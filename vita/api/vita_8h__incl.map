@@ -1,0 +1,21 @@
+<map id="vita.h" name="vita.h">
+<area shape="rect" id="node2" href="$i__mep_8h.html" title="kernel/i_mep.h" alt="" coords="619,273,725,300"/>
+<area shape="rect" id="node8" href="$vitafwd_8h.html" title="kernel/vitafwd.h" alt="" coords="713,587,828,613"/>
+<area shape="rect" id="node9" href="$gene_8h.html" title="kernel/gene.h" alt="" coords="935,355,1035,382"/>
+<area shape="rect" id="node11" href="$common_8h.html" title="kernel/common.h" alt="" coords="611,512,733,539"/>
+<area shape="rect" id="node12" href="$random_8h.html" title="kernel/random.h" alt="" coords="2760,437,2875,464"/>
+<area shape="rect" id="node16" href="$terminal_8h.html" title="kernel/terminal.h" alt="" coords="2403,437,2522,464"/>
+<area shape="rect" id="node20" href="$individual_8h.html" title="kernel/individual.h" alt="" coords="289,355,415,382"/>
+<area shape="rect" id="node27" href="$team_8h.html" title="kernel/team.h" alt="" coords="327,191,428,218"/>
+<area shape="rect" id="node42" href="$src_2search_8h.html" title="kernel/src/search.h" alt="" coords="428,95,561,121"/>
+<area shape="rect" id="node44" href="$bool_8h.html" title="kernel/src/primitive\l/bool.h" alt="" coords="2553,348,2685,389"/>
+<area shape="rect" id="node45" href="$int_8h.html" title="kernel/src/primitive\l/int.h" alt="" coords="2761,348,2893,389"/>
+<area shape="rect" id="node46" href="$real_8h.html" title="kernel/src/primitive\l/real.h" alt="" coords="2397,348,2529,389"/>
+<area shape="rect" id="node47" href="$string_8h.html" title="kernel/src/primitive\l/string.h" alt="" coords="3015,348,3147,389"/>
+<area shape="rect" id="node5" href="$function_8h.html" title="kernel/function.h" alt="" coords="2261,437,2379,464"/>
+<area shape="rect" id="node7" href="$symbol_8h.html" title="kernel/symbol.h" alt="" coords="2287,512,2401,539"/>
+<area shape="rect" id="node10" href="$locus_8h.html" title="kernel/locus.h" alt="" coords="630,437,733,464"/>
+<area shape="rect" id="node22" href="$cache_8h.html" title="kernel/cache.h" alt="" coords="499,437,605,464"/>
+<area shape="rect" id="node23" href="$environment_8h.html" title="kernel/environment.h" alt="" coords="417,512,559,539"/>
+<area shape="rect" id="node43" href="$adf_8h.html" title="kernel/adf.h" alt="" coords="907,191,997,218"/>
+</map>

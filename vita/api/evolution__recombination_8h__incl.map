@@ -1,0 +1,17 @@
+<map id="evolution_recombination.h" name="evolution_recombination.h">
+<area shape="rect" id="node2" href="$evolution__selection_8h.html" title="kernel/evolution_selection.h" alt="" coords="1240,80,1423,107"/>
+<area shape="rect" id="node5" href="$population_8h.html" title="kernel/population.h" alt="" coords="934,229,1065,256"/>
+<area shape="rect" id="node32" href="$vitafwd_8h.html" title="kernel/vitafwd.h" alt="" coords="879,617,994,644"/>
+<area shape="rect" id="node4" href="$alps_8h.html" title="kernel/alps.h" alt="" coords="1019,155,1115,181"/>
+<area shape="rect" id="node7" href="$environment_8h.html" title="kernel/environment.h" alt="" coords="391,304,533,331"/>
+<area shape="rect" id="node18" href="$log_8h.html" title="kernel/log.h" alt="" coords="932,379,1021,405"/>
+<area shape="rect" id="node35" href="$random_8h.html" title="kernel/random.h" alt="" coords="1286,304,1401,331"/>
+<area shape="rect" id="node11" href="$model__measurements_8h.html" title="kernel/model_measurements.h" alt="" coords="526,379,726,405"/>
+<area shape="rect" id="node28" href="$symbol__set_8h.html" title="kernel/symbol_set.h" alt="" coords="87,379,226,405"/>
+<area shape="rect" id="node34" href="$trilean_8h.html" title="kernel/trilean.h" alt="" coords="801,379,907,405"/>
+<area shape="rect" id="node12" href="$fitness_8h.html" title="kernel/fitness.h" alt="" coords="575,453,685,480"/>
+<area shape="rect" id="node19" href="$common_8h.html" title="kernel/common.h" alt="" coords="1234,453,1357,480"/>
+<area shape="rect" id="node24" href="$compatibility__patch_8h.html" title="kernel/compatibility\l_patch.h" alt="" coords="1577,528,1712,569"/>
+<area shape="rect" id="node30" href="$terminal_8h.html" title="kernel/terminal.h" alt="" coords="76,453,195,480"/>
+<area shape="rect" id="node31" href="$symbol_8h.html" title="kernel/symbol.h" alt="" coords="81,535,195,562"/>
+</map>

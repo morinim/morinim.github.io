@@ -1,0 +1,10 @@
+<map id="vita::class_lambda_f&lt; T &gt;" name="vita::class_lambda_f&lt; T &gt;">
+<area shape="rect" id="node3" href="$classvita_1_1basic__class__lambda__f.html" title="The basic interface of a classification lambda class. " alt="" coords="368,169,537,211"/>
+<area shape="rect" id="node2" href="$classvita_1_1lambda__f.html" title="Transforms individuals into lambda functions. " alt="" coords="5,177,141,203"/>
+<area shape="rect" id="node4" href="$classvita_1_1basic__binary__lambda__f.html" title="basic_binary_lambda\l_f\&lt; T, S, false \&gt;" alt="" coords="594,5,738,47"/>
+<area shape="rect" id="node5" href="$classvita_1_1basic__dyn__slot__lambda__f.html" title="basic_dyn_slot_lambda\l_f\&lt; T, S, false \&gt;" alt="" coords="587,71,745,112"/>
+<area shape="rect" id="node6" href="$classvita_1_1basic__gaussian__lambda__f.html" title="basic_gaussian_lambda\l_f\&lt; T, S, false \&gt;" alt="" coords="585,136,747,177"/>
+<area shape="rect" id="node7" href="$classvita_1_1basic__binary__lambda__f.html" title="Lambda class for Binary Classification. " alt="" coords="600,201,732,243"/>
+<area shape="rect" id="node8" href="$classvita_1_1basic__dyn__slot__lambda__f.html" title="Lambda class for Slotted Dynamic Class Boundary Determination. " alt="" coords="597,267,735,308"/>
+<area shape="rect" id="node9" href="$classvita_1_1basic__gaussian__lambda__f.html" title="Lambda class for the Gaussian Distribution Classification. " alt="" coords="595,332,737,373"/>
+</map>

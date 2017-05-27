@@ -1,0 +1,4 @@
+<map id="vita::recombination::strategy&lt; T &gt;" name="vita::recombination::strategy&lt; T &gt;">
+<area shape="rect" id="node2" href="$classvita_1_1recombination_1_1base.html" title="This class defines the program skeleton of a standard genetic programming crossover plus mutation ope..." alt="" coords="5,95,137,136"/>
+<area shape="rect" id="node3" href="$classvita_1_1recombination_1_1de.html" title="This is based on the differential evolution four members crossover. " alt="" coords="161,95,293,136"/>
+</map>

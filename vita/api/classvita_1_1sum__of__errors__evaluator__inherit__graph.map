@@ -1,0 +1,8 @@
+<map id="vita::sum_of_errors_evaluator&lt; T &gt;" name="vita::sum_of_errors_evaluator&lt; T &gt;">
+<area shape="rect" id="node4" href="$classvita_1_1count__evaluator.html" title="Evaluator based on the number of matches. " alt="" coords="581,5,756,32"/>
+<area shape="rect" id="node5" href="$classvita_1_1mae__evaluator.html" title="Evaluator based on the mean absolute error. " alt="" coords="585,56,753,83"/>
+<area shape="rect" id="node6" href="$classvita_1_1mse__evaluator.html" title="Evaluator based on the mean squared error. " alt="" coords="585,107,753,133"/>
+<area shape="rect" id="node7" href="$classvita_1_1rmae__evaluator.html" title="Evaluator based on the mean of relative differences. " alt="" coords="583,157,755,184"/>
+<area shape="rect" id="node2" href="$classvita_1_1src__evaluator.html" title="An evaluator specialized for symbolic regression / classification problems. " alt="" coords="189,81,351,108"/>
+<area shape="rect" id="node3" href="$classvita_1_1evaluator.html" title="Calculates the fitness of an individual. " alt="" coords="5,81,141,108"/>
+</map>

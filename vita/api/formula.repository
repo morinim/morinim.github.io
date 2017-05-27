@@ -1,0 +1,6 @@
+\form#0:$2^cache_size$
+\form#1:$x^2+y^2-z^2$
+\form#2:$\frac{1}{n} \sum_{i=1}^n |target_i - actual_i|$
+\form#3:\[\frac{1}{n} \sum_{i=1}^n \frac{|target_i - actual_i|}{\frac{|target_i| + |actual_i|}{2}}\]
+\form#4:$\frac{1}{n} \sum_{i=1}^n (target_i - actual_i)^2$
+\form#5:$\sum_{i=1}^n target_i == actual_i$

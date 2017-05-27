@@ -1,0 +1,14 @@
+<map id="real.h" name="real.h">
+<area shape="rect" id="node3" href="$function_8h.html" title="kernel/function.h" alt="" coords="109,319,227,345"/>
+<area shape="rect" id="node7" href="$interpreter_8h.html" title="kernel/interpreter.h" alt="" coords="328,169,459,196"/>
+<area shape="rect" id="node22" href="$random_8h.html" title="kernel/random.h" alt="" coords="988,319,1103,345"/>
+<area shape="rect" id="node26" href="$terminal_8h.html" title="kernel/terminal.h" alt="" coords="293,319,411,345"/>
+<area shape="rect" id="node32" href="$comp__penalty_8h.html" title="kernel/src/primitive\l/comp_penalty.h" alt="" coords="223,80,355,121"/>
+<area shape="rect" id="node4" href="$symbol_8h.html" title="kernel/symbol.h" alt="" coords="295,393,409,420"/>
+<area shape="rect" id="node5" href="$vitafwd_8h.html" title="kernel/vitafwd.h" alt="" coords="305,475,420,502"/>
+<area shape="rect" id="node8" href="$core__interpreter_8h.html" title="kernel/core_interpreter.h" alt="" coords="539,244,701,271"/>
+<area shape="rect" id="node9" href="$gene_8h.html" title="kernel/gene.h" alt="" coords="726,244,826,271"/>
+<area shape="rect" id="node10" href="$locus_8h.html" title="kernel/locus.h" alt="" coords="861,319,963,345"/>
+<area shape="rect" id="node13" href="$common_8h.html" title="kernel/common.h" alt="" coords="865,393,988,420"/>
+<area shape="rect" id="node18" href="$compatibility__patch_8h.html" title="kernel/compatibility\l_patch.h" alt="" coords="1025,468,1159,509"/>
+</map>

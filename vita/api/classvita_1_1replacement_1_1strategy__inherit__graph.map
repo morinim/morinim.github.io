@@ -1,0 +1,6 @@
+<map id="vita::replacement::strategy&lt; T &gt;" name="vita::replacement::strategy&lt; T &gt;">
+<area shape="rect" id="node2" href="$classvita_1_1replacement_1_1alps.html" title="ALPS based replacement scheme. " alt="" coords="200,5,331,47"/>
+<area shape="rect" id="node3" href="$classvita_1_1replacement_1_1family__competition.html" title="A family competition replacement scheme. " alt="" coords="184,71,347,112"/>
+<area shape="rect" id="node4" href="$classvita_1_1replacement_1_1pareto.html" title="vita::replacement::\lpareto\&lt; T \&gt;" alt="" coords="200,136,331,177"/>
+<area shape="rect" id="node5" href="$classvita_1_1replacement_1_1tournament.html" title="Tournament based replacement scheme (aka kill tournament) " alt="" coords="200,201,331,243"/>
+</map>

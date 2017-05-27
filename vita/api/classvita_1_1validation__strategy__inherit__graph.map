@@ -1,0 +1,5 @@
+<map id="vita::validation_strategy" name="vita::validation_strategy">
+<area shape="rect" id="node2" href="$classvita_1_1as__is__validation.html" title="a &quot;null object&quot; implementation of validation_strategy. " alt="" coords="5,80,149,107"/>
+<area shape="rect" id="node3" href="$classvita_1_1dss.html" title="Dynamic Training Subset Selection. " alt="" coords="173,80,245,107"/>
+<area shape="rect" id="node4" href="$classvita_1_1holdout__validation.html" title="Holdout validation, aka one round cross&#45;validation or conventional validation. " alt="" coords="269,80,424,107"/>
+</map>

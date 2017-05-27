@@ -1,0 +1,7 @@
+<map id="vita::dyn_slot_evaluator&lt; T &gt;" name="vita::dyn_slot_evaluator&lt; T &gt;">
+<area shape="rect" id="node2" href="$classvita_1_1classification__evaluator.html" title="This class is used to factorized out some code of the classification evaluators. " alt="" coords="57,247,183,288"/>
+<area shape="rect" id="node3" href="$classvita_1_1src__evaluator.html" title="An evaluator specialized for symbolic regression / classification problems. " alt="" coords="39,171,201,197"/>
+<area shape="rect" id="node4" href="$classvita_1_1evaluator.html" title="Calculates the fitness of an individual. " alt="" coords="5,81,141,108"/>
+<area shape="rect" id="node5" href="$classvita_1_1src__data.html" title="Implementation of vita::data for symbolic regression and classification tasks. " alt="" coords="165,81,267,108"/>
+<area shape="rect" id="node6" href="$classvita_1_1data.html" title="Interface for data used by vita::search class to to evolve vita::population. " alt="" coords="178,5,254,32"/>
+</map>

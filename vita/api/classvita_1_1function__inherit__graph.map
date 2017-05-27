@@ -1,0 +1,35 @@
+<map id="vita::function" name="vita::function">
+<area shape="rect" id="node3" href="$classvita_1_1adf.html" title="Subroutine with arguments. " alt="" coords="325,5,394,32"/>
+<area shape="rect" id="node4" href="$classvita_1_1boolean_1_1l__and.html" title="vita::boolean::l_and" alt="" coords="292,56,427,83"/>
+<area shape="rect" id="node5" href="$classvita_1_1boolean_1_1l__not.html" title="vita::boolean::l_not" alt="" coords="293,107,425,133"/>
+<area shape="rect" id="node6" href="$classvita_1_1boolean_1_1l__or.html" title="vita::boolean::l_or" alt="" coords="297,157,422,184"/>
+<area shape="rect" id="node7" href="$classvita_1_1integer_1_1add.html" title="vita::integer::add" alt="" coords="300,208,419,235"/>
+<area shape="rect" id="node8" href="$classvita_1_1integer_1_1div.html" title="vita::integer::div" alt="" coords="302,259,417,285"/>
+<area shape="rect" id="node9" href="$classvita_1_1integer_1_1ife.html" title="vita::integer::ife" alt="" coords="303,309,415,336"/>
+<area shape="rect" id="node10" href="$classvita_1_1integer_1_1ifl.html" title="vita::integer::ifl" alt="" coords="305,360,413,387"/>
+<area shape="rect" id="node11" href="$classvita_1_1integer_1_1ifz.html" title="vita::integer::ifz" alt="" coords="303,411,415,437"/>
+<area shape="rect" id="node12" href="$classvita_1_1integer_1_1mod.html" title="vita::integer::mod" alt="" coords="298,461,421,488"/>
+<area shape="rect" id="node13" href="$classvita_1_1integer_1_1mul.html" title="vita::integer::mul" alt="" coords="300,512,419,539"/>
+<area shape="rect" id="node14" href="$classvita_1_1integer_1_1shl.html" title="vita::integer::shl" alt="" coords="302,563,417,589"/>
+<area shape="rect" id="node15" href="$classvita_1_1integer_1_1sub.html" title="vita::integer::sub" alt="" coords="300,613,419,640"/>
+<area shape="rect" id="node16" href="$classvita_1_1real_1_1abs.html" title="The absolute value of a real number. " alt="" coords="309,664,410,691"/>
+<area shape="rect" id="node17" href="$classvita_1_1real_1_1add.html" title="Sum of two real numbers. " alt="" coords="309,715,410,741"/>
+<area shape="rect" id="node18" href="$classvita_1_1real_1_1div.html" title="Division between two real numbers. " alt="" coords="311,765,408,792"/>
+<area shape="rect" id="node19" href="$classvita_1_1real_1_1gt.html" title="&quot;Greater Then&quot; operator " alt="" coords="314,816,405,843"/>
+<area shape="rect" id="node20" href="$classvita_1_1real_1_1idiv.html" title="Quotient of the division between two real numbers. " alt="" coords="309,867,409,893"/>
+<area shape="rect" id="node21" href="$classvita_1_1real_1_1ifb.html" title="&quot;If between&quot; operator " alt="" coords="312,917,407,944"/>
+<area shape="rect" id="node22" href="$classvita_1_1real_1_1ife.html" title="&quot;If equal&quot; operator " alt="" coords="312,968,407,995"/>
+<area shape="rect" id="node23" href="$classvita_1_1real_1_1ifl.html" title="&quot;If less then&quot; operator " alt="" coords="314,1019,405,1045"/>
+<area shape="rect" id="node24" href="$classvita_1_1real_1_1ifz.html" title="&quot;If zero&quot; operator " alt="" coords="312,1069,407,1096"/>
+<area shape="rect" id="node25" href="$classvita_1_1real_1_1length.html" title="Length of a string. " alt="" coords="302,1120,417,1147"/>
+<area shape="rect" id="node26" href="$classvita_1_1real_1_1ln.html" title="Natural logarithm of a real number. " alt="" coords="314,1171,405,1197"/>
+<area shape="rect" id="node27" href="$classvita_1_1real_1_1lt.html" title="&quot;Less Then&quot; operator " alt="" coords="316,1221,403,1248"/>
+<area shape="rect" id="node28" href="$classvita_1_1real_1_1max.html" title="The larger of two floating point values. " alt="" coords="307,1272,412,1299"/>
+<area shape="rect" id="node29" href="$classvita_1_1real_1_1mod.html" title="Remainder of the division between real numbers. " alt="" coords="307,1323,412,1349"/>
+<area shape="rect" id="node30" href="$classvita_1_1real_1_1mul.html" title="Product of real numbers. " alt="" coords="309,1373,410,1400"/>
+<area shape="rect" id="node31" href="$classvita_1_1real_1_1sin.html" title="sin() of a real number " alt="" coords="311,1424,408,1451"/>
+<area shape="rect" id="node32" href="$classvita_1_1real_1_1sqrt.html" title="square root of a real number " alt="" coords="308,1475,411,1501"/>
+<area shape="rect" id="node33" href="$classvita_1_1real_1_1sub.html" title="Subtraction between real numbers. " alt="" coords="309,1525,410,1552"/>
+<area shape="rect" id="node34" href="$classvita_1_1str_1_1ife.html" title="String comparison for equality. " alt="" coords="315,1576,403,1603"/>
+<area shape="rect" id="node2" href="$classvita_1_1symbol.html" title="GP assembles variable length program structures from basic units called functions and terminals..." alt="" coords="5,791,99,817"/>
+</map>

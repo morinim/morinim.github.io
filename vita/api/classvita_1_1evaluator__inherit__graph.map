@@ -1,0 +1,16 @@
+<map id="vita::evaluator&lt; T &gt;" name="vita::evaluator&lt; T &gt;">
+<area shape="rect" id="node2" href="$classvita_1_1constrained__evaluator.html" title="vita::constrained_evaluator\&lt; T \&gt;" alt="" coords="189,5,400,32"/>
+<area shape="rect" id="node3" href="$classvita_1_1evaluator__proxy.html" title="vita::evaluator_proxy\&lt; T \&gt;" alt="" coords="207,56,382,83"/>
+<area shape="rect" id="node4" href="$classvita_1_1random__evaluator.html" title="A random fitness function used for debug purpose. " alt="" coords="201,107,388,133"/>
+<area shape="rect" id="node5" href="$classvita_1_1src__evaluator.html" title="An evaluator specialized for symbolic regression / classification problems. " alt="" coords="214,157,375,184"/>
+<area shape="rect" id="node15" href="$classvita_1_1test__evaluator.html" title="A fitness function used for debug purpose. " alt="" coords="212,208,377,235"/>
+<area shape="rect" id="node6" href="$classvita_1_1classification__evaluator.html" title="This class is used to factorized out some code of the classification evaluators. " alt="" coords="452,99,579,141"/>
+<area shape="rect" id="node10" href="$classvita_1_1sum__of__errors__evaluator.html" title="An evaluator to minimize the sum of some sort of error. " alt="" coords="448,226,583,267"/>
+<area shape="rect" id="node7" href="$classvita_1_1binary__evaluator.html" title="Single class evaluator for classification problems. " alt="" coords="639,31,817,57"/>
+<area shape="rect" id="node8" href="$classvita_1_1dyn__slot__evaluator.html" title="Slotted Dynamic Class Boundary Determination. " alt="" coords="632,81,824,108"/>
+<area shape="rect" id="node9" href="$classvita_1_1gaussian__evaluator.html" title="Gaussian distribution for multiclass object classification. " alt="" coords="631,132,825,159"/>
+<area shape="rect" id="node11" href="$classvita_1_1count__evaluator.html" title="Evaluator based on the number of matches. " alt="" coords="641,183,815,209"/>
+<area shape="rect" id="node12" href="$classvita_1_1mae__evaluator.html" title="Evaluator based on the mean absolute error. " alt="" coords="644,233,812,260"/>
+<area shape="rect" id="node13" href="$classvita_1_1mse__evaluator.html" title="Evaluator based on the mean squared error. " alt="" coords="644,284,812,311"/>
+<area shape="rect" id="node14" href="$classvita_1_1rmae__evaluator.html" title="Evaluator based on the mean of relative differences. " alt="" coords="642,335,814,361"/>
+</map>

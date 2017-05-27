@@ -1,0 +1,19 @@
+<map id="problem.h" name="problem.h">
+<area shape="rect" id="node4" href="$problem_8h.html" title="kernel/problem.h" alt="" coords="1101,80,1219,107"/>
+<area shape="rect" id="node33" href="$src_2data_8h.html" title="kernel/src/data.h" alt="" coords="1331,155,1450,181"/>
+<area shape="rect" id="node37" href="$factory_8h.html" title="kernel/src/primitive\l/factory.h" alt="" coords="1646,229,1778,271"/>
+<area shape="rect" id="node5" href="$data_8h.html" title="kernel/data.h" alt="" coords="1111,237,1209,263"/>
+<area shape="rect" id="node15" href="$environment_8h.html" title="kernel/environment.h" alt="" coords="315,155,458,181"/>
+<area shape="rect" id="node6" href="$common_8h.html" title="kernel/common.h" alt="" coords="989,393,1112,420"/>
+<area shape="rect" id="node11" href="$compatibility__patch_8h.html" title="kernel/compatibility\l_patch.h" alt="" coords="751,468,886,509"/>
+<area shape="rect" id="node18" href="$model__measurements_8h.html" title="kernel/model_measurements.h" alt="" coords="355,237,555,263"/>
+<area shape="rect" id="node25" href="$log_8h.html" title="kernel/log.h" alt="" coords="825,319,914,345"/>
+<area shape="rect" id="node26" href="$symbol__set_8h.html" title="kernel/symbol_set.h" alt="" coords="1432,237,1571,263"/>
+<area shape="rect" id="node32" href="$trilean_8h.html" title="kernel/trilean.h" alt="" coords="693,319,800,345"/>
+<area shape="rect" id="node19" href="$fitness_8h.html" title="kernel/fitness.h" alt="" coords="406,319,517,345"/>
+<area shape="rect" id="node28" href="$terminal_8h.html" title="kernel/terminal.h" alt="" coords="1483,319,1602,345"/>
+<area shape="rect" id="node29" href="$symbol_8h.html" title="kernel/symbol.h" alt="" coords="1521,393,1636,420"/>
+<area shape="rect" id="node30" href="$vitafwd_8h.html" title="kernel/vitafwd.h" alt="" coords="1521,475,1636,502"/>
+<area shape="rect" id="node34" href="$category__set_8h.html" title="kernel/category_set.h" alt="" coords="1160,319,1307,345"/>
+<area shape="rect" id="node35" href="$distribution_8h.html" title="kernel/distribution.h" alt="" coords="802,237,937,263"/>
+</map>
