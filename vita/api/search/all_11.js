@@ -18,11 +18,10 @@ var searchData=
   ['terminals',['terminals',['../classvita_1_1analyzer.html#a1d5d695629c99078f683bbd8f399e14e',1,'vita::analyzer::terminals()'],['../classvita_1_1symbol__set.html#a16abdd74c5d4383ef2edbdce61f0db06',1,'vita::symbol_set::terminals()']]],
   ['test_5fevaluator',['test_evaluator',['../classvita_1_1test__evaluator.html',1,'vita']]],
   ['threshold',['threshold',['../classvita_1_1environment.html#a2d9a412540dcd1cad76bd09915c72494',1,'vita::environment']]],
-  ['tournament',['tournament',['../classvita_1_1selection_1_1tournament.html',1,'vita::selection']]],
   ['tournament',['tournament',['../classvita_1_1replacement_1_1tournament.html',1,'vita::replacement']]],
+  ['tournament',['tournament',['../classvita_1_1selection_1_1tournament.html',1,'vita::selection']]],
   ['tournament_5fsize',['tournament_size',['../classvita_1_1environment.html#aeb6b6251373969783a5fa5b4188def81',1,'vita::environment']]],
   ['training_5faccuracy',['training_accuracy',['../classvita_1_1basic__dyn__slot__lambda__f.html#a99a949aa846f96734d707f8648f6ecfd',1,'vita::basic_dyn_slot_lambda_f']]],
-  ['tree',['tree',['../classvita_1_1i__mep.html#a5d364a32d2f6b8ca5887f79d2627d14c',1,'vita::i_mep']]],
   ['trilean',['trilean',['../namespacevita.html#acca0cbd3904e6cd30ca5b2df94ac5931',1,'vita']]],
   ['trilean_2eh',['trilean.h',['../trilean_8h.html',1,'']]],
   ['tune_5fparameters',['tune_parameters',['../classvita_1_1search.html#a5b86d3ecade85e0a0d069e23d097329f',1,'vita::search::tune_parameters()'],['../classvita_1_1src__search.html#a02c8f877377c2f98881b6dbed3974472',1,'vita::src_search::tune_parameters()']]]

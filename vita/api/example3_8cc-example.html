@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">example3.cc</div>  </div>
 </div><!--header-->
 <div class="contents">
-<p>Performs three types of crossover between two random individuals.</p>
+<p>Performs various types of crossover between random individuals.</p>
 <div class="fragment"><div class="line"></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"></div>
@@ -98,30 +98,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">  env.<a name="a2"></a><a class="code" href="classvita_1_1environment.html#a78eca365e67e87148eec24e15e4c3405">code_length</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(argc &gt; 1 ? std::atoi(argv[1]) : 10);</div>
 <div class="line"></div>
 <div class="line">  <a name="_a3"></a><a class="code" href="classvita_1_1symbol__factory.html">vita::symbol_factory</a> factory;;</div>
-<div class="line">  sset.<a name="a4"></a><a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a name="a5"></a><a class="code" href="classvita_1_1symbol__factory.html#a09dc8e4614f7af5e93d4eee27a53fa29">make</a>(vita::domain_t::d_double, -200, 200));</div>
-<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#a09dc8e4614f7af5e93d4eee27a53fa29">make</a>(<span class="stringliteral">&quot;FADD&quot;</span>));</div>
-<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#a09dc8e4614f7af5e93d4eee27a53fa29">make</a>(<span class="stringliteral">&quot;FSUB&quot;</span>));</div>
-<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#a09dc8e4614f7af5e93d4eee27a53fa29">make</a>(<span class="stringliteral">&quot;FMUL&quot;</span>));</div>
-<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#a09dc8e4614f7af5e93d4eee27a53fa29">make</a>(<span class="stringliteral">&quot;FIFL&quot;</span>));</div>
-<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#a09dc8e4614f7af5e93d4eee27a53fa29">make</a>(<span class="stringliteral">&quot;FIFE&quot;</span>));</div>
+<div class="line">  sset.<a name="a4"></a><a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a name="a5"></a><a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(vita::domain_t::d_double, -200, 200));</div>
+<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FADD&quot;</span>));</div>
+<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FSUB&quot;</span>));</div>
+<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FMUL&quot;</span>));</div>
+<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FIFL&quot;</span>));</div>
+<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FIFE&quot;</span>));</div>
 <div class="line"></div>
 <div class="line">  <a name="_a6"></a><a class="code" href="classvita_1_1i__mep.html">vita::i_mep</a> i1(env), i2(env);</div>
 <div class="line"></div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;PARENTS\n&quot;</span> &lt;&lt; std::string(40, <span class="charliteral">&#39;-&#39;</span>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line">  i1.dump(std::cout);</div>
-<div class="line">  std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line">  i2.<a name="a7"></a><a class="code" href="classvita_1_1i__mep.html#a5abe6b25f79d6c47be0cddac423b383d">dump</a>(std::cout);</div>
-<div class="line">  std::cout &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"></div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;OFFSPRING\n&quot;</span> &lt;&lt; std::string(40, <span class="charliteral">&#39;-&#39;</span>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"></div>
-<div class="line">  <a name="a8"></a><a class="code" href="namespacevita.html#ac3d9b50b3d7e16052b724747f9a28189">crossover</a>(i1, i2).<a class="code" href="classvita_1_1i__mep.html#a5abe6b25f79d6c47be0cddac423b383d">dump</a>(std::cout);</div>
-<div class="line">  std::cout &lt;&lt; std::endl;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;PARENTS\n&quot;</span> &lt;&lt; std::string(40, <span class="charliteral">&#39;-&#39;</span>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
+<div class="line">            &lt;&lt; vita::out::dump</div>
+<div class="line">            &lt;&lt; i1 &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
+<div class="line">            &lt;&lt; i2 &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
+<div class="line">            &lt;&lt; <span class="stringliteral">&quot;OFFSPRING\n&quot;</span> &lt;&lt; std::string(40, <span class="charliteral">&#39;-&#39;</span>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
+<div class="line">            &lt;&lt; <a name="a7"></a><a class="code" href="classvita_1_1i__mep.html#ab4cc448b530b82a2533d6403609d02a3">crossover</a>(i1, i2)</div>
+<div class="line">            &lt;&lt; std::endl;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:01 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

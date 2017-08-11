@@ -244,271 +244,278 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
-<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="classvita_1_1symbol__set.html#ae19ed02a98d3ea28f1d835d2d2b07dee">  222</a></span>&#160;<a class="code" href="classvita_1_1symbol.html">symbol</a> *<a class="code" href="classvita_1_1symbol__set.html#a9749c08049384fa92b3975f8e65278d2">symbol_set::decode</a>(<span class="keyword">const</span> std::string &amp;dex)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  assert(dex != <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> s : views_.back().all)</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">if</span> (s.sym-&gt;display() == dex)</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;      <span class="keywordflow">return</span> s.sym;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;}</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="classvita_1_1symbol__set.html#a9e2c3df6c8c78ede8f4bd5d7376be269">  238</a></span>&#160;<a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a> <a class="code" href="classvita_1_1symbol__set.html#a9e2c3df6c8c78ede8f4bd5d7376be269">symbol_set::categories</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> size(views_.size());</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  assert(size != 1);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a><span class="keyword">&gt;</span>(size ? size - 1 : size);</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;}</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
-<div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="classvita_1_1symbol__set.html#a16abdd74c5d4383ef2edbdce61f0db06">  250</a></span>&#160;<span class="keywordtype">unsigned</span> <a class="code" href="classvita_1_1symbol__set.html#a16abdd74c5d4383ef2edbdce61f0db06">symbol_set::terminals</a>(<a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a> c)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  Expects(c &lt; <a class="code" href="classvita_1_1symbol__set.html#a9e2c3df6c8c78ede8f4bd5d7376be269">categories</a>());</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(views_[c].terminals.size());</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;}</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
-<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="classvita_1_1symbol__set.html#aadc37e4dac8ba9867a94fe166ba9fdb4">  262</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classvita_1_1symbol__set.html#aadc37e4dac8ba9867a94fe166ba9fdb4">symbol_set::enough_terminals</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keywordflow">if</span> (views_.empty())</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  std::set&lt;category_t&gt; need;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;s : views_.back().all)</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  {</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> arity(s.sym-&gt;arity());</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i(decltype(arity){0}); i &lt; arity; ++i)</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      need.insert(<a class="code" href="classvita_1_1function.html#a0170c32e66de20aef6c80917302cac84">function::cast</a>(s.sym)-&gt;<a class="code" href="classvita_1_1function.html#ae24c44c614cf710b1aa9953076ee4917">arg_category</a>(i));</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  }</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;i : need)</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">if</span> (i &gt;= <a class="code" href="classvita_1_1symbol__set.html#a9e2c3df6c8c78ede8f4bd5d7376be269">categories</a>() || !views_[i].terminals.size())</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;}</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
-<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="classvita_1_1symbol__set.html#afafd9dd20abc9d2f05fc83dc5418b12a">  287</a></span>&#160;<span class="keywordtype">unsigned</span> <a class="code" href="classvita_1_1symbol__set.html#afafd9dd20abc9d2f05fc83dc5418b12a">symbol_set::weight</a>(<span class="keyword">const</span> <a class="code" href="classvita_1_1symbol.html">symbol</a> &amp;s)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> v(weights_.find(&amp;s));</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="keywordflow">if</span> (v == weights_.end())</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <span class="keywordflow">return</span> v-&gt;second;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;}</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno"><a class="line" href="namespacevita.html#afec09f4a7555082d72deec22ecae5cf2">  303</a></span>&#160;std::ostream &amp;<a class="code" href="namespacevita.html#ae60a7117178f58cacfd11c43d086084e">operator&lt;&lt;</a>(std::ostream &amp;o, <span class="keyword">const</span> <a class="code" href="classvita_1_1symbol__set.html">symbol_set</a> &amp;ss)</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;{</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;s : ss.views_.back().all)</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  {</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    o &lt;&lt; s.sym-&gt;display();</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> arity(s.sym-&gt;arity());</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordflow">if</span> (arity)</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      o &lt;&lt; <span class="charliteral">&#39;(&#39;</span>;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> j(decltype(arity){0}); j &lt; arity; ++j)</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      o &lt;&lt; <a class="code" href="classvita_1_1function.html#a0170c32e66de20aef6c80917302cac84">function::cast</a>(s.sym)-&gt;<a class="code" href="classvita_1_1function.html#ae24c44c614cf710b1aa9953076ee4917">arg_category</a>(j)</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        &lt;&lt; (j + 1 == arity ? <span class="stringliteral">&quot;&quot;</span> : <span class="stringliteral">&quot;, &quot;</span>);</div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="classvita_1_1symbol__set.html#ae19ed02a98d3ea28f1d835d2d2b07dee">  223</a></span>&#160;<a class="code" href="classvita_1_1symbol.html">symbol</a> *<a class="code" href="classvita_1_1symbol__set.html#a9749c08049384fa92b3975f8e65278d2">symbol_set::decode</a>(<span class="keyword">const</span> std::string &amp;dex)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  Expects(!dex.empty());</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> s : views_.back().all)</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">if</span> (s.sym-&gt;name() == dex)</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;      <span class="keywordflow">return</span> s.sym;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;}</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="classvita_1_1symbol__set.html#a9e2c3df6c8c78ede8f4bd5d7376be269">  239</a></span>&#160;<a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a> <a class="code" href="classvita_1_1symbol__set.html#a9e2c3df6c8c78ede8f4bd5d7376be269">symbol_set::categories</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> size(views_.size());</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  assert(size != 1);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a><span class="keyword">&gt;</span>(size ? size - 1 : size);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="classvita_1_1symbol__set.html#a16abdd74c5d4383ef2edbdce61f0db06">  251</a></span>&#160;<span class="keywordtype">unsigned</span> <a class="code" href="classvita_1_1symbol__set.html#a16abdd74c5d4383ef2edbdce61f0db06">symbol_set::terminals</a>(<a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a> c)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  Expects(c &lt; <a class="code" href="classvita_1_1symbol__set.html#a9e2c3df6c8c78ede8f4bd5d7376be269">categories</a>());</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(views_[c].terminals.size());</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;}</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="classvita_1_1symbol__set.html#aadc37e4dac8ba9867a94fe166ba9fdb4">  263</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classvita_1_1symbol__set.html#aadc37e4dac8ba9867a94fe166ba9fdb4">symbol_set::enough_terminals</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="keywordflow">if</span> (views_.empty())</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  std::set&lt;category_t&gt; need;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;s : views_.back().all)</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> arity(s.sym-&gt;arity());</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i(decltype(arity){0}); i &lt; arity; ++i)</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      need.insert(<a class="code" href="classvita_1_1function.html#a0170c32e66de20aef6c80917302cac84">function::cast</a>(s.sym)-&gt;<a class="code" href="classvita_1_1function.html#ae24c44c614cf710b1aa9953076ee4917">arg_category</a>(i));</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  }</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;i : need)</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordflow">if</span> (i &gt;= <a class="code" href="classvita_1_1symbol__set.html#a9e2c3df6c8c78ede8f4bd5d7376be269">categories</a>() || !views_[i].terminals.size())</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno"><a class="line" href="classvita_1_1symbol__set.html#afafd9dd20abc9d2f05fc83dc5418b12a">  288</a></span>&#160;<span class="keywordtype">unsigned</span> <a class="code" href="classvita_1_1symbol__set.html#afafd9dd20abc9d2f05fc83dc5418b12a">symbol_set::weight</a>(<span class="keyword">const</span> <a class="code" href="classvita_1_1symbol.html">symbol</a> &amp;s)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> v(weights_.find(&amp;s));</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="keywordflow">if</span> (v == weights_.end())</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  <span class="keywordflow">return</span> v-&gt;second;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;}</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno"><a class="line" href="namespacevita.html#afec09f4a7555082d72deec22ecae5cf2">  306</a></span>&#160;std::ostream &amp;<a class="code" href="namespacevita.html#ae60a7117178f58cacfd11c43d086084e">operator&lt;&lt;</a>(std::ostream &amp;o, <span class="keyword">const</span> <a class="code" href="classvita_1_1symbol__set.html">symbol_set</a> &amp;ss)</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;{</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;s : ss.views_.back().all)</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  {</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> sym(s.sym);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    o &lt;&lt; sym-&gt;name();</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keyword">auto</span> arity(sym-&gt;arity());</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordflow">if</span> (arity)</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      o &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    o &lt;&lt; <span class="stringliteral">&quot; -&gt; &quot;</span> &lt;&lt; s.sym-&gt;category() &lt;&lt; <span class="stringliteral">&quot; (opcode &quot;</span> &lt;&lt; s.sym-&gt;opcode()</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;, parametric &quot;</span> &lt;&lt; s.sym-&gt;parametric()</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;, weight &quot;</span> &lt;&lt; s.weight &lt;&lt; <span class="stringliteral">&quot;)\n&quot;</span>;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  }</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  <span class="keywordflow">return</span> o &lt;&lt; <span class="stringliteral">&quot;Sum: &quot;</span> &lt;&lt; ss.views_.back().all.sum() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;}</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
-<div class="line"><a name="l00329"></a><span class="lineno"><a class="line" href="classvita_1_1symbol__set.html#ae14d3cdf47ad92323bd8833101c912c8">  329</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classvita_1_1symbol__set.html#ae14d3cdf47ad92323bd8833101c912c8">symbol_set::debug</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;i : views_)</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordflow">if</span> (!i.debug())</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="classvita_1_1symbol__set.html#aadc37e4dac8ba9867a94fe166ba9fdb4">enough_terminals</a>())</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  {</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    print.error(<span class="stringliteral">&quot;Symbol set doesn&#39;t contain enough symbols&quot;</span>);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  }</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;}</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="comment"></span>symbol_set::collection::collection(std::string n)</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  : all(<span class="stringliteral">&quot;all&quot;</span>), terminals(<span class="stringliteral">&quot;terminals&quot;</span>), <a class="code" href="classvita_1_1adf.html">adf</a>(<span class="stringliteral">&quot;adf&quot;</span>), <a class="code" href="classvita_1_1adt.html">adt</a>(<span class="stringliteral">&quot;adt&quot;</span>),</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    name_(<a class="code" href="namespacestd.html">std</a>::move(n))</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;{</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;}</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="keywordtype">bool</span> symbol_set::collection::debug()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <span class="keywordflow">if</span> (!all.debug() || !terminals.debug() || !adf.debug() || !adt.debug())</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  {</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    print.error(<span class="stringliteral">&quot;(inside &quot;</span>, name_, <span class="stringliteral">&quot;)&quot;</span>);</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  }</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;s : all)</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  {</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> t_not_found(</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;      std::find(terminals.begin(), terminals.end(), s) == terminals.end());</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="comment">// Terminals must be in the terminals&#39; vector and functions must not be in</span></div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="comment">// the terminals&#39; vector.</span></div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <span class="keywordflow">if</span> (s.sym-&gt;terminal() == t_not_found)</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    {</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      print.error(name_, <span class="stringliteral">&quot;: symbol &quot;</span>, s.sym-&gt;display(), <span class="stringliteral">&quot; badly stored&quot;</span>);</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    }</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    {</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      o &lt;&lt; <span class="charliteral">&#39;(&#39;</span>;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      <span class="keywordflow">for</span> (decltype(arity) j(0); j &lt; arity; ++j)</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        o &lt;&lt; <a class="code" href="classvita_1_1function.html#a0170c32e66de20aef6c80917302cac84">function::cast</a>(sym)-&gt;<a class="code" href="classvita_1_1function.html#ae24c44c614cf710b1aa9953076ee4917">arg_category</a>(j)</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;          &lt;&lt; (j + 1 == arity ? <span class="stringliteral">&quot;&quot;</span> : <span class="stringliteral">&quot;, &quot;</span>);</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      o &lt;&lt; <span class="charliteral">&#39;)&#39;</span>;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    }</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    o &lt;&lt; <span class="stringliteral">&quot; -&gt; &quot;</span> &lt;&lt; sym-&gt;category() &lt;&lt; <span class="stringliteral">&quot; (opcode &quot;</span> &lt;&lt; sym-&gt;opcode()</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;, parametric &quot;</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      &lt;&lt; (sym-&gt;terminal() &amp;&amp; <a class="code" href="classvita_1_1terminal.html#a6e7ffc30f0cff14c939b2a94f724d47e">terminal::cast</a>(sym)-&gt;<a class="code" href="classvita_1_1terminal.html#a57979e29286f973e5147d0b0bb3fe97f">parametric</a>())</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      &lt;&lt; <span class="stringliteral">&quot;, weight &quot;</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      &lt;&lt; s.weight &lt;&lt; <span class="stringliteral">&quot;)\n&quot;</span>;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  }</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="keywordflow">return</span> o &lt;&lt; <span class="stringliteral">&quot;Sum: &quot;</span> &lt;&lt; ss.views_.back().all.sum() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;}</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno"><a class="line" href="classvita_1_1symbol__set.html#ae14d3cdf47ad92323bd8833101c912c8">  337</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classvita_1_1symbol__set.html#ae14d3cdf47ad92323bd8833101c912c8">symbol_set::debug</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;i : views_)</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordflow">if</span> (!i.debug())</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="classvita_1_1symbol__set.html#aadc37e4dac8ba9867a94fe166ba9fdb4">enough_terminals</a>())</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  {</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    print.error(<span class="stringliteral">&quot;Symbol set doesn&#39;t contain enough symbols&quot;</span>);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  }</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;}</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment"></span>symbol_set::collection::collection(std::string n)</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  : all(<span class="stringliteral">&quot;all&quot;</span>), terminals(<span class="stringliteral">&quot;terminals&quot;</span>), <a class="code" href="classvita_1_1adf.html">adf</a>(<span class="stringliteral">&quot;adf&quot;</span>), <a class="code" href="classvita_1_1adt.html">adt</a>(<span class="stringliteral">&quot;adt&quot;</span>),</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    name_(<a class="code" href="namespacestd.html">std</a>::move(n))</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;{</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;}</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="keywordtype">bool</span> symbol_set::collection::debug()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  <span class="keywordflow">if</span> (!all.debug() || !terminals.debug() || !adf.debug() || !adt.debug())</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  {</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    print.error(<span class="stringliteral">&quot;(inside &quot;</span>, name_, <span class="stringliteral">&quot;)&quot;</span>);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  }</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;s : all)</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  {</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> t_not_found(</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;      std::find(terminals.begin(), terminals.end(), s) == terminals.end());</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keywordflow">if</span> (s.sym-&gt;auto_defined())</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    {</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;      <span class="keywordflow">if</span> (s.sym-&gt;terminal())</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      {</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">if</span> (std::find(adt.begin(), adt.end(), s) == adt.end())</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        {</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;          print.error(name_, <span class="stringliteral">&quot;: ADT &quot;</span>, s.sym-&gt;display(), <span class="stringliteral">&quot; badly stored&quot;</span>);</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        }</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;      }</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;      <span class="keywordflow">else</span>  <span class="comment">// function</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="comment">// Terminals must be in the terminals&#39; vector and functions must not be in</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="comment">// the terminals&#39; vector.</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">if</span> (s.sym-&gt;terminal() == t_not_found)</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    {</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;      print.error(name_, <span class="stringliteral">&quot;: symbol &quot;</span>, s.sym-&gt;name(), <span class="stringliteral">&quot; badly stored&quot;</span>);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    }</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keywordflow">if</span> (s.sym-&gt;auto_defined())</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    {</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;      <span class="keywordflow">if</span> (s.sym-&gt;terminal())</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;      {</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keywordflow">if</span> (std::find(adf.begin(), adf.end(), s) == adf.end())</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keywordflow">if</span> (std::find(adt.begin(), adt.end(), s) == adt.end())</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        {</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;          print.error(name_, <span class="stringliteral">&quot;: ADF &quot;</span>, s.sym-&gt;display(), <span class="stringliteral">&quot; badly stored&quot;</span>);</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;          print.error(name_, <span class="stringliteral">&quot;: ADT &quot;</span>, s.sym-&gt;name(), <span class="stringliteral">&quot; badly stored&quot;</span>);</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        }</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      }</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    }</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  }</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> ssize(all.size());</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  <span class="comment">// The following condition should be met at the end of the symbol_set</span></div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  <span class="comment">// specification.</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  <span class="comment">// Since we don&#39;t want to enforce a particular insertion order (e.g. terminals</span></div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  <span class="comment">// before functions), we cannot perform the check here.</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;  <span class="comment">//     if (ssize &amp;&amp; !terminals.size())</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  <span class="comment">//     {</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  <span class="comment">//       print.error(name_, &quot;: no terminal in the symbol set&quot;);</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  <span class="comment">//       return false;</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  <span class="comment">//     }</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;  <span class="keywordflow">if</span> (ssize &lt; terminals.size())</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;  {</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    print.error(name_, <span class="stringliteral">&quot;: wrong terminal set size (more than symbol set)&quot;</span>);</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  }</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  <span class="keywordflow">if</span> (ssize &lt; adf.size())</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  {</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    print.error(name_, <span class="stringliteral">&quot;: wrong ADF set size (more than symbol set)&quot;</span>);</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;  }</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  <span class="keywordflow">if</span> (ssize &lt; adt.size())</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  {</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    print.error(name_, <span class="stringliteral">&quot;: wrong ADT set size (more than symbol set)&quot;</span>);</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  }</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;}</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;</div>
-<div class="line"><a name="l00440"></a><span class="lineno"><a class="line" href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#a110dc9644546e79c67e681957efff36a">  440</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#a110dc9644546e79c67e681957efff36a">symbol_set::collection::sum_container::insert</a>(<span class="keyword">const</span> w_symbol &amp;ws)</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;{</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  elems_.push_back(ws);</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;  sum_ += ws.weight;</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  std::sort(begin(), end(),</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;            [](<span class="keyword">auto</span> s1, <span class="keyword">auto</span> s2) { <span class="keywordflow">return</span> s1.weight &gt; s2.weight; });</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;}</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;</div>
-<div class="line"><a name="l00462"></a><span class="lineno"><a class="line" href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#aa4b0eac87caf0365797428fd57c43b4b">  462</a></span>&#160;<span class="keyword">const</span> <a class="code" href="classvita_1_1symbol.html">symbol</a> &amp;<a class="code" href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#aa4b0eac87caf0365797428fd57c43b4b">symbol_set::collection::sum_container::roulette</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  Expects(sum());</div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> slot(random::sup(sum()));</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;  std::size_t i(0);</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> wedge(elems_[i].<a class="code" href="classvita_1_1symbol__set.html#afafd9dd20abc9d2f05fc83dc5418b12a">weight</a>);</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;       wedge &lt;= slot;</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;       wedge += elems_[++i].weight)</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  {}</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;  assert(i &lt; elems_.size());</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;  <span class="keywordflow">return</span> *elems_[i].sym;</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;  <span class="comment">// The so called roulette-wheel selection via stochastic acceptance:</span></div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;  <span class="comment">// for (;;)</span></div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;  <span class="comment">// {</span></div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;  <span class="comment">//   const symbol *s(random::element(elems));</span></div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;  <span class="comment">//   if (random::sup(max) &lt; s-&gt;weight)</span></div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;  <span class="comment">//     return *s;</span></div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;  <span class="comment">// }</span></div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;  <span class="comment">// Internal tests have proved this is slower for Vita.</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;      <span class="keywordflow">else</span>  <span class="comment">// function</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;      {</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordflow">if</span> (std::find(adf.begin(), adf.end(), s) == adf.end())</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        {</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;          print.error(name_, <span class="stringliteral">&quot;: ADF &quot;</span>, s.sym-&gt;name(), <span class="stringliteral">&quot; badly stored&quot;</span>);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        }</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      }</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    }</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;  }</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> ssize(all.size());</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  <span class="comment">// The following condition should be met at the end of the symbol_set</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  <span class="comment">// specification.</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;  <span class="comment">// Since we don&#39;t want to enforce a particular insertion order (e.g. terminals</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;  <span class="comment">// before functions), we cannot perform the check here.</span></div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  <span class="comment">//     if (ssize &amp;&amp; !terminals.size())</span></div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  <span class="comment">//     {</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  <span class="comment">//       print.error(name_, &quot;: no terminal in the symbol set&quot;);</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  <span class="comment">//       return false;</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  <span class="comment">//     }</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;  <span class="keywordflow">if</span> (ssize &lt; terminals.size())</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;  {</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    print.error(name_, <span class="stringliteral">&quot;: wrong terminal set size (more than symbol set)&quot;</span>);</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  }</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  <span class="keywordflow">if</span> (ssize &lt; adf.size())</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;  {</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    print.error(name_, <span class="stringliteral">&quot;: wrong ADF set size (more than symbol set)&quot;</span>);</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  }</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  <span class="keywordflow">if</span> (ssize &lt; adt.size())</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  {</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    print.error(name_, <span class="stringliteral">&quot;: wrong ADT set size (more than symbol set)&quot;</span>);</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  }</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;}</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div>
+<div class="line"><a name="l00450"></a><span class="lineno"><a class="line" href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#a110dc9644546e79c67e681957efff36a">  450</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#a110dc9644546e79c67e681957efff36a">symbol_set::collection::sum_container::insert</a>(<span class="keyword">const</span> w_symbol &amp;ws)</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;{</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;  elems_.push_back(ws);</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;  sum_ += ws.weight;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;  std::sort(begin(), end(),</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;            [](<span class="keyword">auto</span> s1, <span class="keyword">auto</span> s2) { <span class="keywordflow">return</span> s1.weight &gt; s2.weight; });</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;}</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;</div>
+<div class="line"><a name="l00474"></a><span class="lineno"><a class="line" href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#aa4b0eac87caf0365797428fd57c43b4b">  474</a></span>&#160;<span class="keyword">const</span> <a class="code" href="classvita_1_1symbol.html">symbol</a> &amp;<a class="code" href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#aa4b0eac87caf0365797428fd57c43b4b">symbol_set::collection::sum_container::roulette</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;  Expects(sum());</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> slot(random::sup(sum()));</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;  std::size_t i(0);</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> wedge(elems_[i].<a class="code" href="classvita_1_1symbol__set.html#afafd9dd20abc9d2f05fc83dc5418b12a">weight</a>);</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;       wedge &lt;= slot;</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;       wedge += elems_[++i].weight)</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;  {}</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;  assert(i &lt; elems_.size());</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;  <span class="keywordflow">return</span> *elems_[i].sym;</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;  <span class="comment">// This is a different approach from Eli Bendersky</span></div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;  <span class="comment">// (&lt;http://eli.thegreenplace.net/&gt;):</span></div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  <span class="comment">//     unsigned total(0);</span></div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  <span class="comment">//     std::size_t winner(0);</span></div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;  <span class="comment">// The so called roulette-wheel selection via stochastic acceptance:</span></div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;  <span class="comment">// for (;;)</span></div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  <span class="comment">// {</span></div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;  <span class="comment">//   const symbol *s(random::element(elems));</span></div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  <span class="comment">//     for (std::size_t i(0); i &lt; size(); ++i)</span></div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  <span class="comment">//     {</span></div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  <span class="comment">//       total += elems[i].weight;</span></div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;  <span class="comment">//       if (random::sup(total + 1) &lt; elems[i].weight)</span></div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;  <span class="comment">//         winner = i;</span></div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;  <span class="comment">//     }</span></div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;  <span class="comment">//     return *elems[winner].sym;</span></div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  <span class="comment">// The interesting property of this algorithm is that you don&#39;t need to</span></div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  <span class="comment">// know the sum of weights in advance in order to use it. The method is</span></div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  <span class="comment">// cool, but slower than the standard roulette.</span></div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;}</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;</div>
-<div class="line"><a name="l00511"></a><span class="lineno"><a class="line" href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#aa3c0e3ce93873c5a5b1943c5ce205bb0">  511</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#aa3c0e3ce93873c5a5b1943c5ce205bb0">symbol_set::collection::sum_container::debug</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;  <span class="keywordtype">unsigned</span> check_sum(0);</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : elems_)</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;  {</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    <span class="keywordflow">if</span> (!e.sym-&gt;debug())</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    {</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;      print.error(name_, <span class="stringliteral">&quot;: invalid symbol &quot;</span>, e.sym-&gt;display());</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    }</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    check_sum += e.weight;</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    <span class="keywordflow">if</span> (e.weight == 0 &amp;&amp; !(e.sym-&gt;terminal() || e.sym-&gt;auto_defined()))</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    {</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;      print.error(name_, <span class="stringliteral">&quot;: null weight for symbol &quot;</span>, e.sym-&gt;display());</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    }</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;  }</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  <span class="keywordflow">if</span> (check_sum != sum())</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;  {</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    print.error(name_, <span class="stringliteral">&quot;: incorrect cached sum of weights (stored: &quot;</span>, sum(),</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;                <span class="stringliteral">&quot;, correct: &quot;</span>, check_sum, <span class="charliteral">&#39;)&#39;</span>);</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;  }</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;}</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;}  <span class="comment">// namespace vita</span></div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  <span class="comment">//   if (random::sup(max) &lt; s-&gt;weight)</span></div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  <span class="comment">//     return *s;</span></div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  <span class="comment">// }</span></div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;  <span class="comment">// Internal tests have proved this is slower for Vita.</span></div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;  <span class="comment">// This is a different approach from Eli Bendersky</span></div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  <span class="comment">// (&lt;http://eli.thegreenplace.net/&gt;):</span></div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  <span class="comment">//     unsigned total(0);</span></div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  <span class="comment">//     std::size_t winner(0);</span></div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;  <span class="comment">//     for (std::size_t i(0); i &lt; size(); ++i)</span></div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;  <span class="comment">//     {</span></div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;  <span class="comment">//       total += elems[i].weight;</span></div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  <span class="comment">//       if (random::sup(total + 1) &lt; elems[i].weight)</span></div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;  <span class="comment">//         winner = i;</span></div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;  <span class="comment">//     }</span></div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;  <span class="comment">//     return *elems[winner].sym;</span></div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;  <span class="comment">// The interesting property of this algorithm is that you don&#39;t need to</span></div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;  <span class="comment">// know the sum of weights in advance in order to use it. The method is</span></div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  <span class="comment">// cool, but slower than the standard roulette.</span></div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;}</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;</div>
+<div class="line"><a name="l00523"></a><span class="lineno"><a class="line" href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#aa3c0e3ce93873c5a5b1943c5ce205bb0">  523</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#aa3c0e3ce93873c5a5b1943c5ce205bb0">symbol_set::collection::sum_container::debug</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;  <span class="keywordtype">unsigned</span> check_sum(0);</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : elems_)</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  {</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    <span class="keywordflow">if</span> (!e.sym-&gt;debug())</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    {</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;      print.error(name_, <span class="stringliteral">&quot;: invalid symbol &quot;</span>, e.sym-&gt;name());</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    }</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    check_sum += e.weight;</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    <span class="keywordflow">if</span> (e.weight == 0 &amp;&amp; !(e.sym-&gt;terminal() || e.sym-&gt;auto_defined()))</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    {</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;      print.error(name_, <span class="stringliteral">&quot;: null weight for symbol &quot;</span>, e.sym-&gt;name());</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    }</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;  }</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;  <span class="keywordflow">if</span> (check_sum != sum())</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;  {</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    print.error(name_, <span class="stringliteral">&quot;: incorrect cached sum of weights (stored: &quot;</span>, sum(),</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;                <span class="stringliteral">&quot;, correct: &quot;</span>, check_sum, <span class="charliteral">&#39;)&#39;</span>);</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;  }</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;}</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;}  <span class="comment">// namespace vita</span></div>
 <div class="ttc" id="classvita_1_1symbol__set_html_a0994b6b9ea73d9a18d3574c600c9fea4"><div class="ttname"><a href="classvita_1_1symbol__set.html#a0994b6b9ea73d9a18d3574c600c9fea4">vita::symbol_set::get_adt</a></div><div class="ttdeci">const symbol &amp; get_adt(std::size_t) const </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00057">symbol_set.cc:57</a></div></div>
 <div class="ttc" id="classvita_1_1symbol__set_html_a75979c1627dafefe6ecfa82373615fb9"><div class="ttname"><a href="classvita_1_1symbol__set.html#a75979c1627dafefe6ecfa82373615fb9">vita::symbol_set::arg</a></div><div class="ttdeci">const symbol &amp; arg(std::size_t) const </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00047">symbol_set.cc:47</a></div></div>
+<div class="ttc" id="classvita_1_1terminal_html_a6e7ffc30f0cff14c939b2a94f724d47e"><div class="ttname"><a href="classvita_1_1terminal.html#a6e7ffc30f0cff14c939b2a94f724d47e">vita::terminal::cast</a></div><div class="ttdeci">static const terminal * cast(const symbol *)</div><div class="ttdoc">This is a short cut function. </div><div class="ttdef"><b>Definition:</b> <a href="terminal_8h_source.html#l00085">terminal.h:85</a></div></div>
+<div class="ttc" id="classvita_1_1terminal_html_a57979e29286f973e5147d0b0bb3fe97f"><div class="ttname"><a href="classvita_1_1terminal.html#a57979e29286f973e5147d0b0bb3fe97f">vita::terminal::parametric</a></div><div class="ttdeci">virtual bool parametric() const </div><div class="ttdoc">A parametric terminal needs an additional parameter to be evaluated. </div><div class="ttdef"><b>Definition:</b> <a href="terminal_8h_source.html#l00061">terminal.h:61</a></div></div>
 <div class="ttc" id="namespacevita_html_af603700f8439aec5bcfd976b860cabfa"><div class="ttname"><a href="namespacevita.html#af603700f8439aec5bcfd976b860cabfa">vita::opcode_t</a></div><div class="ttdeci">unsigned opcode_t</div><div class="ttdoc">This is the type used as key for symbol identification. </div><div class="ttdef"><b>Definition:</b> <a href="symbol_8h_source.html#l00024">symbol.h:24</a></div></div>
 <div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
 <div class="ttc" id="namespacevita_html"><div class="ttname"><a href="namespacevita.html">vita</a></div><div class="ttdoc">The main namespace for the project. </div></div>
@@ -516,28 +523,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="adf_8h_html"><div class="ttname"><a href="adf_8h.html">adf.h</a></div></div>
 <div class="ttc" id="classvita_1_1symbol__set_html_a187796ac881f19f101bffcf7f90da0b5"><div class="ttname"><a href="classvita_1_1symbol__set.html#a187796ac881f19f101bffcf7f90da0b5">vita::symbol_set::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clears the current symbol set. </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00038">symbol_set.cc:38</a></div></div>
 <div class="ttc" id="classvita_1_1symbol__set_html_a4df4fcfcfede383d6748c73a88142371"><div class="ttname"><a href="classvita_1_1symbol__set.html#a4df4fcfcfede383d6748c73a88142371">vita::symbol_set::roulette</a></div><div class="ttdeci">const symbol &amp; roulette() const </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00194">symbol_set.cc:194</a></div></div>
-<div class="ttc" id="classvita_1_1symbol__set_1_1collection_1_1sum__container_html_aa3c0e3ce93873c5a5b1943c5ce205bb0"><div class="ttname"><a href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#aa3c0e3ce93873c5a5b1943c5ce205bb0">vita::symbol_set::collection::sum_container::debug</a></div><div class="ttdeci">bool debug() const </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00511">symbol_set.cc:511</a></div></div>
-<div class="ttc" id="classvita_1_1symbol__set_html_a16abdd74c5d4383ef2edbdce61f0db06"><div class="ttname"><a href="classvita_1_1symbol__set.html#a16abdd74c5d4383ef2edbdce61f0db06">vita::symbol_set::terminals</a></div><div class="ttdeci">unsigned terminals(category_t) const </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00250">symbol_set.cc:250</a></div></div>
+<div class="ttc" id="classvita_1_1symbol__set_1_1collection_1_1sum__container_html_aa3c0e3ce93873c5a5b1943c5ce205bb0"><div class="ttname"><a href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#aa3c0e3ce93873c5a5b1943c5ce205bb0">vita::symbol_set::collection::sum_container::debug</a></div><div class="ttdeci">bool debug() const </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00523">symbol_set.cc:523</a></div></div>
+<div class="ttc" id="classvita_1_1symbol__set_html_a16abdd74c5d4383ef2edbdce61f0db06"><div class="ttname"><a href="classvita_1_1symbol__set.html#a16abdd74c5d4383ef2edbdce61f0db06">vita::symbol_set::terminals</a></div><div class="ttdeci">unsigned terminals(category_t) const </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00251">symbol_set.cc:251</a></div></div>
 <div class="ttc" id="classvita_1_1symbol__set_html"><div class="ttname"><a href="classvita_1_1symbol__set.html">vita::symbol_set</a></div><div class="ttdoc">A container for the symbols used by the GP engine. </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8h_source.html#l00035">symbol_set.h:35</a></div></div>
-<div class="ttc" id="classvita_1_1symbol__set_html_aadc37e4dac8ba9867a94fe166ba9fdb4"><div class="ttname"><a href="classvita_1_1symbol__set.html#aadc37e4dac8ba9867a94fe166ba9fdb4">vita::symbol_set::enough_terminals</a></div><div class="ttdeci">bool enough_terminals() const </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00262">symbol_set.cc:262</a></div></div>
+<div class="ttc" id="classvita_1_1symbol__set_html_aadc37e4dac8ba9867a94fe166ba9fdb4"><div class="ttname"><a href="classvita_1_1symbol__set.html#aadc37e4dac8ba9867a94fe166ba9fdb4">vita::symbol_set::enough_terminals</a></div><div class="ttdeci">bool enough_terminals() const </div><div class="ttdoc">We want at least one terminal for every used category. </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00263">symbol_set.cc:263</a></div></div>
 <div class="ttc" id="classvita_1_1terminal_html"><div class="ttname"><a href="classvita_1_1terminal.html">vita::terminal</a></div><div class="ttdoc">A symbol with zero-arity. </div><div class="ttdef"><b>Definition:</b> <a href="terminal_8h_source.html#l00026">terminal.h:26</a></div></div>
-<div class="ttc" id="classvita_1_1symbol__set_1_1collection_1_1sum__container_html_a110dc9644546e79c67e681957efff36a"><div class="ttname"><a href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#a110dc9644546e79c67e681957efff36a">vita::symbol_set::collection::sum_container::insert</a></div><div class="ttdeci">void insert(const w_symbol &amp;)</div><div class="ttdoc">Inserts a weighted symbol in the container. </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00440">symbol_set.cc:440</a></div></div>
+<div class="ttc" id="classvita_1_1symbol__set_1_1collection_1_1sum__container_html_a110dc9644546e79c67e681957efff36a"><div class="ttname"><a href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#a110dc9644546e79c67e681957efff36a">vita::symbol_set::collection::sum_container::insert</a></div><div class="ttdeci">void insert(const w_symbol &amp;)</div><div class="ttdoc">Inserts a weighted symbol in the container. </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00450">symbol_set.cc:450</a></div></div>
 <div class="ttc" id="classvita_1_1symbol__set_html_a21aa69871a3547ae56aaea95b0d5c349"><div class="ttname"><a href="classvita_1_1symbol__set.html#a21aa69871a3547ae56aaea95b0d5c349">vita::symbol_set::adts</a></div><div class="ttdeci">std::size_t adts() const </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00066">symbol_set.cc:66</a></div></div>
 <div class="ttc" id="classvita_1_1symbol__set_html_a9749c08049384fa92b3975f8e65278d2"><div class="ttname"><a href="classvita_1_1symbol__set.html#a9749c08049384fa92b3975f8e65278d2">vita::symbol_set::decode</a></div><div class="ttdeci">symbol * decode(opcode_t) const </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00204">symbol_set.cc:204</a></div></div>
-<div class="ttc" id="classvita_1_1function_html_ae24c44c614cf710b1aa9953076ee4917"><div class="ttname"><a href="classvita_1_1function.html#ae24c44c614cf710b1aa9953076ee4917">vita::function::arg_category</a></div><div class="ttdeci">category_t arg_category(unsigned) const </div><div class="ttdef"><b>Definition:</b> <a href="function_8h_source.html#l00065">function.h:65</a></div></div>
+<div class="ttc" id="classvita_1_1function_html_ae24c44c614cf710b1aa9953076ee4917"><div class="ttname"><a href="classvita_1_1function.html#ae24c44c614cf710b1aa9953076ee4917">vita::function::arg_category</a></div><div class="ttdeci">category_t arg_category(unsigned) const </div><div class="ttdef"><b>Definition:</b> <a href="function_8h_source.html#l00088">function.h:88</a></div></div>
 <div class="ttc" id="classvita_1_1basic__gene_html"><div class="ttname"><a href="classvita_1_1basic__gene.html">vita::basic_gene</a></div><div class="ttdoc">A gene is a unit of heredity in a living organism. </div><div class="ttdef"><b>Definition:</b> <a href="gene_8h_source.html#l00033">gene.h:33</a></div></div>
 <div class="ttc" id="namespacevita_html_ae60a7117178f58cacfd11c43d086084e"><div class="ttname"><a href="namespacevita.html#ae60a7117178f58cacfd11c43d086084e">vita::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;o, hash_t h)</div><div class="ttdef"><b>Definition:</b> <a href="cache_8cc_source.html#l00270">cache.cc:270</a></div></div>
 <div class="ttc" id="classvita_1_1symbol__set_html_a8baeb1617cc552360ec9fce3decc1da8"><div class="ttname"><a href="classvita_1_1symbol__set.html#a8baeb1617cc552360ec9fce3decc1da8">vita::symbol_set::roulette_terminal</a></div><div class="ttdeci">const terminal &amp; roulette_terminal(category_t) const </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00173">symbol_set.cc:173</a></div></div>
-<div class="ttc" id="classvita_1_1symbol__set_1_1collection_1_1sum__container_html_aa4b0eac87caf0365797428fd57c43b4b"><div class="ttname"><a href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#aa4b0eac87caf0365797428fd57c43b4b">vita::symbol_set::collection::sum_container::roulette</a></div><div class="ttdeci">const symbol &amp; roulette() const </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00462">symbol_set.cc:462</a></div></div>
+<div class="ttc" id="classvita_1_1symbol__set_1_1collection_1_1sum__container_html_aa4b0eac87caf0365797428fd57c43b4b"><div class="ttname"><a href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#aa4b0eac87caf0365797428fd57c43b4b">vita::symbol_set::collection::sum_container::roulette</a></div><div class="ttdeci">const symbol &amp; roulette() const </div><div class="ttdoc">Extracts a random symbol from the collection. </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00474">symbol_set.cc:474</a></div></div>
 <div class="ttc" id="classvita_1_1adt_html"><div class="ttname"><a href="classvita_1_1adt.html">vita::adt</a></div><div class="ttdoc">Subroutines WITHOUT arguments. </div><div class="ttdef"><b>Definition:</b> <a href="adf_8h_source.html#l00100">adf.h:100</a></div></div>
-<div class="ttc" id="classvita_1_1function_html_a0170c32e66de20aef6c80917302cac84"><div class="ttname"><a href="classvita_1_1function.html#a0170c32e66de20aef6c80917302cac84">vita::function::cast</a></div><div class="ttdeci">static const function * cast(const symbol *)</div><div class="ttdef"><b>Definition:</b> <a href="function_8h_source.html#l00077">function.h:77</a></div></div>
+<div class="ttc" id="classvita_1_1function_html_a0170c32e66de20aef6c80917302cac84"><div class="ttname"><a href="classvita_1_1function.html#a0170c32e66de20aef6c80917302cac84">vita::function::cast</a></div><div class="ttdeci">static const function * cast(const symbol *)</div><div class="ttdoc">This is a short cut function. </div><div class="ttdef"><b>Definition:</b> <a href="function_8h_source.html#l00100">function.h:100</a></div></div>
 <div class="ttc" id="random_8h_html"><div class="ttname"><a href="random_8h.html">random.h</a></div></div>
-<div class="ttc" id="classvita_1_1symbol__set_html_a9e2c3df6c8c78ede8f4bd5d7376be269"><div class="ttname"><a href="classvita_1_1symbol__set.html#a9e2c3df6c8c78ede8f4bd5d7376be269">vita::symbol_set::categories</a></div><div class="ttdeci">category_t categories() const </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00238">symbol_set.cc:238</a></div></div>
+<div class="ttc" id="classvita_1_1symbol__set_html_a9e2c3df6c8c78ede8f4bd5d7376be269"><div class="ttname"><a href="classvita_1_1symbol__set.html#a9e2c3df6c8c78ede8f4bd5d7376be269">vita::symbol_set::categories</a></div><div class="ttdeci">category_t categories() const </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00239">symbol_set.cc:239</a></div></div>
 <div class="ttc" id="log_8h_html"><div class="ttname"><a href="log_8h.html">log.h</a></div></div>
-<div class="ttc" id="classvita_1_1symbol_html"><div class="ttname"><a href="classvita_1_1symbol.html">vita::symbol</a></div><div class="ttdoc">GP assembles variable length program structures from basic units called functions and terminals...</div><div class="ttdef"><b>Definition:</b> <a href="symbol_8h_source.html#l00032">symbol.h:32</a></div></div>
+<div class="ttc" id="classvita_1_1symbol_html"><div class="ttname"><a href="classvita_1_1symbol.html">vita::symbol</a></div><div class="ttdoc">Together functions and terminals are referred to as symbols. </div><div class="ttdef"><b>Definition:</b> <a href="symbol_8h_source.html#l00033">symbol.h:33</a></div></div>
 <div class="ttc" id="classvita_1_1symbol__set_html_a10a8026f7c5d6b0162e6102a34f8bc32"><div class="ttname"><a href="classvita_1_1symbol__set.html#a10a8026f7c5d6b0162e6102a34f8bc32">vita::symbol_set::symbol_set</a></div><div class="ttdeci">symbol_set()</div><div class="ttdoc">Sets up the object. </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00026">symbol_set.cc:26</a></div></div>
-<div class="ttc" id="classvita_1_1symbol__set_html_ae14d3cdf47ad92323bd8833101c912c8"><div class="ttname"><a href="classvita_1_1symbol__set.html#ae14d3cdf47ad92323bd8833101c912c8">vita::symbol_set::debug</a></div><div class="ttdeci">bool debug() const </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00329">symbol_set.cc:329</a></div></div>
-<div class="ttc" id="classvita_1_1symbol__set_html_afafd9dd20abc9d2f05fc83dc5418b12a"><div class="ttname"><a href="classvita_1_1symbol__set.html#afafd9dd20abc9d2f05fc83dc5418b12a">vita::symbol_set::weight</a></div><div class="ttdeci">unsigned weight(const symbol &amp;) const </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00287">symbol_set.cc:287</a></div></div>
+<div class="ttc" id="classvita_1_1symbol__set_html_ae14d3cdf47ad92323bd8833101c912c8"><div class="ttname"><a href="classvita_1_1symbol__set.html#ae14d3cdf47ad92323bd8833101c912c8">vita::symbol_set::debug</a></div><div class="ttdeci">bool debug() const </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00337">symbol_set.cc:337</a></div></div>
+<div class="ttc" id="classvita_1_1symbol__set_html_afafd9dd20abc9d2f05fc83dc5418b12a"><div class="ttname"><a href="classvita_1_1symbol__set.html#afafd9dd20abc9d2f05fc83dc5418b12a">vita::symbol_set::weight</a></div><div class="ttdeci">unsigned weight(const symbol &amp;) const </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00288">symbol_set.cc:288</a></div></div>
 <div class="ttc" id="classvita_1_1adf_html"><div class="ttname"><a href="classvita_1_1adf.html">vita::adf</a></div><div class="ttdoc">Subroutine with arguments. </div><div class="ttdef"><b>Definition:</b> <a href="adf_8h_source.html#l00074">adf.h:74</a></div></div>
 <div class="ttc" id="argument_8h_html"><div class="ttname"><a href="argument_8h.html">argument.h</a></div></div>
 <div class="ttc" id="classvita_1_1symbol__set_html_a4ac1c305d2088ff6cbcc71724339045d"><div class="ttname"><a href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">vita::symbol_set::insert</a></div><div class="ttdeci">symbol * insert(std::unique_ptr&lt; symbol &gt;, double=1.0)</div><div class="ttdoc">Adds a new symbol to the set. </div><div class="ttdef"><b>Definition:</b> <a href="symbol__set_8cc_source.html#l00080">symbol_set.cc:80</a></div></div>
@@ -545,7 +552,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:01 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

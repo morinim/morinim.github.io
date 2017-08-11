@@ -1,7 +1,7 @@
 var searchData=
 [
   ['cache',['cache',['../classvita_1_1cache.html#a35a5aa89652756b2670e151ef0d195b3',1,'vita::cache']]],
-  ['cast',['cast',['../classvita_1_1function.html#a0170c32e66de20aef6c80917302cac84',1,'vita::function::cast()'],['../namespacevita_1_1integer.html#ab2b58c0938b511bd2c41ceb299c3e98b',1,'vita::integer::cast()']]],
+  ['cast',['cast',['../classvita_1_1function.html#a0170c32e66de20aef6c80917302cac84',1,'vita::function::cast()'],['../classvita_1_1terminal.html#a6e7ffc30f0cff14c939b2a94f724d47e',1,'vita::terminal::cast()'],['../namespacevita_1_1integer.html#ab2b58c0938b511bd2c41ceb299c3e98b',1,'vita::integer::cast()']]],
   ['categories',['categories',['../classvita_1_1i__mep.html#ac229f61675f499a064179cbc621fbe8d',1,'vita::i_mep::categories()'],['../classvita_1_1symbol__set.html#a9e2c3df6c8c78ede8f4bd5d7376be269',1,'vita::symbol_set::categories()'],['../classvita_1_1src__data.html#a02a4d762aa8fc2333daea6a74522fa21',1,'vita::src_data::categories()'],['../classvita_1_1src__problem.html#a323298ed1d6a7e325db521c5fd938a8d',1,'vita::src_problem::categories()']]],
   ['category',['category',['../classvita_1_1i__mep.html#ae9d4e50f0a774b49f39cd39e7d3e785c',1,'vita::i_mep::category()'],['../classvita_1_1symbol.html#a585711f7dfba8bb26a4e038f30f64c8a',1,'vita::symbol::category()']]],
   ['category_5fset',['category_set',['../classvita_1_1category__set.html#a354b0770dced8a15c5f0ac82af30b682',1,'vita::category_set']]],
@@ -15,5 +15,5 @@ var searchData=
   ['comparison_5ffunction_5fpenalty',['comparison_function_penalty',['../namespacevita.html#a02b55b4a449a79d02630e0044b84ecf6',1,'vita']]],
   ['compress',['compress',['../classvita_1_1i__mep.html#a4941c5705ae2843328064a830ba92922',1,'vita::i_mep']]],
   ['constrained_5fevaluator',['constrained_evaluator',['../classvita_1_1constrained__evaluator.html#a360ba8ccf28cc8c6f328f5c369e5a319',1,'vita::constrained_evaluator']]],
-  ['crossover',['crossover',['../namespacevita.html#ac3d9b50b3d7e16052b724747f9a28189',1,'vita']]]
+  ['crossover',['crossover',['../classvita_1_1i__mep.html#ab4cc448b530b82a2533d6403609d02a3',1,'vita::i_mep']]]
 ];

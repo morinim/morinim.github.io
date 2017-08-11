@@ -111,6 +111,7 @@ const <a class="el" href="classvita_1_1summary.html">summary</a>&lt; T &gt; &amp
 <tr class="separator:ab456429a9e9959c6f2e0ae362e1678a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f85bd850e809bab7cf29eef76987433"><td class="memTemplParams" colspan="2">template&lt;class S &gt; </td></tr>
 <tr class="memitem:a0f85bd850e809bab7cf29eef76987433"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classvita_1_1summary.html">summary</a>&lt; T &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvita_1_1evolution.html#a0f85bd850e809bab7cf29eef76987433">run</a> (unsigned, S)</td></tr>
+<tr class="memdesc:a0f85bd850e809bab7cf29eef76987433"><td class="mdescLeft">&#160;</td><td class="mdescRight">The evolutionary core loop.  <a href="#a0f85bd850e809bab7cf29eef76987433">More...</a><br /></td></tr>
 <tr class="separator:a0f85bd850e809bab7cf29eef76987433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -120,8 +121,8 @@ class vita::evolution&lt; T, ES &gt;</h3>
 <p>Progressively evolves a population of programs over a series of generations. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>type of individual. </td></tr>
-    <tr><td class="paramname">ES</td><td>evolution strategy in use.</td></tr>
+    <tr><td class="paramname">T</td><td>type of individual </td></tr>
+    <tr><td class="paramname">ES</td><td>evolution strategy in use</td></tr>
   </table>
   </dd>
 </dl>
@@ -157,8 +158,8 @@ template&lt;class T , template&lt; class &gt; class ES&gt; </div>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>environment (mostly used for population initialization). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">eva</td><td>evaluator used during the evolution. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>environment (mostly used for population initialization) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eva</td><td>evaluator used during the evolution </td></tr>
   </table>
   </dd>
 </dl>
@@ -182,9 +183,9 @@ template&lt;class T , template&lt; class &gt; class ES&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>true if object passes the internal consistency check. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if object passes the internal consistency check </dd></dl>
 
-<p>Definition at line <a class="el" href="evolution_8h_source.html#l00354">354</a> of file <a class="el" href="evolution_8h_source.html">evolution.h</a>.</p>
+<p>Definition at line <a class="el" href="evolution_8h_source.html#l00361">361</a> of file <a class="el" href="evolution_8h_source.html">evolution.h</a>.</p>
 
 </div>
 </div>
@@ -215,14 +216,16 @@ template&lt;class S &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The evolutionary core loop. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">run_count</td><td>run number (used for printing and logging). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">shake</td><td>the "shake data" function. It's used to alter the training set so that evolution would take place in a dynamic environment. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">run_count</td><td>run number (used for printing and logging) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shake</td><td>the "shake data" function. It's used to alter the training set so that evolution would take place in a dynamic environment </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a partial summary of the search (see notes).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a partial summary of the search (see notes)</dd></dl>
 <p>The genetic programming loop:</p>
 <ul>
 <li>select the individual(s) to participate (default algorithm: tournament selection) in the genetic operation;</li>
@@ -232,7 +235,7 @@ template&lt;class S &gt; </div>
 <p>This whole process repeats until the termination criteria is satisfied. With any luck, it will produce an individual that solves the problem at hand.</p>
 <dl class="section note"><dt>Note</dt><dd>The return value is a partial summary: the <code>measurement</code> section is only partially filled (fitness) since many metrics are expensive to calculate and not significative for all kind of problems (e.g. f1-score for a symbolic regression problem). The <a class="el" href="classvita_1_1src__search.html" title="Drives the search for solutions of symbolic regression / classification tasks. ">src_search</a> class has a simple scheme to request the computation of additional metrics. </dd></dl>
 
-<p>Definition at line <a class="el" href="evolution_8h_source.html#l00269">269</a> of file <a class="el" href="evolution_8h_source.html">evolution.h</a>.</p>
+<p>Definition at line <a class="el" href="evolution_8h_source.html#l00276">276</a> of file <a class="el" href="evolution_8h_source.html">evolution.h</a>.</p>
 
 </div>
 </div>
@@ -242,7 +245,7 @@ template&lt;class S &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:02 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

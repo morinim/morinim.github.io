@@ -106,7 +106,7 @@ Collaboration diagram for vita::basic_gene&lt; K &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classvita_1_1basic__gene__coll__graph.png" border="0" usemap="#vita_1_1basic__gene_3_01K_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="vita_1_1basic__gene_3_01K_01_4_coll__map" id="vita_1_1basic__gene_3_01K_01_4_coll__map">
-<area shape="rect" id="node2" href="classvita_1_1symbol.html" title="GP assembles variable length program structures from basic units called functions and terminals..." alt="" coords="34,5,127,32"/></map>
+<area shape="rect" id="node2" href="classvita_1_1symbol.html" title="Together functions and terminals are referred to as symbols. " alt="" coords="34,5,127,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -114,15 +114,12 @@ Public Types</h2></td></tr>
 <tr class="memitem:a8294412672a1f2fcd3942767420d2213"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8294412672a1f2fcd3942767420d2213"></a>enum &#160;</td><td class="memItemRight" valign="bottom">: decltype(K) { <b>k_args</b> = K
  }</td></tr>
 <tr class="separator:a8294412672a1f2fcd3942767420d2213"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0039e1d1490014440de2a5e5c2e95d0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0039e1d1490014440de2a5e5c2e95d0c"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>arg_pack</b> = small_vector&lt; index_type, K &gt;</td></tr>
-<tr class="separator:a0039e1d1490014440de2a5e5c2e95d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26d77be0c845767eb7d55f43cbaa7ef4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26d77be0c845767eb7d55f43cbaa7ef4"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>index_type</b> = std::uint16_t</td></tr>
-<tr class="separator:a26d77be0c845767eb7d55f43cbaa7ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb8bcf337fb0bd585628b91d1823f003"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb8bcf337fb0bd585628b91d1823f003"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>param_type</b> = double</td></tr>
-<tr class="separator:acb8bcf337fb0bd585628b91d1823f003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad36fbca9827368ec3346cb60cd0195b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad36fbca9827368ec3346cb60cd0195b3"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>arg_pack</b> = small_vector&lt; packed_index_t, K &gt;</td></tr>
+<tr class="separator:ad36fbca9827368ec3346cb60cd0195b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf82d2481937f3b67e728b802c50e294"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf82d2481937f3b67e728b802c50e294"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>packed_index_t</b> = std::uint16_t</td></tr>
+<tr class="separator:abf82d2481937f3b67e728b802c50e294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -132,10 +129,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0dbfa79e9023ac57dc63be7705990c0a"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__gene.html#a0dbfa79e9023ac57dc63be7705990c0a">as</a> () const </td></tr>
 <tr class="separator:a0dbfa79e9023ac57dc63be7705990c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8c39ad8d9e82c8c46a8e1eed863e1bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__gene.html#ae8c39ad8d9e82c8c46a8e1eed863e1bd">basic_gene</a> (const <a class="el" href="classvita_1_1terminal.html">terminal</a> &amp;)</td></tr>
+<tr class="memdesc:ae8c39ad8d9e82c8c46a8e1eed863e1bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A new gene built from terminal <code>t</code>.  <a href="#ae8c39ad8d9e82c8c46a8e1eed863e1bd">More...</a><br /></td></tr>
 <tr class="separator:ae8c39ad8d9e82c8c46a8e1eed863e1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a621f44a691eec42d4c3eec73e4ae4559"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__gene.html#a621f44a691eec42d4c3eec73e4ae4559">basic_gene</a> (const std::pair&lt; <a class="el" href="classvita_1_1symbol.html">symbol</a> *, std::vector&lt; <a class="el" href="namespacevita.html#adad613995ae7b1cf3b56a8a16598acdc">index_t</a> &gt;&gt; &amp;)</td></tr>
+<tr class="memdesc:a621f44a691eec42d4c3eec73e4ae4559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility constructor to input hard-coded genomes.  <a href="#a621f44a691eec42d4c3eec73e4ae4559">More...</a><br /></td></tr>
 <tr class="separator:a621f44a691eec42d4c3eec73e4ae4559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25be2a63737bf6ec026f57230e7b3cab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__gene.html#a25be2a63737bf6ec026f57230e7b3cab">basic_gene</a> (const <a class="el" href="classvita_1_1symbol.html">symbol</a> &amp;, <a class="el" href="namespacevita.html#adad613995ae7b1cf3b56a8a16598acdc">index_t</a>, <a class="el" href="namespacevita.html#adad613995ae7b1cf3b56a8a16598acdc">index_t</a>)</td></tr>
+<tr class="memdesc:a25be2a63737bf6ec026f57230e7b3cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">A new gene built from symbol <code>s</code> with argument in the <code>[from;sup[</code> range.  <a href="#a25be2a63737bf6ec026f57230e7b3cab">More...</a><br /></td></tr>
 <tr class="separator:a25be2a63737bf6ec026f57230e7b3cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f029a51db4827cd6dedb57037b362ae"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a2f029a51db4827cd6dedb57037b362ae"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__gene.html#a2f029a51db4827cd6dedb57037b362ae">operator=</a> (T)</td></tr>
@@ -146,9 +146,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:afd6733334692bbd7dd7aba3939f4a76b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd6733334692bbd7dd7aba3939f4a76b"></a>
 arg_pack&#160;</td><td class="memItemRight" valign="bottom"><b>args</b></td></tr>
 <tr class="separator:afd6733334692bbd7dd7aba3939f4a76b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d446cd76d4534ee23d34c4c057c1a87"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d446cd76d4534ee23d34c4c057c1a87"></a>
-param_type&#160;</td><td class="memItemRight" valign="bottom"><b>par</b></td></tr>
-<tr class="separator:a3d446cd76d4534ee23d34c4c057c1a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06a3dfd6a5b4f30bb8f5e30ed6e40651"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06a3dfd6a5b4f30bb8f5e30ed6e40651"></a>
+terminal::param_t&#160;</td><td class="memItemRight" valign="bottom"><b>par</b></td></tr>
+<tr class="separator:a06a3dfd6a5b4f30bb8f5e30ed6e40651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cd13a16cbfaa1bcbfe401ed9610a122"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9cd13a16cbfaa1bcbfe401ed9610a122"></a>
 const <a class="el" href="classvita_1_1symbol.html">symbol</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>sym</b></td></tr>
 <tr class="separator:a9cd13a16cbfaa1bcbfe401ed9610a122"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,7 +160,7 @@ class vita::basic_gene&lt; K &gt;</h3>
 <p>A gene is a unit of heredity in a living organism. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">K</td><td>the maximum <code>function</code>'s number of arguments.</td></tr>
+    <tr><td class="paramname">K</td><td>the maximum <code>function</code>'s number of arguments</td></tr>
   </table>
   </dd>
 </dl>
@@ -191,13 +191,14 @@ template&lt;unsigned K&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>A new gene built from terminal <code>t</code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>a terminal.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>a terminal</td></tr>
   </table>
   </dd>
 </dl>
-<p>A new gene built from terminal <code>t</code>.</p>
 <dl class="section note"><dt>Note</dt><dd>This is usually called for filling the patch section of an individual. </dd></dl>
 
 <p>Definition at line <a class="el" href="gene_8h_source.html#l00030">30</a> of file <a class="el" href="gene_8h_source.html">gene.h</a>.</p>
@@ -219,15 +220,17 @@ template&lt;unsigned K&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Utility constructor to input hard-coded genomes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">g</td><td>a reference to a symbol and its arguments.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">g</td><td>a reference to a symbol and its arguments</td></tr>
   </table>
   </dd>
 </dl>
 <p>With this constructor it is easy to write genome "by hand": std::vector&lt;gene&gt; g( { {{f_add, {1, 2}}}, // [0] ADD 1,2 {{ y, {}}}, // [1] Y {{ x, {}}} // [2] X }; </p>
 
-<p>Definition at line <a class="el" href="gene_8h_source.html#l00048">48</a> of file <a class="el" href="gene_8h_source.html">gene.h</a>.</p>
+<p>Definition at line <a class="el" href="gene_8h_source.html#l00062">62</a> of file <a class="el" href="gene_8h_source.html">gene.h</a>.</p>
 
 </div>
 </div>
@@ -262,18 +265,19 @@ template&lt;unsigned K&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>A new gene built from symbol <code>s</code> with argument in the <code>[from;sup[</code> range. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>a symbol. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">from</td><td>a starting index in the genome. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sup</td><td>an upper limit in the genome.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>a symbol </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">from</td><td>a starting index in the genome </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sup</td><td>an upper limit in the genome</td></tr>
   </table>
   </dd>
 </dl>
-<p>A new gene built from symbol <code>s</code> with argument in the [from;sup[ range.</p>
 <dl class="section note"><dt>Note</dt><dd>This is usually called for filling the standard section of an individual. </dd></dl>
 
-<p>Definition at line <a class="el" href="gene_8h_source.html#l00074">74</a> of file <a class="el" href="gene_8h_source.html">gene.h</a>.</p>
+<p>Definition at line <a class="el" href="gene_8h_source.html#l00090">90</a> of file <a class="el" href="gene_8h_source.html">gene.h</a>.</p>
 
 </div>
 </div>
@@ -295,13 +299,13 @@ template&lt;unsigned K&gt; </div>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>ordinal of an argument. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>ordinal of an argument </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the locus that <code>i</code>-th argument of the current symbol refers to. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the locus that <code>i</code>-th argument of the current symbol refers to </dd></dl>
 
-<p>Definition at line <a class="el" href="gene_8h_source.html#l00146">146</a> of file <a class="el" href="gene_8h_source.html">gene.h</a>.</p>
+<p>Definition at line <a class="el" href="gene_8h_source.html#l00170">170</a> of file <a class="el" href="gene_8h_source.html">gene.h</a>.</p>
 
 </div>
 </div>
@@ -321,10 +325,10 @@ template&lt;class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>the value, casted to type <code>T</code>, contained in this gene.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the value, casted to type <code>T</code>, contained in this gene</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>The method support only arithmetic / enum types. </dd></dl>
 
-<p>Definition at line <a class="el" href="gene_8h_source.html#l00100">100</a> of file <a class="el" href="gene_8h_source.html">gene.h</a>.</p>
+<p>Definition at line <a class="el" href="gene_8h_source.html#l00117">117</a> of file <a class="el" href="gene_8h_source.html">gene.h</a>.</p>
 
 </div>
 </div>
@@ -347,13 +351,13 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>value to be assigned to the gene.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">v</td><td>value to be assigned to the gene</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section warning"><dt>Warning</dt><dd>The method support only arithmetic / enum types. </dd></dl>
 
-<p>Definition at line <a class="el" href="gene_8h_source.html#l00115">115</a> of file <a class="el" href="gene_8h_source.html">gene.h</a>.</p>
+<p>Definition at line <a class="el" href="gene_8h_source.html#l00134">134</a> of file <a class="el" href="gene_8h_source.html">gene.h</a>.</p>
 
 </div>
 </div>
@@ -363,7 +367,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:02 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

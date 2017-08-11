@@ -1,7 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classvita_1_1replacement_1_1strategy.html" title="The replacement strategy (random, tournament...) for the vita::evolution_strategy class..." alt="" coords="5,104,136,145"/>
-<area shape="rect" id="node2" href="$classvita_1_1replacement_1_1alps.html" title="ALPS based replacement scheme. " alt="" coords="200,5,331,47"/>
-<area shape="rect" id="node3" href="$classvita_1_1replacement_1_1family__competition.html" title="A family competition replacement scheme. " alt="" coords="184,71,347,112"/>
-<area shape="rect" id="node4" href="$classvita_1_1replacement_1_1pareto.html" title="vita::replacement::\lpareto\&lt; T \&gt;" alt="" coords="200,136,331,177"/>
-<area shape="rect" id="node5" href="$classvita_1_1replacement_1_1tournament.html" title="Tournament based replacement scheme (aka kill tournament) " alt="" coords="200,201,331,243"/>
+<area shape="rect" id="node1" href="$classvita_1_1recombination_1_1strategy.html" title="The operation strategy (crossover, recombination, mutation...) for the evolution class. " alt="" coords="5,39,137,80"/>
+<area shape="rect" id="node2" href="$classvita_1_1recombination_1_1base.html" title="This class defines the program skeleton of a standard genetic programming crossover plus mutation ope..." alt="" coords="185,5,317,47"/>
+<area shape="rect" id="node3" href="$classvita_1_1recombination_1_1de.html" title="This is based on the differential evolution four members crossover. " alt="" coords="185,71,317,112"/>
 </map>

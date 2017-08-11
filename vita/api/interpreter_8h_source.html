@@ -109,7 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classvita_1_1interpreter.html#a41a2bbdd87c7164eaeb3dbd50a490b88">interpreter</a>(<span class="keyword">const</span> T *, <a class="code" href="classvita_1_1interpreter.html">interpreter</a> * = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  any <a class="code" href="classvita_1_1interpreter.html#a1c8efa8353ec1cec438d65e4343a9810">fetch_param</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  terminal::param_t <a class="code" href="classvita_1_1interpreter.html#add3f3590dfc4032d5b34986e7bd22811">fetch_param</a>();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  any <a class="code" href="classvita_1_1interpreter.html#a2b84209c91392e4249234cddd6022745">fetch_arg</a>(<span class="keywordtype">unsigned</span>);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  any <a class="code" href="classvita_1_1interpreter.html#aa610f8c2d97c8f698219dbf8c9deba35">fetch_adf_arg</a>(<span class="keywordtype">unsigned</span>);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="namespacevita.html#adad613995ae7b1cf3b56a8a16598acdc">index_t</a> <a class="code" href="classvita_1_1interpreter.html#a4a3b46278fcbb3fa17930893aaa0b820">fetch_index</a>(<span class="keywordtype">unsigned</span>) <span class="keyword">const</span>;</div>
@@ -119,12 +119,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="comment">// *** Private support methods ***</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  any run_locus(<span class="keyword">const</span> <a class="code" href="structvita_1_1locus.html">locus</a> &amp;);</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classvita_1_1interpreter.html#a1c8efa8353ec1cec438d65e4343a9810">   66</a></span>&#160;  <span class="keywordtype">double</span> penalty_locus(<span class="keyword">const</span> <a class="code" href="structvita_1_1locus.html">locus</a> &amp;);</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classvita_1_1interpreter.html#add3f3590dfc4032d5b34986e7bd22811">   66</a></span>&#160;  <span class="keywordtype">double</span> penalty_locus(<span class="keyword">const</span> <a class="code" href="structvita_1_1locus.html">locus</a> &amp;);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="comment">// Nonvirtual interface.</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">virtual</span> any run_nvi() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> penalty_nvi() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> debug_nvi() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  any run_nvi() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">double</span> penalty_nvi() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">bool</span> debug_nvi() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">// *** Private data members ***</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">const</span> T *prg_;</div>
@@ -141,27 +141,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#include &quot;kernel/interpreter.tcc&quot;</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}  <span class="comment">// namespace vita</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classvita_1_1interpreter.html#a2b84209c91392e4249234cddd6022745">   90</a></span>&#160;}  <span class="comment">// namespace vita</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif  // include guard</span></div>
 <div class="ttc" id="function_8h_html"><div class="ttname"><a href="function_8h.html">function.h</a></div></div>
-<div class="ttc" id="classvita_1_1interpreter_html_a1c8efa8353ec1cec438d65e4343a9810"><div class="ttname"><a href="classvita_1_1interpreter.html#a1c8efa8353ec1cec438d65e4343a9810">vita::interpreter::fetch_param</a></div><div class="ttdeci">any fetch_param()</div><div class="ttdef"><b>Definition:</b> <a href="interpreter_8h_source.html#l00066">interpreter.h:66</a></div></div>
 <div class="ttc" id="classvita_1_1interpreter_html"><div class="ttname"><a href="classvita_1_1interpreter.html">vita::interpreter</a></div><div class="ttdoc">A template specialization of the core_interpreter class. </div><div class="ttdef"><b>Definition:</b> <a href="interpreter_8h_source.html#l00051">interpreter.h:51</a></div></div>
 <div class="ttc" id="namespacevita_html"><div class="ttname"><a href="namespacevita.html">vita</a></div><div class="ttdoc">The main namespace for the project. </div></div>
 <div class="ttc" id="core__interpreter_8h_html"><div class="ttname"><a href="core__interpreter_8h.html">core_interpreter.h</a></div></div>
 <div class="ttc" id="namespacevita_html_adad613995ae7b1cf3b56a8a16598acdc"><div class="ttname"><a href="namespacevita.html#adad613995ae7b1cf3b56a8a16598acdc">vita::index_t</a></div><div class="ttdeci">unsigned index_t</div><div class="ttdoc">Index in the genome. </div><div class="ttdef"><b>Definition:</b> <a href="locus_8h_source.html#l00025">locus.h:25</a></div></div>
-<div class="ttc" id="classvita_1_1interpreter_html_a2b84209c91392e4249234cddd6022745"><div class="ttname"><a href="classvita_1_1interpreter.html#a2b84209c91392e4249234cddd6022745">vita::interpreter::fetch_arg</a></div><div class="ttdeci">any fetch_arg(unsigned)</div><div class="ttdef"><b>Definition:</b> <a href="interpreter_8h_source.html#l00088">interpreter.h:88</a></div></div>
+<div class="ttc" id="classvita_1_1interpreter_html_a2b84209c91392e4249234cddd6022745"><div class="ttname"><a href="classvita_1_1interpreter.html#a2b84209c91392e4249234cddd6022745">vita::interpreter::fetch_arg</a></div><div class="ttdeci">any fetch_arg(unsigned)</div><div class="ttdoc">Fetches the value of the i-th argument of the current gene. </div><div class="ttdef"><b>Definition:</b> <a href="interpreter_8h_source.html#l00090">interpreter.h:90</a></div></div>
 <div class="ttc" id="classvita_1_1interpreter_html_a41a2bbdd87c7164eaeb3dbd50a490b88"><div class="ttname"><a href="classvita_1_1interpreter.html#a41a2bbdd87c7164eaeb3dbd50a490b88">vita::interpreter::interpreter</a></div><div class="ttdeci">interpreter(const T *, interpreter *=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="interpreter_8h_source.html#l00030">interpreter.h:30</a></div></div>
-<div class="ttc" id="classvita_1_1interpreter_html_aa610f8c2d97c8f698219dbf8c9deba35"><div class="ttname"><a href="classvita_1_1interpreter.html#aa610f8c2d97c8f698219dbf8c9deba35">vita::interpreter::fetch_adf_arg</a></div><div class="ttdeci">any fetch_adf_arg(unsigned)</div><div class="ttdef"><b>Definition:</b> <a href="interpreter_8h_source.html#l00131">interpreter.h:131</a></div></div>
+<div class="ttc" id="classvita_1_1interpreter_html_aa610f8c2d97c8f698219dbf8c9deba35"><div class="ttname"><a href="classvita_1_1interpreter.html#aa610f8c2d97c8f698219dbf8c9deba35">vita::interpreter::fetch_adf_arg</a></div><div class="ttdeci">any fetch_adf_arg(unsigned)</div><div class="ttdef"><b>Definition:</b> <a href="interpreter_8h_source.html#l00133">interpreter.h:133</a></div></div>
 <div class="ttc" id="structvita_1_1locus_html"><div class="ttname"><a href="structvita_1_1locus.html">vita::locus</a></div><div class="ttdef"><b>Definition:</b> <a href="locus_8h_source.html#l00032">locus.h:32</a></div></div>
 <div class="ttc" id="classvita_1_1core__interpreter_html"><div class="ttname"><a href="classvita_1_1core__interpreter.html">vita::core_interpreter</a></div><div class="ttdoc">Minimum interface of an interpreter. </div><div class="ttdef"><b>Definition:</b> <a href="core__interpreter_8h_source.html#l00029">core_interpreter.h:29</a></div></div>
 <div class="ttc" id="gene_8h_html"><div class="ttname"><a href="gene_8h.html">gene.h</a></div></div>
 <div class="ttc" id="vitafwd_8h_html"><div class="ttname"><a href="vitafwd_8h.html">vitafwd.h</a></div></div>
-<div class="ttc" id="classvita_1_1interpreter_html_a4a3b46278fcbb3fa17930893aaa0b820"><div class="ttname"><a href="classvita_1_1interpreter.html#a4a3b46278fcbb3fa17930893aaa0b820">vita::interpreter::fetch_index</a></div><div class="ttdeci">index_t fetch_index(unsigned) const </div><div class="ttdef"><b>Definition:</b> <a href="interpreter_8h_source.html#l00149">interpreter.h:149</a></div></div>
+<div class="ttc" id="classvita_1_1interpreter_html_add3f3590dfc4032d5b34986e7bd22811"><div class="ttname"><a href="classvita_1_1interpreter.html#add3f3590dfc4032d5b34986e7bd22811">vita::interpreter::fetch_param</a></div><div class="ttdeci">terminal::param_t fetch_param()</div><div class="ttdef"><b>Definition:</b> <a href="interpreter_8h_source.html#l00066">interpreter.h:66</a></div></div>
+<div class="ttc" id="classvita_1_1interpreter_html_a4a3b46278fcbb3fa17930893aaa0b820"><div class="ttname"><a href="classvita_1_1interpreter.html#a4a3b46278fcbb3fa17930893aaa0b820">vita::interpreter::fetch_index</a></div><div class="ttdeci">index_t fetch_index(unsigned) const </div><div class="ttdef"><b>Definition:</b> <a href="interpreter_8h_source.html#l00152">interpreter.h:152</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:01 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

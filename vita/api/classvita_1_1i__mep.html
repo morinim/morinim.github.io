@@ -128,17 +128,33 @@ Public Types</h2></td></tr>
 <tr class="memitem:a4ee3e8a71aa17168ba5a5d050b192388"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ee3e8a71aa17168ba5a5d050b192388"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b> = <a class="el" href="classvita_1_1i__mep_1_1basic__iterator.html">basic_iterator</a>&lt; true &gt;</td></tr>
 <tr class="separator:a4ee3e8a71aa17168ba5a5d050b192388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac57d3aa6a3f5486c6352f3b02a24feca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac57d3aa6a3f5486c6352f3b02a24feca"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>crossover_t</b> { <br />
+&#160;&#160;<b>one_point</b>, 
+<b>two_points</b>, 
+<b>tree</b>, 
+<b>uniform</b>, 
+<br />
+&#160;&#160;<b>NUM_CROSSOVERS</b>
+<br />
+ }</td></tr>
+<tr class="separator:ac57d3aa6a3f5486c6352f3b02a24feca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa44edfac973fe45734bbef51262bbd1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa44edfac973fe45734bbef51262bbd1b"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b> = <a class="el" href="classvita_1_1i__mep_1_1basic__iterator.html">basic_iterator</a>&lt; false &gt;</td></tr>
 <tr class="separator:aa44edfac973fe45734bbef51262bbd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a2d168fea885014a25bdfd2242cb73aa2"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#a2d168fea885014a25bdfd2242cb73aa2">active_symbols</a> () const </td></tr>
+<tr class="memdesc:a2d168fea885014a25bdfd2242cb73aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of active symbols.  <a href="#a2d168fea885014a25bdfd2242cb73aa2">More...</a><br /></td></tr>
+<tr class="separator:a2d168fea885014a25bdfd2242cb73aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61fb8189dd2b502d08805864daba13bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvita_1_1i__mep_1_1basic__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#a61fb8189dd2b502d08805864daba13bd">begin</a> () const </td></tr>
 <tr class="separator:a61fb8189dd2b502d08805864daba13bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8853fd65f72730d1cb5534658dc420aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvita_1_1i__mep_1_1basic__iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#a8853fd65f72730d1cb5534658dc420aa">begin</a> ()</td></tr>
 <tr class="separator:a8853fd65f72730d1cb5534658dc420aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7fe8aabe301627b9869cc4958bbda08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvita_1_1locus.html">locus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#ae7fe8aabe301627b9869cc4958bbda08">best</a> () const </td></tr>
+<tr class="separator:ae7fe8aabe301627b9869cc4958bbda08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ce69eb3b028df048baa559d7aec4828"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structvita_1_1locus.html">locus</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#a3ce69eb3b028df048baa559d7aec4828">blocks</a> () const </td></tr>
+<tr class="memdesc:a3ce69eb3b028df048baa559d7aec4828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates a set of indexes to blocks contained in <code>this</code> individual.  <a href="#a3ce69eb3b028df048baa559d7aec4828">More...</a><br /></td></tr>
 <tr class="separator:a3ce69eb3b028df048baa559d7aec4828"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac229f61675f499a064179cbc621fbe8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#ac229f61675f499a064179cbc621fbe8d">categories</a> () const </td></tr>
 <tr class="separator:ac229f61675f499a064179cbc621fbe8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,10 +167,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa4d6912ce15ad52269dbb8680c0488c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac67809e21f7b34e8d4cd854c8f8bc0ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvita_1_1i__mep.html">i_mep</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#ac67809e21f7b34e8d4cd854c8f8bc0ef">destroy_block</a> (<a class="el" href="namespacevita.html#adad613995ae7b1cf3b56a8a16598acdc">index_t</a>, const <a class="el" href="classvita_1_1symbol__set.html">symbol_set</a> &amp;) const </td></tr>
 <tr class="separator:ac67809e21f7b34e8d4cd854c8f8bc0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5abe6b25f79d6c47be0cddac423b383d"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#a5abe6b25f79d6c47be0cddac423b383d">dump</a> (std::ostream &amp;) const </td></tr>
-<tr class="separator:a5abe6b25f79d6c47be0cddac423b383d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ca24f2bcd2e128f8312df3e5909a963"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#a0ca24f2bcd2e128f8312df3e5909a963">eff_size</a> () const </td></tr>
-<tr class="separator:a0ca24f2bcd2e128f8312df3e5909a963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd2a2b111488ede77d59c4a2249ade27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#abd2a2b111488ede77d59c4a2249ade27">empty</a> () const </td></tr>
 <tr class="separator:abd2a2b111488ede77d59c4a2249ade27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a178a3cc41834d374b9a184dc7b6b9560"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvita_1_1i__mep_1_1basic__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#a178a3cc41834d374b9a184dc7b6b9560">end</a> () const </td></tr>
@@ -162,19 +174,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5fbc8ce6f6d71d26b3d9e00b55d514ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvita_1_1i__mep_1_1basic__iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#a5fbc8ce6f6d71d26b3d9e00b55d514ea">end</a> ()</td></tr>
 <tr class="separator:a5fbc8ce6f6d71d26b3d9e00b55d514ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52383630e0c5d8463e09cf45275bd1d0"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classvita_1_1i__mep.html">i_mep</a>, std::vector&lt; <a class="el" href="structvita_1_1locus.html">locus</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#a52383630e0c5d8463e09cf45275bd1d0">generalize</a> (unsigned, const <a class="el" href="classvita_1_1symbol__set.html">symbol_set</a> &amp;) const </td></tr>
+<tr class="memdesc:a52383630e0c5d8463e09cf45275bd1d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produces the body for a ADF.  <a href="#a52383630e0c5d8463e09cf45275bd1d0">More...</a><br /></td></tr>
 <tr class="separator:a52383630e0c5d8463e09cf45275bd1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6f0dbf83f9e1ff32534ec0157617415"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvita_1_1i__mep.html">i_mep</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#ad6f0dbf83f9e1ff32534ec0157617415">get_block</a> (const <a class="el" href="structvita_1_1locus.html">locus</a> &amp;) const </td></tr>
 <tr class="separator:ad6f0dbf83f9e1ff32534ec0157617415"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70b8929b50824dc1f8f470104938731f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#a70b8929b50824dc1f8f470104938731f">graphviz</a> (std::ostream &amp;, const std::string &amp;=&quot;&quot;) const </td></tr>
-<tr class="separator:a70b8929b50824dc1f8f470104938731f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afef8f1706fbb7eedad3da9f18e011c4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#afef8f1706fbb7eedad3da9f18e011c4e">i_mep</a> (const <a class="el" href="classvita_1_1environment.html">environment</a> &amp;)</td></tr>
+<tr class="memdesc:afef8f1706fbb7eedad3da9f18e011c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the initial, random expressions that make up an individual.  <a href="#afef8f1706fbb7eedad3da9f18e011c4e">More...</a><br /></td></tr>
 <tr class="separator:afef8f1706fbb7eedad3da9f18e011c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc3bcb89e049c903744f8cd7bf74c37e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#adc3bcb89e049c903744f8cd7bf74c37e">i_mep</a> (const std::vector&lt; <a class="el" href="classvita_1_1basic__gene.html">gene</a> &gt; &amp;)</td></tr>
+<tr class="memdesc:adc3bcb89e049c903744f8cd7bf74c37e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new individual containing genes from <code>gv</code>.  <a href="#adc3bcb89e049c903744f8cd7bf74c37e">More...</a><br /></td></tr>
 <tr class="separator:adc3bcb89e049c903744f8cd7bf74c37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a481949abf8ed621cef6532517ed017d3"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#a481949abf8ed621cef6532517ed017d3">in_line</a> (std::ostream &amp;) const </td></tr>
-<tr class="separator:a481949abf8ed621cef6532517ed017d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afea52f62ea9cb4235541c998e7eedb2d"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#afea52f62ea9cb4235541c998e7eedb2d">list</a> (std::ostream &amp;, bool=true) const </td></tr>
-<tr class="separator:afea52f62ea9cb4235541c998e7eedb2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a730f0831047db4ebb11cd0e2039c9509"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#a730f0831047db4ebb11cd0e2039c9509">mutation</a> (double, const <a class="el" href="classvita_1_1environment.html">environment</a> &amp;)</td></tr>
 <tr class="memdesc:a730f0831047db4ebb11cd0e2039c9509"><td class="mdescLeft">&#160;</td><td class="mdescRight">A new individual is created mutating <code>this</code>.  <a href="#a730f0831047db4ebb11cd0e2039c9509">More...</a><br /></td></tr>
 <tr class="separator:a730f0831047db4ebb11cd0e2039c9509"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,15 +192,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae66d9ab4a8b5622d634bdd158ff3bf7d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvita_1_1basic__gene.html">gene</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#ae66d9ab4a8b5622d634bdd158ff3bf7d">operator[]</a> (<a class="el" href="structvita_1_1locus.html">locus</a>) const </td></tr>
 <tr class="separator:ae66d9ab4a8b5622d634bdd158ff3bf7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7113544eb433a363362ae90565228d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvita_1_1i__mep.html">i_mep</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#aa7113544eb433a363362ae90565228d0">replace</a> (const <a class="el" href="classvita_1_1basic__gene.html">gene</a> &amp;) const </td></tr>
+<tr class="memdesc:aa7113544eb433a363362ae90565228d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new individual obtained from <code>this</code> replacing the original symbol at locus <code><a class="el" href="classvita_1_1i__mep.html#ae7fe8aabe301627b9869cc4958bbda08">best()</a></code> with <code>g</code>.  <a href="#aa7113544eb433a363362ae90565228d0">More...</a><br /></td></tr>
 <tr class="separator:aa7113544eb433a363362ae90565228d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf67b32404bbb34de28e54f10c681794"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvita_1_1i__mep.html">i_mep</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#abf67b32404bbb34de28e54f10c681794">replace</a> (const <a class="el" href="structvita_1_1locus.html">locus</a> &amp;, const <a class="el" href="classvita_1_1basic__gene.html">gene</a> &amp;) const </td></tr>
+<tr class="memdesc:abf67b32404bbb34de28e54f10c681794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new individual obtained from <code>this</code> replacing the original symbol at locus <code>l</code> with <code>g</code>.  <a href="#abf67b32404bbb34de28e54f10c681794">More...</a><br /></td></tr>
 <tr class="separator:abf67b32404bbb34de28e54f10c681794"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65e068fb3a81fc4856dfd1c1a56bf020"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvita_1_1hash__t.html">hash_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#a65e068fb3a81fc4856dfd1c1a56bf020">signature</a> () const </td></tr>
+<tr class="memdesc:a65e068fb3a81fc4856dfd1c1a56bf020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signature maps syntactically distinct (but logically equivalent) individuals to the same value.  <a href="#a65e068fb3a81fc4856dfd1c1a56bf020">More...</a><br /></td></tr>
 <tr class="separator:a65e068fb3a81fc4856dfd1c1a56bf020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56f9257682e0751995a631b1ae5a0df5"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#a56f9257682e0751995a631b1ae5a0df5">size</a> () const </td></tr>
 <tr class="separator:a56f9257682e0751995a631b1ae5a0df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d364a32d2f6b8ca5887f79d2627d14c"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#a5d364a32d2f6b8ca5887f79d2627d14c">tree</a> (std::ostream &amp;) const </td></tr>
-<tr class="separator:a5d364a32d2f6b8ca5887f79d2627d14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvita_1_1individual"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvita_1_1individual')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvita_1_1individual.html">vita::individual&lt; i_mep &gt;</a></td></tr>
 <tr class="memitem:a484a2b3f2ceba915a0abbccc22da2502 inherit pub_methods_classvita_1_1individual"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>age</b> () const</td></tr>
 <tr class="memdesc:a484a2b3f2ceba915a0abbccc22da2502 inherit pub_methods_classvita_1_1individual"><td class="mdescLeft">&#160;</td><td class="mdescRight">A measurement of the age of an individual (mainly used for ALPS).  <a href="#a484a2b3f2ceba915a0abbccc22da2502">More...</a><br /></td></tr>
@@ -211,8 +221,8 @@ Friends</h2></td></tr>
 template&lt;bool &gt; </td></tr>
 <tr class="memitem:a7d75b0ad2bf90990fb68262ea85a8eba"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>basic_iterator</b></td></tr>
 <tr class="separator:a7d75b0ad2bf90990fb68262ea85a8eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9867fdbfa2ebb8ad56bb52b06b21bcf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvita_1_1i__mep.html">i_mep</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#aa9867fdbfa2ebb8ad56bb52b06b21bcf">crossover</a> (const <a class="el" href="classvita_1_1i__mep.html">i_mep</a> &amp;, const <a class="el" href="classvita_1_1i__mep.html">i_mep</a> &amp;)</td></tr>
-<tr class="memdesc:aa9867fdbfa2ebb8ad56bb52b06b21bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two Point Crossover.  <a href="#aa9867fdbfa2ebb8ad56bb52b06b21bcf">More...</a><br /></td></tr>
+<tr class="memitem:aa9867fdbfa2ebb8ad56bb52b06b21bcf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9867fdbfa2ebb8ad56bb52b06b21bcf"></a>
+<a class="el" href="classvita_1_1i__mep.html">i_mep</a>&#160;</td><td class="memItemRight" valign="bottom"><b>crossover</b> (const <a class="el" href="classvita_1_1i__mep.html">i_mep</a> &amp;, const <a class="el" href="classvita_1_1i__mep.html">i_mep</a> &amp;)</td></tr>
 <tr class="separator:aa9867fdbfa2ebb8ad56bb52b06b21bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97adbdea9a361ff0eea578ffe07cd102"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97adbdea9a361ff0eea578ffe07cd102"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>individual&lt; i_mep &gt;</b></td></tr>
@@ -225,13 +235,19 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>interpreter&lt; i_me
 Related Functions</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p>(Note that these are not member functions.) </p>
 </td></tr>
+<tr class="memitem:ab4cc448b530b82a2533d6403609d02a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvita_1_1i__mep.html">i_mep</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#ab4cc448b530b82a2533d6403609d02a3">crossover</a> (const <a class="el" href="classvita_1_1i__mep.html">i_mep</a> &amp;lhs, const <a class="el" href="classvita_1_1i__mep.html">i_mep</a> &amp;rhs)</td></tr>
+<tr class="memdesc:ab4cc448b530b82a2533d6403609d02a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Self-Adaptive Crossover operator.  <a href="#ab4cc448b530b82a2533d6403609d02a3">More...</a><br /></td></tr>
+<tr class="separator:ab4cc448b530b82a2533d6403609d02a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7254ed2cc0e11b494f17414277d17b7a"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#a7254ed2cc0e11b494f17414277d17b7a">distance</a> (const <a class="el" href="classvita_1_1i__mep.html">i_mep</a> &amp;lhs, const <a class="el" href="classvita_1_1i__mep.html">i_mep</a> &amp;rhs)</td></tr>
 <tr class="separator:a7254ed2cc0e11b494f17414277d17b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a570436601a92ca6f63524b71ab054e76"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1i__mep.html#a570436601a92ca6f63524b71ab054e76">operator&lt;&lt;</a> (std::ostream &amp;s, const <a class="el" href="classvita_1_1i__mep.html">i_mep</a> &amp;ind)</td></tr>
+<tr class="separator:a570436601a92ca6f63524b71ab054e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classvita_1_1individual"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classvita_1_1individual')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classvita_1_1individual.html">vita::individual&lt; i_mep &gt;</a></td></tr>
 <tr class="memitem:a58b202388a4d290b76b7ee8be0bb3147 inherit pro_methods_classvita_1_1individual"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><b>set_older_age</b> (unsigned)</td></tr>
+<tr class="memdesc:a58b202388a4d290b76b7ee8be0bb3147 inherit pro_methods_classvita_1_1individual"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the age of this individual if it's smaller than <code>rhs_age</code>.  <a href="#a58b202388a4d290b76b7ee8be0bb3147">More...</a><br /></td></tr>
 <tr class="separator:a58b202388a4d290b76b7ee8be0bb3147 inherit pro_methods_classvita_1_1individual"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classvita_1_1individual"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classvita_1_1individual')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classvita_1_1individual.html">vita::individual&lt; i_mep &gt;</a></td></tr>
 <tr class="memitem:a309e9dba521268d9d5fc09aa01052e1f inherit pro_attribs_classvita_1_1individual"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a309e9dba521268d9d5fc09aa01052e1f"></a>
@@ -243,7 +259,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Each individual contains a genome which represents a possible solution to the task being tackled (i.e. a point in the search space). </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="example3_8cc-example.html#_a6">example3.cc</a>, <a class="el" href="example4_8cc-example.html#_a8">example4.cc</a>, <a class="el" href="example5_8cc-example.html#_a6">example5.cc</a>, and <a class="el" href="example6_8cc-example.html#_a7">example6.cc</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00031">31</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00032">32</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="afef8f1706fbb7eedad3da9f18e011c4e"></a>
 <div class="memitem">
@@ -266,15 +282,17 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Generates the initial, random expressions that make up an individual. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>base environment.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>base environment</td></tr>
   </table>
   </dd>
 </dl>
-<p>Generates the initial, random expressions that make up an individual. This has to be implemented so as to ensure that there is no violation of the type system's constraints. </p>
+<p>The constructor is implemented so as to ensure that there is no violation of the type system's constraints. </p>
 
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00032">32</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00033">33</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
 
 </div>
 </div>
@@ -299,19 +317,48 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Creates a new individual containing genes from <code>gv</code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">gv</td><td>vector of genes.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gv</td><td>vector of genes</td></tr>
   </table>
   </dd>
 </dl>
-<p>Create a new individual containing the genes of <code>gv</code>. This is useful for debugging purpouse (i.e. setup ad-hoc individuals). </p>
+<p>This is useful for debugging purpouse (i.e. setup ad-hoc individuals). </p>
 
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00063">63</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00066">66</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a2d168fea885014a25bdfd2242cb73aa2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned vita::i_mep::active_symbols </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of active symbols. </p>
+<dl class="section return"><dt>Returns</dt><dd>number of active symbols</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classvita_1_1i__mep.html#a56f9257682e0751995a631b1ae5a0df5">size()</a></dd></dl>
+<p>When <code><a class="el" href="classvita_1_1i__mep.html#ae9d4e50f0a774b49f39cd39e7d3e785c">category()</a> &gt; 1</code>, <a class="el" href="classvita_1_1i__mep.html#a2d168fea885014a25bdfd2242cb73aa2" title="Number of active symbols. ">active_symbols()</a> can be greater than <a class="el" href="classvita_1_1i__mep.html#a56f9257682e0751995a631b1ae5a0df5">size()</a>. For instance consider the following individual: </p><pre class="fragment">[0, 1] FIFL 1 2 2 3
+[1, 0] "car"
+[2, 0] "plane"
+[2, 1] 10
+[3, 1] 20
+</pre><p><code><a class="el" href="classvita_1_1i__mep.html#a56f9257682e0751995a631b1ae5a0df5">size()</a> == 4</code> (four slots / rows) and <code><a class="el" href="classvita_1_1i__mep.html#a2d168fea885014a25bdfd2242cb73aa2" title="Number of active symbols. ">active_symbols()</a> == 5</code>. </p>
+
+<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00104">104</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a61fb8189dd2b502d08805864daba13bd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -332,9 +379,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>an iterator to the first active locus of the individual. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an iterator to the first active locus of the individual </dd></dl>
 
-<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00160">160</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00172">172</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
 
 </div>
 </div>
@@ -358,9 +405,35 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>an iterator to the first active locus of the individual. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an iterator to the first active locus of the individual </dd></dl>
 
-<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00176">176</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00188">188</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae7fe8aabe301627b9869cc4958bbda08"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structvita_1_1locus.html">locus</a> vita::i_mep::best </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>the starting locus of the best sequence available </dd></dl>
+
+<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00120">120</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
 
 </div>
 </div>
@@ -376,12 +449,13 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a list of loci referring to active symbols.</dd></dl>
-<p>The function calculates a set of indexes to blocks contained in <code>this</code> individual.</p>
+
+<p>Calculates a set of indexes to blocks contained in <code>this</code> individual. </p>
+<dl class="section return"><dt>Returns</dt><dd>a list of loci referring to active symbols</dd></dl>
 <p>Indexes can be used by the <a class="el" href="classvita_1_1i__mep.html#ad6f0dbf83f9e1ff32534ec0157617415">i_mep::get_block</a> function.</p>
 <dl class="section note"><dt>Note</dt><dd>A block is a subset of the active code composed of, at least, a function. </dd></dl>
 
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00170">170</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00175">175</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
 
 </div>
 </div>
@@ -405,9 +479,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>the total number of categories the individual is using. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the total number of categories the individual is using </dd></dl>
 
-<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00128">128</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00137">137</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
 
 </div>
 </div>
@@ -423,9 +497,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>the category of the individual. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the category of the individual </dd></dl>
 
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00283">283</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00290">290</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
 
 </div>
 </div>
@@ -445,7 +519,7 @@ Additional Inherited Members</h2></td></tr>
 <p>A sort of "common subexpression elimination" optimization. </p>
 <p>The function doesn't rely on the meaning of the symbols, just on the genome layout. </p>
 
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00819">819</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00652">652</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
 
 </div>
 </div>
@@ -461,9 +535,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the individual passes the internal consistency check. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the individual passes the internal consistency check </dd></dl>
 
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00430">430</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00453">453</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
 
 </div>
 </div>
@@ -492,66 +566,14 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sset</td><td>a symbol set. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>index of a symbol in the individual. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sset</td><td>a symbol set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>index of a symbol in the individual </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a new individual obtained from <code>this</code> inserting a random terminal at index <code>index</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a new individual obtained from <code>this</code> inserting a random terminal at index <code>index</code> </dd></dl>
 
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00218">218</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5abe6b25f79d6c47be0cddac423b383d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; vita::i_mep::dump </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">s</td><td>output stream.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Print the complete content of this individual. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="example3_8cc-example.html#a7">example3.cc</a>, and <a class="el" href="example5_8cc-example.html#a7">example5.cc</a>.</dd>
-</dl>
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00680">680</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0ca24f2bcd2e128f8312df3e5909a963"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned vita::i_mep::eff_size </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>the effective size of the individual. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classvita_1_1i__mep.html#a56f9257682e0751995a631b1ae5a0df5">size()</a></dd></dl>
-<dl class="section note"><dt>Note</dt><dd><a class="el" href="classvita_1_1i__mep.html#a0ca24f2bcd2e128f8312df3e5909a963">eff_size()</a> can be greater than <a class="el" href="classvita_1_1i__mep.html#a56f9257682e0751995a631b1ae5a0df5">size()</a> when <code><a class="el" href="classvita_1_1i__mep.html#ae9d4e50f0a774b49f39cd39e7d3e785c">category()</a> &gt; 1</code>. For instance consider the following individual: <pre class="fragment">[0, 1] FIFL 1 2 2 3
-[1, 0] "car"
-[2, 0] "plane"
-[2, 1] 10
-[3, 1] 20
-</pre></dd></dl>
-<p><code><a class="el" href="classvita_1_1i__mep.html#a56f9257682e0751995a631b1ae5a0df5">size()</a> == 4</code> but <code><a class="el" href="classvita_1_1i__mep.html#a0ca24f2bcd2e128f8312df3e5909a963">eff_size()</a> == 5</code>. </p>
-
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00098">98</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00223">223</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
 
 </div>
 </div>
@@ -575,9 +597,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the individual isn't initialized. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the individual isn't initialized </dd></dl>
 
-<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00148">148</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00158">158</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
 
 </div>
 </div>
@@ -601,9 +623,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>an iterator used as sentry value to stop a cycle. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an iterator used as sentry value to stop a cycle </dd></dl>
 
-<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00168">168</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00180">180</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
 
 </div>
 </div>
@@ -627,9 +649,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>an iterator used as sentry value to stop a cycle. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an iterator used as sentry value to stop a cycle </dd></dl>
 
-<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00184">184</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00196">196</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
 
 </div>
 </div>
@@ -656,17 +678,19 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Produces the body for a ADF. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sset</td><td>a symbol set. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">max_args</td><td>maximum number of arguments for the ADF. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sset</td><td>a symbol set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_args</td><td>maximum number of arguments for the ADF </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the generalized individual and a set of loci (ADF arguments positions).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the generalized individual and a set of loci (ADF arguments positions)</dd></dl>
 <p>Changes up to <code>max_args</code> terminals (exactly <code>max_args</code> when available) of <code>this</code> individual with formal arguments, thus producing the body for a ADF. </p>
 
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00243">243</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00250">250</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
 
 </div>
 </div>
@@ -685,113 +709,14 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>locus of the genome. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>locus of the genome </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>an individual obtained from <code>this</code> choosing the gene sequence starting at <code>l</code>.</dd></dl>
-<p>This function is often used along with the <a class="el" href="classvita_1_1i__mep.html#a3ce69eb3b028df048baa559d7aec4828">blocks</a> function. </p>
+<dl class="section return"><dt>Returns</dt><dd>an individual obtained from <code>this</code> choosing the gene sequence starting at <code>l</code></dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is often used along with the <a class="el" href="classvita_1_1i__mep.html#a3ce69eb3b028df048baa559d7aec4828" title="Calculates a set of indexes to blocks contained in this individual. ">i_mep::blocks</a> function. </dd></dl>
 
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00110">110</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a70b8929b50824dc1f8f470104938731f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vita::i_mep::graphviz </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>id</em> = <code>&quot;&quot;</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">s</td><td>output stream. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>used for subgraph plot (usually this is an empty string).</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>The output stream contains a graph of this individual described in dot language (see <a href="http://www.graphviz.org/">http://www.graphviz.org/</a>). </p>
-
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00543">543</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a481949abf8ed621cef6532517ed017d3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; vita::i_mep::in_line </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">s</td><td>output stream</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>The individual is printed on a single line with symbols separated by spaces. Not at all human readable, but a compact representation for import / export.</p>
-<dl class="section note"><dt>Note</dt><dd>Prints active genes visiting the genome in pre-order. </dd></dl>
-
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00574">574</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afea52f62ea9cb4235541c998e7eedb2d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; vita::i_mep::list </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>short_form</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">s</td><td>output stream. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">short_form</td><td>if <code>true</code> prints a shorter and more human-readable form of the genome.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Do you remember C=64 list? :-)</p>
-<p>10 PRINT "HOME" 20 PRINT "SWEET" 30 GOTO 10 </p>
-
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00605">605</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00116">116</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
 
 </div>
 </div>
@@ -822,14 +747,14 @@ Additional Inherited Members</h2></td></tr>
 <p>A new individual is created mutating <code>this</code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>probability of gene mutation. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>the current environment. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>probability of gene mutation </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>the current environment </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>number of mutations performed. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of mutations performed </dd></dl>
 
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00127">127</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00133">133</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
 
 </div>
 </div>
@@ -852,10 +777,10 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the two individuals are equal (symbol by symbol, including introns).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the two individuals are equal (symbol by symbol, including introns)</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Age is not checked. </dd></dl>
 
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00295">295</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00302">302</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
 
 </div>
 </div>
@@ -882,13 +807,13 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>locus of a <code>gene</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>locus of a <code>gene</code> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the l-th gene of <code>this</code> individual. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the <code>l</code>-th gene of <code>this</code> individual </dd></dl>
 
-<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00120">120</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00129">129</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
 
 </div>
 </div>
@@ -905,16 +830,17 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Creates a new individual obtained from <code>this</code> replacing the original symbol at locus <code><a class="el" href="classvita_1_1i__mep.html#ae7fe8aabe301627b9869cc4958bbda08">best()</a></code> with <code>g</code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">g</td><td>new gene for replacement. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">g</td><td>new gene for replacement </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a new individual with gene at locus <code>best_</code> replaced by <code>g</code>.</dd></dl>
-<p>Create a new individual obtained from <code>this</code> replacing the original symbol at locus <code>best_</code> with <code>g</code>. </p>
+<dl class="section return"><dt>Returns</dt><dd>a new individual with gene at locus <code><a class="el" href="classvita_1_1i__mep.html#ae7fe8aabe301627b9869cc4958bbda08">best()</a></code> replaced by <code>g</code> </dd></dl>
 
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00207">207</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00212">212</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
 
 </div>
 </div>
@@ -941,17 +867,18 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Create a new individual obtained from <code>this</code> replacing the original symbol at locus <code>l</code> with <code>g</code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>locus where replacement takes place. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">g</td><td>new gene for replacement. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>locus where replacement takes place </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">g</td><td>new gene for replacement </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a new individual with gene at locus <code>l</code> replaced by <code>g</code>.</dd></dl>
-<p>Create a new individual obtained from <code>this</code> replacing the original symbol at locus <code>l</code> with <code>g</code>. </p>
+<dl class="section return"><dt>Returns</dt><dd>a new individual with gene at locus <code>l</code> replaced by <code>g</code> </dd></dl>
 
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00189">189</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00194">194</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
 
 </div>
 </div>
@@ -967,13 +894,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Signature maps syntactically distinct (but logically equivalent) individuals to the same value. </p>
 <dl class="section return"><dt>Returns</dt><dd>the signature of this individual.</dd></dl>
-<p>Signature maps syntactically distinct (but logically equivalent) individuals to the same value.</p>
 <p>In other words identical individuals at genotypic level have the same signature; different individuals at the genotipic level may be mapped to the same signature since the value of terminals is considered and not the index.</p>
 <p>This is a very interesting property, useful for individual comparison, information retrieval, entropy calculation... </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="example4_8cc-example.html#a10">example4.cc</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00419">419</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00442">442</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
 
 </div>
 </div>
@@ -997,39 +925,16 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>the total size of the individual (effective size + introns).</dd></dl>
-<p>The size is constant for any individual (it's chosen at initialization time). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classvita_1_1i__mep.html#a0ca24f2bcd2e128f8312df3e5909a963">eff_size()</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the total size of the individual (effective size + introns)</dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>Size is constant for any individual (it's chosen at initialization time).</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>eff_size() </dd></dl>
 
-<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00140">140</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5d364a32d2f6b8ca5887f79d2627d14c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; vita::i_mep::tree </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">s</td><td>output stream. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00651">651</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8h_source.html#l00150">150</a> of file <a class="el" href="i__mep_8h_source.html">i_mep.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a class="anchor" id="aa9867fdbfa2ebb8ad56bb52b06b21bcf"></a>
+<a class="anchor" id="ab4cc448b530b82a2533d6403609d02a3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1040,13 +945,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname"><a class="el" href="classvita_1_1i__mep.html">i_mep</a> crossover </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvita_1_1i__mep.html">i_mep</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classvita_1_1i__mep.html">i_mep</a> &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1056,24 +961,38 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Two Point Crossover. </p>
+<p>A Self-Adaptive Crossover operator. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">lhs</td><td>first parent. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>second parent. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lhs</td><td>first parent </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>second parent </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the result of the crossover (we only generate a single offspring).</dd></dl>
-<p>We randomly select a parent (between <code>lhs</code> and <code>rhs</code>) and a two loci (common crossover points). The offspring is created with genes from the chosen parent before the first crossover point and after the second crossover point; genes between crossover points are taken from the other parent.</p>
-<dl class="section note"><dt>Note</dt><dd>Parents must have the same size. </dd></dl>
-
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l01012">1012</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+<p>Well known elementary crossover operators traverse the problem domain in different ways, exhibiting variable performances and specific problems. An attempt to make the algorithm more robust is combining various search strategies, encapsulated by the different elementary crossover operators available, via self adaptation.</p>
+<p>We associate, with each individual, the type of crossover used to create it (initially this is set to a random type). This type is used afterwards to determine which crossover to apply and allows the algorithm to adjust the relative mixture of operators.</p>
+<p>Here we briefly describe the elementary crossover operators that are utilised:</p>
+<p><b>ONE POINT</b></p>
+<p>We randomly select a parent (between <code>from</code> and <code>to</code>) and a single locus (common crossover point). The offspring is created with genes from the chosen parent up to the crossover point and genes from the other parent beyond that point. One-point crossover is the oldest homologous crossover in tree-based GP.</p>
+<p><b>TREE</b></p>
+<p>Inserts a complete tree from one parent into the other. The operation is less disruptive than other forms of crossover since an entire tree is copied (not just a part).</p>
+<p><b>TWO POINTS</b></p>
+<p>We randomly select two loci (common crossover points). The offspring is created with genes from the one parent before the first crossover point and after the second crossover point; genes between crossover points are taken from the other parent.</p>
+<p><b>UNIFORM CROSSOVER</b></p>
+<p>The i-th locus of the offspring has a 50% probability to be filled with the i-th gene of <code>from</code> and 50% with i-th gene of <code>to</code>.</p>
+<p>Uniform crossover, as the name suggests, is a GP operator inspired by the GA operator of the same name (G. Syswerda. Uniform crossover in genetic algorithms - Proceedings of the Third International Conference on Genetic Algorithms. 1989). GA uniform crossover constructs offspring on a bitwise basis, copying each allele from each parent with a 50% probability. Thus the information at each gene location is equally likely to have come from either parent and on average each parent donates 50% of its genetic material. The whole operation, of course, relies on the fact that all the chromosomes in the population are of the same structure and the same length. GP uniform crossover begins with the observation that many parse trees are at least partially structurally similar.</p>
+<dl class="section note"><dt>Note</dt><dd>Parents must have the same size.</dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>What has to be noticed is that the adaption of the parameter happens before the fitness is given to it. That means that getting a good parameter doesn't rise the individual's fitness but only its performance over time.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>"Adapting Crossover in Evolutionary Algorithms" - William M. Spears. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="example3_8cc-example.html#a7">example3.cc</a>.</dd>
+</dl>
+<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00779">779</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
 
 </div>
 </div>
@@ -1110,15 +1029,59 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">lhs</td><td>first term of comparison. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>second term of comparison. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lhs</td><td>first term of comparison </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs</td><td>second term of comparison </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a numeric measurement of the difference between <code>lhs</code> and <code>rhs</code> (the number of different genes between individuals). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a numeric measurement of the difference between <code>lhs</code> and <code>rhs</code> (the number of different genes between individuals) </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="pathfinding01_8cc-example.html#a0">pathfinding01.cc</a>, and <a class="el" href="pathfinding02_8cc-example.html#a0">pathfinding02.cc</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00314">314</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l00331">331</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a570436601a92ca6f63524b71ab054e76"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvita_1_1i__mep.html">i_mep</a> &amp;&#160;</td>
+          <td class="paramname"><em>ind</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">s</td><td>output stream </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ind</td><td>individual to print </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>output stream including <code>ind</code> </dd></dl>
+
+<p>Definition at line <a class="el" href="i__mep_8cc_source.html#l01045">1045</a> of file <a class="el" href="i__mep_8cc_source.html">i_mep.cc</a>.</p>
 
 </div>
 </div>
@@ -1129,7 +1092,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:02 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

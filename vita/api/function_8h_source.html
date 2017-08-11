@@ -101,58 +101,69 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevita.html">vita</a></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classvita_1_1function.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvita_1_1function.html">function</a> : <span class="keyword">public</span> <a class="code" href="classvita_1_1symbol.html">symbol</a></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">function</span>(<span class="keyword">const</span> std::string &amp;, <a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a>, <a class="code" href="namespacevita.html#ac33b6e76367210a9fc3b80e940ed41a8">cvect</a>);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  category_t <a class="code" href="classvita_1_1function.html#ae24c44c614cf710b1aa9953076ee4917">arg_category</a>(<span class="keywordtype">unsigned</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <a class="code" href="classvita_1_1function.html#a4fae1403c190831beec930a9326692a6">arity</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvita_1_1function.html#a9d013855dbeafaf99219417a02572dcf">debug</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">function</span> *<a class="code" href="classvita_1_1function.html#a0170c32e66de20aef6c80917302cac84">cast</a>(<span class="keyword">const</span> <a class="code" href="classvita_1_1symbol.html">symbol</a> *);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:  <span class="comment">// Private data members</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="namespacevita.html#ac33b6e76367210a9fc3b80e940ed41a8">cvect</a> argt_;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classvita_1_1function.html#a4fae1403c190831beec930a9326692a6">   55</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <a class="code" href="classvita_1_1function.html#a4fae1403c190831beec930a9326692a6">function::arity</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  assert(argt_.size());</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(argt_.size());</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classvita_1_1function.html#ae24c44c614cf710b1aa9953076ee4917">   65</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a> <a class="code" href="classvita_1_1function.html#ae24c44c614cf710b1aa9953076ee4917">function::arg_category</a>(<span class="keywordtype">unsigned</span> i)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  assert(i &lt; <a class="code" href="classvita_1_1function.html#a4fae1403c190831beec930a9326692a6">arity</a>());</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">return</span> argt_[i];</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classvita_1_1function.html#a0170c32e66de20aef6c80917302cac84">   77</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> <span class="keyword">function</span> *<a class="code" href="classvita_1_1function.html#a0170c32e66de20aef6c80917302cac84">function::cast</a>(<span class="keyword">const</span> <a class="code" href="classvita_1_1symbol.html">symbol</a> *s)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  assert(s-&gt;arity());</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code" href="classvita_1_1function.html">function</a> *<span class="keyword">&gt;</span>(s);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}  <span class="comment">// namespace vita</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif  // Include guard</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classvita_1_1function.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvita_1_1function.html">function</a> : <span class="keyword">public</span> <a class="code" href="classvita_1_1symbol.html">symbol</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">function</span>(<span class="keyword">const</span> std::string &amp;, <a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a>, <a class="code" href="namespacevita.html#ac33b6e76367210a9fc3b80e940ed41a8">cvect</a>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  category_t <a class="code" href="classvita_1_1function.html#ae24c44c614cf710b1aa9953076ee4917">arg_category</a>(<span class="keywordtype">unsigned</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvita_1_1function.html#af86577183d590196be5af1fd9907233f">associative</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">virtual</span> std::string <a class="code" href="classvita_1_1function.html#ae1d05a7eb233949ff45e10eb6967b8a8">display</a>(format = c_format) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">unsigned</span> <a class="code" href="classvita_1_1function.html#a844eb55dce2c7dd7f0eca1b82d8d574d">arity</a>() <span class="keyword">const</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classvita_1_1function.html#a9d013855dbeafaf99219417a02572dcf">debug</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">function</span> *<a class="code" href="classvita_1_1function.html#a0170c32e66de20aef6c80917302cac84">cast</a>(<span class="keyword">const</span> <a class="code" href="classvita_1_1symbol.html">symbol</a> *);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="namespacevita.html#ac33b6e76367210a9fc3b80e940ed41a8">cvect</a> argt_;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classvita_1_1function.html#a844eb55dce2c7dd7f0eca1b82d8d574d">   58</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">unsigned</span> <a class="code" href="classvita_1_1function.html#a844eb55dce2c7dd7f0eca1b82d8d574d">function::arity</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  Expects(argt_.size());</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(argt_.size());</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classvita_1_1function.html#af86577183d590196be5af1fd9907233f">   79</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classvita_1_1function.html#af86577183d590196be5af1fd9907233f">function::associative</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classvita_1_1function.html#ae24c44c614cf710b1aa9953076ee4917">   88</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a> <a class="code" href="classvita_1_1function.html#ae24c44c614cf710b1aa9953076ee4917">function::arg_category</a>(<span class="keywordtype">unsigned</span> i)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  Expects(i &lt; <a class="code" href="classvita_1_1function.html#a844eb55dce2c7dd7f0eca1b82d8d574d">arity</a>());</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">return</span> argt_[i];</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classvita_1_1function.html#a0170c32e66de20aef6c80917302cac84">  100</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> <span class="keyword">function</span> *<a class="code" href="classvita_1_1function.html#a0170c32e66de20aef6c80917302cac84">function::cast</a>(<span class="keyword">const</span> <a class="code" href="classvita_1_1symbol.html">symbol</a> *s)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  Expects(s-&gt;arity());</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><a class="code" href="classvita_1_1function.html">function</a> *<span class="keyword">&gt;</span>(s);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}  <span class="comment">// namespace vita</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif  // include guard</span></div>
 <div class="ttc" id="symbol_8h_html"><div class="ttname"><a href="symbol_8h.html">symbol.h</a></div></div>
 <div class="ttc" id="namespacevita_html"><div class="ttname"><a href="namespacevita.html">vita</a></div><div class="ttdoc">The main namespace for the project. </div></div>
-<div class="ttc" id="classvita_1_1function_html_a9d013855dbeafaf99219417a02572dcf"><div class="ttname"><a href="classvita_1_1function.html#a9d013855dbeafaf99219417a02572dcf">vita::function::debug</a></div><div class="ttdeci">virtual bool debug() const override</div><div class="ttdef"><b>Definition:</b> <a href="function_8cc_source.html#l00034">function.cc:34</a></div></div>
-<div class="ttc" id="classvita_1_1function_html"><div class="ttname"><a href="classvita_1_1function.html">vita::function</a></div><div class="ttdoc">A symbol (arity > 0) used in GP. </div><div class="ttdef"><b>Definition:</b> <a href="function_8h_source.html#l00035">function.h:35</a></div></div>
+<div class="ttc" id="classvita_1_1function_html_a844eb55dce2c7dd7f0eca1b82d8d574d"><div class="ttname"><a href="classvita_1_1function.html#a844eb55dce2c7dd7f0eca1b82d8d574d">vita::function::arity</a></div><div class="ttdeci">unsigned arity() const final</div><div class="ttdef"><b>Definition:</b> <a href="function_8h_source.html#l00058">function.h:58</a></div></div>
+<div class="ttc" id="classvita_1_1function_html_a9d013855dbeafaf99219417a02572dcf"><div class="ttname"><a href="classvita_1_1function.html#a9d013855dbeafaf99219417a02572dcf">vita::function::debug</a></div><div class="ttdeci">bool debug() const override</div><div class="ttdef"><b>Definition:</b> <a href="function_8cc_source.html#l00046">function.cc:46</a></div></div>
+<div class="ttc" id="classvita_1_1function_html"><div class="ttname"><a href="classvita_1_1function.html">vita::function</a></div><div class="ttdoc">A symbol with arity() > 0. </div><div class="ttdef"><b>Definition:</b> <a href="function_8h_source.html#l00034">function.h:34</a></div></div>
 <div class="ttc" id="namespacevita_html_ac33b6e76367210a9fc3b80e940ed41a8"><div class="ttname"><a href="namespacevita.html#ac33b6e76367210a9fc3b80e940ed41a8">vita::cvect</a></div><div class="ttdeci">std::vector&lt; category_t &gt; cvect</div><div class="ttdoc">A useful shortcut for a group of categories. </div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00056">common.h:56</a></div></div>
-<div class="ttc" id="classvita_1_1function_html_a4fae1403c190831beec930a9326692a6"><div class="ttname"><a href="classvita_1_1function.html#a4fae1403c190831beec930a9326692a6">vita::function::arity</a></div><div class="ttdeci">virtual unsigned arity() const override</div><div class="ttdef"><b>Definition:</b> <a href="function_8h_source.html#l00055">function.h:55</a></div></div>
-<div class="ttc" id="classvita_1_1function_html_ae24c44c614cf710b1aa9953076ee4917"><div class="ttname"><a href="classvita_1_1function.html#ae24c44c614cf710b1aa9953076ee4917">vita::function::arg_category</a></div><div class="ttdeci">category_t arg_category(unsigned) const </div><div class="ttdef"><b>Definition:</b> <a href="function_8h_source.html#l00065">function.h:65</a></div></div>
-<div class="ttc" id="classvita_1_1function_html_a0170c32e66de20aef6c80917302cac84"><div class="ttname"><a href="classvita_1_1function.html#a0170c32e66de20aef6c80917302cac84">vita::function::cast</a></div><div class="ttdeci">static const function * cast(const symbol *)</div><div class="ttdef"><b>Definition:</b> <a href="function_8h_source.html#l00077">function.h:77</a></div></div>
-<div class="ttc" id="classvita_1_1symbol_html"><div class="ttname"><a href="classvita_1_1symbol.html">vita::symbol</a></div><div class="ttdoc">GP assembles variable length program structures from basic units called functions and terminals...</div><div class="ttdef"><b>Definition:</b> <a href="symbol_8h_source.html#l00032">symbol.h:32</a></div></div>
+<div class="ttc" id="classvita_1_1function_html_ae24c44c614cf710b1aa9953076ee4917"><div class="ttname"><a href="classvita_1_1function.html#ae24c44c614cf710b1aa9953076ee4917">vita::function::arg_category</a></div><div class="ttdeci">category_t arg_category(unsigned) const </div><div class="ttdef"><b>Definition:</b> <a href="function_8h_source.html#l00088">function.h:88</a></div></div>
+<div class="ttc" id="classvita_1_1function_html_ae1d05a7eb233949ff45e10eb6967b8a8"><div class="ttname"><a href="classvita_1_1function.html#ae1d05a7eb233949ff45e10eb6967b8a8">vita::function::display</a></div><div class="ttdeci">virtual std::string display(format=c_format) const </div><div class="ttdef"><b>Definition:</b> <a href="function_8cc_source.html#l00038">function.cc:38</a></div></div>
+<div class="ttc" id="classvita_1_1function_html_a0170c32e66de20aef6c80917302cac84"><div class="ttname"><a href="classvita_1_1function.html#a0170c32e66de20aef6c80917302cac84">vita::function::cast</a></div><div class="ttdeci">static const function * cast(const symbol *)</div><div class="ttdoc">This is a short cut function. </div><div class="ttdef"><b>Definition:</b> <a href="function_8h_source.html#l00100">function.h:100</a></div></div>
+<div class="ttc" id="classvita_1_1symbol_html"><div class="ttname"><a href="classvita_1_1symbol.html">vita::symbol</a></div><div class="ttdoc">Together functions and terminals are referred to as symbols. </div><div class="ttdef"><b>Definition:</b> <a href="symbol_8h_source.html#l00033">symbol.h:33</a></div></div>
+<div class="ttc" id="classvita_1_1function_html_af86577183d590196be5af1fd9907233f"><div class="ttname"><a href="classvita_1_1function.html#af86577183d590196be5af1fd9907233f">vita::function::associative</a></div><div class="ttdeci">virtual bool associative() const </div><div class="ttdoc">Is the symbol subject to the associative law of arithmetic? </div><div class="ttdef"><b>Definition:</b> <a href="function_8h_source.html#l00079">function.h:79</a></div></div>
 <div class="ttc" id="namespacevita_html_ab4bee4c13eaf6e5d61b4900cae4f0447"><div class="ttname"><a href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">vita::category_t</a></div><div class="ttdeci">unsigned category_t</div><div class="ttdoc">A category provide operations which supplement or supersede those of the domain but which are restric...</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00053">common.h:53</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:01 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

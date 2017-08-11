@@ -120,6 +120,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ae19ed02a98d3ea28f1d835d2d2b07dee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvita_1_1symbol.html">symbol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#ae19ed02a98d3ea28f1d835d2d2b07dee">decode</a> (const std::string &amp;) const </td></tr>
 <tr class="separator:ae19ed02a98d3ea28f1d835d2d2b07dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadc37e4dac8ba9867a94fe166ba9fdb4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#aadc37e4dac8ba9867a94fe166ba9fdb4">enough_terminals</a> () const </td></tr>
+<tr class="memdesc:aadc37e4dac8ba9867a94fe166ba9fdb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">We want at least one terminal for every used category.  <a href="#aadc37e4dac8ba9867a94fe166ba9fdb4">More...</a><br /></td></tr>
 <tr class="separator:aadc37e4dac8ba9867a94fe166ba9fdb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0994b6b9ea73d9a18d3574c600c9fea4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvita_1_1symbol.html">symbol</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#a0994b6b9ea73d9a18d3574c600c9fea4">get_adt</a> (std::size_t) const </td></tr>
 <tr class="separator:a0994b6b9ea73d9a18d3574c600c9fea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +147,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_adf_weights</b>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a43de7afad938b101b14e0029449df867"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#a43de7afad938b101b14e0029449df867">operator&lt;&lt;</a> (std::ostream &amp;, const <a class="el" href="classvita_1_1symbol__set.html">symbol_set</a> &amp;)</td></tr>
+<tr class="memdesc:a43de7afad938b101b14e0029449df867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the symbol set to an output stream.  <a href="#a43de7afad938b101b14e0029449df867">More...</a><br /></td></tr>
 <tr class="separator:a43de7afad938b101b14e0029449df867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -170,7 +172,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets up the object. </p>
-<p>The constructor allocates memory for up to <code>k_args</code> argument. </p>
+<p>The constructor allocates memory for up to <code>k_args</code> arguments. </p>
 
 <p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00026">26</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
@@ -189,7 +191,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>the number of ADT functions stored. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the number of ADT functions stored </dd></dl>
 
 <p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00066">66</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
@@ -210,11 +212,11 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>index of an argument symbol. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>index of an argument symbol </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a reference to the n-th <code>argument</code> symbol. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to the <code>n</code>-th <code>argument</code> symbol </dd></dl>
 
 <p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00047">47</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
@@ -232,10 +234,10 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>number of categories in the symbol set (&gt;= 1).</dd></dl>
-<p>See also <a class="el" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">category_set::size()</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>number of categories in the symbol set (<code>&gt;= 1</code>)</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">category_set::size()</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00238">238</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00239">239</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -251,9 +253,9 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object passes the internal consistency check. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object passes the internal consistency check </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00329">329</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00337">337</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -272,11 +274,11 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">opcode</td><td>numerical code used as primary key for a symbol. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">opcode</td><td>numerical code used as primary key for a symbol </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the <a class="el" href="classvita_1_1symbol.html" title="GP assembles variable length program structures from basic units called functions and terminals...">vita::symbol</a> identified by <code>opcode</code> (<code>nullptr</code> if not found). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the <a class="el" href="classvita_1_1symbol.html" title="Together functions and terminals are referred to as symbols. ">vita::symbol</a> identified by <code>opcode</code> (<code>nullptr</code> if not found). </dd></dl>
 
 <p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00204">204</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
@@ -297,14 +299,14 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dex</td><td>the name of a symbol. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dex</td><td>the name of a symbol </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the symbol identified by <code>dex</code> (0 if not found).</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>Please note that opcodes (automatically assigned) are primary keys for symbols. Conversely the name of a symbol is chosen by the user, so, if you don't pay attention, different symbols may have the same name. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the symbol identified by <code>dex</code> (0 if not found)</dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>Please note that opcodes are automatically generated and fully identify a symbol (they're primary keys). Conversely the name of a symbol is chosen by the user, so, if you don't pay attention, different symbols may have the same name. </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00222">222</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00223">223</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -320,10 +322,11 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if there are enough terminals for secure individual generation.</dd></dl>
-<p>We want at least one terminal for every used category. </p>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00262">262</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>We want at least one terminal for every used category. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if there are enough terminals for secure individual generation </dd></dl>
+
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00263">263</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -342,11 +345,11 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>index of an ADT symbol. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>index of an ADT symbol </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a reference to the i-th ADT symbol. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to the <code>i</code>-th ADT symbol </dd></dl>
 
 <p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00057">57</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
@@ -379,8 +382,8 @@ Friends</h2></td></tr>
 <p>Adds a new symbol to the set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>symbol to be added. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">wr</td><td>the weight of <code>s</code> (1.0 means standard frequency, 2.0 double probability of selection). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>symbol to be added </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wr</td><td>the weight of <code>s</code> (<code>1.0</code> means standard frequency, <code>2.0</code> double probability of selection) </td></tr>
   </table>
   </dd>
 </dl>
@@ -403,7 +406,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a random symbol from the set of all symbols. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a random symbol from the set of all symbols </dd></dl>
 
 <p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00194">194</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
@@ -424,11 +427,11 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>a category. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>a category </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a random symbol of category <code>c</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a random symbol of category <code>c</code> </dd></dl>
 
 <p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00184">184</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
@@ -449,11 +452,11 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>a category. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>a category </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a random terminal of category <code>c</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a random terminal of category <code>c</code> </dd></dl>
 
 <p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00173">173</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
@@ -474,13 +477,13 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>a category. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>a category </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>number of terminals in category <code>c</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of terminals in category <code>c</code> </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00250">250</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00251">251</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -503,9 +506,9 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the weight of <code>s</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the weight of <code>s</code> </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00287">287</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00288">288</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -541,17 +544,19 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Prints the symbol set to an output stream. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">o</td><td>output stream. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ss</td><td>symbol set to be printed. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">o</td><td>output stream </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ss</td><td>symbol set to be printed </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>output stream including <code>ss</code>.</dd></dl>
-<p>Useful for debugging purpose. </p>
+<dl class="section return"><dt>Returns</dt><dd>output stream including <code>ss</code></dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Useful for debugging purpose. </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00303">303</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00306">306</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -562,7 +567,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:02 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

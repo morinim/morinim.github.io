@@ -118,20 +118,23 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a87ab97e810c0279ae51734e2e55bc792"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1evaluator.html#a87ab97e810c0279ae51734e2e55bc792">clear</a> (clear_flag)</td></tr>
-<tr class="memdesc:a87ab97e810c0279ae51734e2e55bc792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Some evaluators keep a cache / some statistics to improve performances.  <a href="#a87ab97e810c0279ae51734e2e55bc792">More...</a><br /></td></tr>
+<tr class="memdesc:a87ab97e810c0279ae51734e2e55bc792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empties the cache / clear the statistics.  <a href="#a87ab97e810c0279ae51734e2e55bc792">More...</a><br /></td></tr>
 <tr class="separator:a87ab97e810c0279ae51734e2e55bc792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2090925bf83eba4db175768defa8e21"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1evaluator.html#ac2090925bf83eba4db175768defa8e21">clear</a> (const T &amp;)</td></tr>
-<tr class="memdesc:ac2090925bf83eba4db175768defa8e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Some evaluators keep a cache to improve performances.  <a href="#ac2090925bf83eba4db175768defa8e21">More...</a><br /></td></tr>
+<tr class="memdesc:ac2090925bf83eba4db175768defa8e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears cached informations about a specific individual.  <a href="#ac2090925bf83eba4db175768defa8e21">More...</a><br /></td></tr>
 <tr class="separator:ac2090925bf83eba4db175768defa8e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1075f033aa48b405701b80d4902e099f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classvita_1_1basic__fitness__t.html">fitness_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1evaluator.html#a1075f033aa48b405701b80d4902e099f">fast</a> (const T &amp;)</td></tr>
+<tr class="memdesc:a1075f033aa48b405701b80d4902e099f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An approximate, faster version of the standard evaluator.  <a href="#a1075f033aa48b405701b80d4902e099f">More...</a><br /></td></tr>
 <tr class="separator:a1075f033aa48b405701b80d4902e099f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6c7c3d40ea9f9227b328fa386941687"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1evaluator.html#ac6c7c3d40ea9f9227b328fa386941687">info</a> () const </td></tr>
 <tr class="separator:ac6c7c3d40ea9f9227b328fa386941687"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2035a24384c300ed64fbcadd66431230"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classvita_1_1lambda__f.html">lambda_f</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1evaluator.html#a2035a24384c300ed64fbcadd66431230">lambdify</a> (const T &amp;) const </td></tr>
+<tr class="memdesc:a2035a24384c300ed64fbcadd66431230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived methods create the 'executable' form of an individual.  <a href="#a2035a24384c300ed64fbcadd66431230">More...</a><br /></td></tr>
 <tr class="separator:a2035a24384c300ed64fbcadd66431230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a722061b28b48df3893679cea0a49ac59"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classvita_1_1basic__fitness__t.html">fitness_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1evaluator.html#a722061b28b48df3893679cea0a49ac59">operator()</a> (const T &amp;)=0</td></tr>
 <tr class="separator:a722061b28b48df3893679cea0a49ac59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeda37bbe1956c0266a4d1b1f2c231a3"><td class="memItemLeft" align="right" valign="top">virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1evaluator.html#aeeda37bbe1956c0266a4d1b1f2c231a3">seen</a> (const T &amp;) const </td></tr>
+<tr class="memdesc:aeeda37bbe1956c0266a4d1b1f2c231a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Some evaluators keep additional statistics about the individual seen so far.  <a href="#aeeda37bbe1956c0266a4d1b1f2c231a3">More...</a><br /></td></tr>
 <tr class="separator:aeeda37bbe1956c0266a4d1b1f2c231a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -181,11 +184,11 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Some evaluators keep a cache / some statistics to improve performances. </p>
-<p>This method asks to empty the cache / clear the statistics.</p>
-<p>The default implementation is empty. </p>
+<p>Empties the cache / clear the statistics. </p>
+<p>Some evaluators keep a cache / some statistics to improve performances.</p>
+<dl class="section note"><dt>Note</dt><dd>Default implementation is empty. </dd></dl>
 
-<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00055">55</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
+<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00058">58</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
 
 </div>
 </div>
@@ -213,12 +216,12 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Clears cached informations about a specific individual. </p>
 <p>Some evaluators keep a cache to improve performances. </p>
-<p>This method asks to clear cached informations about an individual. </p>
 
 <p>Reimplemented in <a class="el" href="classvita_1_1evaluator__proxy.html#ad926b82bac16b309cfd27fcf56ae4e62">vita::evaluator_proxy&lt; T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00064">64</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
+<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00068">68</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
 
 </div>
 </div>
@@ -245,19 +248,21 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>An approximate, faster version of the standard evaluator. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>an individual to be evaluated. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>an individual to be evaluated </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the fitness (usually an approximation of) <code>i</code>.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the fitness (usually an approximation of) <code>i</code></dd></dl>
 <p>Some evaluators have a faster but approximated version of the standard fitness evaluation method.</p>
-<p>The default implementation calls the standard fitness function. </p>
+<dl class="section note"><dt>Note</dt><dd>Default implementation calls the standard fitness function. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classvita_1_1sum__of__errors__evaluator.html#a91e330b9bd54def4d4614f0acf342a58">vita::sum_of_errors_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1constrained__evaluator.html#a5e91c0c64ff99049b617663de2d6d2bd">vita::constrained_evaluator&lt; T, E, P &gt;</a>, and <a class="el" href="classvita_1_1evaluator__proxy.html#ad340baca5dd6f119f0ede9a4cfa7de87">vita::evaluator_proxy&lt; T &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classvita_1_1sum__of__errors__evaluator.html#ade0cf1a400e21fe3195b62f56a596f1e">vita::sum_of_errors_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1constrained__evaluator.html#a5e91c0c64ff99049b617663de2d6d2bd">vita::constrained_evaluator&lt; T, E, P &gt;</a>, and <a class="el" href="classvita_1_1evaluator__proxy.html#ad340baca5dd6f119f0ede9a4cfa7de87">vita::evaluator_proxy&lt; T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00031">31</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
+<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00033">33</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
 
 </div>
 </div>
@@ -283,12 +288,12 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>some info about the status / efficiency of the evaluator.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>some info about the status / efficiency of the evaluator</dd></dl>
 <p>The default implementation is empty. </p>
 
 <p>Reimplemented in <a class="el" href="classvita_1_1evaluator__proxy.html#aeed0d8344c37cb109d8c959b3487200b">vita::evaluator_proxy&lt; T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00074">74</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
+<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00078">78</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
 
 </div>
 </div>
@@ -315,13 +320,14 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><code>nullptr</code>.</dd></dl>
-<p>Derived methods create the 'executable' form of an individual.</p>
+
+<p>Derived methods create the 'executable' form of an individual. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>nullptr</code></dd></dl>
 <p>The default implementation is an empty method. </p>
 
-<p>Reimplemented in <a class="el" href="classvita_1_1binary__evaluator.html#ad5744e54bd9553e6ce9f3c117fe4072d">vita::binary_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1gaussian__evaluator.html#acbe6c283007474016cb9f4bc9ddd1104">vita::gaussian_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1dyn__slot__evaluator.html#a0bdd84f8bc8cfb3d5a4c6505fcc1a3b8">vita::dyn_slot_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1sum__of__errors__evaluator.html#aa5f3cafa7e2cc1c861905f5622fa13a1">vita::sum_of_errors_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1constrained__evaluator.html#a5c2b66e47be1c775e9620677b2697927">vita::constrained_evaluator&lt; T, E, P &gt;</a>, and <a class="el" href="classvita_1_1evaluator__proxy.html#a0ff7bb08ce20d1bd605cd6bf9dc1d339">vita::evaluator_proxy&lt; T &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classvita_1_1binary__evaluator.html#af0e41b8bc6e688c166487891fede1e0e">vita::binary_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1gaussian__evaluator.html#a0fdf02592cf02e804fcbe718eb9dd499">vita::gaussian_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1dyn__slot__evaluator.html#a82fb4b30f66e2df71c099f48a5d49bf3">vita::dyn_slot_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1sum__of__errors__evaluator.html#ae63a058edacc34316429a283164f30e4">vita::sum_of_errors_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1constrained__evaluator.html#a5c2b66e47be1c775e9620677b2697927">vita::constrained_evaluator&lt; T, E, P &gt;</a>, and <a class="el" href="classvita_1_1evaluator__proxy.html#a0ff7bb08ce20d1bd605cd6bf9dc1d339">vita::evaluator_proxy&lt; T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00087">87</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
+<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00091">91</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
 
 </div>
 </div>
@@ -350,7 +356,7 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the fitness of the individual. </dd></dl>
 
-<p>Implemented in <a class="el" href="classvita_1_1binary__evaluator.html#a797c240d25c390269860b4dd1d8acc35">vita::binary_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1gaussian__evaluator.html#a18ebbbf62e6f17943a2f4fd3e6a99e20">vita::gaussian_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1dyn__slot__evaluator.html#a1d3df645b47cee0ed545e75177a0cb08">vita::dyn_slot_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1test__evaluator.html#a4f9eb1276bfa96a8596cd713c5a1b46f">vita::test_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1random__evaluator.html#ad849827ae2348efe08dc158d8d8a2388">vita::random_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1sum__of__errors__evaluator.html#aaaf5dcecf5cc82c46572e67b3b532337">vita::sum_of_errors_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1constrained__evaluator.html#a534baf67ce019fcb1c92112c76f37237">vita::constrained_evaluator&lt; T, E, P &gt;</a>, and <a class="el" href="classvita_1_1evaluator__proxy.html#a530bf6506adc60a6ef3e095262255c57">vita::evaluator_proxy&lt; T &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classvita_1_1binary__evaluator.html#a4334069844614bc469255b1c46badbc6">vita::binary_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1gaussian__evaluator.html#a432d25339b752f7414a836bb5c0d5a01">vita::gaussian_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1dyn__slot__evaluator.html#aa55013ef2271bac6e71a2d7f7e80ca3d">vita::dyn_slot_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1test__evaluator.html#a4f9eb1276bfa96a8596cd713c5a1b46f">vita::test_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1random__evaluator.html#ad849827ae2348efe08dc158d8d8a2388">vita::random_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1sum__of__errors__evaluator.html#a4fd6b8cefdb7d5c94f5612eb603280fa">vita::sum_of_errors_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1constrained__evaluator.html#a534baf67ce019fcb1c92112c76f37237">vita::constrained_evaluator&lt; T, E, P &gt;</a>, and <a class="el" href="classvita_1_1evaluator__proxy.html#a530bf6506adc60a6ef3e095262255c57">vita::evaluator_proxy&lt; T &gt;</a>.</p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="example6_8cc-example.html#a6">example6.cc</a>.</dd>
 </dl>
 </div>
@@ -378,12 +384,13 @@ template&lt;class T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><code>0</code>.</dd></dl>
+
 <p>Some evaluators keep additional statistics about the individual seen so far. </p>
+<dl class="section return"><dt>Returns</dt><dd><code>0</code> </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classvita_1_1evaluator__proxy.html#a40723768c1f163fa93658ea411b551fc">vita::evaluator_proxy&lt; T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00043">43</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
+<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00045">45</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
 
 </div>
 </div>
@@ -393,7 +400,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:02 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

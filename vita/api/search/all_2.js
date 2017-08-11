@@ -6,7 +6,7 @@ var searchData=
   ['cache_2eh',['cache.h',['../cache_8h.html',1,'']]],
   ['cache_5fhash_2eh',['cache_hash.h',['../cache__hash_8h.html',1,'']]],
   ['cache_5fsize',['cache_size',['../classvita_1_1environment.html#a862670e373b706425bcfa548619c9bac',1,'vita::environment']]],
-  ['cast',['cast',['../classvita_1_1function.html#a0170c32e66de20aef6c80917302cac84',1,'vita::function::cast()'],['../namespacevita_1_1integer.html#ab2b58c0938b511bd2c41ceb299c3e98b',1,'vita::integer::cast()']]],
+  ['cast',['cast',['../classvita_1_1function.html#a0170c32e66de20aef6c80917302cac84',1,'vita::function::cast()'],['../classvita_1_1terminal.html#a6e7ffc30f0cff14c939b2a94f724d47e',1,'vita::terminal::cast()'],['../namespacevita_1_1integer.html#ab2b58c0938b511bd2c41ceb299c3e98b',1,'vita::integer::cast()']]],
   ['categories',['categories',['../classvita_1_1i__mep.html#ac229f61675f499a064179cbc621fbe8d',1,'vita::i_mep::categories()'],['../classvita_1_1symbol__set.html#a9e2c3df6c8c78ede8f4bd5d7376be269',1,'vita::symbol_set::categories()'],['../classvita_1_1src__data.html#a02a4d762aa8fc2333daea6a74522fa21',1,'vita::src_data::categories()'],['../classvita_1_1src__problem.html#a323298ed1d6a7e325db521c5fd938a8d',1,'vita::src_problem::categories()']]],
   ['category',['category',['../structvita_1_1category.html',1,'vita']]],
   ['category',['category',['../classvita_1_1i__mep.html#ae9d4e50f0a774b49f39cd39e7d3e785c',1,'vita::i_mep::category()'],['../classvita_1_1symbol.html#a585711f7dfba8bb26a4e038f30f64c8a',1,'vita::symbol::category()']]],
@@ -46,7 +46,7 @@ var searchData=
   ['core_5finterpreter_2eh',['core_interpreter.h',['../core__interpreter_8h.html',1,'']]],
   ['count_5fevaluator',['count_evaluator',['../classvita_1_1count__evaluator.html',1,'vita']]],
   ['counter',['counter',['../structvita_1_1analyzer_1_1sym__counter.html#a8bca9cf940bca491a5636b5ae2e9e182',1,'vita::analyzer::sym_counter']]],
-  ['crossover',['crossover',['../classvita_1_1i__mep.html#aa9867fdbfa2ebb8ad56bb52b06b21bcf',1,'vita::i_mep::crossover()'],['../namespacevita.html#ac3d9b50b3d7e16052b724747f9a28189',1,'vita::crossover()']]],
+  ['crossover',['crossover',['../classvita_1_1i__mep.html#ab4cc448b530b82a2533d6403609d02a3',1,'vita::i_mep']]],
   ['cvect',['cvect',['../namespacevita.html#ac33b6e76367210a9fc3b80e940ed41a8',1,'vita']]],
   ['contributor_20guidelines',['Contributor guidelines',['../page2.html',1,'']]]
 ];

@@ -125,6 +125,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a58b202388a4d290b76b7ee8be0bb3147"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1individual.html#a58b202388a4d290b76b7ee8be0bb3147">set_older_age</a> (unsigned)</td></tr>
+<tr class="memdesc:a58b202388a4d290b76b7ee8be0bb3147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the age of this individual if it's smaller than <code>rhs_age</code>.  <a href="#a58b202388a4d290b76b7ee8be0bb3147">More...</a><br /></td></tr>
 <tr class="separator:a58b202388a4d290b76b7ee8be0bb3147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -140,7 +141,7 @@ class vita::individual&lt; Derived &gt;</h3>
 <p>A single member of a <code>population</code>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Derived</td><td>the derived class in the CRTP.</td></tr>
+    <tr><td class="paramname">Derived</td><td>the derived class in the CRTP</td></tr>
   </table>
   </dd>
 </dl>
@@ -174,7 +175,7 @@ template&lt;class Derived &gt; </div>
 </div><div class="memdoc">
 
 <p>A measurement of the age of an individual (mainly used for ALPS). </p>
-<dl class="section return"><dt>Returns</dt><dd>The individual's age.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The individual's age</dd></dl>
 <p>This is a measure of how long an individual's family of genotypic material has been in the population. Randomly generated individuals, such as those that are created when the search algorithm are started, start with an age of <code>0</code>. Each generation that an individual stays in the population (such as through elitism) its age is increased by <code>1</code>. <b>Individuals that are created through mutation or recombination take the age of their oldest parent</b>.</p>
 <dl class="section note"><dt>Note</dt><dd>This differs from conventional measures of age, in which individuals created through applying some type of variation to an existing individual (e.g. mutation or recombination) start with an age of <code>0</code>. </dd></dl>
 
@@ -209,15 +210,15 @@ template&lt;class Derived &gt; </div>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">env</td><td>environment used for building the individual. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>input stream. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">env</td><td>environment used for building the individual </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>input stream </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object has been loaded correctly.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object has been loaded correctly</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If the load operation isn't successful the object isn't modified. </dd></dl>
 
-<p>Definition at line <a class="el" href="individual_8h_source.html#l00062">62</a> of file <a class="el" href="individual_8h_source.html">individual.h</a>.</p>
+<p>Definition at line <a class="el" href="individual_8h_source.html#l00061">61</a> of file <a class="el" href="individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -238,13 +239,13 @@ template&lt;class Derived &gt; </div>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>output stream. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>output stream </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object has been saved correctly. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object has been saved correctly </dd></dl>
 
-<p>Definition at line <a class="el" href="individual_8h_source.html#l00084">84</a> of file <a class="el" href="individual_8h_source.html">individual.h</a>.</p>
+<p>Definition at line <a class="el" href="individual_8h_source.html#l00083">83</a> of file <a class="el" href="individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -271,15 +272,16 @@ template&lt;class Derived &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Updates the age of this individual if it's smaller than <code>rhs_age</code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">rhs_age</td><td>the age of an individual.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rhs_age</td><td>the age of an individual </td></tr>
   </table>
   </dd>
 </dl>
-<p>Updates the age of this individual if it's smaller than <code>rhs_age</code>. </p>
 
-<p>Definition at line <a class="el" href="individual_8h_source.html#l00097">97</a> of file <a class="el" href="individual_8h_source.html">individual.h</a>.</p>
+<p>Definition at line <a class="el" href="individual_8h_source.html#l00096">96</a> of file <a class="el" href="individual_8h_source.html">individual.h</a>.</p>
 
 </div>
 </div>
@@ -289,7 +291,7 @@ template&lt;class Derived &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:02 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

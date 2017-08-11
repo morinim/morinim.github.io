@@ -6,6 +6,5 @@ var searchData=
   ['terminal',['terminal',['../classvita_1_1symbol.html#ad1f43761fc4fc79658eb69166047ced8',1,'vita::symbol']]],
   ['terminals',['terminals',['../classvita_1_1analyzer.html#a1d5d695629c99078f683bbd8f399e14e',1,'vita::analyzer::terminals()'],['../classvita_1_1symbol__set.html#a16abdd74c5d4383ef2edbdce61f0db06',1,'vita::symbol_set::terminals()']]],
   ['training_5faccuracy',['training_accuracy',['../classvita_1_1basic__dyn__slot__lambda__f.html#a99a949aa846f96734d707f8648f6ecfd',1,'vita::basic_dyn_slot_lambda_f']]],
-  ['tree',['tree',['../classvita_1_1i__mep.html#a5d364a32d2f6b8ca5887f79d2627d14c',1,'vita::i_mep']]],
   ['tune_5fparameters',['tune_parameters',['../classvita_1_1search.html#a5b86d3ecade85e0a0d069e23d097329f',1,'vita::search::tune_parameters()'],['../classvita_1_1src__search.html#a02c8f877377c2f98881b6dbed3974472',1,'vita::src_search::tune_parameters()']]]
 ];

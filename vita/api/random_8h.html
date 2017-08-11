@@ -136,10 +136,16 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a1cc7016b089f59f8ddadf5f8569933e4"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a1cc7016b089f59f8ddadf5f8569933e4"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; std::is_floating_point&lt; T &gt;::value, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>vita::random::between</b> (T min, T sup)</td></tr>
+<tr class="memdesc:a1cc7016b089f59f8ddadf5f8569933e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A specialization for floating point values of the <code>random::between(T, T)</code> template function.  <a href="#a1cc7016b089f59f8ddadf5f8569933e4">More...</a><br /></td></tr>
 <tr class="separator:a1cc7016b089f59f8ddadf5f8569933e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1db08856f9973b89a239b28aa28a8b36"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a1db08856f9973b89a239b28aa28a8b36"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; std::is_integral&lt; T &gt;::value, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>vita::random::between</b> (T min, T sup)</td></tr>
+<tr class="memdesc:a1db08856f9973b89a239b28aa28a8b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Picks up a random integer value uniformly distributed in the set of integers <code>{min, min+1, ..., sup-1}</code>.  <a href="#a1db08856f9973b89a239b28aa28a8b36">More...</a><br /></td></tr>
 <tr class="separator:a1db08856f9973b89a239b28aa28a8b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad87f792ba754fa1a2fa7c3865aad76a3"><td class="memTemplParams" colspan="2"><a class="anchor" id="ad87f792ba754fa1a2fa7c3865aad76a3"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:ad87f792ba754fa1a2fa7c3865aad76a3"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; std::is_enum&lt; T &gt;::value, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>vita::random::between</b> (T min, T sup)</td></tr>
+<tr class="separator:ad87f792ba754fa1a2fa7c3865aad76a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4712dc6263182eb411ee47243012fcc0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><b>vita::random::boolean</b> (double p)</td></tr>
 <tr class="separator:a4712dc6263182eb411ee47243012fcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae725bb0872f2a23e612b06d75d7f78a5"><td class="memTemplParams" colspan="2">template&lt;class C &gt; </td></tr>
@@ -149,9 +155,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a4e40cb5af5defd7d1568cb2b8008ec8b"><td class="memTemplItemLeft" align="right" valign="top">C::value_type &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>vita::random::element</b> (C &amp;c)</td></tr>
 <tr class="separator:a4e40cb5af5defd7d1568cb2b8008ec8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade4dc9c8e6f89cd5b5feb57b2c9c248f"><td class="memItemLeft" align="right" valign="top">engine_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>vita::random::engine</b> ()</td></tr>
+<tr class="memdesc:ade4dc9c8e6f89cd5b5feb57b2c9c248f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grants access to the shared random engine generator.  <a href="#ade4dc9c8e6f89cd5b5feb57b2c9c248f">More...</a><br /></td></tr>
 <tr class="separator:ade4dc9c8e6f89cd5b5feb57b2c9c248f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5cfc76ff469a6d148444a7075b1f9a0"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:af5cfc76ff469a6d148444a7075b1f9a0"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>vita::random::ephemeral</b> (distribution d, T p1, T p2)</td></tr>
+<tr class="memdesc:af5cfc76ff469a6d148444a7075b1f9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for ephemeral random constant generation.  <a href="#af5cfc76ff469a6d148444a7075b1f9a0">More...</a><br /></td></tr>
 <tr class="separator:af5cfc76ff469a6d148444a7075b1f9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b3c590093194b30acf7634ef7ea5c84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b3c590093194b30acf7634ef7ea5c84"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>vita::random::randomize</b> ()</td></tr>
@@ -167,14 +175,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>vita::random::randomi
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section remark"><dt>Remarks</dt><dd>This file is part of VITA.</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (C) 2011-2016 EOS di Manlio Morini.</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (C) 2011-2017 EOS di Manlio Morini.</dd></dl>
 <dl class="section user"><dt>License</dt><dd>This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at <a href="http://mozilla.org/MPL/2.0/">http://mozilla.org/MPL/2.0/</a> </dd></dl>
 
 <p>Definition in file <a class="el" href="random_8h_source.html">random.h</a>.</p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:01 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

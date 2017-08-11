@@ -1,4 +1,4 @@
 <map id="vita::integer::ifz" name="vita::integer::ifz">
-<area shape="rect" id="node2" href="$classvita_1_1function.html" title="A symbol (arity &gt; 0) used in GP. " alt="" coords="13,80,110,107"/>
-<area shape="rect" id="node3" href="$classvita_1_1symbol.html" title="GP assembles variable length program structures from basic units called functions and terminals..." alt="" coords="15,5,108,32"/>
+<area shape="rect" id="node2" href="$classvita_1_1function.html" title="A symbol with arity() &gt; 0. " alt="" coords="13,80,110,107"/>
+<area shape="rect" id="node3" href="$classvita_1_1symbol.html" title="Together functions and terminals are referred to as symbols. " alt="" coords="15,5,108,32"/>
 </map>

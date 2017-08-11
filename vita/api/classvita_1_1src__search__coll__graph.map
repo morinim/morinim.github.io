@@ -1,6 +1,6 @@
 <map id="vita::src_search&lt; T, ES &gt;" name="vita::src_search&lt; T, ES &gt;">
 <area shape="rect" id="node2" href="$classvita_1_1search.html" title="Search drives the evolution. " alt="" coords="1213,164,1361,191"/>
-<area shape="rect" id="node3" href="$classvita_1_1environment.html" title="A context object (as defined in the Context Object Pattern) aggregating multiple related parameters i..." alt="" coords="725,129,848,156"/>
+<area shape="rect" id="node3" href="$classvita_1_1environment.html" title="Context object aggregating multiple related parameters into one structure. " alt="" coords="725,129,848,156"/>
 <area shape="rect" id="node16" href="$classvita_1_1problem.html" title="Aggregates the problem&#45;related data needed by an evolutionary program. " alt="" coords="967,77,1064,104"/>
 <area shape="rect" id="node4" href="$structvita_1_1environment_1_1alps__parameters.html" title="Parameters for the Age&#45;Layered Population Structure (ALPS) paradigm. " alt="" coords="447,57,577,98"/>
 <area shape="rect" id="node5" href="$structvita_1_1environment_1_1team__parameters.html" title="vita::environment::\lteam_parameters" alt="" coords="447,122,577,163"/>

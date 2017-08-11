@@ -135,6 +135,7 @@ iterator&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (iterat
 const w_symbol &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (std::size_t i) const </td></tr>
 <tr class="separator:ab6c1a9597defef1e4ae4e6d19da0ea06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4b0eac87caf0365797428fd57c43b4b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvita_1_1symbol.html">symbol</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set_1_1collection_1_1sum__container.html#aa4b0eac87caf0365797428fd57c43b4b">roulette</a> () const </td></tr>
+<tr class="memdesc:aa4b0eac87caf0365797428fd57c43b4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts a random symbol from the collection.  <a href="#aa4b0eac87caf0365797428fd57c43b4b">More...</a><br /></td></tr>
 <tr class="separator:aa4b0eac87caf0365797428fd57c43b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1072af4dbc90379c84f9d9c1f1de7893"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1072af4dbc90379c84f9d9c1f1de7893"></a>
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const </td></tr>
@@ -162,9 +163,9 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>sum</b> () const 
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object passes the internal consistency check. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object passes the internal consistency check </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00511">511</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00523">523</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -183,9 +184,15 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>sum</b> () const 
 </div><div class="memdoc">
 
 <p>Inserts a weighted symbol in the container. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ws</td><td>a weighted symbol</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>We manage to sort the symbols in descending order, with respect to the weight, so the selection algorithm would run faster. </p>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00440">440</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00450">450</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -201,13 +208,15 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>sum</b> () const 
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a random symbol from the container.</dd></dl>
+
+<p>Extracts a random symbol from the collection. </p>
+<dl class="section return"><dt>Returns</dt><dd>a random symbol</dd></dl>
 <p>Probably the fastest way to produce a realization of a random variable X in a computer is to create a big table where each outcome <code>i</code> is inserted a number of times proportional to <code>P(X=i)</code>.</p>
 <p>Two fast methods are described in "Fast Generation of Discrete Random
 Variables" (Marsaglia, Tsang, Wang). Also <code>std::discrete_distribution</code> seems quite fast.</p>
 <p>Anyway we choose the "roulette algorithm" because it's very simple. </p>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00462">462</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00474">474</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -218,7 +227,7 @@ Variables" (Marsaglia, Tsang, Wang). Also <code>std::discrete_distribution</code
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:02 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

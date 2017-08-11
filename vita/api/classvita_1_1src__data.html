@@ -185,10 +185,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a3006369e4efacc1a71828cb615ae7575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab372861c1567718f9e11310cdcb47f6b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structvita_1_1src__data_1_1column.html">column</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1src__data.html#ab372861c1567718f9e11310cdcb47f6b">get_column</a> (unsigned) const </td></tr>
 <tr class="separator:ab372861c1567718f9e11310cdcb47f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ddd9127ea3a5a5ab076b6925a2def58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ddd9127ea3a5a5ab076b6925a2def58"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>has</b> (<a class="el" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">dataset_t</a>) const override</td></tr>
+<tr class="memitem:a2ddd9127ea3a5a5ab076b6925a2def58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1src__data.html#a2ddd9127ea3a5a5ab076b6925a2def58">has</a> (<a class="el" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">dataset_t</a>) const override</td></tr>
 <tr class="separator:a2ddd9127ea3a5a5ab076b6925a2def58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a210a8100c3b0ebd93756af378b5dd0e0"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1src__data.html#a210a8100c3b0ebd93756af378b5dd0e0">load</a> (const std::string &amp;, <a class="el" href="classvita_1_1src__data.html#acd7bcd09e6e67a86eb7c963b803e40dc">filter_hook_t</a>=nullptr)</td></tr>
+<tr class="memdesc:a210a8100c3b0ebd93756af378b5dd0e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the content of a file into the active dataset.  <a href="#a210a8100c3b0ebd93756af378b5dd0e0">More...</a><br /></td></tr>
 <tr class="separator:a210a8100c3b0ebd93756af378b5dd0e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0951e74f577ad7165325b825507d569a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0951e74f577ad7165325b825507d569a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>move_append</b> (<a class="el" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">dataset_t</a>, <a class="el" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">dataset_t</a>, std::size_t)</td></tr>
@@ -231,10 +231,10 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of <a class="el" href="classvita_1_1data.html" title="Interface for data used by vita::search class to to evolve vita::population. ">vita::data</a> for symbolic regression and classification tasks. </p>
-<p><a class="el" href="classvita_1_1src__data.html" title="Implementation of vita::data for symbolic regression and classification tasks. ">src_data</a> is a collection of "monomorphic" examples (all samples have the same type and arity) that is forward iterable.</p>
-<p>It can read xrff (<a href="http://weka.wikispaces.com/XRFF">http://weka.wikispaces.com/XRFF</a>) and CSV (<a href="https://developers.google.com/prediction/docs/developer-guide?hl=it">https://developers.google.com/prediction/docs/developer-guide?hl=it</a>) files. </p>
+<p><a class="el" href="classvita_1_1src__data.html" title="Implementation of vita::data for symbolic regression and classification tasks. ">src_data</a> is a forward iterable collection of "monomorphic" examples (all samples have the same type and arity).</p>
+<p>It can read XRFF (<a href="http://weka.wikispaces.com/XRFF">http://weka.wikispaces.com/XRFF</a>) and CSV files. </p>
 
-<p>Definition at line <a class="el" href="src_2data_8h_source.html#l00040">40</a> of file <a class="el" href="src_2data_8h_source.html">src/data.h</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8h_source.html#l00038">38</a> of file <a class="el" href="src_2data_8h_source.html">src/data.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="acd7bcd09e6e67a86eb7c963b803e40dc"></a>
 <div class="memitem">
@@ -248,7 +248,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>A filter and transform function (returns <code>true</code> for records that should be loaded and, possibly, transform its input parameter). </p>
 
-<p>Definition at line <a class="el" href="src_2data_8h_source.html#l00056">56</a> of file <a class="el" href="src_2data_8h_source.html">src/data.h</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8h_source.html#l00054">54</a> of file <a class="el" href="src_2data_8h_source.html">src/data.h</a>.</p>
 
 </div>
 </div>
@@ -267,7 +267,7 @@ Static Public Member Functions</h2></td></tr>
 <p>FILE -&gt; record_t -&gt; example &ndash;(vita::push_back)&ndash;&gt; <a class="el" href="classvita_1_1src__data.html" title="Implementation of vita::data for symbolic regression and classification tasks. ">vita::src_data</a> </p>
 </blockquote>
 
-<p>Definition at line <a class="el" href="src_2data_8h_source.html#l00052">52</a> of file <a class="el" href="src_2data_8h_source.html">src/data.h</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8h_source.html#l00050">50</a> of file <a class="el" href="src_2data_8h_source.html">src/data.h</a>.</p>
 
 </div>
 </div>
@@ -307,13 +307,13 @@ Static Public Member Functions</h2></td></tr>
 <p>New data instance containing the learning collection from <code>filename</code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>name of the file containing the learning collection. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ft</td><td>a filter and transform function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filename</td><td>name of the file containing the learning collection </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ft</td><td>a filter and transform function </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00085">85</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00084">84</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -330,9 +330,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>reference to the first element of the active dataset. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>reference to the first element of the active dataset </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00105">105</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00104">104</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -348,9 +348,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a constant reference to the first element of the active dataset. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a constant reference to the first element of the active dataset </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00113">113</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00112">112</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -369,13 +369,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>a dataset (training / validation / test set). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>a dataset (training / validation / test set) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>reference to the first element of dataset <code>d</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>reference to the first element of dataset <code>d</code> </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00122">122</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00121">121</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -394,13 +394,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>a dataset (training / validation / test set). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>a dataset (training / validation / test set) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a constant reference to the first element dataset <code>d</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a constant reference to the first element dataset <code>d</code> </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00132">132</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00131">131</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -416,9 +416,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a const reference to the set of categories associated with the dataset. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a const reference to the set of categories associated with the dataset </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00200">200</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00203">203</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -437,14 +437,14 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>the encoded (src_data::encode()) value of a class. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>the encoded (src_data::encode()) value of a class </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the name of the class encoded with the <code>unsigned i</code> (or an empty string if such class cannot be find).</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the name of the class encoded with the <code>unsigned i</code> (or an empty string if such class cannot be find)</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Boost Bitmap could be used to speed up the search in <code>classes_map_</code>, but to date speed isn't an issue. </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00319">319</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00322">322</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -460,9 +460,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>number of classes of the problem (== 0 for a symbolic regression problem, &gt; 1 for a classification problem). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of classes of the problem (<code>== 0</code> for a symbolic regression problem, <code>&gt; 1</code> for a classification problem) </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00265">265</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00268">268</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -478,10 +478,10 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>number of columns of the dataset.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of columns of the dataset</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>data class supports just one output for every instance, so, if the dataset is not empty: <code><a class="el" href="classvita_1_1src__data.html#aaa28cffa4f66f5ba0d287b4f2d534f50">variables()</a> + 1 == <a class="el" href="classvita_1_1src__data.html#ab35b1799106cafb2ba1060eec4ebac3e">columns()</a></code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00253">253</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00256">256</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -497,9 +497,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object passes the internal consistency check. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object passes the internal consistency check </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00712">712</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00713">713</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -515,9 +515,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a reference to the sentinel element of the active dataset. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a reference to the sentinel element of the active dataset </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00141">141</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00140">140</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -533,9 +533,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a constant reference to the sentinel element of the active dataset. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a constant reference to the sentinel element of the active dataset </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00149">149</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00148">148</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -554,13 +554,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>a dataset (training / validation / test set). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>a dataset (training / validation / test set) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a reference to the sentinel element of dataset <code>d</code> </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00158">158</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00157">157</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -579,13 +579,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>a dataset (training / validation / test set). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>a dataset (training / validation / test set) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a constant reference to the sentinel element of dataset <code>d</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a constant reference to the sentinel element of dataset <code>d</code> </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00168">168</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00167">167</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -612,13 +612,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>the name of a weka domain. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>the name of a weka domain </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the internel id of the weka-domain <code>n</code> (<code>d_void</code> if it's unknown or not managed). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the internel id of the weka-domain <code>n</code> (<code>d_void</code> if it's unknown or not managed) </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00743">743</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00744">744</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -637,13 +637,48 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>index of a column. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>index of a column </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a const reference to the i-th column of the dataset. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a const reference to the <code>i</code>-th column of the dataset </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00209">209</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00212">212</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2ddd9127ea3a5a5ab076b6925a2def58"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vita::src_data::has </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">dataset_t</a>&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>a dataset type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if a dataset of type <code>d</code> is available </dd></dl>
+
+<p>Implements <a class="el" href="classvita_1_1data.html">vita::data</a>.</p>
+
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00194">194</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -670,32 +705,24 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Loads the content of a file into the active dataset. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>name of the file containing the data set. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ft</td><td>a filter and transform function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">f</td><td>name of the file containing the data set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ft</td><td>a filter and transform function </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>number of lines parsed (0 in case of errors).</dd></dl>
-<p>Loads the content of <code>f</code> into the active dataset.</p>
+<dl class="section return"><dt>Returns</dt><dd>number of lines parsed (0 in case of errors)</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd><ul>
 <li>Training/valutation set must be loaded before test set.</li>
-<li>Before changing problem the data object should be clear.</li>
+<li>Before changing problem the <code>data</code> object should be clear. So: dataset(training); load("training.csv"); dataset(test); load("test.csv"); ... <a class="el" href="classvita_1_1src__data.html#afeff6d35a84fdfc7e9340cadf131413f" title="Resets the object. ">clear()</a>; dataset(training); load("training2.csv"); ...</li>
 </ul>
 </dd></dl>
-<p>So: </p><pre class="fragment">dataset(training);
-load("training.csv");
-dataset(test);
-load("test.csv");
-...
-clear();
-dataset(training);
-load("training2.csv");
-...
-</pre><dl class="section note"><dt>Note</dt><dd>Test set can have an empty output value. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Test set can have an empty output value. </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00687">687</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00688">688</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -711,9 +738,9 @@ load("training2.csv");
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the current dataset is empty. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the current dataset is empty </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00704">704</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00705">705</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -739,7 +766,7 @@ load("training2.csv");
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00290">290</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00293">293</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -755,9 +782,9 @@ load("training2.csv");
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>the size of the active dataset. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the size of the active dataset </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00186">186</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00185">185</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -776,13 +803,13 @@ load("training2.csv");
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>a dataset (training / validation / test set). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>a dataset (training / validation / test set) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the size of the dataset <code>d</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the size of the dataset <code>d</code> </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00178">178</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00177">177</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -798,10 +825,10 @@ load("training2.csv");
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>input vector dimension.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>input vector dimension</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>data class supports just one output for every instance, so, if the dataset is not empty, <code><a class="el" href="classvita_1_1src__data.html#aaa28cffa4f66f5ba0d287b4f2d534f50">variables()</a> + 1 == <a class="el" href="classvita_1_1src__data.html#ab35b1799106cafb2ba1060eec4ebac3e">columns()</a></code>. </dd></dl>
 
-<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00276">276</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
+<p>Definition at line <a class="el" href="src_2data_8cc_source.html#l00279">279</a> of file <a class="el" href="src_2data_8cc_source.html">src/data.cc</a>.</p>
 
 </div>
 </div>
@@ -812,7 +839,7 @@ load("training2.csv");
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:02 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

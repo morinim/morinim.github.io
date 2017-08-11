@@ -115,30 +115,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classvita_1_1accuracy__metric.html">   56</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvita_1_1accuracy__metric.html">accuracy_metric</a> : <span class="keyword">public</span> <a class="code" href="classvita_1_1model__metric.html">model_metric</a>&lt;T&gt;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> operator()(<span class="keyword">const</span> <a class="code" href="classvita_1_1reg__lambda__f.html">reg_lambda_f&lt;T&gt;</a> *,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                            <span class="keyword">const</span> <a class="code" href="classvita_1_1src__data.html">src_data</a> &amp;) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> operator()(<span class="keyword">const</span> <a class="code" href="classvita_1_1class__lambda__f.html">class_lambda_f&lt;T&gt;</a> *,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                            <span class="keyword">const</span> <a class="code" href="classvita_1_1src__data.html">src_data</a> &amp;) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#include &quot;kernel/src/model_metric.tcc&quot;</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}  <span class="comment">// namespace vita</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif  // Include guard</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">double</span> operator()(<span class="keyword">const</span> <a class="code" href="classvita_1_1reg__lambda__f.html">reg_lambda_f&lt;T&gt;</a> *, <span class="keyword">const</span> <a class="code" href="classvita_1_1src__data.html">src_data</a> &amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">double</span> operator()(<span class="keyword">const</span> <a class="code" href="classvita_1_1class__lambda__f.html">class_lambda_f&lt;T&gt;</a> *,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                    <span class="keyword">const</span> <a class="code" href="classvita_1_1src__data.html">src_data</a> &amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#include &quot;kernel/src/model_metric.tcc&quot;</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}  <span class="comment">// namespace vita</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif  // Include guard</span></div>
 <div class="ttc" id="classvita_1_1accuracy__metric_html"><div class="ttname"><a href="classvita_1_1accuracy__metric.html">vita::accuracy_metric</a></div><div class="ttdoc">Accuracy refers to the number of training examples that are correctly valued/classified as a proporti...</div><div class="ttdef"><b>Definition:</b> <a href="model__metric_8h_source.html#l00056">model_metric.h:56</a></div></div>
 <div class="ttc" id="classvita_1_1reg__lambda__f_html"><div class="ttname"><a href="classvita_1_1reg__lambda__f.html">vita::reg_lambda_f</a></div><div class="ttdoc">Often, working with regression models, we aren&#39;t interested in implementation details (i...</div><div class="ttdef"><b>Definition:</b> <a href="lambda__f_8h_source.html#l00079">lambda_f.h:79</a></div></div>
 <div class="ttc" id="src_2data_8h_html"><div class="ttname"><a href="src_2data_8h.html">data.h</a></div></div>
-<div class="ttc" id="classvita_1_1class__lambda__f_html"><div class="ttname"><a href="classvita_1_1class__lambda__f.html">vita::class_lambda_f</a></div><div class="ttdoc">Often, working with classification models, we aren&#39;t interested in implementation details (i...</div><div class="ttdef"><b>Definition:</b> <a href="lambda__f_8h_source.html#l00124">lambda_f.h:124</a></div></div>
+<div class="ttc" id="classvita_1_1class__lambda__f_html"><div class="ttname"><a href="classvita_1_1class__lambda__f.html">vita::class_lambda_f</a></div><div class="ttdoc">Often, working with classification models, we aren&#39;t interested in implementation details (i...</div><div class="ttdef"><b>Definition:</b> <a href="lambda__f_8h_source.html#l00123">lambda_f.h:123</a></div></div>
 <div class="ttc" id="namespacevita_html"><div class="ttname"><a href="namespacevita.html">vita</a></div><div class="ttdoc">The main namespace for the project. </div></div>
 <div class="ttc" id="vitafwd_8h_html"><div class="ttname"><a href="vitafwd_8h.html">vitafwd.h</a></div></div>
 <div class="ttc" id="classvita_1_1model__metric_html"><div class="ttname"><a href="classvita_1_1model__metric.html">vita::model_metric</a></div><div class="ttdoc">There are a lot of metrics related to a model (a lambda_f) and we don&#39;t want fat classes. </div><div class="ttdef"><b>Definition:</b> <a href="vitafwd_8h_source.html#l00033">vitafwd.h:33</a></div></div>
 <div class="ttc" id="lambda__f_8h_html"><div class="ttname"><a href="lambda__f_8h.html">lambda_f.h</a></div></div>
-<div class="ttc" id="classvita_1_1src__data_html"><div class="ttname"><a href="classvita_1_1src__data.html">vita::src_data</a></div><div class="ttdoc">Implementation of vita::data for symbolic regression and classification tasks. </div><div class="ttdef"><b>Definition:</b> <a href="src_2data_8h_source.html#l00040">src/data.h:40</a></div></div>
+<div class="ttc" id="classvita_1_1src__data_html"><div class="ttname"><a href="classvita_1_1src__data.html">vita::src_data</a></div><div class="ttdoc">Implementation of vita::data for symbolic regression and classification tasks. </div><div class="ttdef"><b>Definition:</b> <a href="src_2data_8h_source.html#l00038">src/data.h:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:01 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

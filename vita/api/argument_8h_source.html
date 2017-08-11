@@ -102,41 +102,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevita.html">vita</a></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classvita_1_1argument.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvita_1_1argument.html">argument</a> : <span class="keyword">public</span> <a class="code" href="classvita_1_1terminal.html">terminal</a></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classvita_1_1argument.html#a1786b39df4a7fef4e093d2ab84e9b014">argument</a>(<span class="keywordtype">unsigned</span>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">virtual</span> std::string <a class="code" href="classvita_1_1argument.html#a3c8251549201c889f1c8b6cdd6901602">display</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">unsigned</span> <a class="code" href="classvita_1_1argument.html#a97186756bb5ab34e67c3e3f78ab6723f">index</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">virtual</span> any <a class="code" href="classvita_1_1argument.html#a2ae5454a158c116d5ca095f47d5db5f8">eval</a>(<a class="code" href="classvita_1_1core__interpreter.html">core_interpreter</a> *) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classvita_1_1argument.html#a187e872cd9c1e39ee86cf28707cf3706">debug</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> index_;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};  <span class="comment">// class argument</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}  <span class="comment">// namespace vita</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif  // Include guard</span></div>
-<div class="ttc" id="classvita_1_1argument_html_a1786b39df4a7fef4e093d2ab84e9b014"><div class="ttname"><a href="classvita_1_1argument.html#a1786b39df4a7fef4e093d2ab84e9b014">vita::argument::argument</a></div><div class="ttdeci">argument(unsigned)</div><div class="ttdef"><b>Definition:</b> <a href="argument_8cc_source.html#l00030">argument.cc:30</a></div></div>
-<div class="ttc" id="classvita_1_1argument_html_a187e872cd9c1e39ee86cf28707cf3706"><div class="ttname"><a href="classvita_1_1argument.html#a187e872cd9c1e39ee86cf28707cf3706">vita::argument::debug</a></div><div class="ttdeci">virtual bool debug() const override</div><div class="ttdef"><b>Definition:</b> <a href="argument_8cc_source.html#l00065">argument.cc:65</a></div></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classvita_1_1argument.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvita_1_1argument.html">argument</a> : <span class="keyword">public</span> <a class="code" href="classvita_1_1terminal.html">terminal</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classvita_1_1argument.html#a1786b39df4a7fef4e093d2ab84e9b014">argument</a>(<span class="keywordtype">unsigned</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  std::string <a class="code" href="classvita_1_1argument.html#a03ab17ce933302b62834a9bef3e904ff">name</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">unsigned</span> <a class="code" href="classvita_1_1argument.html#a97186756bb5ab34e67c3e3f78ab6723f">index</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  any <a class="code" href="classvita_1_1argument.html#a2ae5454a158c116d5ca095f47d5db5f8">eval</a>(<a class="code" href="classvita_1_1core__interpreter.html">core_interpreter</a> *) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classvita_1_1argument.html#a187e872cd9c1e39ee86cf28707cf3706">debug</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> index_;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};  <span class="comment">// class argument</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}  <span class="comment">// namespace vita</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif  // include guard</span></div>
+<div class="ttc" id="classvita_1_1argument_html_a1786b39df4a7fef4e093d2ab84e9b014"><div class="ttname"><a href="classvita_1_1argument.html#a1786b39df4a7fef4e093d2ab84e9b014">vita::argument::argument</a></div><div class="ttdeci">argument(unsigned)</div><div class="ttdoc">n-th argument constructor. </div><div class="ttdef"><b>Definition:</b> <a href="argument_8cc_source.html#l00032">argument.cc:32</a></div></div>
+<div class="ttc" id="classvita_1_1argument_html_a187e872cd9c1e39ee86cf28707cf3706"><div class="ttname"><a href="classvita_1_1argument.html#a187e872cd9c1e39ee86cf28707cf3706">vita::argument::debug</a></div><div class="ttdeci">bool debug() const override</div><div class="ttdef"><b>Definition:</b> <a href="argument_8cc_source.html#l00067">argument.cc:67</a></div></div>
 <div class="ttc" id="namespacevita_html"><div class="ttname"><a href="namespacevita.html">vita</a></div><div class="ttdoc">The main namespace for the project. </div></div>
-<div class="ttc" id="classvita_1_1argument_html_a2ae5454a158c116d5ca095f47d5db5f8"><div class="ttname"><a href="classvita_1_1argument.html#a2ae5454a158c116d5ca095f47d5db5f8">vita::argument::eval</a></div><div class="ttdeci">virtual any eval(core_interpreter *) const override</div><div class="ttdef"><b>Definition:</b> <a href="argument_8cc_source.html#l00055">argument.cc:55</a></div></div>
+<div class="ttc" id="classvita_1_1argument_html_a2ae5454a158c116d5ca095f47d5db5f8"><div class="ttname"><a href="classvita_1_1argument.html#a2ae5454a158c116d5ca095f47d5db5f8">vita::argument::eval</a></div><div class="ttdeci">any eval(core_interpreter *) const override</div><div class="ttdef"><b>Definition:</b> <a href="argument_8cc_source.html#l00057">argument.cc:57</a></div></div>
 <div class="ttc" id="terminal_8h_html"><div class="ttname"><a href="terminal_8h.html">terminal.h</a></div></div>
-<div class="ttc" id="classvita_1_1argument_html_a3c8251549201c889f1c8b6cdd6901602"><div class="ttname"><a href="classvita_1_1argument.html#a3c8251549201c889f1c8b6cdd6901602">vita::argument::display</a></div><div class="ttdeci">virtual std::string display() const override</div><div class="ttdef"><b>Definition:</b> <a href="argument_8cc_source.html#l00046">argument.cc:46</a></div></div>
-<div class="ttc" id="classvita_1_1argument_html"><div class="ttname"><a href="classvita_1_1argument.html">vita::argument</a></div><div class="ttdoc">argument is a special terminal used by adf functions for input parameters passing. </div><div class="ttdef"><b>Definition:</b> <a href="argument_8h_source.html#l00027">argument.h:27</a></div></div>
+<div class="ttc" id="classvita_1_1argument_html"><div class="ttname"><a href="classvita_1_1argument.html">vita::argument</a></div><div class="ttdoc">A special terminal used by adf functions for input parameters passing. </div><div class="ttdef"><b>Definition:</b> <a href="argument_8h_source.html#l00026">argument.h:26</a></div></div>
 <div class="ttc" id="classvita_1_1terminal_html"><div class="ttname"><a href="classvita_1_1terminal.html">vita::terminal</a></div><div class="ttdoc">A symbol with zero-arity. </div><div class="ttdef"><b>Definition:</b> <a href="terminal_8h_source.html#l00026">terminal.h:26</a></div></div>
 <div class="ttc" id="classvita_1_1core__interpreter_html"><div class="ttname"><a href="classvita_1_1core__interpreter.html">vita::core_interpreter</a></div><div class="ttdoc">Minimum interface of an interpreter. </div><div class="ttdef"><b>Definition:</b> <a href="core__interpreter_8h_source.html#l00029">core_interpreter.h:29</a></div></div>
 <div class="ttc" id="vitafwd_8h_html"><div class="ttname"><a href="vitafwd_8h.html">vitafwd.h</a></div></div>
-<div class="ttc" id="classvita_1_1argument_html_a97186756bb5ab34e67c3e3f78ab6723f"><div class="ttname"><a href="classvita_1_1argument.html#a97186756bb5ab34e67c3e3f78ab6723f">vita::argument::index</a></div><div class="ttdeci">unsigned index() const </div><div class="ttdef"><b>Definition:</b> <a href="argument_8cc_source.html#l00038">argument.cc:38</a></div></div>
+<div class="ttc" id="classvita_1_1argument_html_a03ab17ce933302b62834a9bef3e904ff"><div class="ttname"><a href="classvita_1_1argument.html#a03ab17ce933302b62834a9bef3e904ff">vita::argument::name</a></div><div class="ttdeci">std::string name() const override</div><div class="ttdef"><b>Definition:</b> <a href="argument_8cc_source.html#l00048">argument.cc:48</a></div></div>
+<div class="ttc" id="classvita_1_1argument_html_a97186756bb5ab34e67c3e3f78ab6723f"><div class="ttname"><a href="classvita_1_1argument.html#a97186756bb5ab34e67c3e3f78ab6723f">vita::argument::index</a></div><div class="ttdeci">unsigned index() const </div><div class="ttdef"><b>Definition:</b> <a href="argument_8cc_source.html#l00040">argument.cc:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:01 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

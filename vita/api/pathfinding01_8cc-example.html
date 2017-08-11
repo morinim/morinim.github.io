@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
 <div class="line"><span class="comment"> *  \remark This file is part of VITA.</span></div>
 <div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> *  \copyright Copyright (C) 2016 EOS di Manlio Morini.</span></div>
+<div class="line"><span class="comment"> *  \copyright Copyright (C) 2016-2017 EOS di Manlio Morini.</span></div>
 <div class="line"><span class="comment"> *</span></div>
 <div class="line"><span class="comment"> *  \license</span></div>
 <div class="line"><span class="comment"> *  This Source Code Form is subject to the terms of the Mozilla Public</span></div>
@@ -121,7 +121,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">  <span class="keyword">explicit</span> move(<span class="keywordtype">unsigned</span> step) : <a class="code" href="namespacevita.html">vita</a>::ga::integer(step, 0, 4)  {}</div>
 <div class="line"></div>
-<div class="line">  <span class="keyword">virtual</span> std::string display(<span class="keywordtype">double</span> v)<span class="keyword"> const override</span></div>
+<div class="line">  std::string display(terminal::param_t v, format)<span class="keyword"> const override</span></div>
 <div class="line"><span class="keyword">  </span>{</div>
 <div class="line">    <span class="keywordflow">switch</span> (static_cast&lt;unsigned&gt;(v))</div>
 <div class="line">    {</div>
@@ -270,7 +270,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:01 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

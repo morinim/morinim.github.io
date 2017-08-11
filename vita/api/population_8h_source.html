@@ -114,64 +114,66 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  T &amp;operator[](coord);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">const</span> T &amp;operator[](coord) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">unsigned</span> allowed(<span class="keywordtype">unsigned</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">unsigned</span> individuals() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">unsigned</span> individuals(<span class="keywordtype">unsigned</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">unsigned</span> individuals() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">unsigned</span> individuals(<span class="keywordtype">unsigned</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">unsigned</span> allowed(<span class="keywordtype">unsigned</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> init_layer(<span class="keywordtype">unsigned</span>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">void</span> add_layer();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">unsigned</span> layers() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> inc_age();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> add_to_layer(<span class="keywordtype">unsigned</span>, <span class="keyword">const</span> T &amp;);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> pop_from_layer(<span class="keywordtype">unsigned</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> add_to_layer(<span class="keywordtype">unsigned</span>, <span class="keyword">const</span> T &amp;);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> pop_from_layer(<span class="keywordtype">unsigned</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> remove_layer(<span class="keywordtype">unsigned</span>);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> set_allowed(<span class="keywordtype">unsigned</span>, <span class="keywordtype">unsigned</span>);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">const</span> <a class="code" href="classvita_1_1environment.html">environment</a> &amp;env() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> inc_age();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">bool</span> debug() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">const</span> <a class="code" href="classvita_1_1environment.html">environment</a> &amp;env() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="comment">// Iterators.</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classvita_1_1population_1_1base__iterator.html">   62</a></span>&#160;  <span class="keyword">template</span>&lt;<span class="keywordtype">bool</span>&gt; <span class="keyword">class </span><a class="code" href="classvita_1_1population_1_1base__iterator.html">base_iterator</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">using</span> <a class="code" href="classvita_1_1population_1_1base__iterator.html">const_iterator</a> = <a class="code" href="classvita_1_1population_1_1base__iterator.html">base_iterator&lt;true&gt;</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">using</span> <a class="code" href="classvita_1_1population_1_1base__iterator.html">iterator</a> = <a class="code" href="classvita_1_1population_1_1base__iterator.html">base_iterator&lt;false&gt;</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  const_iterator begin() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  const_iterator end() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="comment">// Serialization.</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">bool</span> load(std::istream &amp;, <span class="keyword">const</span> <a class="code" href="classvita_1_1environment.html">environment</a> &amp;);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">bool</span> save(std::ostream &amp;) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">const</span> <a class="code" href="classvita_1_1environment.html">environment</a> *env_;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  std::vector&lt;layer_t&gt; pop_;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  std::vector&lt;unsigned&gt; allowed_;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">typename</span> <a class="code" href="classvita_1_1population.html">population&lt;T&gt;::coord</a> pickup();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">typename</span> <a class="code" href="classvita_1_1population.html">population&lt;T&gt;::coord</a> pickup(</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">const</span> <a class="code" href="classvita_1_1population.html">population&lt;T&gt;</a> &amp;, <span class="keyword">typename</span> <a class="code" href="classvita_1_1population.html">population&lt;T&gt;::coord</a>);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#include &quot;kernel/population_coord.tcc&quot;</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#include &quot;kernel/population_iterator.tcc&quot;</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#include &quot;kernel/population.tcc&quot;</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}  <span class="comment">// namespace vita</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">bool</span> debug() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="comment">// Iterators.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classvita_1_1population_1_1base__iterator.html">   64</a></span>&#160;  <span class="keyword">template</span>&lt;<span class="keywordtype">bool</span>&gt; <span class="keyword">class </span><a class="code" href="classvita_1_1population_1_1base__iterator.html">base_iterator</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">using</span> <a class="code" href="classvita_1_1population_1_1base__iterator.html">const_iterator</a> = <a class="code" href="classvita_1_1population_1_1base__iterator.html">base_iterator&lt;true&gt;</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">using</span> <a class="code" href="classvita_1_1population_1_1base__iterator.html">iterator</a> = <a class="code" href="classvita_1_1population_1_1base__iterator.html">base_iterator&lt;false&gt;</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  const_iterator begin() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  const_iterator end() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="comment">// Serialization.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">bool</span> load(std::istream &amp;, <span class="keyword">const</span> <a class="code" href="classvita_1_1environment.html">environment</a> &amp;);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">bool</span> save(std::ostream &amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">const</span> <a class="code" href="classvita_1_1environment.html">environment</a> *env_;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  std::vector&lt;layer_t&gt; pop_;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  std::vector&lt;unsigned&gt; allowed_;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">typename</span> <a class="code" href="classvita_1_1population.html">population&lt;T&gt;::coord</a> pickup();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">typename</span> <a class="code" href="classvita_1_1population.html">population&lt;T&gt;::coord</a> pickup(</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">const</span> <a class="code" href="classvita_1_1population.html">population&lt;T&gt;</a> &amp;, <span class="keyword">typename</span> <a class="code" href="classvita_1_1population.html">population&lt;T&gt;::coord</a>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#include &quot;kernel/population_coord.tcc&quot;</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#include &quot;kernel/population_iterator.tcc&quot;</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#include &quot;kernel/population.tcc&quot;</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif  // include guard</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}  <span class="comment">// namespace vita</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif  // include guard</span></div>
 <div class="ttc" id="classvita_1_1population_html"><div class="ttname"><a href="classvita_1_1population.html">vita::population</a></div><div class="ttdoc">A group of individuals which may interact together (for example by mating) producing offspring...</div><div class="ttdef"><b>Definition:</b> <a href="population_8h_source.html#l00035">population.h:35</a></div></div>
-<div class="ttc" id="classvita_1_1environment_html"><div class="ttname"><a href="classvita_1_1environment.html">vita::environment</a></div><div class="ttdoc">A context object (as defined in the Context Object Pattern) aggregating multiple related parameters i...</div><div class="ttdef"><b>Definition:</b> <a href="environment_8h_source.html#l00035">environment.h:35</a></div></div>
+<div class="ttc" id="classvita_1_1environment_html"><div class="ttname"><a href="classvita_1_1environment.html">vita::environment</a></div><div class="ttdoc">Context object aggregating multiple related parameters into one structure. </div><div class="ttdef"><b>Definition:</b> <a href="environment_8h_source.html#l00049">environment.h:49</a></div></div>
 <div class="ttc" id="namespacevita_html"><div class="ttname"><a href="namespacevita.html">vita</a></div><div class="ttdoc">The main namespace for the project. </div></div>
 <div class="ttc" id="environment_8h_html"><div class="ttname"><a href="environment_8h.html">environment.h</a></div></div>
-<div class="ttc" id="classvita_1_1population_1_1base__iterator_html"><div class="ttname"><a href="classvita_1_1population_1_1base__iterator.html">vita::population::base_iterator</a></div><div class="ttdef"><b>Definition:</b> <a href="population_8h_source.html#l00062">population.h:62</a></div></div>
+<div class="ttc" id="classvita_1_1population_1_1base__iterator_html"><div class="ttname"><a href="classvita_1_1population_1_1base__iterator.html">vita::population::base_iterator</a></div><div class="ttdef"><b>Definition:</b> <a href="population_8h_source.html#l00064">population.h:64</a></div></div>
 <div class="ttc" id="random_8h_html"><div class="ttname"><a href="random_8h.html">random.h</a></div></div>
 <div class="ttc" id="log_8h_html"><div class="ttname"><a href="log_8h.html">log.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:01 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

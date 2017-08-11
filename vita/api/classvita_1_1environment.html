@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A context object (as defined in the Context Object Pattern) aggregating multiple related parameters into one structure, so there needs to be only one common parameter passed amongst functions and classes.  
+<p>Context object aggregating multiple related parameters into one structure.  
  <a href="classvita_1_1environment.html#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for vita::environment:</div>
@@ -125,6 +125,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9a30a7385869314b0d0f74339915b577"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1environment.html#a9a30a7385869314b0d0f74339915b577">debug</a> (bool) const </td></tr>
 <tr class="separator:a9a30a7385869314b0d0f74339915b577"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c7225607613af06c99553af998b2c34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1environment.html#a1c7225607613af06c99553af998b2c34">environment</a> (<a class="el" href="classvita_1_1symbol__set.html">symbol_set</a> *, bool=false)</td></tr>
+<tr class="memdesc:a1c7225607613af06c99553af998b2c34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="#a1c7225607613af06c99553af998b2c34">More...</a><br /></td></tr>
 <tr class="separator:a1c7225607613af06c99553af998b2c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb2a4d79e43447c08358391d3d71668d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1environment.html#abb2a4d79e43447c08358391d3d71668d">xml</a> (tinyxml2::XMLDocument *) const </td></tr>
 <tr class="memdesc:abb2a4d79e43447c08358391d3d71668d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the environment in XML format.  <a href="#abb2a4d79e43447c08358391d3d71668d">More...</a><br /></td></tr>
@@ -140,7 +141,7 @@ struct <a class="el" href="structvita_1_1environment_1_1alps__parameters.html">v
 <tr class="memdesc:aaed7dea5d8e1bb864ae69a2d9edb19da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should we use Adaptive Representation through Learning? <br /></td></tr>
 <tr class="separator:aaed7dea5d8e1bb864ae69a2d9edb19da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2b353279d3732d227a49a36e80c21ea"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1environment.html#af2b353279d3732d227a49a36e80c21ea">brood_recombination</a> = 0</td></tr>
-<tr class="memdesc:af2b353279d3732d227a49a36e80c21ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">This parameter controls the brood recombination/selection level (0 to turn it off).  <a href="#af2b353279d3732d227a49a36e80c21ea">More...</a><br /></td></tr>
+<tr class="memdesc:af2b353279d3732d227a49a36e80c21ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">This parameter controls the brood recombination/selection level (<code>0</code> to turn it off).  <a href="#af2b353279d3732d227a49a36e80c21ea">More...</a><br /></td></tr>
 <tr class="separator:af2b353279d3732d227a49a36e80c21ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a862670e373b706425bcfa548619c9bac"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1environment.html#a862670e373b706425bcfa548619c9bac">cache_size</a> = 16</td></tr>
 <tr class="memdesc:a862670e373b706425bcfa548619c9bac"><td class="mdescLeft">&#160;</td><td class="mdescRight"><img class="formulaInl" alt="$2^cache_size$" src="form_0.png"/> is the number of elements of the transposition table.  <a href="#a862670e373b706425bcfa548619c9bac">More...</a><br /></td></tr>
@@ -204,11 +205,12 @@ struct <a class="el" href="structvita_1_1environment_1_1team__parameters.html">v
 <tr class="separator:a558907237e4b38730f77fd361102917a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A context object (as defined in the Context Object Pattern) aggregating multiple related parameters into one structure, so there needs to be only one common parameter passed amongst functions and classes. </p>
+<div class="textblock"><p>Context object aggregating multiple related parameters into one structure. </p>
+<p>A context object (as defined in the Context Object Pattern) aggregates multiple related parameters into one structure, so there needs to be only one common parameter passed amongst functions and classes.</p>
 <p>Included values are used as parameters for object initializations and runtime execution control. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="example3_8cc-example.html#_a1">example3.cc</a>, <a class="el" href="example4_8cc-example.html#_a1">example4.cc</a>, <a class="el" href="example5_8cc-example.html#_a1">example5.cc</a>, and <a class="el" href="example6_8cc-example.html#_a10">example6.cc</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00035">35</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00049">49</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1c7225607613af06c99553af998b2c34"></a>
 <div class="memitem">
@@ -241,17 +243,20 @@ struct <a class="el" href="structvita_1_1environment_1_1team__parameters.html">v
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Class constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ss</td><td>a pointer to the symbol set used in the current environment. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">initialize</td><td>if <code>true</code> initializes every parameter in such a way as to allow the object to pass <code><a class="el" href="classvita_1_1environment.html#a9a30a7385869314b0d0f74339915b577">environment::debug</a>(..., true)</code>.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ss</td><td>a pointer to the symbol set used in the current environment </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">initialize</td><td>if <code>true</code> initializes every auto-tuning-parameter with standard values (thus disabling the <code><a class="el" href="classvita_1_1search.html#a5b86d3ecade85e0a0d069e23d097329f" title="Tries to tune search parameters for the current problem. ">search::tune_parameters</a></code> method)</td></tr>
   </table>
   </dd>
 </dl>
-<p>Class constructor. Default values are quite standard, but specific problems need ad-hoc tuning.</p>
+<p>Default values are quite standard, but specific problems need ad-hoc tuning.</p>
+<dl class="section note"><dt>Note</dt><dd>If <code>initialize</code> is <code>true</code> the environment passes the <code>environment::debug(true)</code> check.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classvita_1_1search.html#a5b86d3ecade85e0a0d069e23d097329f" title="Tries to tune search parameters for the current problem. ">search::tune_parameters</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="environment_8cc_source.html#l00028">28</a> of file <a class="el" href="environment_8cc_source.html">environment.cc</a>.</p>
+<p>Definition at line <a class="el" href="environment_8cc_source.html#l00035">35</a> of file <a class="el" href="environment_8cc_source.html">environment.cc</a>.</p>
 
 </div>
 </div>
@@ -271,13 +276,13 @@ struct <a class="el" href="structvita_1_1environment_1_1team__parameters.html">v
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">force_defined</td><td>all the optional parameter have to be in a 'well defined' state for the function to pass the test. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">force_defined</td><td>all the optional parameter have to be in a 'well defined' state for the function to pass the test </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object passes the internal consistency check. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object passes the internal consistency check </dd></dl>
 
-<p>Definition at line <a class="el" href="environment_8cc_source.html#l00109">109</a> of file <a class="el" href="environment_8cc_source.html">environment.cc</a>.</p>
+<p>Definition at line <a class="el" href="environment_8cc_source.html#l00118">118</a> of file <a class="el" href="environment_8cc_source.html">environment.cc</a>.</p>
 
 </div>
 </div>
@@ -298,12 +303,12 @@ struct <a class="el" href="structvita_1_1environment_1_1team__parameters.html">v
 <p>Saves the environment in XML format. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">d</td><td>output document for saving the environment. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">d</td><td>output document for saving the environment </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="environment_8cc_source.html#l00058">58</a> of file <a class="el" href="environment_8cc_source.html">environment.cc</a>.</p>
+<p>Definition at line <a class="el" href="environment_8cc_source.html#l00066">66</a> of file <a class="el" href="environment_8cc_source.html">environment.cc</a>.</p>
 
 </div>
 </div>
@@ -318,16 +323,17 @@ struct <a class="el" href="structvita_1_1environment_1_1team__parameters.html">v
       </table>
 </div><div class="memdoc">
 
-<p>This parameter controls the brood recombination/selection level (0 to turn it off). </p>
+<p>This parameter controls the brood recombination/selection level (<code>0</code> to turn it off). </p>
 <p>In nature it's common for organisms to produce many offspring and then neglect, abort, resorb, eat some of them or allow them to eat each other. There are many reasons for this behavior ("Kozlowski &amp; Stearns,
-1989"). The phenomenon is known variously as soft selection, brood selection, spontaneous abortion. The "bottom line" of this behaviour in nature is the reduction of parental resource investment in offspring who are potentially less fit than others. </p><dl class="section see"><dt>See also</dt><dd>"Greedy recombination and genetic search on the space of computer
-programs" (Walter Alden Tackett - 1995). </dd></dl>
+1989"). The phenomenon is known variously as soft selection, brood selection, spontaneous abortion. The "bottom line" of this behaviour in nature is the reduction of parental resource investment in offspring who are potentially less fit than others.</p>
+<dl class="section see"><dt>See also</dt><dd>"Greedy recombination and genetic search on the space of computer
+programs" (Walter Alden Tackett - 1995).</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><ul>
 <li><code>0</code> means undefined (auto-tune); </li>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00134">134</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00152">152</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -343,7 +349,7 @@ programs" (Walter Alden Tackett - 1995). </dd></dl>
 
 <p><img class="formulaInl" alt="$2^cache_size$" src="form_0.png"/> is the number of elements of the transposition table. </p>
 
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00187">187</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00207">207</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -362,7 +368,7 @@ programs" (Walter Alden Tackett - 1995). </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>A length of 0 means undefined (auto-tune). </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="example3_8cc-example.html#a2">example3.cc</a>, <a class="el" href="example4_8cc-example.html#a2">example4.cc</a>, <a class="el" href="example5_8cc-example.html#a2">example5.cc</a>, and <a class="el" href="titanic03_8cc-example.html#a2">titanic03.cc</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00055">55</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00070">70</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +385,7 @@ programs" (Walter Alden Tackett - 1995). </dd></dl>
 <p>Switches Dynamic Subset Selection on/off. </p>
 <dl class="section see"><dt>See also</dt><dd>search::dss() </dd></dl>
 
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00149">149</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00169">169</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -396,7 +402,7 @@ programs" (Walter Alden Tackett - 1995). </dd></dl>
 <p>An elitist algorithm is one that ALWAYS retains in the population the best individual found so far. </p>
 <p>With higher elitism the population will converge quicker but losing diversity. </p>
 
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00088">88</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00105">105</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -413,7 +419,7 @@ programs" (Walter Alden Tackett - 1995). </dd></dl>
 <p>Used by some evolution strategies to stop a run when there aren't improvements within g_without_improvement generations. </p>
 <dl class="section note"><dt>Note</dt><dd>A value of 0 means disabled (this parameter isn't auto-tuned). </dd></dl>
 
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00173">173</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00193">193</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -431,7 +437,7 @@ programs" (Walter Alden Tackett - 1995). </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>A value of 0 means undefined (auto-tune). </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="scheduling_8cc-example.html#a3">scheduling.cc</a>, and <a class="el" href="titanic03_8cc-example.html#a4">titanic03.cc</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00167">167</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00187">187</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -449,7 +455,7 @@ programs" (Walter Alden Tackett - 1995). </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>A value of 0 means undefined (auto-tune). </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="scheduling_8cc-example.html#a2">scheduling.cc</a>, and <a class="el" href="titanic03_8cc-example.html#a3">titanic03.cc</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00076">76</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00092">92</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -467,7 +473,7 @@ programs" (Walter Alden Tackett - 1995). </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>When the evolution strategy is vita::basic_std_es, setting <code>layers &gt; 1</code> is like running <code>n</code> evolutions "in parallel" (the sub-populations of each layer don't interact). A value greater than one is usually choosen for <a class="el" href="classvita_1_1basic__alps__es.html" title="Basic ALPS strategy. ">vita::basic_alps_es</a> or with other strategies that allow migrants.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>A value of 0 means undefined (auto-tune). </dd></dl>
 
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00071">71</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00087">87</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -489,7 +495,7 @@ programs" (Walter Alden Tackett - 1995). </dd></dl>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00162">162</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00182">182</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -504,10 +510,10 @@ programs" (Walter Alden Tackett - 1995). </dd></dl>
 </div><div class="memdoc">
 
 <p>Minimum number of individuals in a layer of the population. </p>
-<p>Some evolution strategies dynamically change the number of individuals of the population. This parameter avoid to drop below a predefined limit</p>
+<p>Some evolution strategies dynamically change the number of individuals of the population. This parameter avoids to drop below a predefined limit</p>
 <dl class="section note"><dt>Note</dt><dd>A value of 0 means undefined (auto-tune) </dd></dl>
 
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00083">83</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00100">100</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -525,7 +531,7 @@ programs" (Walter Alden Tackett - 1995). </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>A negative value means means undefined (auto-tune).</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>operation_strategy::run. </dd></dl>
 
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00114">114</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00130">130</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -541,7 +547,7 @@ programs" (Walter Alden Tackett - 1995). </dd></dl>
 
 <p>Mutation rate probability. </p>
 <p>Mutation is one of the principal "search operators" used to transform programs in the Genetic Programming algorithm. It causes random changes in individuals.</p>
-<dl class="section warning"><dt>Warning</dt><dd>p_cross + p_mutation != 1.0 <code>p_mutation</code> is the probability to mutate a gene; it's not the probability to choose the mutation operator (which depends depends on the recombination algorithm).</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd><code>p_cross + p_mutation != 1.0</code>: <code>p_mutation</code> is the probability to mutate a gene; it's not the probability to choose the mutation operator (which depends depends on the recombination algorithm).</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>A negative value means undefined (auto-tune).</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><ul>
 <li>individual::mutation;</li>
@@ -549,7 +555,7 @@ programs" (Walter Alden Tackett - 1995). </dd></dl>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00107">107</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00123">123</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -566,7 +572,7 @@ programs" (Walter Alden Tackett - 1995). </dd></dl>
 <p>The number of symbols in the patch section (a section of the genome that contains terminals only). </p>
 <dl class="section note"><dt>Note</dt><dd>A length of 0 means undefined (auto-tune). </dd></dl>
 
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00060">60</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00076">76</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -583,7 +589,7 @@ programs" (Walter Alden Tackett - 1995). </dd></dl>
 <p>Used to identify successfully learned (matched, classified, resolved...) examples. </p>
 <p>By default only fitness is considered. </p>
 
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00221">221</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00244">244</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -605,7 +611,7 @@ programs" (Walter Alden Tackett - 1995). </dd></dl>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00145">145</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00164">164</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -622,7 +628,7 @@ programs" (Walter Alden Tackett - 1995). </dd></dl>
 <p>How much data should be reserved for the validation set? <code>validation_percentage</code> is the fraction of the original data that goes into the validation set. </p>
 <dl class="section note"><dt>Note</dt><dd>The special value 100 means auto-tune. </dd></dl>
 
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00180">180</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00200">200</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -633,7 +639,7 @@ programs" (Walter Alden Tackett - 1995). </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:02 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

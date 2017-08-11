@@ -119,59 +119,60 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="classvita_1_1basic__gene.html#a2f029a51db4827cd6dedb57037b362ae">operator=</a>(T);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="comment">// Types and constants.</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">using</span> param_type = double;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classvita_1_1basic__gene.html#a621f44a691eec42d4c3eec73e4ae4559">   48</a></span>&#160;  <span class="keyword">using</span> index_type = std::uint16_t;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">using</span> arg_pack = small_vector&lt;index_type, K&gt;;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">enum</span> : decltype(K) {k_args = K};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// Public data members.</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">const</span> <a class="code" href="classvita_1_1symbol.html">symbol</a> *sym;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  param_type    par;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  arg_pack     args;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">template</span>&lt;<span class="keywordtype">bool</span>, <span class="keywordtype">bool</span>&gt; <span class="keyword">struct </span>param_t;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">using</span> arithmetic_p = param_t&lt;1, 0&gt;;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">using</span> enum_p       = param_t&lt;0, 1&gt;;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keywordtype">void</span> copy_param(T, arithmetic_p);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keywordtype">void</span> copy_param(T, enum_p);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> K&gt;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;std::ostream &amp;operator&lt;&lt;(std::ostream &amp;, const basic_gene&lt;K&gt; &amp;);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> K&gt;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacevita.html#a94d909af287f145d111c772158749acc">operator==</a>(<span class="keyword">const</span> basic_gene&lt;K&gt; &amp;, <span class="keyword">const</span> basic_gene&lt;K&gt; &amp;);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> K&gt;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacevita.html#a14bbe117edefaeb25f89e072bdb55274">operator!=</a>(<span class="keyword">const</span> basic_gene&lt;K&gt; &amp;, <span class="keyword">const</span> basic_gene&lt;K&gt; &amp;);</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classvita_1_1basic__gene.html#a25be2a63737bf6ec026f57230e7b3cab">   74</a></span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">using</span> <a class="code" href="classvita_1_1basic__gene.html">gene</a> = <a class="code" href="classvita_1_1basic__gene.html">basic_gene&lt;4&gt;</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#include &quot;kernel/gene.tcc&quot;</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}  <span class="comment">// namespace vita</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif  // Include guard</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">using</span> packed_index_t = std::uint16_t;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">using</span> arg_pack = small_vector&lt;packed_index_t, K&gt;;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">enum</span> : decltype(K) {k_args = K};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="comment">// Public data members.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">const</span> <a class="code" href="classvita_1_1symbol.html">symbol</a>     *sym;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  terminal::param_t par;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  arg_pack         args;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">template</span>&lt;<span class="keywordtype">bool</span>, <span class="keywordtype">bool</span>&gt; <span class="keyword">struct </span>param_t;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">using</span> arithmetic_p = param_t&lt;1, 0&gt;;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">using</span> enum_p       = param_t&lt;0, 1&gt;;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classvita_1_1basic__gene.html#a621f44a691eec42d4c3eec73e4ae4559">   62</a></span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keywordtype">void</span> copy_param(T, arithmetic_p);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keywordtype">void</span> copy_param(T, enum_p);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> init_if_parametric();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> K&gt;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;std::ostream &amp;operator&lt;&lt;(std::ostream &amp;, const basic_gene&lt;K&gt; &amp;);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> K&gt;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacevita.html#a94d909af287f145d111c772158749acc">operator==</a>(<span class="keyword">const</span> <a class="code" href="classvita_1_1basic__gene.html">basic_gene&lt;K&gt;</a> &amp;, <span class="keyword">const</span> <a class="code" href="classvita_1_1basic__gene.html">basic_gene&lt;K&gt;</a> &amp;);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">unsigned</span> K&gt;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacevita.html#a14bbe117edefaeb25f89e072bdb55274">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classvita_1_1basic__gene.html">basic_gene&lt;K&gt;</a> &amp;, <span class="keyword">const</span> <a class="code" href="classvita_1_1basic__gene.html">basic_gene&lt;K&gt;</a> &amp;);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">using</span> <a class="code" href="classvita_1_1basic__gene.html">gene</a> = <a class="code" href="classvita_1_1basic__gene.html">basic_gene&lt;4&gt;</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#include &quot;kernel/gene.tcc&quot;</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}  <span class="comment">// namespace vita</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif  // include guard</span></div>
 <div class="ttc" id="function_8h_html"><div class="ttname"><a href="function_8h.html">function.h</a></div></div>
-<div class="ttc" id="classvita_1_1basic__gene_html_a8c47089bb074de83f4a31512b439e5ec"><div class="ttname"><a href="classvita_1_1basic__gene.html#a8c47089bb074de83f4a31512b439e5ec">vita::basic_gene::arg_locus</a></div><div class="ttdeci">locus arg_locus(unsigned) const </div><div class="ttdef"><b>Definition:</b> <a href="gene_8h_source.html#l00146">gene.h:146</a></div></div>
-<div class="ttc" id="classvita_1_1basic__gene_html_a0dbfa79e9023ac57dc63be7705990c0a"><div class="ttname"><a href="classvita_1_1basic__gene.html#a0dbfa79e9023ac57dc63be7705990c0a">vita::basic_gene::as</a></div><div class="ttdeci">T as() const </div><div class="ttdef"><b>Definition:</b> <a href="gene_8h_source.html#l00100">gene.h:100</a></div></div>
+<div class="ttc" id="classvita_1_1basic__gene_html_a8c47089bb074de83f4a31512b439e5ec"><div class="ttname"><a href="classvita_1_1basic__gene.html#a8c47089bb074de83f4a31512b439e5ec">vita::basic_gene::arg_locus</a></div><div class="ttdeci">locus arg_locus(unsigned) const </div><div class="ttdef"><b>Definition:</b> <a href="gene_8h_source.html#l00170">gene.h:170</a></div></div>
+<div class="ttc" id="classvita_1_1basic__gene_html_a0dbfa79e9023ac57dc63be7705990c0a"><div class="ttname"><a href="classvita_1_1basic__gene.html#a0dbfa79e9023ac57dc63be7705990c0a">vita::basic_gene::as</a></div><div class="ttdeci">T as() const </div><div class="ttdef"><b>Definition:</b> <a href="gene_8h_source.html#l00117">gene.h:117</a></div></div>
 <div class="ttc" id="namespacevita_html"><div class="ttname"><a href="namespacevita.html">vita</a></div><div class="ttdoc">The main namespace for the project. </div></div>
 <div class="ttc" id="terminal_8h_html"><div class="ttname"><a href="terminal_8h.html">terminal.h</a></div></div>
 <div class="ttc" id="namespacevita_html_adad613995ae7b1cf3b56a8a16598acdc"><div class="ttname"><a href="namespacevita.html#adad613995ae7b1cf3b56a8a16598acdc">vita::index_t</a></div><div class="ttdeci">unsigned index_t</div><div class="ttdoc">Index in the genome. </div><div class="ttdef"><b>Definition:</b> <a href="locus_8h_source.html#l00025">locus.h:25</a></div></div>
-<div class="ttc" id="namespacevita_html_a14bbe117edefaeb25f89e072bdb55274"><div class="ttname"><a href="namespacevita.html#a14bbe117edefaeb25f89e072bdb55274">vita::operator!=</a></div><div class="ttdeci">bool operator!=(const basic_gene&lt; K &gt; &amp;, const basic_gene&lt; K &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="gene_8h_source.html#l00179">gene.h:179</a></div></div>
+<div class="ttc" id="namespacevita_html_a14bbe117edefaeb25f89e072bdb55274"><div class="ttname"><a href="namespacevita.html#a14bbe117edefaeb25f89e072bdb55274">vita::operator!=</a></div><div class="ttdeci">bool operator!=(const basic_gene&lt; K &gt; &amp;, const basic_gene&lt; K &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="gene_8h_source.html#l00206">gene.h:206</a></div></div>
 <div class="ttc" id="structvita_1_1locus_html"><div class="ttname"><a href="structvita_1_1locus.html">vita::locus</a></div><div class="ttdef"><b>Definition:</b> <a href="locus_8h_source.html#l00032">locus.h:32</a></div></div>
 <div class="ttc" id="classvita_1_1terminal_html"><div class="ttname"><a href="classvita_1_1terminal.html">vita::terminal</a></div><div class="ttdoc">A symbol with zero-arity. </div><div class="ttdef"><b>Definition:</b> <a href="terminal_8h_source.html#l00026">terminal.h:26</a></div></div>
-<div class="ttc" id="namespacevita_html_a94d909af287f145d111c772158749acc"><div class="ttname"><a href="namespacevita.html#a94d909af287f145d111c772158749acc">vita::operator==</a></div><div class="ttdeci">bool operator==(const basic_gene&lt; K &gt; &amp;, const basic_gene&lt; K &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="gene_8h_source.html#l00159">gene.h:159</a></div></div>
+<div class="ttc" id="namespacevita_html_a94d909af287f145d111c772158749acc"><div class="ttname"><a href="namespacevita.html#a94d909af287f145d111c772158749acc">vita::operator==</a></div><div class="ttdeci">bool operator==(const basic_gene&lt; K &gt; &amp;, const basic_gene&lt; K &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="gene_8h_source.html#l00183">gene.h:183</a></div></div>
 <div class="ttc" id="classvita_1_1basic__gene_html"><div class="ttname"><a href="classvita_1_1basic__gene.html">vita::basic_gene</a></div><div class="ttdoc">A gene is a unit of heredity in a living organism. </div><div class="ttdef"><b>Definition:</b> <a href="gene_8h_source.html#l00033">gene.h:33</a></div></div>
 <div class="ttc" id="locus_8h_html"><div class="ttname"><a href="locus_8h.html">locus.h</a></div></div>
 <div class="ttc" id="random_8h_html"><div class="ttname"><a href="random_8h.html">random.h</a></div></div>
-<div class="ttc" id="classvita_1_1symbol_html"><div class="ttname"><a href="classvita_1_1symbol.html">vita::symbol</a></div><div class="ttdoc">GP assembles variable length program structures from basic units called functions and terminals...</div><div class="ttdef"><b>Definition:</b> <a href="symbol_8h_source.html#l00032">symbol.h:32</a></div></div>
-<div class="ttc" id="classvita_1_1basic__gene_html_a2f029a51db4827cd6dedb57037b362ae"><div class="ttname"><a href="classvita_1_1basic__gene.html#a2f029a51db4827cd6dedb57037b362ae">vita::basic_gene::operator=</a></div><div class="ttdeci">void operator=(T)</div><div class="ttdef"><b>Definition:</b> <a href="gene_8h_source.html#l00115">gene.h:115</a></div></div>
+<div class="ttc" id="classvita_1_1symbol_html"><div class="ttname"><a href="classvita_1_1symbol.html">vita::symbol</a></div><div class="ttdoc">Together functions and terminals are referred to as symbols. </div><div class="ttdef"><b>Definition:</b> <a href="symbol_8h_source.html#l00033">symbol.h:33</a></div></div>
+<div class="ttc" id="classvita_1_1basic__gene_html_a2f029a51db4827cd6dedb57037b362ae"><div class="ttname"><a href="classvita_1_1basic__gene.html#a2f029a51db4827cd6dedb57037b362ae">vita::basic_gene::operator=</a></div><div class="ttdeci">void operator=(T)</div><div class="ttdef"><b>Definition:</b> <a href="gene_8h_source.html#l00134">gene.h:134</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:01 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -1,4 +1,4 @@
 <map id="vita::constant&lt; T &gt;" name="vita::constant&lt; T &gt;">
 <area shape="rect" id="node2" href="$classvita_1_1terminal.html" title="A symbol with zero&#45;arity. " alt="" coords="23,80,121,107"/>
-<area shape="rect" id="node3" href="$classvita_1_1symbol.html" title="GP assembles variable length program structures from basic units called functions and terminals..." alt="" coords="25,5,119,32"/>
+<area shape="rect" id="node3" href="$classvita_1_1symbol.html" title="Together functions and terminals are referred to as symbols. " alt="" coords="25,5,119,32"/>
 </map>

@@ -96,23 +96,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevita.html">vita</a></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classvita_1_1terminal.html#af9fc0092a731a086a7fcbe45ba5e7357">   20</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classvita_1_1terminal.html#af9fc0092a731a086a7fcbe45ba5e7357">terminal::debug</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classvita_1_1symbol.html#a75ed0d3f05442f28d35c0eadfdcc52e7">associative</a>())</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classvita_1_1symbol.html#a72c5361a763a1e06fc00ea9fa625fa81">symbol::debug</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}  <span class="comment">// namespace vita</span></div>
-<div class="ttc" id="classvita_1_1symbol_html_a72c5361a763a1e06fc00ea9fa625fa81"><div class="ttname"><a href="classvita_1_1symbol.html#a72c5361a763a1e06fc00ea9fa625fa81">vita::symbol::debug</a></div><div class="ttdeci">virtual bool debug() const </div><div class="ttdef"><b>Definition:</b> <a href="symbol_8cc_source.html#l00077">symbol.cc:77</a></div></div>
-<div class="ttc" id="classvita_1_1terminal_html_af9fc0092a731a086a7fcbe45ba5e7357"><div class="ttname"><a href="classvita_1_1terminal.html#af9fc0092a731a086a7fcbe45ba5e7357">vita::terminal::debug</a></div><div class="ttdeci">virtual bool debug() const override</div><div class="ttdef"><b>Definition:</b> <a href="terminal_8cc_source.html#l00020">terminal.cc:20</a></div></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classvita_1_1terminal.html#a744a4b8bfcfd5e247fb1d1f556278417">   25</a></span>&#160;std::string <a class="code" href="classvita_1_1terminal.html#a744a4b8bfcfd5e247fb1d1f556278417">terminal::display</a>(terminal::param_t v, format)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classvita_1_1symbol.html#aa99265d244ee9fe3d3f08be2c349cebb">name</a>() + <span class="stringliteral">&quot;_&quot;</span> + std::to_string(v);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classvita_1_1terminal.html#af9fc0092a731a086a7fcbe45ba5e7357">   33</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classvita_1_1terminal.html#af9fc0092a731a086a7fcbe45ba5e7357">terminal::debug</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classvita_1_1symbol.html#a72c5361a763a1e06fc00ea9fa625fa81">symbol::debug</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}  <span class="comment">// namespace vita</span></div>
+<div class="ttc" id="classvita_1_1symbol_html_a72c5361a763a1e06fc00ea9fa625fa81"><div class="ttname"><a href="classvita_1_1symbol.html#a72c5361a763a1e06fc00ea9fa625fa81">vita::symbol::debug</a></div><div class="ttdeci">virtual bool debug() const </div><div class="ttdef"><b>Definition:</b> <a href="symbol_8cc_source.html#l00062">symbol.cc:62</a></div></div>
+<div class="ttc" id="classvita_1_1terminal_html_af9fc0092a731a086a7fcbe45ba5e7357"><div class="ttname"><a href="classvita_1_1terminal.html#af9fc0092a731a086a7fcbe45ba5e7357">vita::terminal::debug</a></div><div class="ttdeci">bool debug() const override</div><div class="ttdef"><b>Definition:</b> <a href="terminal_8cc_source.html#l00033">terminal.cc:33</a></div></div>
 <div class="ttc" id="namespacevita_html"><div class="ttname"><a href="namespacevita.html">vita</a></div><div class="ttdoc">The main namespace for the project. </div></div>
 <div class="ttc" id="terminal_8h_html"><div class="ttname"><a href="terminal_8h.html">terminal.h</a></div></div>
-<div class="ttc" id="classvita_1_1symbol_html_a75ed0d3f05442f28d35c0eadfdcc52e7"><div class="ttname"><a href="classvita_1_1symbol.html#a75ed0d3f05442f28d35c0eadfdcc52e7">vita::symbol::associative</a></div><div class="ttdeci">virtual bool associative() const </div><div class="ttdef"><b>Definition:</b> <a href="symbol_8h_source.html#l00111">symbol.h:111</a></div></div>
+<div class="ttc" id="classvita_1_1symbol_html_aa99265d244ee9fe3d3f08be2c349cebb"><div class="ttname"><a href="classvita_1_1symbol.html#aa99265d244ee9fe3d3f08be2c349cebb">vita::symbol::name</a></div><div class="ttdeci">virtual std::string name() const </div><div class="ttdef"><b>Definition:</b> <a href="symbol_8cc_source.html#l00045">symbol.cc:45</a></div></div>
+<div class="ttc" id="classvita_1_1terminal_html_a744a4b8bfcfd5e247fb1d1f556278417"><div class="ttname"><a href="classvita_1_1terminal.html#a744a4b8bfcfd5e247fb1d1f556278417">vita::terminal::display</a></div><div class="ttdeci">virtual std::string display(param_t, format=c_format) const </div><div class="ttdef"><b>Definition:</b> <a href="terminal_8cc_source.html#l00025">terminal.cc:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:01 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

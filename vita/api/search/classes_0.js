@@ -12,6 +12,7 @@ var searchData=
   ['alps',['alps',['../classvita_1_1selection_1_1alps.html',1,'vita::selection']]],
   ['alps_5fparameters',['alps_parameters',['../structvita_1_1environment_1_1alps__parameters.html',1,'vita::environment']]],
   ['analyzer',['analyzer',['../classvita_1_1analyzer.html',1,'vita']]],
+  ['aq',['aq',['../classvita_1_1real_1_1aq.html',1,'vita::real']]],
   ['argument',['argument',['../classvita_1_1argument.html',1,'vita']]],
   ['as_5fis_5fvalidation',['as_is_validation',['../classvita_1_1as__is__validation.html',1,'vita']]]
 ];

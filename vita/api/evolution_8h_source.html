@@ -118,14 +118,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classvita_1_1evolution.html#a2615f03638658eb7a7e86d6d28d4fe0a">debug</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="comment">// Private support methods.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="comment">// Support methods.</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">const</span> <a class="code" href="classvita_1_1environment.html">environment</a> &amp;env()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> pop_.env(); }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="classvita_1_1analyzer.html">analyzer&lt;T&gt;</a> get_stats() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classvita_1_1log.html">log</a>(<span class="keywordtype">unsigned</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> print_progress(<span class="keywordtype">unsigned</span>, <span class="keywordtype">unsigned</span>, <span class="keywordtype">bool</span>, timer *) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">bool</span> stop_condition(<span class="keyword">const</span> <a class="code" href="classvita_1_1summary.html">summary&lt;T&gt;</a> &amp;) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="comment">// Private data members.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="comment">// Data members.</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="classvita_1_1population.html">vita::population&lt;T&gt;</a> pop_;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classvita_1_1evaluator.html">evaluator&lt;T&gt;</a>       &amp;eva_;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="classvita_1_1summary.html">summary&lt;T&gt;</a>        stats_;</div>
@@ -139,12 +139,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif  // include guard</span></div>
 <div class="ttc" id="classvita_1_1population_html"><div class="ttname"><a href="classvita_1_1population.html">vita::population</a></div><div class="ttdoc">A group of individuals which may interact together (for example by mating) producing offspring...</div><div class="ttdef"><b>Definition:</b> <a href="population_8h_source.html#l00035">population.h:35</a></div></div>
 <div class="ttc" id="classvita_1_1evaluator_html"><div class="ttname"><a href="classvita_1_1evaluator.html">vita::evaluator</a></div><div class="ttdoc">Calculates the fitness of an individual. </div><div class="ttdef"><b>Definition:</b> <a href="evaluator_8h_source.html#l00044">evaluator.h:44</a></div></div>
-<div class="ttc" id="classvita_1_1environment_html"><div class="ttname"><a href="classvita_1_1environment.html">vita::environment</a></div><div class="ttdoc">A context object (as defined in the Context Object Pattern) aggregating multiple related parameters i...</div><div class="ttdef"><b>Definition:</b> <a href="environment_8h_source.html#l00035">environment.h:35</a></div></div>
+<div class="ttc" id="classvita_1_1environment_html"><div class="ttname"><a href="classvita_1_1environment.html">vita::environment</a></div><div class="ttdoc">Context object aggregating multiple related parameters into one structure. </div><div class="ttdef"><b>Definition:</b> <a href="environment_8h_source.html#l00049">environment.h:49</a></div></div>
 <div class="ttc" id="namespacevita_html"><div class="ttname"><a href="namespacevita.html">vita</a></div><div class="ttdoc">The main namespace for the project. </div></div>
 <div class="ttc" id="population_8h_html"><div class="ttname"><a href="population_8h.html">population.h</a></div></div>
 <div class="ttc" id="classvita_1_1log_html"><div class="ttname"><a href="classvita_1_1log.html">vita::log</a></div><div class="ttdoc">A basic console logger. </div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00026">log.h:26</a></div></div>
-<div class="ttc" id="classvita_1_1evolution_html_ab456429a9e9959c6f2e0ae362e1678a9"><div class="ttname"><a href="classvita_1_1evolution.html#ab456429a9e9959c6f2e0ae362e1678a9">vita::evolution::run</a></div><div class="ttdeci">const summary&lt; T &gt; &amp; run(unsigned)</div><div class="ttdoc">A shortcut to call the run method without a shake function. </div><div class="ttdef"><b>Definition:</b> <a href="evolution_8h_source.html#l00345">evolution.h:345</a></div></div>
-<div class="ttc" id="classvita_1_1evolution_html_a2615f03638658eb7a7e86d6d28d4fe0a"><div class="ttname"><a href="classvita_1_1evolution.html#a2615f03638658eb7a7e86d6d28d4fe0a">vita::evolution::debug</a></div><div class="ttdeci">bool debug() const </div><div class="ttdef"><b>Definition:</b> <a href="evolution_8h_source.html#l00354">evolution.h:354</a></div></div>
+<div class="ttc" id="classvita_1_1evolution_html_ab456429a9e9959c6f2e0ae362e1678a9"><div class="ttname"><a href="classvita_1_1evolution.html#ab456429a9e9959c6f2e0ae362e1678a9">vita::evolution::run</a></div><div class="ttdeci">const summary&lt; T &gt; &amp; run(unsigned)</div><div class="ttdoc">A shortcut to call the run method without a shake function. </div><div class="ttdef"><b>Definition:</b> <a href="evolution_8h_source.html#l00352">evolution.h:352</a></div></div>
+<div class="ttc" id="classvita_1_1evolution_html_a2615f03638658eb7a7e86d6d28d4fe0a"><div class="ttname"><a href="classvita_1_1evolution.html#a2615f03638658eb7a7e86d6d28d4fe0a">vita::evolution::debug</a></div><div class="ttdeci">bool debug() const </div><div class="ttdef"><b>Definition:</b> <a href="evolution_8h_source.html#l00361">evolution.h:361</a></div></div>
 <div class="ttc" id="evolution__summary_8h_html"><div class="ttname"><a href="evolution__summary_8h.html">evolution_summary.h</a></div></div>
 <div class="ttc" id="classvita_1_1evolution_html_aa989586ca57a1400a755843d19930515"><div class="ttname"><a href="classvita_1_1evolution.html#aa989586ca57a1400a755843d19930515">vita::evolution::evolution</a></div><div class="ttdeci">evolution(const environment &amp;, evaluator&lt; T &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="evolution_8h_source.html#l00078">evolution.h:78</a></div></div>
 <div class="ttc" id="classvita_1_1summary_html"><div class="ttname"><a href="classvita_1_1summary.html">vita::summary</a></div><div class="ttdoc">A summary of evolution (results, statistics...) </div><div class="ttdef"><b>Definition:</b> <a href="evolution__summary_8h_source.html#l00029">evolution_summary.h:29</a></div></div>
@@ -155,7 +155,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:01 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

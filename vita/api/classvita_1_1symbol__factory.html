@@ -97,36 +97,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>An abstract factory (the essence of the pattern is to provide an interface for creating families of related or dependent objects, i.e.  
+<p>An abstract factory for symbols.  
  <a href="classvita_1_1symbol__factory.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a66772b29d42b71d92f7a78747313ae23"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__factory.html#a66772b29d42b71d92f7a78747313ae23">args</a> (const std::string &amp;) const </td></tr>
 <tr class="separator:a66772b29d42b71d92f7a78747313ae23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09dc8e4614f7af5e93d4eee27a53fa29"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classvita_1_1symbol.html">symbol</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__factory.html#a09dc8e4614f7af5e93d4eee27a53fa29">make</a> (const std::string &amp;, <a class="el" href="namespacevita.html#ac33b6e76367210a9fc3b80e940ed41a8">cvect</a>=<a class="el" href="namespacevita.html#ac33b6e76367210a9fc3b80e940ed41a8">cvect</a>{0})</td></tr>
-<tr class="separator:a09dc8e4614f7af5e93d4eee27a53fa29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab59967e6860742393b3ee0a016023d"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classvita_1_1symbol.html">symbol</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a> (const std::string &amp;, <a class="el" href="namespacevita.html#ac33b6e76367210a9fc3b80e940ed41a8">cvect</a>={0})</td></tr>
+<tr class="memdesc:aaab59967e6860742393b3ee0a016023d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a specific instance of a symbol.  <a href="#aaab59967e6860742393b3ee0a016023d">More...</a><br /></td></tr>
+<tr class="separator:aaab59967e6860742393b3ee0a016023d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8a658954050d3101f93b50f3ec33ee5"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classvita_1_1symbol.html">symbol</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__factory.html#ac8a658954050d3101f93b50f3ec33ee5">make</a> (<a class="el" href="namespacevita.html#aa7b3178dc7b1402efb37f6596353042c">domain_t</a>, int, int, <a class="el" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a>=0)</td></tr>
+<tr class="memdesc:ac8a658954050d3101f93b50f3ec33ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of a number.  <a href="#ac8a658954050d3101f93b50f3ec33ee5">More...</a><br /></td></tr>
 <tr class="separator:ac8a658954050d3101f93b50f3ec33ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d07ce7e7f6fe4ebcab02a16c614d8a2"><td class="memTemplParams" colspan="2">template&lt;class &gt; </td></tr>
 <tr class="memitem:a5d07ce7e7f6fe4ebcab02a16c614d8a2"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__factory.html#a5d07ce7e7f6fe4ebcab02a16c614d8a2">register_symbol</a> (const std::string &amp;, unsigned)</td></tr>
-<tr class="memdesc:a5d07ce7e7f6fe4ebcab02a16c614d8a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">registers a new symbol inside the factory  <a href="#a5d07ce7e7f6fe4ebcab02a16c614d8a2">More...</a><br /></td></tr>
+<tr class="memdesc:a5d07ce7e7f6fe4ebcab02a16c614d8a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new symbol inside the factory.  <a href="#a5d07ce7e7f6fe4ebcab02a16c614d8a2">More...</a><br /></td></tr>
 <tr class="separator:a5d07ce7e7f6fe4ebcab02a16c614d8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71759b113c10e415b69ba02e298eb450"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71759b113c10e415b69ba02e298eb450"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__factory.html#a71759b113c10e415b69ba02e298eb450">symbol_factory</a> ()</td></tr>
 <tr class="memdesc:a71759b113c10e415b69ba02e298eb450"><td class="mdescLeft">&#160;</td><td class="mdescRight">The factory is preloaded with a number of common symbols. <br /></td></tr>
 <tr class="separator:a71759b113c10e415b69ba02e298eb450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a955d947896396dd505e92c91723beff4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__factory.html#a955d947896396dd505e92c91723beff4">unregister_symbol</a> (const std::string &amp;)</td></tr>
+<tr class="memdesc:a955d947896396dd505e92c91723beff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister the symbol from the factory.  <a href="#a955d947896396dd505e92c91723beff4">More...</a><br /></td></tr>
 <tr class="separator:a955d947896396dd505e92c91723beff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An abstract factory (the essence of the pattern is to provide an interface for creating families of related or dependent objects, i.e. </p>
-<p>symbols, without specifying ther concrete classes, e.g. numbers, functions...).</p>
+<div class="textblock"><p>An abstract factory for symbols. </p>
+<p>The essence of the pattern is to provide an interface for creating families of related or dependent objects, i.e. symbols, without specifying their concrete classes (e.g. numbers, functions...).</p>
 <p>The factory determines the actual concrete type of the symbol to be created and it's here that the object is actually created. However, the factory only returns an abstract pointer to the created concrete object.</p>
 <p>This insulates client code from object creation by having clients ask a factory object to create an object of the desired abstract type and to return an abstract pointer to the object. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="example3_8cc-example.html#_a3">example3.cc</a>, <a class="el" href="example4_8cc-example.html#_a3">example4.cc</a>, <a class="el" href="example5_8cc-example.html#_a3">example5.cc</a>, and <a class="el" href="example6_8cc-example.html#_a11">example6.cc</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="factory_8h_source.html#l00036">36</a> of file <a class="el" href="factory_8h_source.html">factory.h</a>.</p>
+<p>Definition at line <a class="el" href="factory_8h_source.html#l00038">38</a> of file <a class="el" href="factory_8h_source.html">factory.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a66772b29d42b71d92f7a78747313ae23"></a>
 <div class="memitem">
@@ -143,17 +146,17 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of the symbol (case sensitive). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of the symbol (case sensitive) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>number of distinct categories needed to build the symbol. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of distinct categories needed to build the symbol </dd></dl>
 
-<p>Definition at line <a class="el" href="factory_8cc_source.html#l00181">181</a> of file <a class="el" href="factory_8cc_source.html">factory.cc</a>.</p>
+<p>Definition at line <a class="el" href="factory_8cc_source.html#l00186">186</a> of file <a class="el" href="factory_8cc_source.html">factory.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a09dc8e4614f7af5e93d4eee27a53fa29"></a>
+<a class="anchor" id="aaab59967e6860742393b3ee0a016023d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -167,7 +170,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespacevita.html#ac33b6e76367210a9fc3b80e940ed41a8">cvect</a>&#160;</td>
-          <td class="paramname"><em>c</em> = <code><a class="el" href="namespacevita.html#ac33b6e76367210a9fc3b80e940ed41a8">cvect</a>{0}</code>&#160;</td>
+          <td class="paramname"><em>c</em> = <code>{0}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -176,14 +179,16 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Creates a specific instance of a symbol. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of the symbol to be created (case sensitive). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>a list of categories used by the the symbol constructor. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of the symbol to be created (case sensitive) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>a list of categories used by the the symbol constructor </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>an abstract pointer to the created symbol.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an abstract pointer to the created symbol</dd></dl>
 <p>As the factory only returns an abstract pointer, the client code (which requests the object from the factory) does not know - and is not burdened by - the actual concrete type of the object which was just created. However, the type of the concrete object is known by the abstract factory via the <code>name</code> and <code>c</code> arguments.</p>
 <dl class="section attention"><dt>Attention</dt><dd>If <code>name</code> is not recognized as a preregistered symbol, it's registered on the fly as a constant.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd><ul>
@@ -193,7 +198,7 @@ Public Member Functions</h2></td></tr>
 </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="example3_8cc-example.html#a5">example3.cc</a>, <a class="el" href="example4_8cc-example.html#a5">example4.cc</a>, <a class="el" href="example5_8cc-example.html#a5">example5.cc</a>, and <a class="el" href="example6_8cc-example.html#a13">example6.cc</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="factory_8cc_source.html#l00119">119</a> of file <a class="el" href="factory_8cc_source.html">factory.cc</a>.</p>
+<p>Definition at line <a class="el" href="factory_8cc_source.html#l00122">122</a> of file <a class="el" href="factory_8cc_source.html">factory.cc</a>.</p>
 
 </div>
 </div>
@@ -232,20 +237,22 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Creates an instance of a number. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>domain of the symbol. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">min</td><td>lower bound for the number value. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">max</td><td>upper bound for the number value. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>a category used by the symbol constructor. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">d</td><td>domain of the symbol </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">min</td><td>lower bound for the number value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max</td><td>upper bound for the number value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>a category used by the symbol constructor </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>an abstract pointer to the created symbol.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an abstract pointer to the created symbol</dd></dl>
 <p>This is an alternative way to build a number. The other <code>make</code> method finds the domain of the number checking the input string's format.</p>
 <p>Here there're explicit parameters for domain / category and we can also specify a range (<code>[min; max]</code>). </p>
 
-<p>Definition at line <a class="el" href="factory_8cc_source.html#l00161">161</a> of file <a class="el" href="factory_8cc_source.html">factory.cc</a>.</p>
+<p>Definition at line <a class="el" href="factory_8cc_source.html#l00166">166</a> of file <a class="el" href="factory_8cc_source.html">factory.cc</a>.</p>
 
 </div>
 </div>
@@ -275,18 +282,18 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>registers a new symbol inside the factory </p>
+<p>Registers a new symbol inside the factory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of the symbol to be registered (case sensitive). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>number of arguments for the constructor of the symbol. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of the symbol to be registered (case sensitive) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>number of arguments for the constructor of the symbol </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the symbol <code>T</code> has been added to the factory.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the symbol <code>T</code> has been added to the factory</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd><code>name</code> is a key: the function doesn't register different symbols with the same name. </dd></dl>
 
-<p>Definition at line <a class="el" href="factory_8h_source.html#l00076">76</a> of file <a class="el" href="factory_8h_source.html">factory.h</a>.</p>
+<p>Definition at line <a class="el" href="factory_8h_source.html#l00079">79</a> of file <a class="el" href="factory_8h_source.html">factory.h</a>.</p>
 
 </div>
 </div>
@@ -303,16 +310,18 @@ template&lt;class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Unregister the symbol from the factory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of the symbol (case sensitive). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of the symbol (case sensitive) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the symbol has been unregistered.</dd></dl>
-<p>Unregister the symbol from the factory. </p><dl class="section note"><dt>Note</dt><dd>constants and variable aren't registered in the factory, so they cannot be unregistered. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the symbol has been unregistered</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Constants and variable aren't registered in the factory, so they cannot be unregistered. </dd></dl>
 
-<p>Definition at line <a class="el" href="factory_8cc_source.html#l00196">196</a> of file <a class="el" href="factory_8cc_source.html">factory.cc</a>.</p>
+<p>Definition at line <a class="el" href="factory_8cc_source.html#l00203">203</a> of file <a class="el" href="factory_8cc_source.html">factory.cc</a>.</p>
 
 </div>
 </div>
@@ -323,7 +332,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:02 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

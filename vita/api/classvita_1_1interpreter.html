@@ -119,11 +119,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa610f8c2d97c8f698219dbf8c9deba35"><td class="memItemLeft" align="right" valign="top">any&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1interpreter.html#aa610f8c2d97c8f698219dbf8c9deba35">fetch_adf_arg</a> (unsigned)</td></tr>
 <tr class="separator:aa610f8c2d97c8f698219dbf8c9deba35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b84209c91392e4249234cddd6022745"><td class="memItemLeft" align="right" valign="top">any&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1interpreter.html#a2b84209c91392e4249234cddd6022745">fetch_arg</a> (unsigned)</td></tr>
+<tr class="memdesc:a2b84209c91392e4249234cddd6022745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches the value of the <code>i</code>-th argument of the current gene.  <a href="#a2b84209c91392e4249234cddd6022745">More...</a><br /></td></tr>
 <tr class="separator:a2b84209c91392e4249234cddd6022745"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a3b46278fcbb3fa17930893aaa0b820"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevita.html#adad613995ae7b1cf3b56a8a16598acdc">index_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1interpreter.html#a4a3b46278fcbb3fa17930893aaa0b820">fetch_index</a> (unsigned) const </td></tr>
 <tr class="separator:a4a3b46278fcbb3fa17930893aaa0b820"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c8efa8353ec1cec438d65e4343a9810"><td class="memItemLeft" align="right" valign="top">any&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1interpreter.html#a1c8efa8353ec1cec438d65e4343a9810">fetch_param</a> ()</td></tr>
-<tr class="separator:a1c8efa8353ec1cec438d65e4343a9810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3f3590dfc4032d5b34986e7bd22811"><td class="memItemLeft" align="right" valign="top">terminal::param_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1interpreter.html#add3f3590dfc4032d5b34986e7bd22811">fetch_param</a> ()</td></tr>
+<tr class="separator:add3f3590dfc4032d5b34986e7bd22811"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41a2bbdd87c7164eaeb3dbd50a490b88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1interpreter.html#a41a2bbdd87c7164eaeb3dbd50a490b88">interpreter</a> (const T *, <a class="el" href="classvita_1_1interpreter.html">interpreter</a> *=nullptr)</td></tr>
 <tr class="separator:a41a2bbdd87c7164eaeb3dbd50a490b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e0d333b480ac4e8805ddeb280c000ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e0d333b480ac4e8805ddeb280c000ac"></a>
@@ -147,7 +148,7 @@ class vita::interpreter&lt; T &gt;</h3>
 <p>A template specialization of the <a class="el" href="classvita_1_1core__interpreter.html" title="Minimum interface of an interpreter. ">core_interpreter</a> class. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>the type of individual used.</td></tr>
+    <tr><td class="paramname">T</td><td>the type of individual used</td></tr>
   </table>
   </dd>
 </dl>
@@ -161,7 +162,7 @@ This is an example of dependency injection via constructor injection: the class 
 <li><a href="http://stackoverflow.com/q/1974682/3235496">http://stackoverflow.com/q/1974682/3235496</a> </li>
 </ul>
 </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="example5_8cc-example.html#_a8">example5.cc</a>, and <a class="el" href="example6_8cc-example.html#_a8">example6.cc</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="example5_8cc-example.html#_a7">example5.cc</a>, and <a class="el" href="example6_8cc-example.html#_a8">example6.cc</a>.</dd>
 </dl>
 <p>Definition at line <a class="el" href="interpreter_8h_source.html#l00051">51</a> of file <a class="el" href="interpreter_8h_source.html">interpreter.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -200,8 +201,8 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ind</td><td>individual whose value we are interested in. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>context in which we calculate the output value (used for the evaluation of ADF). It can be empty (<code>nullptr</code>).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ind</td><td>individual whose value we are interested in </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>context in which we calculate the output value (used for the evaluation of ADF). It can be empty (<code>nullptr</code>)</td></tr>
   </table>
   </dd>
 </dl>
@@ -229,13 +230,13 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>i-th argument of the current ADF. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>i-th argument of the current ADF </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the value of the i-th argument of the current ADF function. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the value of the i-th argument of the current ADF function </dd></dl>
 
-<p>Definition at line <a class="el" href="interpreter_8h_source.html#l00131">131</a> of file <a class="el" href="interpreter_8h_source.html">interpreter.h</a>.</p>
+<p>Definition at line <a class="el" href="interpreter_8h_source.html#l00133">133</a> of file <a class="el" href="interpreter_8h_source.html">interpreter.h</a>.</p>
 
 </div>
 </div>
@@ -254,21 +255,23 @@ template&lt;class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Fetches the value of the <code>i</code>-th argument of the current gene. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>i-th argument of the current function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>i-th argument of the current gene </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the value of the i-th argument of the current function.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the required value</dd></dl>
 <p>We use a cache to avoid recalculating the same value during the same interpreter execution. This means that side effects are not evaluated to date: WE ASSUME REFERENTIAL TRANSPARENCY for all the expressions.</p>
 <dl class="section see"><dt>See also</dt><dd><ul>
-<li><a href="http://en.wikipedia.org/wiki/Referential_transparency_(computer_science)">http://en.wikipedia.org/wiki/Referential_transparency_(computer_science)</a></li>
-<li><a href="http://en.wikipedia.org/wiki/Memoization">http://en.wikipedia.org/wiki/Memoization</a> </li>
+<li><a href="http://wikipedia.org/wiki/Referential_transparency_(computer_science)">http://wikipedia.org/wiki/Referential_transparency_(computer_science)</a></li>
+<li><a href="http://wikipedia.org/wiki/Memoization">http://wikipedia.org/wiki/Memoization</a> </li>
 </ul>
 </dd></dl>
 
-<p>Definition at line <a class="el" href="interpreter_8h_source.html#l00088">88</a> of file <a class="el" href="interpreter_8h_source.html">interpreter.h</a>.</p>
+<p>Definition at line <a class="el" href="interpreter_8h_source.html#l00090">90</a> of file <a class="el" href="interpreter_8h_source.html">interpreter.h</a>.</p>
 
 </div>
 </div>
@@ -289,31 +292,31 @@ template&lt;class T &gt; </div>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>i-th argument of the current function. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td><code>i</code>-th argument of the current function </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the index referenced by the i-th argument of the current function. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the index referenced by the <code>i</code>-th argument of the current function </dd></dl>
 
-<p>Definition at line <a class="el" href="interpreter_8h_source.html#l00149">149</a> of file <a class="el" href="interpreter_8h_source.html">interpreter.h</a>.</p>
+<p>Definition at line <a class="el" href="interpreter_8h_source.html#l00152">152</a> of file <a class="el" href="interpreter_8h_source.html">interpreter.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1c8efa8353ec1cec438d65e4343a9810"></a>
+<a class="anchor" id="add3f3590dfc4032d5b34986e7bd22811"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">any <a class="el" href="classvita_1_1interpreter.html">vita::interpreter</a>&lt; T &gt;::fetch_param </td>
+          <td class="memname">terminal::param_t <a class="el" href="classvita_1_1interpreter.html">vita::interpreter</a>&lt; T &gt;::fetch_param </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>the output value of the current terminal symbol. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the output value of the current terminal symbol </dd></dl>
 
 <p>Definition at line <a class="el" href="interpreter_8h_source.html#l00066">66</a> of file <a class="el" href="interpreter_8h_source.html">interpreter.h</a>.</p>
 
@@ -325,7 +328,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:02 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

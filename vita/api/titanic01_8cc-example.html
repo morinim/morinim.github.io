@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="fragment"><div class="line"><span class="comment">/*</span></div>
 <div class="line"><span class="comment"> *  \remark This file is part of VITA.</span></div>
 <div class="line"><span class="comment"> *</span></div>
-<div class="line"><span class="comment"> *  \copyright Copyright (C) 2013-2016 EOS di Manlio Morini.</span></div>
+<div class="line"><span class="comment"> *  \copyright Copyright (C) 2013-2017 EOS di Manlio Morini.</span></div>
 <div class="line"><span class="comment"> *</span></div>
 <div class="line"><span class="comment"> *  \license</span></div>
 <div class="line"><span class="comment"> *  This Source Code Form is subject to the terms of the Mozilla Public</span></div>
@@ -101,20 +101,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">  <a name="_a0"></a><a class="code" href="classvita_1_1src__problem.html">vita::src_problem</a> titanic(<span class="stringliteral">&quot;titanic_train.csv&quot;</span>);  <span class="comment">// reading training set</span></div>
+<div class="line">  <a name="_a0"></a><a class="code" href="classvita_1_1src__problem.html">vita::src_problem</a> titanic(<span class="stringliteral">&quot;../examples/titanic_train.csv&quot;</span>);  <span class="comment">// training set</span></div>
 <div class="line"></div>
 <div class="line">  <span class="keywordflow">if</span> (!titanic)</div>
 <div class="line">    <span class="keywordflow">return</span> EXIT_FAILURE;</div>
 <div class="line"></div>
 <div class="line">  <a name="_a1"></a><a class="code" href="classvita_1_1src__search.html">vita::src_search&lt;&gt;</a> s(titanic);</div>
-<div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> summary(s.<a name="a2"></a><a class="code" href="classvita_1_1search.html#a7cfb24ad9065f244b3a56a9f6b1a2504">run</a>());                     <span class="comment">// starting search and</span></div>
-<div class="line">                                                   <span class="comment">// getting a summary</span></div>
-<div class="line">  std::cout &lt;&lt; summary.best.solution &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> summary(s.<a name="a2"></a><a class="code" href="classvita_1_1search.html#a7cfb24ad9065f244b3a56a9f6b1a2504">run</a>());  <span class="comment">// starting search and getting a summary</span></div>
+<div class="line"></div>
+<div class="line">  std::cout &lt;&lt; summary.best.solution &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;  <span class="comment">// print result</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat May 27 2017 16:51:01 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

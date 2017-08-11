@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['crossover',['crossover',['../classvita_1_1i__mep.html#aa9867fdbfa2ebb8ad56bb52b06b21bcf',1,'vita::i_mep']]]
+  ['operator_3c_3c',['operator&lt;&lt;',['../classvita_1_1symbol__set.html#a43de7afad938b101b14e0029449df867',1,'vita::symbol_set']]]
 ];

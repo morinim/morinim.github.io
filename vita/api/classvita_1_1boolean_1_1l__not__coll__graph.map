@@ -1,4 +1,4 @@
 <map id="vita::boolean::l_not" name="vita::boolean::l_not">
-<area shape="rect" id="node2" href="$classvita_1_1function.html" title="A symbol (arity &gt; 0) used in GP. " alt="" coords="23,80,120,107"/>
-<area shape="rect" id="node3" href="$classvita_1_1symbol.html" title="GP assembles variable length program structures from basic units called functions and terminals..." alt="" coords="25,5,118,32"/>
+<area shape="rect" id="node2" href="$classvita_1_1function.html" title="A symbol with arity() &gt; 0. " alt="" coords="23,80,120,107"/>
+<area shape="rect" id="node3" href="$classvita_1_1symbol.html" title="Together functions and terminals are referred to as symbols. " alt="" coords="25,5,118,32"/>
 </map>
