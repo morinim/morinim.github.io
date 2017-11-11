@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classvita_1_1validation__strategy.html" title="Interface for specific training / cross validation techniques (e.g. " alt="" coords="5,56,165,83"/>
+<area shape="rect" id="node2" href="$classvita_1_1as__is__validation.html" title="A &quot;null object&quot; implementation of validation_strategy. " alt="" coords="219,5,363,32"/>
+<area shape="rect" id="node3" href="$classvita_1_1dss.html" title="Dynamic training Subset Selection. " alt="" coords="255,56,327,83"/>
+<area shape="rect" id="node4" href="$classvita_1_1holdout__validation.html" title="Holdout validation, aka one round cross&#45;validation or conventional validation. " alt="" coords="213,107,368,133"/>
+</map>

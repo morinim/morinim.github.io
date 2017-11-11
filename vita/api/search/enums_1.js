@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['level',['level',['../classvita_1_1log.html#aaf5ee14c0de05964f76a4f665d4d99f2',1,'vita::log']]]
+  ['initialization',['initialization',['../namespacevita.html#a3d4a275c44e4d8c67dc7b16cf11b2ff0',1,'vita']]]
 ];

@@ -97,14 +97,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>This is a 128bit stream used as individual signature / hash table look up key.  
+<p>A 128bit unsigned integer used as individual's signature / hash table look-up key.  
  <a href="structvita_1_1hash__t.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abe06016e7a1966def19271c5118c1031"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe06016e7a1966def19271c5118c1031"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvita_1_1hash__t.html#abe06016e7a1966def19271c5118c1031">clear</a> ()</td></tr>
-<tr class="memdesc:abe06016e7a1966def19271c5118c1031"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the content of <a class="el" href="structvita_1_1hash__t.html" title="This is a 128bit stream used as individual signature / hash table look up key. ">hash_t</a>. <br /></td></tr>
+<tr class="memdesc:abe06016e7a1966def19271c5118c1031"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the content of <a class="el" href="structvita_1_1hash__t.html" title="A 128bit unsigned integer used as individual&#39;s signature / hash table look-up key. ">hash_t</a>. <br /></td></tr>
 <tr class="separator:abe06016e7a1966def19271c5118c1031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed6bd2de784711e17db1741f69ff2a0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvita_1_1hash__t.html#aed6bd2de784711e17db1741f69ff2a0c">combine</a> (<a class="el" href="structvita_1_1hash__t.html">hash_t</a> h)</td></tr>
 <tr class="memdesc:aed6bd2de784711e17db1741f69ff2a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to combine multiple hashes.  <a href="#aed6bd2de784711e17db1741f69ff2a0c">More...</a><br /></td></tr>
@@ -113,8 +113,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvita_1_1hash__t.html#aa312556a1f68cd92f2b069527527b2c5">empty</a> () const </td></tr>
 <tr class="memdesc:aa312556a1f68cd92f2b069527527b2c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">We assume that a string of 128 zero bits means empty. <br /></td></tr>
 <tr class="separator:aa312556a1f68cd92f2b069527527b2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e451103b9ae2e78d574597caa73a70f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvita_1_1hash__t.html#a7e451103b9ae2e78d574597caa73a70f">hash_t</a> (std::uint64_t a=0, std::uint64_t b=0)</td></tr>
-<tr class="memdesc:a7e451103b9ae2e78d574597caa73a70f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash signature is a 128 bit unsigned and is built by two 64 bit halves.  <a href="#a7e451103b9ae2e78d574597caa73a70f">More...</a><br /></td></tr>
+<tr class="memitem:a7e451103b9ae2e78d574597caa73a70f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e451103b9ae2e78d574597caa73a70f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hash_t</b> (std::uint64_t a=0, std::uint64_t b=0)</td></tr>
 <tr class="separator:a7e451103b9ae2e78d574597caa73a70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0d4051cbe8246d6ea9686acc53d8a4d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvita_1_1hash__t.html#ae0d4051cbe8246d6ea9686acc53d8a4d">load</a> (std::istream &amp;)</td></tr>
 <tr class="separator:ae0d4051cbe8246d6ea9686acc53d8a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,49 +136,10 @@ std::uint_least64_t&#160;</td><td class="memItemRight" valign="bottom"><b>data</
 <tr class="separator:a33baff41f93fdc029d3cb9853f21bd8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is a 128bit stream used as individual signature / hash table look up key. </p>
+<div class="textblock"><p>A 128bit unsigned integer used as individual's signature / hash table look-up key. </p>
 
-<p>Definition at line <a class="el" href="cache_8h_source.html#l00024">24</a> of file <a class="el" href="cache_8h_source.html">cache.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7e451103b9ae2e78d574597caa73a70f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vita::hash_t::hash_t </td>
-          <td>(</td>
-          <td class="paramtype">std::uint64_t&#160;</td>
-          <td class="paramname"><em>a</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::uint64_t&#160;</td>
-          <td class="paramname"><em>b</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Hash signature is a 128 bit unsigned and is built by two 64 bit halves. </p>
-
-<p>Definition at line <a class="el" href="cache_8h_source.html#l00028">28</a> of file <a class="el" href="cache_8h_source.html">cache.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+<p>Definition at line <a class="el" href="cache__hash_8h_source.html#l00025">25</a> of file <a class="el" href="cache__hash_8h_source.html">cache_hash.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aed6bd2de784711e17db1741f69ff2a0c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -204,7 +165,7 @@ std::uint_least64_t&#160;</td><td class="memItemRight" valign="bottom"><b>data</
 <p>Used to combine multiple hashes. </p>
 <dl class="section note"><dt>Note</dt><dd>In spite of its handy bit-mixing properties, XOR is not a good way to combine hashes due to its commutativity (e.g. see <a href="http://stackoverflow.com/q/5889238/3235496">http://stackoverflow.com/q/5889238/3235496</a>). </dd></dl>
 
-<p>Definition at line <a class="el" href="cache_8h_source.html#l00047">47</a> of file <a class="el" href="cache_8h_source.html">cache.h</a>.</p>
+<p>Definition at line <a class="el" href="cache__hash_8h_source.html#l00046">46</a> of file <a class="el" href="cache__hash_8h_source.html">cache_hash.h</a>.</p>
 
 </div>
 </div>
@@ -223,14 +184,14 @@ std::uint_least64_t&#160;</td><td class="memItemRight" valign="bottom"><b>data</
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>input stream. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>input stream </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <a class="el" href="structvita_1_1hash__t.html" title="This is a 128bit stream used as individual signature / hash table look up key. ">hash_t</a> loaded correctly.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>If the load operation isn't successful the current <a class="el" href="structvita_1_1hash__t.html" title="This is a 128bit stream used as individual signature / hash table look up key. ">hash_t</a> isn't changed. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <a class="el" href="structvita_1_1hash__t.html" title="A 128bit unsigned integer used as individual&#39;s signature / hash table look-up key. ">hash_t</a> loaded correctly</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the load operation isn't successful the current <a class="el" href="structvita_1_1hash__t.html" title="A 128bit unsigned integer used as individual&#39;s signature / hash table look-up key. ">hash_t</a> isn't changed. </dd></dl>
 
-<p>Definition at line <a class="el" href="cache_8cc_source.html#l00024">24</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
+<p>Definition at line <a class="el" href="cache__hash_8cc_source.html#l00026">26</a> of file <a class="el" href="cache__hash_8cc_source.html">cache_hash.cc</a>.</p>
 
 </div>
 </div>
@@ -249,24 +210,24 @@ std::uint_least64_t&#160;</td><td class="memItemRight" valign="bottom"><b>data</
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>output stream. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>output stream </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <a class="el" href="structvita_1_1hash__t.html" title="This is a 128bit stream used as individual signature / hash table look up key. ">hash_t</a> was saved correctly. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <a class="el" href="structvita_1_1hash__t.html" title="A 128bit unsigned integer used as individual&#39;s signature / hash table look-up key. ">hash_t</a> was saved correctly </dd></dl>
 
-<p>Definition at line <a class="el" href="cache_8cc_source.html#l00040">40</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
+<p>Definition at line <a class="el" href="cache__hash_8cc_source.html#l00042">42</a> of file <a class="el" href="cache__hash_8cc_source.html">cache_hash.cc</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li><a class="el" href="cache_8h_source.html">cache.h</a></li>
-<li><a class="el" href="cache_8cc_source.html">cache.cc</a></li>
+<li><a class="el" href="cache__hash_8h_source.html">cache_hash.h</a></li>
+<li><a class="el" href="cache__hash_8cc_source.html">cache_hash.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:37 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

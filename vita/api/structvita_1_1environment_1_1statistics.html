@@ -105,69 +105,138 @@ Collaboration diagram for vita::environment::statistics:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a41e68a4f5c278937844330a50fee7241"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41e68a4f5c278937844330a50fee7241"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvita_1_1environment_1_1statistics.html#a41e68a4f5c278937844330a50fee7241">arl</a> = false</td></tr>
-<tr class="memdesc:a41e68a4f5c278937844330a50fee7241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should we save a list of active ADF? <br /></td></tr>
-<tr class="separator:a41e68a4f5c278937844330a50fee7241"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0465fd048eeed1c9118000b19cfa2f21"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0465fd048eeed1c9118000b19cfa2f21"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>arl_name</b> = &quot;arl&quot;</td></tr>
-<tr class="separator:a0465fd048eeed1c9118000b19cfa2f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae05d59fdcb2ec675ce5fd9971f2a4571"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae05d59fdcb2ec675ce5fd9971f2a4571"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvita_1_1environment_1_1statistics.html#ae05d59fdcb2ec675ce5fd9971f2a4571">dir</a> = &quot;&quot;</td></tr>
-<tr class="memdesc:ae05d59fdcb2ec675ce5fd9971f2a4571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where shuld we save statistics / status files? <br /></td></tr>
+<tr class="memitem:a6d9424a59e76001aadc363799c29caf2"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvita_1_1environment_1_1statistics.html#a6d9424a59e76001aadc363799c29caf2">arl_file</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:a6d9424a59e76001aadc363799c29caf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the log file used to save ARL-specific information.  <a href="#a6d9424a59e76001aadc363799c29caf2">More...</a><br /></td></tr>
+<tr class="separator:a6d9424a59e76001aadc363799c29caf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae05d59fdcb2ec675ce5fd9971f2a4571"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvita_1_1environment_1_1statistics.html#ae05d59fdcb2ec675ce5fd9971f2a4571">dir</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:ae05d59fdcb2ec675ce5fd9971f2a4571"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base common path for the log files.  <a href="#ae05d59fdcb2ec675ce5fd9971f2a4571">More...</a><br /></td></tr>
 <tr class="separator:ae05d59fdcb2ec675ce5fd9971f2a4571"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad18d26e77d094c87966aa91d8a433816"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad18d26e77d094c87966aa91d8a433816"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>dyn_name</b> = &quot;dynamic&quot;</td></tr>
-<tr class="separator:ad18d26e77d094c87966aa91d8a433816"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d15259cd92f22f00640f89419308264"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d15259cd92f22f00640f89419308264"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvita_1_1environment_1_1statistics.html#a6d15259cd92f22f00640f89419308264">dynamic</a> = false</td></tr>
-<tr class="memdesc:a6d15259cd92f22f00640f89419308264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should we save a dynamic execution status file? <br /></td></tr>
-<tr class="separator:a6d15259cd92f22f00640f89419308264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d3c42b866accfd6991f51deb6d9b0e9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvita_1_1environment_1_1statistics.html#a2d3c42b866accfd6991f51deb6d9b0e9">dynamic_file</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:a2d3c42b866accfd6991f51deb6d9b0e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the log file used to save real-time information.  <a href="#a2d3c42b866accfd6991f51deb6d9b0e9">More...</a><br /></td></tr>
+<tr class="separator:a2d3c42b866accfd6991f51deb6d9b0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48918f401afa958f54731adaebb5f555"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvita_1_1environment_1_1statistics.html#a48918f401afa958f54731adaebb5f555">layers_file</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:a48918f401afa958f54731adaebb5f555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the log file used to save layer-specific information.  <a href="#a48918f401afa958f54731adaebb5f555">More...</a><br /></td></tr>
+<tr class="separator:a48918f401afa958f54731adaebb5f555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a095cca4f5ef4db7b05238a559a7ac382"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvita_1_1environment_1_1statistics.html#a095cca4f5ef4db7b05238a559a7ac382">population_file</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:a095cca4f5ef4db7b05238a559a7ac382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the log file used to save population-specific information.  <a href="#a095cca4f5ef4db7b05238a559a7ac382">More...</a><br /></td></tr>
+<tr class="separator:a095cca4f5ef4db7b05238a559a7ac382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa64b126436b618679bd34418785f668"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvita_1_1environment_1_1statistics.html#afa64b126436b618679bd34418785f668">summary_file</a> = &quot;&quot;</td></tr>
+<tr class="memdesc:afa64b126436b618679bd34418785f668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the log file used to save a summary report.  <a href="#afa64b126436b618679bd34418785f668">More...</a><br /></td></tr>
+<tr class="separator:afa64b126436b618679bd34418785f668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">An empty string disable savings.</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Name of the file used to save test results. </p>
+</div></td></tr>
+<tr class="memitem:ad3f4c0228a8ae82303da20d80a427fa9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3f4c0228a8ae82303da20d80a427fa9"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>test_file</b> = &quot;&quot;</td></tr>
+<tr class="separator:ad3f4c0228a8ae82303da20d80a427fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afde5a1dc1d2aee44d6ab33ce2b9a7cbd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afde5a1dc1d2aee44d6ab33ce2b9a7cbd"></a>
 out::print_format_t&#160;</td><td class="memItemRight" valign="bottom"><b>ind_format</b> = out::list_f</td></tr>
 <tr class="separator:afde5a1dc1d2aee44d6ab33ce2b9a7cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2eb8048b1ffe433db3a48b322905e3a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2eb8048b1ffe433db3a48b322905e3a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvita_1_1environment_1_1statistics.html#ac2eb8048b1ffe433db3a48b322905e3a">layers</a> = false</td></tr>
-<tr class="memdesc:ac2eb8048b1ffe433db3a48b322905e3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should we save dynamic statistics about layers status? <br /></td></tr>
-<tr class="separator:ac2eb8048b1ffe433db3a48b322905e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9410bceac6fd8ea1a3eaf2a7101ad205"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9410bceac6fd8ea1a3eaf2a7101ad205"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>lys_name</b> = &quot;layers&quot;</td></tr>
-<tr class="separator:a9410bceac6fd8ea1a3eaf2a7101ad205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada0f3ceac15b893b923a72252c405512"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada0f3ceac15b893b923a72252c405512"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>pop_name</b> = &quot;population&quot;</td></tr>
-<tr class="separator:ada0f3ceac15b893b923a72252c405512"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3709804c0e2fa13f56a4fc584c9a6448"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvita_1_1environment_1_1statistics.html#a3709804c0e2fa13f56a4fc584c9a6448">population</a> = false</td></tr>
-<tr class="memdesc:a3709804c0e2fa13f56a4fc584c9a6448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should we save a dynamic population status file?  <a href="#a3709804c0e2fa13f56a4fc584c9a6448">More...</a><br /></td></tr>
-<tr class="separator:a3709804c0e2fa13f56a4fc584c9a6448"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8150339e694c84a09a4867712e6cdb18"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8150339e694c84a09a4867712e6cdb18"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>sum_name</b> = &quot;summary&quot;</td></tr>
-<tr class="separator:a8150339e694c84a09a4867712e6cdb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a601ae464708d3c777099adf8638ddc20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a601ae464708d3c777099adf8638ddc20"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvita_1_1environment_1_1statistics.html#a601ae464708d3c777099adf8638ddc20">summary</a> = false</td></tr>
-<tr class="memdesc:a601ae464708d3c777099adf8638ddc20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should we save a summary of the run? <br /></td></tr>
-<tr class="separator:a601ae464708d3c777099adf8638ddc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54b26baa11795ed527825489624f1389"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54b26baa11795ed527825489624f1389"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>tst_name</b> = &quot;test&quot;</td></tr>
-<tr class="separator:a54b26baa11795ed527825489624f1389"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00209">209</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00229">229</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a3709804c0e2fa13f56a4fc584c9a6448"></a>
+<a class="anchor" id="a6d9424a59e76001aadc363799c29caf2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool vita::environment::statistics::population = false</td>
+          <td class="memname">std::string vita::environment::statistics::arl_file = &quot;&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Should we save a dynamic population status file? </p>
-<dl class="section warning"><dt>Warning</dt><dd>It can be very slow! </dd></dl>
+<p>Name of the log file used to save ARL-specific information. </p>
+<dl class="section note"><dt>Note</dt><dd>An empty string disable logging. </dd></dl>
 
-<p>Definition at line <a class="el" href="environment_8h_source.html#l00228">228</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00237">237</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae05d59fdcb2ec675ce5fd9971f2a4571"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vita::environment::statistics::dir = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A base common path for the log files. </p>
+<p>A single log file can overwrite this path specifying an absolute path. </p>
+
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00233">233</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d3c42b866accfd6991f51deb6d9b0e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vita::environment::statistics::dynamic_file = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Name of the log file used to save real-time information. </p>
+<dl class="section note"><dt>Note</dt><dd>An empty string disable logging. </dd></dl>
+
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00241">241</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a48918f401afa958f54731adaebb5f555"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vita::environment::statistics::layers_file = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Name of the log file used to save layer-specific information. </p>
+<dl class="section note"><dt>Note</dt><dd>An empty string disable logging. </dd></dl>
+
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00245">245</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a095cca4f5ef4db7b05238a559a7ac382"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vita::environment::statistics::population_file = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Name of the log file used to save population-specific information. </p>
+<dl class="section note"><dt>Note</dt><dd>An empty string disable logging. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Enabling this log with large populations has a big performance impact. </dd></dl>
+
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00251">251</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa64b126436b618679bd34418785f668"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vita::environment::statistics::summary_file = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Name of the log file used to save a summary report. </p>
+<dl class="section note"><dt>Note</dt><dd>An empty string disable logging. </dd></dl>
+
+<p>Definition at line <a class="el" href="environment_8h_source.html#l00255">255</a> of file <a class="el" href="environment_8h_source.html">environment.h</a>.</p>
 
 </div>
 </div>
@@ -177,7 +246,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>tst_name</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:37 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

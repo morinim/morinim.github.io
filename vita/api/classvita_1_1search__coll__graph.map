@@ -1,14 +1,16 @@
 <map id="vita::search&lt; T, ES &gt;" name="vita::search&lt; T, ES &gt;">
-<area shape="rect" id="node2" href="$classvita_1_1environment.html" title="Context object aggregating multiple related parameters into one structure. " alt="" coords="725,129,848,156"/>
-<area shape="rect" id="node15" href="$classvita_1_1problem.html" title="Aggregates the problem&#45;related data needed by an evolutionary program. " alt="" coords="967,77,1064,104"/>
-<area shape="rect" id="node3" href="$structvita_1_1environment_1_1alps__parameters.html" title="Parameters for the Age&#45;Layered Population Structure (ALPS) paradigm. " alt="" coords="447,57,577,98"/>
-<area shape="rect" id="node4" href="$structvita_1_1environment_1_1team__parameters.html" title="vita::environment::\lteam_parameters" alt="" coords="447,122,577,163"/>
-<area shape="rect" id="node5" href="$structvita_1_1model__measurements.html" title="A collection of measurements. " alt="" coords="423,188,601,215"/>
-<area shape="rect" id="node6" href="$classvita_1_1basic__fitness__t.html" title="vita::basic_fitness\l_t\&lt; double \&gt;" alt="" coords="181,178,309,219"/>
-<area shape="rect" id="node7" href="$classvita_1_1symbol__set.html" title="A container for the symbols used by the GP engine. " alt="" coords="453,5,571,32"/>
-<area shape="rect" id="node8" href="$structvita_1_1environment_1_1de__parameters.html" title="vita::environment::\lde_parameters" alt="" coords="447,239,577,281"/>
-<area shape="rect" id="node9" href="$structvita_1_1environment_1_1statistics.html" title="vita::environment::\lstatistics" alt="" coords="447,309,577,350"/>
-<area shape="rect" id="node10" title="STL class. " alt="" coords="205,319,285,345"/>
-<area shape="rect" id="node11" title="STL class. " alt="" coords="5,311,132,353"/>
-<area shape="rect" id="node14" href="$classvita_1_1validation__strategy.html" title="Interface for specific training / cross validation techniques (e.g. " alt="" coords="707,264,867,291"/>
+<area shape="rect" id="node4" href="$classvita_1_1validation__strategy.html" title="Interface for specific training / cross validation techniques (e.g. " alt="" coords="739,143,899,170"/>
+<area shape="rect" id="node5" href="$classvita_1_1problem.html" title="Aggregates the problem&#45;related data needed by an evolutionary program. " alt="" coords="1003,202,1100,229"/>
+<area shape="rect" id="node6" href="$classvita_1_1environment.html" title="Context object aggregating multiple related parameters into one structure. " alt="" coords="757,195,880,222"/>
+<area shape="rect" id="node7" href="$structvita_1_1environment_1_1alps__parameters.html" title="Parameters for the Age&#45;Layered Population Structure (ALPS) paradigm. " alt="" coords="479,5,609,47"/>
+<area shape="rect" id="node8" href="$structvita_1_1environment_1_1team__parameters.html" title="vita::environment::\lteam_parameters" alt="" coords="479,71,609,112"/>
+<area shape="rect" id="node9" href="$structvita_1_1model__measurements.html" title="A collection of measurements. " alt="" coords="455,137,633,163"/>
+<area shape="rect" id="node10" href="$classvita_1_1basic__fitness__t.html" title="vita::basic_fitness\l_t\&lt; double \&gt;" alt="" coords="181,129,309,171"/>
+<area shape="rect" id="node11" href="$structvita_1_1environment_1_1mep__parameters.html" title="vita::environment::\lmep_parameters" alt="" coords="479,188,609,229"/>
+<area shape="rect" id="node12" href="$structvita_1_1environment_1_1de__parameters.html" title="vita::environment::\lde_parameters" alt="" coords="479,253,609,295"/>
+<area shape="rect" id="node13" href="$structvita_1_1environment_1_1misc__parameters.html" title="vita::environment::\lmisc_parameters" alt="" coords="479,319,609,360"/>
+<area shape="rect" id="node14" title="STL class. " alt="" coords="205,375,285,402"/>
+<area shape="rect" id="node16" href="$structvita_1_1environment_1_1statistics.html" title="vita::environment::\lstatistics" alt="" coords="479,417,609,459"/>
+<area shape="rect" id="node15" title="STL class. " alt="" coords="5,368,132,409"/>
+<area shape="rect" id="node17" href="$classvita_1_1symbol__set.html" title="A container for the symbols used by the GP engine. " alt="" coords="759,246,878,273"/>
 </map>

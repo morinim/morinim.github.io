@@ -92,35 +92,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="comment">//</span></div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
 <div class="line">{</div>
-<div class="line">  <a name="_a0"></a><a class="code" href="classvita_1_1symbol__set.html">vita::symbol_set</a> sset;</div>
-<div class="line">  <a name="_a1"></a><a class="code" href="classvita_1_1environment.html">vita::environment</a> env(&amp;sset, <span class="keyword">true</span>);</div>
+<div class="line">  <span class="keyword">using namespace </span><a class="code" href="namespacevita.html">vita</a>;</div>
+<div class="line">  <a name="_a0"></a><a class="code" href="classvita_1_1problem.html">problem</a> p(initialization::standard);</div>
 <div class="line"></div>
-<div class="line">  env.<a name="a2"></a><a class="code" href="classvita_1_1environment.html#a78eca365e67e87148eec24e15e4c3405">code_length</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(argc &gt; 1 ? std::atoi(argv[1]) : 50);</div>
+<div class="line">  p.<a name="a1"></a>env.<a name="a2"></a>mep.<a name="a3"></a><a class="code" href="structvita_1_1environment_1_1mep__parameters.html#a40194180dcc7e086f91e8a78111bae97">code_length</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(argc &gt; 1</div>
+<div class="line">                                                ? std::atoi(argv[1]) : 50);</div>
 <div class="line"></div>
-<div class="line">  <a name="_a3"></a><a class="code" href="classvita_1_1symbol__factory.html">vita::symbol_factory</a> factory;</div>
-<div class="line">  sset.<a name="a4"></a><a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a name="a5"></a><a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(vita::domain_t::d_double, -200, 200));</div>
-<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FADD&quot;</span>));</div>
-<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FSUB&quot;</span>));</div>
-<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FMUL&quot;</span>));</div>
-<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FIFL&quot;</span>));</div>
-<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FIFE&quot;</span>));</div>
+<div class="line">  <a name="_a4"></a><a class="code" href="classvita_1_1symbol__factory.html">symbol_factory</a> factory;</div>
+<div class="line">  p.<a name="a5"></a>sset.<a name="a6"></a><a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a name="a7"></a><a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(domain_t::d_double, -200, 200));</div>
+<div class="line">  p.sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FADD&quot;</span>));</div>
+<div class="line">  p.sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FSUB&quot;</span>));</div>
+<div class="line">  p.sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FMUL&quot;</span>));</div>
+<div class="line">  p.sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FIFL&quot;</span>));</div>
+<div class="line">  p.sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FIFE&quot;</span>));</div>
 <div class="line"></div>
 <div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> n(static_cast&lt;unsigned&gt;(argc &gt; 2 ? std::atoi(argv[2]) : 10000000));</div>
 <div class="line"></div>
-<div class="line">  <a name="_a6"></a><a class="code" href="classvita_1_1cache.html">vita::cache</a> cache(static_cast&lt;unsigned&gt;(argc &gt; 3 ? std::atoi(argv[3]) : 16));</div>
+<div class="line">  <a name="_a8"></a><a class="code" href="classvita_1_1cache.html">cache</a> <a class="code" href="classvita_1_1cache.html">cache</a>(static_cast&lt;unsigned&gt;(argc &gt; 3 ? std::atoi(argv[3]) : 16));</div>
 <div class="line"></div>
-<div class="line">  std::vector&lt;vita::i_mep&gt; pool;</div>
+<div class="line">  std::vector&lt;i_mep&gt; pool;</div>
 <div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i(0); i &lt; 1000; ++i)</div>
-<div class="line">    pool.emplace_back(env);</div>
+<div class="line">    pool.emplace_back(p);</div>
 <div class="line"></div>
-<div class="line">  vita::timer t;</div>
+<div class="line">  timer t;</div>
 <div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i(0); i &lt; n; ++i)</div>
 <div class="line">  {</div>
-<div class="line">    <a name="_a7"></a><a class="code" href="classvita_1_1basic__fitness__t.html">vita::fitness_t</a> f{<span class="keyword">static_cast&lt;</span>vita::fitness_t::value_type<span class="keyword">&gt;</span>(i)};</div>
-<div class="line">    <span class="keyword">const</span> <a name="_a8"></a><a class="code" href="classvita_1_1i__mep.html">vita::i_mep</a> &amp;ind(vita::random::element(pool));</div>
+<div class="line">    <a name="_a9"></a><a class="code" href="classvita_1_1basic__fitness__t.html">fitness_t</a> f{<span class="keyword">static_cast&lt;</span>fitness_t::value_type<span class="keyword">&gt;</span>(i)};</div>
+<div class="line">    <span class="keyword">const</span> <a name="_a10"></a><a class="code" href="classvita_1_1i__mep.html">i_mep</a> &amp;ind(random::element(pool));</div>
 <div class="line"></div>
-<div class="line">    cache.<a name="a9"></a><a class="code" href="classvita_1_1cache.html#aada0b84cec72b4ce34dd8170d07626bc">insert</a>(ind.<a name="a10"></a><a class="code" href="classvita_1_1i__mep.html#a65e068fb3a81fc4856dfd1c1a56bf020">signature</a>(), f);</div>
-<div class="line">    cache.<a name="a11"></a><a class="code" href="classvita_1_1cache.html#a30d1856dc4c4181880b0e7cd0db21d8f">find</a>(ind.<a class="code" href="classvita_1_1i__mep.html#a65e068fb3a81fc4856dfd1c1a56bf020">signature</a>());</div>
+<div class="line">    cache.<a name="a11"></a><a class="code" href="classvita_1_1cache.html#aada0b84cec72b4ce34dd8170d07626bc">insert</a>(ind.<a name="a12"></a><a class="code" href="classvita_1_1i__mep.html#a65e068fb3a81fc4856dfd1c1a56bf020">signature</a>(), f);</div>
+<div class="line">    cache.<a name="a13"></a><a class="code" href="classvita_1_1cache.html#a30d1856dc4c4181880b0e7cd0db21d8f">find</a>(ind.<a class="code" href="classvita_1_1i__mep.html#a65e068fb3a81fc4856dfd1c1a56bf020">signature</a>());</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">if</span> (i % 1000 == 0)</div>
 <div class="line">      std::cout &lt;&lt; i &lt;&lt; <span class="charliteral">&#39;\r&#39;</span> &lt;&lt; std::flush;</div>
@@ -131,7 +132,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:36 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

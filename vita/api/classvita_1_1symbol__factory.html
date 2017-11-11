@@ -127,7 +127,7 @@ Public Member Functions</h2></td></tr>
 <p>The essence of the pattern is to provide an interface for creating families of related or dependent objects, i.e. symbols, without specifying their concrete classes (e.g. numbers, functions...).</p>
 <p>The factory determines the actual concrete type of the symbol to be created and it's here that the object is actually created. However, the factory only returns an abstract pointer to the created concrete object.</p>
 <p>This insulates client code from object creation by having clients ask a factory object to create an object of the desired abstract type and to return an abstract pointer to the object. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="example3_8cc-example.html#_a3">example3.cc</a>, <a class="el" href="example4_8cc-example.html#_a3">example4.cc</a>, <a class="el" href="example5_8cc-example.html#_a3">example5.cc</a>, and <a class="el" href="example6_8cc-example.html#_a11">example6.cc</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="example3_8cc-example.html#_a4">example3.cc</a>, <a class="el" href="example4_8cc-example.html#_a4">example4.cc</a>, <a class="el" href="example5_8cc-example.html#_a4">example5.cc</a>, and <a class="el" href="example6_8cc-example.html#_a10">example6.cc</a>.</dd>
 </dl>
 <p>Definition at line <a class="el" href="factory_8h_source.html#l00038">38</a> of file <a class="el" href="factory_8h_source.html">factory.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -196,7 +196,7 @@ Public Member Functions</h2></td></tr>
 <li>Adding new concrete types is done by modifying the client code to use a different factory, a modification which is typically one line in one file (the different factory then creates objects of a different concrete type, but still returns a pointer of the same abstract type as before - thus insulating the client code from change). This is significantly easier than modifying the client code to instantiate a new type, which would require changing every location in the code where a new object is created (as well as making sure that all such code locations also have knowledge of the new concrete type, by including for instance a concrete class header file). Since all factory objects are stored globally in a singleton object and all client code goes through the singleton to access the proper factory for object creation, changing factories is as easy as changing the singleton object. </li>
 </ul>
 </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="example3_8cc-example.html#a5">example3.cc</a>, <a class="el" href="example4_8cc-example.html#a5">example4.cc</a>, <a class="el" href="example5_8cc-example.html#a5">example5.cc</a>, and <a class="el" href="example6_8cc-example.html#a13">example6.cc</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="example3_8cc-example.html#a7">example3.cc</a>, <a class="el" href="example4_8cc-example.html#a7">example4.cc</a>, <a class="el" href="example5_8cc-example.html#a7">example5.cc</a>, and <a class="el" href="example6_8cc-example.html#a11">example6.cc</a>.</dd>
 </dl>
 <p>Definition at line <a class="el" href="factory_8cc_source.html#l00122">122</a> of file <a class="el" href="factory_8cc_source.html">factory.cc</a>.</p>
 
@@ -332,7 +332,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:37 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

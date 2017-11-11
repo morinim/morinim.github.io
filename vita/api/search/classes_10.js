@@ -8,6 +8,6 @@ var searchData=
   ['team_5fparameters',['team_parameters',['../structvita_1_1environment_1_1team__parameters.html',1,'vita::environment']]],
   ['terminal',['terminal',['../classvita_1_1terminal.html',1,'vita']]],
   ['test_5fevaluator',['test_evaluator',['../classvita_1_1test__evaluator.html',1,'vita']]],
-  ['tournament',['tournament',['../classvita_1_1selection_1_1tournament.html',1,'vita::selection']]],
-  ['tournament',['tournament',['../classvita_1_1replacement_1_1tournament.html',1,'vita::replacement']]]
+  ['tournament',['tournament',['../classvita_1_1replacement_1_1tournament.html',1,'vita::replacement']]],
+  ['tournament',['tournament',['../classvita_1_1selection_1_1tournament.html',1,'vita::selection']]]
 ];

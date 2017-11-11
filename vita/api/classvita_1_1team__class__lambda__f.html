@@ -118,9 +118,9 @@ Collaboration diagram for vita::team_class_lambda_f&lt; T, S, N, L, C &gt;:</div
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a12c42b0c46dff440821b21629c35826d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1team__class__lambda__f.html#a12c42b0c46dff440821b21629c35826d">debug</a> () const override</td></tr>
 <tr class="separator:a12c42b0c46dff440821b21629c35826d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a182d7e8c157d1160d84112773c5c989d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1team__class__lambda__f.html#a182d7e8c157d1160d84112773c5c989d">load</a> (std::istream &amp;, const <a class="el" href="classvita_1_1environment.html">environment</a> &amp;) override</td></tr>
-<tr class="memdesc:a182d7e8c157d1160d84112773c5c989d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the lambda team from persistent storage.  <a href="#a182d7e8c157d1160d84112773c5c989d">More...</a><br /></td></tr>
-<tr class="separator:a182d7e8c157d1160d84112773c5c989d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ea84a2b975b94c11bd127e1c58a755"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1team__class__lambda__f.html#ac6ea84a2b975b94c11bd127e1c58a755">load</a> (std::istream &amp;, const <a class="el" href="classvita_1_1problem.html">problem</a> &amp;) override</td></tr>
+<tr class="memdesc:ac6ea84a2b975b94c11bd127e1c58a755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the lambda team from persistent storage.  <a href="#ac6ea84a2b975b94c11bd127e1c58a755">More...</a><br /></td></tr>
+<tr class="separator:ac6ea84a2b975b94c11bd127e1c58a755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2eb751c354e18849d91ba3916654d99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1team__class__lambda__f.html#ad2eb751c354e18849d91ba3916654d99">save</a> (std::ostream &amp;) const override</td></tr>
 <tr class="memdesc:ad2eb751c354e18849d91ba3916654d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the lambda team on persistent storage.  <a href="#ad2eb751c354e18849d91ba3916654d99">More...</a><br /></td></tr>
 <tr class="separator:ad2eb751c354e18849d91ba3916654d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,7 +217,7 @@ template&lt;class... Args&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00763">763</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
+<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00754">754</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
 
 </div>
 </div>
@@ -248,11 +248,11 @@ template&lt;class T , bool S, bool N, template&lt; class, bool, bool &gt; class 
 
 <p>Implements <a class="el" href="classvita_1_1lambda__f.html">vita::lambda_f&lt; T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00895">895</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
+<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00886">886</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a182d7e8c157d1160d84112773c5c989d"></a>
+<a class="anchor" id="ac6ea84a2b975b94c11bd127e1c58a755"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -270,8 +270,8 @@ template&lt;class T , bool S, bool N, template&lt; class, bool, bool &gt; class 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvita_1_1environment.html">environment</a> &amp;&#160;</td>
-          <td class="paramname"><em>e</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvita_1_1problem.html">problem</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -289,7 +289,7 @@ template&lt;class T , bool S, bool N, template&lt; class, bool, bool &gt; class 
 <p>Loads the lambda team from persistent storage. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>environment used to build the object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>current problem. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>input stream. </td></tr>
   </table>
   </dd>
@@ -299,7 +299,7 @@ template&lt;class T , bool S, bool N, template&lt; class, bool, bool &gt; class 
 
 <p>Reimplemented from <a class="el" href="classvita_1_1lambda__f.html">vita::lambda_f&lt; T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00861">861</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
+<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00852">852</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
 
 </div>
 </div>
@@ -338,7 +338,7 @@ template&lt;class T , bool S, bool N, template&lt; class, bool, bool &gt; class 
 
 <p>Reimplemented from <a class="el" href="classvita_1_1lambda__f.html">vita::lambda_f&lt; T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00834">834</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
+<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00825">825</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
 
 </div>
 </div>
@@ -380,7 +380,7 @@ template&lt;class T , bool S, bool N, template&lt; class, bool, bool &gt; class 
 
 <p>Implements <a class="el" href="classvita_1_1class__lambda__f.html">vita::class_lambda_f&lt; team&lt; T &gt; &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00791">791</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
+<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00782">782</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
 
 </div>
 </div>
@@ -390,7 +390,7 @@ template&lt;class T , bool S, bool N, template&lt; class, bool, bool &gt; class 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:37 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

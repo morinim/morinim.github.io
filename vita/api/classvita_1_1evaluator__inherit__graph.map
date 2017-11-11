@@ -1,6 +1,6 @@
 <map id="vita::evaluator&lt; T &gt;" name="vita::evaluator&lt; T &gt;">
-<area shape="rect" id="node2" href="$classvita_1_1constrained__evaluator.html" title="vita::constrained_evaluator\&lt; T \&gt;" alt="" coords="189,5,400,32"/>
-<area shape="rect" id="node3" href="$classvita_1_1evaluator__proxy.html" title="vita::evaluator_proxy\&lt; T \&gt;" alt="" coords="207,56,382,83"/>
+<area shape="rect" id="node2" href="$classvita_1_1constrained__evaluator.html" title="The class merges a basic evaluator and a penalty function into a new combined evaluator. " alt="" coords="189,5,400,32"/>
+<area shape="rect" id="node3" href="$classvita_1_1evaluator__proxy.html" title="Provides a surrogate for an evaluator to control access to it. " alt="" coords="207,56,382,83"/>
 <area shape="rect" id="node4" href="$classvita_1_1random__evaluator.html" title="A random fitness function used for debug purpose. " alt="" coords="201,107,388,133"/>
 <area shape="rect" id="node5" href="$classvita_1_1src__evaluator.html" title="An evaluator specialized for symbolic regression / classification problems. " alt="" coords="214,157,375,184"/>
 <area shape="rect" id="node15" href="$classvita_1_1test__evaluator.html" title="A fitness function used for debug purpose. " alt="" coords="212,208,377,235"/>

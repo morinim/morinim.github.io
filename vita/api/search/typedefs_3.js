@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['number',['number',['../namespacevita.html#aa90aa919a905e1090c5aa74a2844d647',1,'vita']]]
+  ['index_5ft',['index_t',['../namespacevita.html#adad613995ae7b1cf3b56a8a16598acdc',1,'vita']]]
 ];

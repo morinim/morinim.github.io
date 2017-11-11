@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classvita_1_1data.html" title="Interface for data used by vita::search class to to evolve vita::population. " alt="" coords="5,5,81,32"/>
-<area shape="rect" id="node2" href="$classvita_1_1src__data.html" title="Implementation of vita::data for symbolic regression and classification tasks. " alt="" coords="129,5,231,32"/>
+<area shape="rect" id="node1" href="$classvita_1_1data.html" title="Interface for data used by vita::search class to evolve vita::population. " alt="" coords="5,5,81,32"/>
+<area shape="rect" id="node2" href="$classvita_1_1src__data.html" title="Specialization of vita::data for symbolic regression and classification tasks. " alt="" coords="129,5,231,32"/>
 </map>

@@ -105,7 +105,7 @@ Collaboration diagram for vita::individual&lt; Derived &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classvita_1_1individual__coll__graph.png" border="0" usemap="#vita_1_1individual_3_01Derived_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="vita_1_1individual_3_01Derived_01_4_coll__map" id="vita_1_1individual_3_01Derived_01_4_coll__map">
-<area shape="rect" id="node2" href="structvita_1_1hash__t.html" title="This is a 128bit stream used as individual signature / hash table look up key. " alt="" coords="47,5,138,32"/></map>
+<area shape="rect" id="node2" href="structvita_1_1hash__t.html" title="A 128bit unsigned integer used as individual&#39;s signature / hash table look&#45;up key. " alt="" coords="47,5,138,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -117,8 +117,8 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1individual.html#ab0f63498ebae90239c568543dcf7e31a">inc_age</a> ()</td></tr>
 <tr class="memdesc:ab0f63498ebae90239c568543dcf7e31a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the individual's age. <br /></td></tr>
 <tr class="separator:ab0f63498ebae90239c568543dcf7e31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdf0181c2d76597dd162c5497c9540ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1individual.html#acdf0181c2d76597dd162c5497c9540ff">load</a> (std::istream &amp;, const <a class="el" href="classvita_1_1environment.html">environment</a> &amp;)</td></tr>
-<tr class="separator:acdf0181c2d76597dd162c5497c9540ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a8ce3a8f5956080664a98e7b0d0fc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1individual.html#a29a8ce3a8f5956080664a98e7b0d0fc1">load</a> (std::istream &amp;, const <a class="el" href="classvita_1_1problem.html">problem</a> &amp;)</td></tr>
+<tr class="separator:a29a8ce3a8f5956080664a98e7b0d0fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21e77a2f75fa8de0426d405994e2a035"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1individual.html#a21e77a2f75fa8de0426d405994e2a035">save</a> (std::ostream &amp;) const </td></tr>
 <tr class="separator:a21e77a2f75fa8de0426d405994e2a035"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -149,7 +149,7 @@ class vita::individual&lt; Derived &gt;</h3>
 <p>This class is the (nondependent CRTP) base class of every type of individual and factorizes out common code / data members.</p>
 <dl class="section note"><dt>Note</dt><dd>AKA chromosome. </dd></dl>
 
-<p>Definition at line <a class="el" href="individual_8h_source.html#l00039">39</a> of file <a class="el" href="individual_8h_source.html">individual.h</a>.</p>
+<p>Definition at line <a class="el" href="individual_8h_source.html#l00040">40</a> of file <a class="el" href="individual_8h_source.html">individual.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a484a2b3f2ceba915a0abbccc22da2502"></a>
 <div class="memitem">
@@ -183,7 +183,7 @@ template&lt;class Derived &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="acdf0181c2d76597dd162c5497c9540ff"></a>
+<a class="anchor" id="a29a8ce3a8f5956080664a98e7b0d0fc1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -198,8 +198,8 @@ template&lt;class Derived &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvita_1_1environment.html">environment</a> &amp;&#160;</td>
-          <td class="paramname"><em>env</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvita_1_1problem.html">problem</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -210,7 +210,7 @@ template&lt;class Derived &gt; </div>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">env</td><td>environment used for building the individual </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>currently tackled problem </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>input stream </td></tr>
   </table>
   </dd>
@@ -291,7 +291,7 @@ template&lt;class Derived &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:37 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

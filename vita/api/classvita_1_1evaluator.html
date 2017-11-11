@@ -104,7 +104,7 @@ Inheritance diagram for vita::evaluator&lt; T &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classvita_1_1evaluator__inherit__graph.png" border="0" usemap="#vita_1_1evaluator_3_01T_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="vita_1_1evaluator_3_01T_01_4_inherit__map" id="vita_1_1evaluator_3_01T_01_4_inherit__map">
-<area shape="rect" id="node2" href="classvita_1_1constrained__evaluator.html" title="vita::constrained_evaluator\&lt; T \&gt;" alt="" coords="189,5,400,32"/><area shape="rect" id="node3" href="classvita_1_1evaluator__proxy.html" title="vita::evaluator_proxy\&lt; T \&gt;" alt="" coords="207,56,382,83"/><area shape="rect" id="node4" href="classvita_1_1random__evaluator.html" title="A random fitness function used for debug purpose. " alt="" coords="201,107,388,133"/><area shape="rect" id="node5" href="classvita_1_1src__evaluator.html" title="An evaluator specialized for symbolic regression / classification problems. " alt="" coords="214,157,375,184"/><area shape="rect" id="node15" href="classvita_1_1test__evaluator.html" title="A fitness function used for debug purpose. " alt="" coords="212,208,377,235"/><area shape="rect" id="node6" href="classvita_1_1classification__evaluator.html" title="This class is used to factorized out some code of the classification evaluators. " alt="" coords="452,99,579,141"/><area shape="rect" id="node10" href="classvita_1_1sum__of__errors__evaluator.html" title="An evaluator to minimize the sum of some sort of error. " alt="" coords="448,226,583,267"/><area shape="rect" id="node7" href="classvita_1_1binary__evaluator.html" title="Single class evaluator for classification problems. " alt="" coords="639,31,817,57"/><area shape="rect" id="node8" href="classvita_1_1dyn__slot__evaluator.html" title="Slotted Dynamic Class Boundary Determination. " alt="" coords="632,81,824,108"/><area shape="rect" id="node9" href="classvita_1_1gaussian__evaluator.html" title="Gaussian distribution for multiclass object classification. " alt="" coords="631,132,825,159"/><area shape="rect" id="node11" href="classvita_1_1count__evaluator.html" title="Evaluator based on the number of matches. " alt="" coords="641,183,815,209"/><area shape="rect" id="node12" href="classvita_1_1mae__evaluator.html" title="Evaluator based on the mean absolute error. " alt="" coords="644,233,812,260"/><area shape="rect" id="node13" href="classvita_1_1mse__evaluator.html" title="Evaluator based on the mean squared error. " alt="" coords="644,284,812,311"/><area shape="rect" id="node14" href="classvita_1_1rmae__evaluator.html" title="Evaluator based on the mean of relative differences. " alt="" coords="642,335,814,361"/></map>
+<area shape="rect" id="node2" href="classvita_1_1constrained__evaluator.html" title="The class merges a basic evaluator and a penalty function into a new combined evaluator. " alt="" coords="189,5,400,32"/><area shape="rect" id="node3" href="classvita_1_1evaluator__proxy.html" title="Provides a surrogate for an evaluator to control access to it. " alt="" coords="207,56,382,83"/><area shape="rect" id="node4" href="classvita_1_1random__evaluator.html" title="A random fitness function used for debug purpose. " alt="" coords="201,107,388,133"/><area shape="rect" id="node5" href="classvita_1_1src__evaluator.html" title="An evaluator specialized for symbolic regression / classification problems. " alt="" coords="214,157,375,184"/><area shape="rect" id="node15" href="classvita_1_1test__evaluator.html" title="A fitness function used for debug purpose. " alt="" coords="212,208,377,235"/><area shape="rect" id="node6" href="classvita_1_1classification__evaluator.html" title="This class is used to factorized out some code of the classification evaluators. " alt="" coords="452,99,579,141"/><area shape="rect" id="node10" href="classvita_1_1sum__of__errors__evaluator.html" title="An evaluator to minimize the sum of some sort of error. " alt="" coords="448,226,583,267"/><area shape="rect" id="node7" href="classvita_1_1binary__evaluator.html" title="Single class evaluator for classification problems. " alt="" coords="639,31,817,57"/><area shape="rect" id="node8" href="classvita_1_1dyn__slot__evaluator.html" title="Slotted Dynamic Class Boundary Determination. " alt="" coords="632,81,824,108"/><area shape="rect" id="node9" href="classvita_1_1gaussian__evaluator.html" title="Gaussian distribution for multiclass object classification. " alt="" coords="631,132,825,159"/><area shape="rect" id="node11" href="classvita_1_1count__evaluator.html" title="Evaluator based on the number of matches. " alt="" coords="641,183,815,209"/><area shape="rect" id="node12" href="classvita_1_1mae__evaluator.html" title="Evaluator based on the mean absolute error. " alt="" coords="644,233,812,260"/><area shape="rect" id="node13" href="classvita_1_1mse__evaluator.html" title="Evaluator based on the mean squared error. " alt="" coords="644,284,812,311"/><area shape="rect" id="node14" href="classvita_1_1rmae__evaluator.html" title="Evaluator based on the mean of relative differences. " alt="" coords="642,335,814,361"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -131,8 +131,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2035a24384c300ed64fbcadd66431230"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classvita_1_1lambda__f.html">lambda_f</a>&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1evaluator.html#a2035a24384c300ed64fbcadd66431230">lambdify</a> (const T &amp;) const </td></tr>
 <tr class="memdesc:a2035a24384c300ed64fbcadd66431230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived methods create the 'executable' form of an individual.  <a href="#a2035a24384c300ed64fbcadd66431230">More...</a><br /></td></tr>
 <tr class="separator:a2035a24384c300ed64fbcadd66431230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b003a20ce3a4b70692731df353e873a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1evaluator.html#a2b003a20ce3a4b70692731df353e873a">load</a> (std::istream &amp;)</td></tr>
+<tr class="separator:a2b003a20ce3a4b70692731df353e873a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a722061b28b48df3893679cea0a49ac59"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classvita_1_1basic__fitness__t.html">fitness_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1evaluator.html#a722061b28b48df3893679cea0a49ac59">operator()</a> (const T &amp;)=0</td></tr>
 <tr class="separator:a722061b28b48df3893679cea0a49ac59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63e35a24a63cf9c1e67995fc58ee0f0b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1evaluator.html#a63e35a24a63cf9c1e67995fc58ee0f0b">save</a> (std::ostream &amp;) const </td></tr>
+<tr class="separator:a63e35a24a63cf9c1e67995fc58ee0f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeda37bbe1956c0266a4d1b1f2c231a3"><td class="memItemLeft" align="right" valign="top">virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1evaluator.html#aeeda37bbe1956c0266a4d1b1f2c231a3">seen</a> (const T &amp;) const </td></tr>
 <tr class="memdesc:aeeda37bbe1956c0266a4d1b1f2c231a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Some evaluators keep additional statistics about the individual seen so far.  <a href="#aeeda37bbe1956c0266a4d1b1f2c231a3">More...</a><br /></td></tr>
 <tr class="separator:aeeda37bbe1956c0266a4d1b1f2c231a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,7 +192,7 @@ template&lt;class T &gt; </div>
 <p>Some evaluators keep a cache / some statistics to improve performances.</p>
 <dl class="section note"><dt>Note</dt><dd>Default implementation is empty. </dd></dl>
 
-<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00058">58</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
+<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00081">81</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
 
 </div>
 </div>
@@ -219,9 +223,9 @@ template&lt;class T &gt; </div>
 <p>Clears cached informations about a specific individual. </p>
 <p>Some evaluators keep a cache to improve performances. </p>
 
-<p>Reimplemented in <a class="el" href="classvita_1_1evaluator__proxy.html#ad926b82bac16b309cfd27fcf56ae4e62">vita::evaluator_proxy&lt; T &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classvita_1_1evaluator__proxy.html#a69c3c53570e15a5ef85d3f60e54e3a80">vita::evaluator_proxy&lt; T, E &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00068">68</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
+<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00091">91</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
 
 </div>
 </div>
@@ -260,7 +264,7 @@ template&lt;class T &gt; </div>
 <p>Some evaluators have a faster but approximated version of the standard fitness evaluation method.</p>
 <dl class="section note"><dt>Note</dt><dd>Default implementation calls the standard fitness function. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classvita_1_1sum__of__errors__evaluator.html#ade0cf1a400e21fe3195b62f56a596f1e">vita::sum_of_errors_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1constrained__evaluator.html#a5e91c0c64ff99049b617663de2d6d2bd">vita::constrained_evaluator&lt; T, E, P &gt;</a>, and <a class="el" href="classvita_1_1evaluator__proxy.html#ad340baca5dd6f119f0ede9a4cfa7de87">vita::evaluator_proxy&lt; T &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classvita_1_1sum__of__errors__evaluator.html#ade0cf1a400e21fe3195b62f56a596f1e">vita::sum_of_errors_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1evaluator__proxy.html#a701eb5b5c8b082c6447393269d508632">vita::evaluator_proxy&lt; T, E &gt;</a>, and <a class="el" href="classvita_1_1constrained__evaluator.html#a5e91c0c64ff99049b617663de2d6d2bd">vita::constrained_evaluator&lt; T, E, P &gt;</a>.</p>
 
 <p>Definition at line <a class="el" href="evaluator_8h_source.html#l00033">33</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
 
@@ -291,9 +295,9 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>some info about the status / efficiency of the evaluator</dd></dl>
 <p>The default implementation is empty. </p>
 
-<p>Reimplemented in <a class="el" href="classvita_1_1evaluator__proxy.html#aeed0d8344c37cb109d8c959b3487200b">vita::evaluator_proxy&lt; T &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classvita_1_1evaluator__proxy.html#a5b8e94bc4d368ec6a7b09b8645ac26f9">vita::evaluator_proxy&lt; T, E &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00078">78</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
+<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00101">101</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
 
 </div>
 </div>
@@ -325,9 +329,47 @@ template&lt;class T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd><code>nullptr</code></dd></dl>
 <p>The default implementation is an empty method. </p>
 
-<p>Reimplemented in <a class="el" href="classvita_1_1binary__evaluator.html#af0e41b8bc6e688c166487891fede1e0e">vita::binary_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1gaussian__evaluator.html#a0fdf02592cf02e804fcbe718eb9dd499">vita::gaussian_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1dyn__slot__evaluator.html#a82fb4b30f66e2df71c099f48a5d49bf3">vita::dyn_slot_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1sum__of__errors__evaluator.html#ae63a058edacc34316429a283164f30e4">vita::sum_of_errors_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1constrained__evaluator.html#a5c2b66e47be1c775e9620677b2697927">vita::constrained_evaluator&lt; T, E, P &gt;</a>, and <a class="el" href="classvita_1_1evaluator__proxy.html#a0ff7bb08ce20d1bd605cd6bf9dc1d339">vita::evaluator_proxy&lt; T &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classvita_1_1binary__evaluator.html#af0e41b8bc6e688c166487891fede1e0e">vita::binary_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1gaussian__evaluator.html#a0fdf02592cf02e804fcbe718eb9dd499">vita::gaussian_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1dyn__slot__evaluator.html#a82fb4b30f66e2df71c099f48a5d49bf3">vita::dyn_slot_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1sum__of__errors__evaluator.html#ae63a058edacc34316429a283164f30e4">vita::sum_of_errors_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1evaluator__proxy.html#a68e18c7c2d9a3ee422ccb1623c16cdc3">vita::evaluator_proxy&lt; T, E &gt;</a>, and <a class="el" href="classvita_1_1constrained__evaluator.html#a5c2b66e47be1c775e9620677b2697927">vita::constrained_evaluator&lt; T, E, P &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00091">91</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
+<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00114">114</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2b003a20ce3a4b70692731df353e873a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classvita_1_1evaluator.html">vita::evaluator</a>&lt; T &gt;::load </td>
+          <td>(</td>
+          <td class="paramtype">std::istream &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>input stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object loaded correctly</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the load operation isn't successful the current object isn't changed. </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classvita_1_1evaluator__proxy.html#ae5578efc280187344b865ece2964369a">vita::evaluator_proxy&lt; T, E &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00046">46</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
 
 </div>
 </div>
@@ -356,9 +398,46 @@ template&lt;class T&gt; </div>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>the fitness of the individual. </dd></dl>
 
-<p>Implemented in <a class="el" href="classvita_1_1binary__evaluator.html#a4334069844614bc469255b1c46badbc6">vita::binary_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1gaussian__evaluator.html#a432d25339b752f7414a836bb5c0d5a01">vita::gaussian_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1dyn__slot__evaluator.html#aa55013ef2271bac6e71a2d7f7e80ca3d">vita::dyn_slot_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1test__evaluator.html#a4f9eb1276bfa96a8596cd713c5a1b46f">vita::test_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1random__evaluator.html#ad849827ae2348efe08dc158d8d8a2388">vita::random_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1sum__of__errors__evaluator.html#a4fd6b8cefdb7d5c94f5612eb603280fa">vita::sum_of_errors_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1constrained__evaluator.html#a534baf67ce019fcb1c92112c76f37237">vita::constrained_evaluator&lt; T, E, P &gt;</a>, and <a class="el" href="classvita_1_1evaluator__proxy.html#a530bf6506adc60a6ef3e095262255c57">vita::evaluator_proxy&lt; T &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classvita_1_1binary__evaluator.html#a4334069844614bc469255b1c46badbc6">vita::binary_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1gaussian__evaluator.html#a432d25339b752f7414a836bb5c0d5a01">vita::gaussian_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1dyn__slot__evaluator.html#aa55013ef2271bac6e71a2d7f7e80ca3d">vita::dyn_slot_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1test__evaluator.html#a4f9eb1276bfa96a8596cd713c5a1b46f">vita::test_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1random__evaluator.html#ad849827ae2348efe08dc158d8d8a2388">vita::random_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1sum__of__errors__evaluator.html#a4fd6b8cefdb7d5c94f5612eb603280fa">vita::sum_of_errors_evaluator&lt; T &gt;</a>, <a class="el" href="classvita_1_1evaluator__proxy.html#a42717a91bab3fc47220fbc4d24ff9f92">vita::evaluator_proxy&lt; T, E &gt;</a>, and <a class="el" href="classvita_1_1constrained__evaluator.html#a534baf67ce019fcb1c92112c76f37237">vita::constrained_evaluator&lt; T, E, P &gt;</a>.</p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="example6_8cc-example.html#a6">example6.cc</a>.</dd>
 </dl>
+</div>
+</div>
+<a class="anchor" id="a63e35a24a63cf9c1e67995fc58ee0f0b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classvita_1_1evaluator.html">vita::evaluator</a>&lt; T &gt;::save </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>output stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object was saved correctly </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classvita_1_1evaluator__proxy.html#a2b7532beaa7d05907661573fae6dc020">vita::evaluator_proxy&lt; T, E &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00056">56</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="aeeda37bbe1956c0266a4d1b1f2c231a3"></a>
@@ -388,9 +467,9 @@ template&lt;class T &gt; </div>
 <p>Some evaluators keep additional statistics about the individual seen so far. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>0</code> </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classvita_1_1evaluator__proxy.html#a40723768c1f163fa93658ea411b551fc">vita::evaluator_proxy&lt; T &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classvita_1_1evaluator__proxy.html#a90f1ae255e15e0c75fdc5fecd731b827">vita::evaluator_proxy&lt; T, E &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00045">45</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
+<p>Definition at line <a class="el" href="evaluator_8h_source.html#l00068">68</a> of file <a class="el" href="evaluator_8h_source.html">evaluator.h</a>.</p>
 
 </div>
 </div>
@@ -400,7 +479,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:37 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

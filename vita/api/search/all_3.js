@@ -1,7 +1,7 @@
 var searchData=
 [
   ['data',['data',['../classvita_1_1data.html',1,'vita']]],
-  ['data',['data',['../classvita_1_1data.html#a4117f10c249e7d908d7e382c7fc1959f',1,'vita::data::data()'],['../classvita_1_1problem.html#a91f772c1a1a4a527ea37f0be6312281c',1,'vita::problem::data()'],['../classvita_1_1src__problem.html#a3eac51a26e529dcd2d0d9688655f0c04',1,'vita::src_problem::data()']]],
+  ['data',['data',['../classvita_1_1data.html#a7b64794dc84ec62c5bf95c1b5745fe5a',1,'vita::data::data()'],['../classvita_1_1problem.html#a91f772c1a1a4a527ea37f0be6312281c',1,'vita::problem::data()'],['../classvita_1_1src__problem.html#a3eac51a26e529dcd2d0d9688655f0c04',1,'vita::src_problem::data()']]],
   ['data_2ecc',['data.cc',['../data_8cc.html',1,'']]],
   ['data_2eh',['data.h',['../data_8h.html',1,'']]],
   ['dataset_5ft',['dataset_t',['../classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973',1,'vita::data']]],
@@ -31,5 +31,5 @@ var searchData=
   ['dss_2ecc',['dss.cc',['../dss_8cc.html',1,'']]],
   ['dss_2eh',['dss.h',['../dss_8h.html',1,'']]],
   ['dyn_5fslot_5fevaluator',['dyn_slot_evaluator',['../classvita_1_1dyn__slot__evaluator.html',1,'vita']]],
-  ['dynamic',['dynamic',['../structvita_1_1environment_1_1statistics.html#a6d15259cd92f22f00640f89419308264',1,'vita::environment::statistics']]]
+  ['dynamic_5ffile',['dynamic_file',['../structvita_1_1environment_1_1statistics.html#a2d3c42b866accfd6991f51deb6d9b0e9',1,'vita::environment::statistics']]]
 ];

@@ -100,37 +100,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevita.html">vita</a></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classvita_1_1data.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvita_1_1data.html">data</a></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">   39</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">dataset_t</a> {training = 0, validation, test, npos};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="comment">// ---- Constructors ----</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classvita_1_1data.html#a4117f10c249e7d908d7e382c7fc1959f">data</a>(<a class="code" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">dataset_t</a> = npos);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classvita_1_1data.html#a578f3481c569bb4250b4270669427bcb">select</a>(<a class="code" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">dataset_t</a>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">dataset_t</a> <a class="code" href="classvita_1_1data.html#a58972da5228959f3de63c9c4f9fa557a">active_dataset</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> has(<a class="code" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">dataset_t</a>) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">dataset_t</a> active_dataset_;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}  <span class="comment">// namespace vita</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif  // include guard</span></div>
-<div class="ttc" id="classvita_1_1data_html_a4117f10c249e7d908d7e382c7fc1959f"><div class="ttname"><a href="classvita_1_1data.html#a4117f10c249e7d908d7e382c7fc1959f">vita::data::data</a></div><div class="ttdeci">data(dataset_t=npos)</div><div class="ttdoc">New empty data instance. </div><div class="ttdef"><b>Definition:</b> <a href="data_8cc_source.html#l00021">data.cc:21</a></div></div>
-<div class="ttc" id="classvita_1_1data_html"><div class="ttname"><a href="classvita_1_1data.html">vita::data</a></div><div class="ttdoc">Interface for data used by vita::search class to to evolve vita::population. </div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00025">data.h:25</a></div></div>
-<div class="ttc" id="classvita_1_1data_html_a578f3481c569bb4250b4270669427bcb"><div class="ttname"><a href="classvita_1_1data.html#a578f3481c569bb4250b4270669427bcb">vita::data::select</a></div><div class="ttdeci">void select(dataset_t)</div><div class="ttdef"><b>Definition:</b> <a href="data_8cc_source.html#l00031">data.cc:31</a></div></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classvita_1_1data.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvita_1_1data.html">data</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">   38</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">dataset_t</a> {training = 0, validation, test, npos};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// ---- Constructors ----</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classvita_1_1data.html#a7b64794dc84ec62c5bf95c1b5745fe5a">data</a>(<a class="code" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">dataset_t</a> = training);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classvita_1_1data.html#a578f3481c569bb4250b4270669427bcb">select</a>(<a class="code" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">dataset_t</a>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> has(<a class="code" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">dataset_t</a>) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">dataset_t</a> <a class="code" href="classvita_1_1data.html#a58972da5228959f3de63c9c4f9fa557a">active_dataset</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">dataset_t</a> active_dataset_;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}  <span class="comment">// namespace vita</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif  // include guard</span></div>
+<div class="ttc" id="classvita_1_1data_html"><div class="ttname"><a href="classvita_1_1data.html">vita::data</a></div><div class="ttdoc">Interface for data used by vita::search class to evolve vita::population. </div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00024">data.h:24</a></div></div>
+<div class="ttc" id="classvita_1_1data_html_a578f3481c569bb4250b4270669427bcb"><div class="ttname"><a href="classvita_1_1data.html#a578f3481c569bb4250b4270669427bcb">vita::data::select</a></div><div class="ttdeci">virtual void select(dataset_t)</div><div class="ttdoc">Activates the dataset we want to operate on (training / validation / test set). </div><div class="ttdef"><b>Definition:</b> <a href="data_8cc_source.html#l00031">data.cc:31</a></div></div>
 <div class="ttc" id="classvita_1_1data_html_a58972da5228959f3de63c9c4f9fa557a"><div class="ttname"><a href="classvita_1_1data.html#a58972da5228959f3de63c9c4f9fa557a">vita::data::active_dataset</a></div><div class="ttdeci">dataset_t active_dataset() const </div><div class="ttdef"><b>Definition:</b> <a href="data_8cc_source.html#l00039">data.cc:39</a></div></div>
 <div class="ttc" id="namespacevita_html"><div class="ttname"><a href="namespacevita.html">vita</a></div><div class="ttdoc">The main namespace for the project. </div></div>
-<div class="ttc" id="classvita_1_1data_html_a91021e8cfb4d00c5fcf8a64b45436973"><div class="ttname"><a href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">vita::data::dataset_t</a></div><div class="ttdeci">dataset_t</div><div class="ttdoc">Data are stored in three datasets: </div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00039">data.h:39</a></div></div>
+<div class="ttc" id="classvita_1_1data_html_a7b64794dc84ec62c5bf95c1b5745fe5a"><div class="ttname"><a href="classvita_1_1data.html#a7b64794dc84ec62c5bf95c1b5745fe5a">vita::data::data</a></div><div class="ttdeci">data(dataset_t=training)</div><div class="ttdoc">New empty data instance. </div><div class="ttdef"><b>Definition:</b> <a href="data_8cc_source.html#l00021">data.cc:21</a></div></div>
+<div class="ttc" id="classvita_1_1data_html_a91021e8cfb4d00c5fcf8a64b45436973"><div class="ttname"><a href="classvita_1_1data.html#a91021e8cfb4d00c5fcf8a64b45436973">vita::data::dataset_t</a></div><div class="ttdeci">dataset_t</div><div class="ttdoc">Data are stored in three datasets: </div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00038">data.h:38</a></div></div>
 <div class="ttc" id="common_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:36 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

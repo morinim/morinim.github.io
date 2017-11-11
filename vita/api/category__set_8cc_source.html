@@ -104,8 +104,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structvita_1_1category.html#af82894676f566c231deca8e92509f851">   26</a></span>&#160;category::operator bool()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordflow">return</span> tag != null.tag || name != null.name || domain != null.domain ||</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;         labels != null.labels;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordflow">return</span> tag != null.tag || name != null.name || domain != null.domain</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;         || labels != null.labels;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classvita_1_1category__set.html#a354b0770dced8a15c5f0ac82af30b682">   35</a></span>&#160;<a class="code" href="classvita_1_1category__set.html#a354b0770dced8a15c5f0ac82af30b682">category_set::category_set</a>() : categories_()</div>
@@ -124,99 +124,99 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                      categories_.end());</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">   82</a></span>&#160;<a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a> <a class="code" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">category_set::size</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a><span class="keyword">&gt;</span>(categories_.size());</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classvita_1_1category__set.html#ae0a0f0d3d38e4b77a67e2b65e52d4c96">   92</a></span>&#160;<a class="code" href="structvita_1_1category.html">category</a> <a class="code" href="classvita_1_1category__set.html#ae0a0f0d3d38e4b77a67e2b65e52d4c96">category_set::find</a>(<span class="keyword">const</span> std::string &amp;name)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> uc(std::find_if(categories_.begin(), categories_.end(),</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                             [name](<span class="keyword">const</span> <a class="code" href="structvita_1_1untagged__category.html">untagged_category</a> &amp;c)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                             {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                               <span class="keywordflow">return</span> c.name == name;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                             }));</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordflow">if</span> (uc == categories_.end())</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="structvita_1_1category.html#a41f7febefc98998d8be9bba957fec8a9">category::null</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">   85</a></span>&#160;<a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a> <a class="code" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">category_set::size</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a><span class="keyword">&gt;</span>(categories_.size());</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classvita_1_1category__set.html#ae0a0f0d3d38e4b77a67e2b65e52d4c96">   95</a></span>&#160;<a class="code" href="structvita_1_1category.html">category</a> <a class="code" href="classvita_1_1category__set.html#ae0a0f0d3d38e4b77a67e2b65e52d4c96">category_set::find</a>(<span class="keyword">const</span> std::string &amp;name)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> uc(std::find_if(categories_.begin(), categories_.end(),</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                             [name](<span class="keyword">const</span> <a class="code" href="structvita_1_1untagged__category.html">untagged_category</a> &amp;c)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                             {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                               <span class="keywordflow">return</span> c.name == name;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                             }));</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> tag(</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    static_cast&lt;category_t&gt;(std::distance(categories_.begin(), uc)));</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="structvita_1_1category.html">category</a>(tag, categories_[tag]);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classvita_1_1category__set.html#a946b3aad65f7e505e120342f6720808e">  113</a></span>&#160;<a class="code" href="structvita_1_1category.html">category</a> <a class="code" href="classvita_1_1category__set.html#ae0a0f0d3d38e4b77a67e2b65e52d4c96">category_set::find</a>(<a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a> t)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordflow">return</span> t &lt; <a class="code" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">size</a>() ? <a class="code" href="structvita_1_1category.html">category</a>(t, categories_[t]) : <a class="code" href="structvita_1_1category.html#a41f7febefc98998d8be9bba957fec8a9">category::null</a>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classvita_1_1category__set.html#a40fb05bfdfbe673636c35e048c1535d7">  122</a></span>&#160;<a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a> <a class="code" href="classvita_1_1category__set.html#a40fb05bfdfbe673636c35e048c1535d7">category_set::insert</a>(<span class="keyword">const</span> <a class="code" href="structvita_1_1untagged__category.html">untagged_category</a> &amp;c)</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  assert(!c.name.empty());</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <a class="code" href="structvita_1_1category.html">category</a> c1(<a class="code" href="classvita_1_1category__set.html#ae0a0f0d3d38e4b77a67e2b65e52d4c96">find</a>(c.name));</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordflow">if</span> (!c1)</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    c1.tag = <span class="keyword">static_cast&lt;</span>decltype(c1.tag)<span class="keyword">&gt;</span>(<a class="code" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">size</a>());</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    categories_.push_back(c);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordflow">return</span> c1.tag;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">if</span> (uc == categories_.end())</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="structvita_1_1category.html#a41f7febefc98998d8be9bba957fec8a9">category::null</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> tag(</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    static_cast&lt;category_t&gt;(std::distance(categories_.begin(), uc)));</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="structvita_1_1category.html">category</a>(tag, categories_[tag]);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classvita_1_1category__set.html#a946b3aad65f7e505e120342f6720808e">  116</a></span>&#160;<a class="code" href="structvita_1_1category.html">category</a> <a class="code" href="classvita_1_1category__set.html#ae0a0f0d3d38e4b77a67e2b65e52d4c96">category_set::find</a>(<a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a> t)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordflow">return</span> t &lt; <a class="code" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">size</a>() ? <a class="code" href="structvita_1_1category.html">category</a>(t, categories_[t]) : <a class="code" href="structvita_1_1category.html#a41f7febefc98998d8be9bba957fec8a9">category::null</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classvita_1_1category__set.html#a40fb05bfdfbe673636c35e048c1535d7">  125</a></span>&#160;<a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a> <a class="code" href="classvita_1_1category__set.html#a40fb05bfdfbe673636c35e048c1535d7">category_set::insert</a>(<span class="keyword">const</span> <a class="code" href="structvita_1_1untagged__category.html">untagged_category</a> &amp;c)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  Expects(!c.name.empty());</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="structvita_1_1category.html">category</a> c1(<a class="code" href="classvita_1_1category__set.html#ae0a0f0d3d38e4b77a67e2b65e52d4c96">find</a>(c.name));</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordflow">if</span> (!c1)</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    c1.tag = <span class="keyword">static_cast&lt;</span>decltype(c1.tag)<span class="keyword">&gt;</span>(<a class="code" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">size</a>());</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    categories_.push_back(c);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  }</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="classvita_1_1category__set.html#ad5bbfddeceaff01f7aa6dfca2e90b7fd">  143</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classvita_1_1category__set.html#ad5bbfddeceaff01f7aa6dfca2e90b7fd">category_set::add_label</a>(<a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a> t, <span class="keyword">const</span> std::string &amp;l)</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;{</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  assert(t &lt; <a class="code" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">size</a>());</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  assert(categories_[t].domain == domain_t::d_string);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  categories_[t].labels.insert(l);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordflow">return</span> c1.tag;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classvita_1_1category__set.html#ad5bbfddeceaff01f7aa6dfca2e90b7fd">  146</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classvita_1_1category__set.html#ad5bbfddeceaff01f7aa6dfca2e90b7fd">category_set::add_label</a>(<a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a> t, <span class="keyword">const</span> std::string &amp;l)</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;{</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  Expects(t &lt; <a class="code" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">size</a>());</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  Expects(categories_[t].domain == domain_t::d_string);</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classvita_1_1category__set.html#a1d86934223db9e2e286419255d9c1988">  157</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classvita_1_1category__set.html#a1d86934223db9e2e286419255d9c1988">category_set::swap</a>(<a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a> t1, <a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a> t2)</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;{</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  assert(t1 &lt; <a class="code" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">size</a>());</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  assert(t2 &lt; <a class="code" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">size</a>());</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  std::swap(categories_[t1], categories_[t2]);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  categories_[t].labels.insert(l);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="classvita_1_1category__set.html#a1d86934223db9e2e286419255d9c1988">  160</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classvita_1_1category__set.html#a1d86934223db9e2e286419255d9c1988">category_set::swap</a>(<a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a> t1, <a class="code" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a> t2)</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;{</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  Expects(t1 &lt; <a class="code" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">size</a>());</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  Expects(t2 &lt; <a class="code" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">size</a>());</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="namespacevita.html#a1d3966b89ea1dea95a41487cc4945153">  172</a></span>&#160;std::ostream &amp;<a class="code" href="namespacevita.html#ae60a7117178f58cacfd11c43d086084e">operator&lt;&lt;</a>(std::ostream &amp;s, <span class="keyword">const</span> <a class="code" href="structvita_1_1category.html">category</a> &amp;c)</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  s &lt;&lt; c.name &lt;&lt; <span class="stringliteral">&quot; (category &quot;</span> &lt;&lt; c.tag &lt;&lt; <span class="stringliteral">&quot;, domain &quot;</span> &lt;&lt; c.domain;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  s &lt;&lt; <span class="stringliteral">&quot;, [&quot;</span>;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordflow">if</span> (!c.labels.empty())</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    std::copy(c.labels.begin(), c.labels.end(),</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;              infix_iterator&lt;std::string&gt;(s, <span class="stringliteral">&quot; &quot;</span>));</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  s &lt;&lt; <span class="stringliteral">&quot;])&quot;</span>;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordflow">return</span> s;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  std::swap(categories_[t1], categories_[t2]);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="namespacevita.html#a1d3966b89ea1dea95a41487cc4945153">  175</a></span>&#160;std::ostream &amp;<a class="code" href="namespacevita.html#ae60a7117178f58cacfd11c43d086084e">operator&lt;&lt;</a>(std::ostream &amp;s, <span class="keyword">const</span> <a class="code" href="structvita_1_1category.html">category</a> &amp;c)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;{</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  s &lt;&lt; c.name &lt;&lt; <span class="stringliteral">&quot; (category &quot;</span> &lt;&lt; c.tag &lt;&lt; <span class="stringliteral">&quot;, domain &quot;</span> &lt;&lt; c.domain;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  s &lt;&lt; <span class="stringliteral">&quot;, [&quot;</span>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keywordflow">if</span> (!c.labels.empty())</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    std::copy(c.labels.begin(), c.labels.end(),</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;              infix_iterator&lt;std::string&gt;(s, <span class="stringliteral">&quot; &quot;</span>));</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  s &lt;&lt; <span class="stringliteral">&quot;])&quot;</span>;</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}  <span class="comment">// namespace vita</span></div>
-<div class="ttc" id="structvita_1_1category_html_a41f7febefc98998d8be9bba957fec8a9"><div class="ttname"><a href="structvita_1_1category.html#a41f7febefc98998d8be9bba957fec8a9">vita::category::null</a></div><div class="ttdeci">static const category null</div><div class="ttdoc">A special value used for missing answers. </div><div class="ttdef"><b>Definition:</b> <a href="category__set_8h_source.html#l00069">category_set.h:69</a></div></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordflow">return</span> s;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;}</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;}  <span class="comment">// namespace vita</span></div>
+<div class="ttc" id="structvita_1_1category_html_a41f7febefc98998d8be9bba957fec8a9"><div class="ttname"><a href="structvita_1_1category.html#a41f7febefc98998d8be9bba957fec8a9">vita::category::null</a></div><div class="ttdeci">static const category null</div><div class="ttdoc">A special value used for missing answers. </div><div class="ttdef"><b>Definition:</b> <a href="category__set_8h_source.html#l00071">category_set.h:71</a></div></div>
 <div class="ttc" id="classvita_1_1category__set_html_a354b0770dced8a15c5f0ac82af30b682"><div class="ttname"><a href="classvita_1_1category__set.html#a354b0770dced8a15c5f0ac82af30b682">vita::category_set::category_set</a></div><div class="ttdeci">category_set()</div><div class="ttdoc">Builds an empty category_set. </div><div class="ttdef"><b>Definition:</b> <a href="category__set_8cc_source.html#l00035">category_set.cc:35</a></div></div>
-<div class="ttc" id="classvita_1_1category__set_1_1const__iterator_html"><div class="ttname"><a href="classvita_1_1category__set_1_1const__iterator.html">vita::category_set::const_iterator</a></div><div class="ttdoc">Forward iterator to read the elements of a category_set. </div><div class="ttdef"><b>Definition:</b> <a href="category__set_8h_source.html#l00107">category_set.h:107</a></div></div>
-<div class="ttc" id="classvita_1_1category__set_html_ad5bbfddeceaff01f7aa6dfca2e90b7fd"><div class="ttname"><a href="classvita_1_1category__set.html#ad5bbfddeceaff01f7aa6dfca2e90b7fd">vita::category_set::add_label</a></div><div class="ttdeci">void add_label(category_t, const std::string &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="category__set_8cc_source.html#l00143">category_set.cc:143</a></div></div>
+<div class="ttc" id="classvita_1_1category__set_1_1const__iterator_html"><div class="ttname"><a href="classvita_1_1category__set_1_1const__iterator.html">vita::category_set::const_iterator</a></div><div class="ttdoc">Forward iterator to read the elements of a category_set. </div><div class="ttdef"><b>Definition:</b> <a href="category__set_8h_source.html#l00109">category_set.h:109</a></div></div>
+<div class="ttc" id="classvita_1_1category__set_html_ad5bbfddeceaff01f7aa6dfca2e90b7fd"><div class="ttname"><a href="classvita_1_1category__set.html#ad5bbfddeceaff01f7aa6dfca2e90b7fd">vita::category_set::add_label</a></div><div class="ttdeci">void add_label(category_t, const std::string &amp;)</div><div class="ttdoc">Adds a label to the set of labels associated with a category. </div><div class="ttdef"><b>Definition:</b> <a href="category__set_8cc_source.html#l00146">category_set.cc:146</a></div></div>
 <div class="ttc" id="namespacevita_html"><div class="ttname"><a href="namespacevita.html">vita</a></div><div class="ttdoc">The main namespace for the project. </div></div>
 <div class="ttc" id="classvita_1_1category__set_html_abe190dd9be6286ea7f86814d9573f10e"><div class="ttname"><a href="classvita_1_1category__set.html#abe190dd9be6286ea7f86814d9573f10e">vita::category_set::end</a></div><div class="ttdeci">const_iterator end() const </div><div class="ttdoc">Standard, STL-style, end method. </div><div class="ttdef"><b>Definition:</b> <a href="category__set_8cc_source.html#l00051">category_set.cc:51</a></div></div>
-<div class="ttc" id="classvita_1_1category__set_html_a1d86934223db9e2e286419255d9c1988"><div class="ttname"><a href="classvita_1_1category__set.html#a1d86934223db9e2e286419255d9c1988">vita::category_set::swap</a></div><div class="ttdeci">void swap(category_t, category_t)</div><div class="ttdef"><b>Definition:</b> <a href="category__set_8cc_source.html#l00157">category_set.cc:157</a></div></div>
-<div class="ttc" id="structvita_1_1untagged__category_html"><div class="ttname"><a href="structvita_1_1untagged__category.html">vita::untagged_category</a></div><div class="ttdoc">Informations about a category of the dataset. </div><div class="ttdef"><b>Definition:</b> <a href="category__set_8h_source.html#l00047">category_set.h:47</a></div></div>
-<div class="ttc" id="classvita_1_1category__set_html_a40fb05bfdfbe673636c35e048c1535d7"><div class="ttname"><a href="classvita_1_1category__set.html#a40fb05bfdfbe673636c35e048c1535d7">vita::category_set::insert</a></div><div class="ttdeci">category_t insert(const untagged_category &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="category__set_8cc_source.html#l00122">category_set.cc:122</a></div></div>
-<div class="ttc" id="classvita_1_1category__set_html_a1760088d1a2452e1d76e7eee239762ac"><div class="ttname"><a href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">vita::category_set::size</a></div><div class="ttdeci">category_t size() const </div><div class="ttdef"><b>Definition:</b> <a href="category__set_8cc_source.html#l00082">category_set.cc:82</a></div></div>
-<div class="ttc" id="classvita_1_1category__set_html_ae0a0f0d3d38e4b77a67e2b65e52d4c96"><div class="ttname"><a href="classvita_1_1category__set.html#ae0a0f0d3d38e4b77a67e2b65e52d4c96">vita::category_set::find</a></div><div class="ttdeci">category find(const std::string &amp;) const </div><div class="ttdef"><b>Definition:</b> <a href="category__set_8cc_source.html#l00092">category_set.cc:92</a></div></div>
+<div class="ttc" id="classvita_1_1category__set_html_a1d86934223db9e2e286419255d9c1988"><div class="ttname"><a href="classvita_1_1category__set.html#a1d86934223db9e2e286419255d9c1988">vita::category_set::swap</a></div><div class="ttdeci">void swap(category_t, category_t)</div><div class="ttdoc">Swaps two categories. </div><div class="ttdef"><b>Definition:</b> <a href="category__set_8cc_source.html#l00160">category_set.cc:160</a></div></div>
+<div class="ttc" id="structvita_1_1untagged__category_html"><div class="ttname"><a href="structvita_1_1untagged__category.html">vita::untagged_category</a></div><div class="ttdoc">Informations about a category of the dataset. </div><div class="ttdef"><b>Definition:</b> <a href="category__set_8h_source.html#l00049">category_set.h:49</a></div></div>
+<div class="ttc" id="classvita_1_1category__set_html_a40fb05bfdfbe673636c35e048c1535d7"><div class="ttname"><a href="classvita_1_1category__set.html#a40fb05bfdfbe673636c35e048c1535d7">vita::category_set::insert</a></div><div class="ttdeci">category_t insert(const untagged_category &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="category__set_8cc_source.html#l00125">category_set.cc:125</a></div></div>
+<div class="ttc" id="classvita_1_1category__set_html_a1760088d1a2452e1d76e7eee239762ac"><div class="ttname"><a href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">vita::category_set::size</a></div><div class="ttdeci">category_t size() const </div><div class="ttdoc">Number of input categories. </div><div class="ttdef"><b>Definition:</b> <a href="category__set_8cc_source.html#l00085">category_set.cc:85</a></div></div>
+<div class="ttc" id="classvita_1_1category__set_html_ae0a0f0d3d38e4b77a67e2b65e52d4c96"><div class="ttname"><a href="classvita_1_1category__set.html#ae0a0f0d3d38e4b77a67e2b65e52d4c96">vita::category_set::find</a></div><div class="ttdeci">category find(const std::string &amp;) const </div><div class="ttdef"><b>Definition:</b> <a href="category__set_8cc_source.html#l00095">category_set.cc:95</a></div></div>
 <div class="ttc" id="category__set_8h_html"><div class="ttname"><a href="category__set_8h.html">category_set.h</a></div></div>
-<div class="ttc" id="namespacevita_html_ae60a7117178f58cacfd11c43d086084e"><div class="ttname"><a href="namespacevita.html#ae60a7117178f58cacfd11c43d086084e">vita::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;o, hash_t h)</div><div class="ttdef"><b>Definition:</b> <a href="cache_8cc_source.html#l00270">cache.cc:270</a></div></div>
+<div class="ttc" id="namespacevita_html_ae60a7117178f58cacfd11c43d086084e"><div class="ttname"><a href="namespacevita.html#ae60a7117178f58cacfd11c43d086084e">vita::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;o, hash_t h)</div><div class="ttdoc">Mainly useful for debugging / testing. </div><div class="ttdef"><b>Definition:</b> <a href="cache__hash_8cc_source.html#l00056">cache_hash.cc:56</a></div></div>
 <div class="ttc" id="classvita_1_1category__set_html_af7de7f7b1070a9481ae544e2100ad43c"><div class="ttname"><a href="classvita_1_1category__set.html#af7de7f7b1070a9481ae544e2100ad43c">vita::category_set::begin</a></div><div class="ttdeci">const_iterator begin() const </div><div class="ttdoc">Standard, STL-style, begin method. </div><div class="ttdef"><b>Definition:</b> <a href="category__set_8cc_source.html#l00042">category_set.cc:42</a></div></div>
-<div class="ttc" id="structvita_1_1category_html"><div class="ttname"><a href="structvita_1_1category.html">vita::category</a></div><div class="ttdoc">Integrates untagged_category struct with a unique identifier. </div><div class="ttdef"><b>Definition:</b> <a href="category__set_8h_source.html#l00057">category_set.h:57</a></div></div>
+<div class="ttc" id="structvita_1_1category_html"><div class="ttname"><a href="structvita_1_1category.html">vita::category</a></div><div class="ttdoc">Integrates untagged_category struct with a unique identifier. </div><div class="ttdef"><b>Definition:</b> <a href="category__set_8h_source.html#l00059">category_set.h:59</a></div></div>
 <div class="ttc" id="namespacevita_html_ab4bee4c13eaf6e5d61b4900cae4f0447"><div class="ttname"><a href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">vita::category_t</a></div><div class="ttdeci">unsigned category_t</div><div class="ttdoc">A category provide operations which supplement or supersede those of the domain but which are restric...</div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00053">common.h:53</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:36 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

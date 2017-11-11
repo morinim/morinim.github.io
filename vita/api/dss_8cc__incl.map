@@ -1,12 +1,12 @@
 <map id="dss.cc" name="dss.cc">
-<area shape="rect" id="node2" href="$dss_8h.html" title="kernel/src/dss.h" alt="" coords="919,80,1033,107"/>
-<area shape="rect" id="node27" href="$random_8h.html" title="kernel/random.h" alt="" coords="1047,229,1161,256"/>
-<area shape="rect" id="node3" href="$validation__strategy_8h.html" title="kernel/validation_strategy.h" alt="" coords="885,155,1067,181"/>
-<area shape="rect" id="node13" href="$src_2data_8h.html" title="kernel/src/data.h" alt="" coords="579,155,698,181"/>
-<area shape="rect" id="node4" href="$common_8h.html" title="kernel/common.h" alt="" coords="835,379,957,405"/>
-<area shape="rect" id="node9" href="$compatibility__patch_8h.html" title="kernel/compatibility\l_patch.h" alt="" coords="994,453,1129,495"/>
-<area shape="rect" id="node16" href="$category__set_8h.html" title="kernel/category_set.h" alt="" coords="676,229,823,256"/>
-<area shape="rect" id="node19" href="$data_8h.html" title="kernel/data.h" alt="" coords="847,229,945,256"/>
-<area shape="rect" id="node20" href="$distribution_8h.html" title="kernel/distribution.h" alt="" coords="302,229,437,256"/>
-<area shape="rect" id="node23" href="$log_8h.html" title="kernel/log.h" alt="" coords="473,304,562,331"/>
+<area shape="rect" id="node2" href="$dss_8h.html" title="kernel/src/dss.h" alt="" coords="522,80,637,107"/>
+<area shape="rect" id="node28" href="$random_8h.html" title="kernel/random.h" alt="" coords="942,229,1057,256"/>
+<area shape="rect" id="node3" href="$validation__strategy_8h.html" title="kernel/validation_strategy.h" alt="" coords="99,155,281,181"/>
+<area shape="rect" id="node13" href="$src_2data_8h.html" title="kernel/src/data.h" alt="" coords="520,155,639,181"/>
+<area shape="rect" id="node4" href="$common_8h.html" title="kernel/common.h" alt="" coords="493,379,615,405"/>
+<area shape="rect" id="node9" href="$compatibility__patch_8h.html" title="kernel/compatibility\l_patch.h" alt="" coords="652,453,787,495"/>
+<area shape="rect" id="node17" href="$category__set_8h.html" title="kernel/category_set.h" alt="" coords="667,229,814,256"/>
+<area shape="rect" id="node20" href="$data_8h.html" title="kernel/data.h" alt="" coords="71,229,168,256"/>
+<area shape="rect" id="node21" href="$distribution_8h.html" title="kernel/distribution.h" alt="" coords="385,229,520,256"/>
+<area shape="rect" id="node24" href="$log_8h.html" title="kernel/log.h" alt="" coords="509,304,599,331"/>
 </map>

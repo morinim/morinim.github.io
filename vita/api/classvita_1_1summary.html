@@ -97,7 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>A summary of evolution (results, statistics...)  
+<p>A summary of evolution (results, statistics...).  
  <a href="classvita_1_1summary.html#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for vita::summary&lt; T &gt;:</div>
@@ -113,9 +113,11 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1summary.html#af5550d835c19cb1e784b03376d57062a">clear</a> ()</td></tr>
 <tr class="memdesc:af5550d835c19cb1e784b03376d57062a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets summary informations. <br /></td></tr>
 <tr class="separator:af5550d835c19cb1e784b03376d57062a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af46d9f967c39474e7c10695f65064003"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1summary.html#af46d9f967c39474e7c10695f65064003">load</a> (std::istream &amp;, const <a class="el" href="classvita_1_1environment.html">environment</a> &amp;)</td></tr>
-<tr class="separator:af46d9f967c39474e7c10695f65064003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2cf21de2f0fcb85c482dc6f354b059e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1summary.html#ae2cf21de2f0fcb85c482dc6f354b059e">load</a> (std::istream &amp;, const <a class="el" href="classvita_1_1problem.html">problem</a> &amp;)</td></tr>
+<tr class="memdesc:ae2cf21de2f0fcb85c482dc6f354b059e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the object from a stream.  <a href="#ae2cf21de2f0fcb85c482dc6f354b059e">More...</a><br /></td></tr>
+<tr class="separator:ae2cf21de2f0fcb85c482dc6f354b059e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e96b58967fa07a0a24ac0275e5c802f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1summary.html#a2e96b58967fa07a0a24ac0275e5c802f">save</a> (std::ostream &amp;) const </td></tr>
+<tr class="memdesc:a2e96b58967fa07a0a24ac0275e5c802f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the object into a stream.  <a href="#a2e96b58967fa07a0a24ac0275e5c802f">More...</a><br /></td></tr>
 <tr class="separator:a2e96b58967fa07a0a24ac0275e5c802f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f39775ef4b85bc2265148c1182eb25c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f39775ef4b85bc2265148c1182eb25c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1summary.html#a4f39775ef4b85bc2265148c1182eb25c">summary</a> ()</td></tr>
@@ -138,7 +140,8 @@ struct {</td></tr>
 <tr class="memitem:af8b1ba1a6140621b4c91643839268fa2"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>best</b></td></tr>
 <tr class="separator:af8b1ba1a6140621b4c91643839268fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecc26dd78be58c5f3ddeed86908b3146"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecc26dd78be58c5f3ddeed86908b3146"></a>
-std::uintmax_t&#160;</td><td class="memItemRight" valign="bottom"><b>crossovers</b></td></tr>
+std::uintmax_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1summary.html#aecc26dd78be58c5f3ddeed86908b3146">crossovers</a></td></tr>
+<tr class="memdesc:aecc26dd78be58c5f3ddeed86908b3146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of crossovers performed. <br /></td></tr>
 <tr class="separator:aecc26dd78be58c5f3ddeed86908b3146"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46264c125d1133af6c31c411a8d71bdc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46264c125d1133af6c31c411a8d71bdc"></a>
 std::chrono::milliseconds&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1summary.html#a46264c125d1133af6c31c411a8d71bdc">elapsed</a></td></tr>
@@ -151,14 +154,15 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>gen</b></td></tr>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>last_imp</b></td></tr>
 <tr class="separator:a5686e18406e0b376f75e4c1dbef47a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0377214248cc6c0e5a0cda177f070067"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0377214248cc6c0e5a0cda177f070067"></a>
-std::uintmax_t&#160;</td><td class="memItemRight" valign="bottom"><b>mutations</b></td></tr>
+std::uintmax_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1summary.html#a0377214248cc6c0e5a0cda177f070067">mutations</a></td></tr>
+<tr class="memdesc:a0377214248cc6c0e5a0cda177f070067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of mutations performed. <br /></td></tr>
 <tr class="separator:a0377214248cc6c0e5a0cda177f070067"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
 class vita::summary&lt; T &gt;</h3>
 
-<p>A summary of evolution (results, statistics...) </p>
+<p>A summary of evolution (results, statistics...). </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>type of individual </td></tr>
@@ -168,7 +172,7 @@ class vita::summary&lt; T &gt;</h3>
 
 <p>Definition at line <a class="el" href="evolution__summary_8h_source.html#l00029">29</a> of file <a class="el" href="evolution__summary_8h_source.html">evolution_summary.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="af46d9f967c39474e7c10695f65064003"></a>
+<a class="anchor" id="ae2cf21de2f0fcb85c482dc6f354b059e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -183,8 +187,8 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvita_1_1environment.html">environment</a> &amp;&#160;</td>
-          <td class="paramname"><em>e</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvita_1_1problem.html">problem</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -193,17 +197,19 @@ template&lt;class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Loads the object from a stream. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>input stream. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>an environment (needed to build the best individual). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>input stream </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>active problem </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object loaded correctly.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object loaded correctly</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If the load operation isn't successful the current object isn't changed. </dd></dl>
 
-<p>Definition at line <a class="el" href="evolution__summary_8h_source.html#l00048">48</a> of file <a class="el" href="evolution__summary_8h_source.html">evolution_summary.h</a>.</p>
+<p>Definition at line <a class="el" href="evolution__summary_8h_source.html#l00050">50</a> of file <a class="el" href="evolution__summary_8h_source.html">evolution_summary.h</a>.</p>
 
 </div>
 </div>
@@ -222,15 +228,17 @@ template&lt;class T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Saves the object into a stream. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>output stream. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>output stream </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if summary was saved correctly. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if summary was saved correctly </dd></dl>
 
-<p>Definition at line <a class="el" href="evolution__summary_8h_source.html#l00092">92</a> of file <a class="el" href="evolution__summary_8h_source.html">evolution_summary.h</a>.</p>
+<p>Definition at line <a class="el" href="evolution__summary_8h_source.html#l00096">96</a> of file <a class="el" href="evolution__summary_8h_source.html">evolution_summary.h</a>.</p>
 
 </div>
 </div>
@@ -240,7 +248,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:37 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

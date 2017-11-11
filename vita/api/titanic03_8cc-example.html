@@ -94,12 +94,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">  <span class="keywordflow">if</span> (!titanic)</div>
 <div class="line">    <span class="keywordflow">return</span> EXIT_FAILURE;</div>
 <div class="line"></div>
-<div class="line">  titanic.<a name="a1"></a>env.<a name="a2"></a><a class="code" href="classvita_1_1environment.html#a78eca365e67e87148eec24e15e4c3405">code_length</a> =  130;</div>
-<div class="line">  titanic.env.<a name="a3"></a><a class="code" href="classvita_1_1environment.html#a36ea26f28e29bb77d5098fa9ba24890e">individuals</a> = 1000;</div>
-<div class="line">  titanic.env.<a name="a4"></a><a class="code" href="classvita_1_1environment.html#a799dfa64b3997886c40a8a2d46b99b8b">generations</a> =  200;</div>
+<div class="line">  titanic.<a name="a1"></a>env.<a name="a2"></a>mep.<a name="a3"></a><a class="code" href="structvita_1_1environment_1_1mep__parameters.html#a40194180dcc7e086f91e8a78111bae97">code_length</a> = 130;</div>
+<div class="line">  titanic.env.<a name="a4"></a><a class="code" href="classvita_1_1environment.html#a36ea26f28e29bb77d5098fa9ba24890e">individuals</a> = 1000;</div>
+<div class="line">  titanic.env.<a name="a5"></a><a class="code" href="classvita_1_1environment.html#a799dfa64b3997886c40a8a2d46b99b8b">generations</a> =  200;</div>
 <div class="line"></div>
-<div class="line">  <a name="_a5"></a><a class="code" href="classvita_1_1src__search.html">vita::src_search&lt;&gt;</a> s(titanic, vita::metric_flags::accuracy);</div>
-<div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> summary(s.<a name="a6"></a><a class="code" href="classvita_1_1search.html#a7cfb24ad9065f244b3a56a9f6b1a2504">run</a>(10));</div>
+<div class="line">  <a name="_a6"></a><a class="code" href="classvita_1_1src__search.html">vita::src_search&lt;&gt;</a> s(titanic, vita::metric_flags::accuracy);</div>
+<div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> summary(s.<a name="a7"></a><a class="code" href="classvita_1_1search.html#a7cfb24ad9065f244b3a56a9f6b1a2504">run</a>(10));</div>
 <div class="line"></div>
 <div class="line">  std::cout &lt;&lt; summary.best.solution &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
 <div class="line">            &lt;&lt; summary.best.score.accuracy &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:36 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

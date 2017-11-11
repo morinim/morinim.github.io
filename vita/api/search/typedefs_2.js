@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['index_5ft',['index_t',['../namespacevita.html#adad613995ae7b1cf3b56a8a16598acdc',1,'vita']]]
+  ['gene',['gene',['../namespacevita.html#a6516a710b0c52fca1ea1fa7c34151375',1,'vita']]]
 ];

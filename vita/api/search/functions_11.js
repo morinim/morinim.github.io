@@ -4,7 +4,7 @@ var searchData=
   ['team_5fclass_5flambda_5ff',['team_class_lambda_f',['../classvita_1_1team__class__lambda__f.html#a6b4e003aff0be18fbf7d86430c98f186',1,'vita::team_class_lambda_f']]],
   ['term_5fraw_5fmode',['term_raw_mode',['../namespacevita.html#aae7e6376d0c104b43811f06b759ed59f',1,'vita']]],
   ['terminal',['terminal',['../classvita_1_1symbol.html#ad1f43761fc4fc79658eb69166047ced8',1,'vita::symbol']]],
-  ['terminals',['terminals',['../classvita_1_1analyzer.html#a1d5d695629c99078f683bbd8f399e14e',1,'vita::analyzer::terminals()'],['../classvita_1_1symbol__set.html#a16abdd74c5d4383ef2edbdce61f0db06',1,'vita::symbol_set::terminals()']]],
+  ['terminals',['terminals',['../classvita_1_1analyzer.html#a1d5d695629c99078f683bbd8f399e14e',1,'vita::analyzer::terminals()'],['../classvita_1_1symbol__set.html#a9df5d1bb58b69bffccdf6964a7f26178',1,'vita::symbol_set::terminals()']]],
   ['training_5faccuracy',['training_accuracy',['../classvita_1_1basic__dyn__slot__lambda__f.html#a99a949aa846f96734d707f8648f6ecfd',1,'vita::basic_dyn_slot_lambda_f']]],
   ['tune_5fparameters',['tune_parameters',['../classvita_1_1search.html#a5b86d3ecade85e0a0d069e23d097329f',1,'vita::search::tune_parameters()'],['../classvita_1_1src__search.html#a02c8f877377c2f98881b6dbed3974472',1,'vita::src_search::tune_parameters()']]]
 ];

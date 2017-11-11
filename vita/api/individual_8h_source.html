@@ -100,91 +100,94 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cache_8h.html">kernel/cache.h</a>&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="environment_8h.html">kernel/environment.h</a>&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="locus_8h.html">kernel/locus.h</a>&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="vitafwd_8h.html">kernel/vitafwd.h</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevita.html">vita</a></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> Derived&gt;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classvita_1_1individual.html#a484a2b3f2ceba915a0abbccc22da2502">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvita_1_1individual.html">individual</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classvita_1_1individual.html">individual</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">unsigned</span> <a class="code" href="classvita_1_1individual.html#a484a2b3f2ceba915a0abbccc22da2502">age</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classvita_1_1individual.html#ab0f63498ebae90239c568543dcf7e31a">inc_age</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="comment">// Serialization.</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classvita_1_1individual.html#ab0f63498ebae90239c568543dcf7e31a">   48</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classvita_1_1individual.html#acdf0181c2d76597dd162c5497c9540ff">load</a>(std::istream &amp;, <span class="keyword">const</span> <a class="code" href="classvita_1_1environment.html">environment</a> &amp;);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classvita_1_1individual.html#a21e77a2f75fa8de0426d405994e2a035">save</a>(std::ostream &amp;) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  ~<a class="code" href="classvita_1_1individual.html">individual</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classvita_1_1individual.html#a58b202388a4d290b76b7ee8be0bb3147">set_older_age</a>(<span class="keywordtype">unsigned</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="problem_8h.html">kernel/problem.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="vitafwd_8h.html">kernel/vitafwd.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevita.html">vita</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classvita_1_1individual.html#a484a2b3f2ceba915a0abbccc22da2502">   39</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> Derived&gt;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classvita_1_1individual.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvita_1_1individual.html">individual</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">unsigned</span> <a class="code" href="classvita_1_1individual.html#a484a2b3f2ceba915a0abbccc22da2502">age</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classvita_1_1individual.html#ab0f63498ebae90239c568543dcf7e31a">inc_age</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="comment">// Serialization.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classvita_1_1individual.html#a29a8ce3a8f5956080664a98e7b0d0fc1">load</a>(std::istream &amp;, <span class="keyword">const</span> <a class="code" href="classvita_1_1problem.html">problem</a> &amp;);</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classvita_1_1individual.html#ab0f63498ebae90239c568543dcf7e31a">   48</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classvita_1_1individual.html#a21e77a2f75fa8de0426d405994e2a035">save</a>(std::ostream &amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="comment">// Protected to prevent individual&lt;Derived&gt; from being instantiated as a non</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="comment">// base class.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="classvita_1_1individual.html">individual</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  ~<a class="code" href="classvita_1_1individual.html">individual</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="comment">// Note that syntactically distinct (but logically equivalent) individuals</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="comment">// have the same signature. This is a very interesting  property, useful</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="comment">// for individual comparison, information retrieval, entropy calculation...</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">mutable</span> <a class="code" href="structvita_1_1hash__t.html">hash_t</a> signature_;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classvita_1_1individual.html#acdf0181c2d76597dd162c5497c9540ff">   61</a></span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">unsigned</span> age_;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};  <span class="comment">// class individual</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="structvita_1_1has__introns.html">   68</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">struct </span><a class="code" href="structvita_1_1has__introns.html">has_introns</a> : std::false_type {};</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceout.html">out</a></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">bool</span> long_form_flag(std::ostream &amp;);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;print_format_t print_format_flag(std::ostream &amp;);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classvita_1_1out_1_1print__format.html">   75</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvita_1_1out_1_1print__format.html">print_format</a></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classvita_1_1out_1_1print__format.html">print_format</a>(print_format_t t) : t_(t) {}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">friend</span> std::ostream &amp;operator&lt;&lt;(std::ostream &amp;, <a class="code" href="classvita_1_1out_1_1print__format.html">print_format</a>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classvita_1_1individual.html#a58b202388a4d290b76b7ee8be0bb3147">set_older_age</a>(<span class="keywordtype">unsigned</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="comment">// Note that syntactically distinct (but logically equivalent) individuals</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="comment">// have the same signature. This is a very interesting  property, useful</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="comment">// for individual comparison, information retrieval, entropy calculation...</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classvita_1_1individual.html#a29a8ce3a8f5956080664a98e7b0d0fc1">   61</a></span>&#160;  <span class="keyword">mutable</span> <a class="code" href="structvita_1_1hash__t.html">hash_t</a> signature_;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">unsigned</span> age_;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};  <span class="comment">// class individual</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="structvita_1_1has__introns.html">   70</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">struct </span><a class="code" href="structvita_1_1has__introns.html">has_introns</a> : std::false_type {};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceout.html">out</a></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">bool</span> long_form_flag(std::ostream &amp;);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;print_format_t print_format_flag(std::ostream &amp;);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classvita_1_1out_1_1print__format.html">   77</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvita_1_1out_1_1print__format.html">print_format</a></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classvita_1_1out_1_1print__format.html">print_format</a>(print_format_t t) : t_(t) {}</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classvita_1_1individual.html#a21e77a2f75fa8de0426d405994e2a035">   83</a></span>&#160;  print_format_t t_;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;std::ostream &amp;c_language(std::ostream &amp;);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;std::ostream &amp;dump(std::ostream &amp;);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;std::ostream &amp;graphviz(std::ostream &amp;);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;std::ostream &amp;in_line(std::ostream &amp;);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;std::ostream &amp;list(std::ostream &amp;);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;std::ostream &amp;mql_language(std::ostream &amp;);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;std::ostream &amp;tree(std::ostream &amp;);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;std::ostream &amp;long_form(std::ostream &amp;);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;std::ostream &amp;short_form(std::ostream &amp;);</div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classvita_1_1individual.html#a58b202388a4d290b76b7ee8be0bb3147">   96</a></span>&#160;}  <span class="comment">// namespace out</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#include &quot;kernel/individual.tcc&quot;</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">friend</span> std::ostream &amp;operator&lt;&lt;(std::ostream &amp;, <a class="code" href="classvita_1_1out_1_1print__format.html">print_format</a>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classvita_1_1individual.html#a21e77a2f75fa8de0426d405994e2a035">   83</a></span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  print_format_t t_;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;std::ostream &amp;c_language(std::ostream &amp;);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;std::ostream &amp;dump(std::ostream &amp;);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;std::ostream &amp;graphviz(std::ostream &amp;);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;std::ostream &amp;in_line(std::ostream &amp;);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;std::ostream &amp;list(std::ostream &amp;);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;std::ostream &amp;mql_language(std::ostream &amp;);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;std::ostream &amp;tree(std::ostream &amp;);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classvita_1_1individual.html#a58b202388a4d290b76b7ee8be0bb3147">   96</a></span>&#160;std::ostream &amp;long_form(std::ostream &amp;);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;std::ostream &amp;short_form(std::ostream &amp;);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}  <span class="comment">// namespace out</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}  <span class="comment">// namespace vita</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif  // include guard</span></div>
-<div class="ttc" id="classvita_1_1out_1_1print__format_html"><div class="ttname"><a href="classvita_1_1out_1_1print__format.html">vita::out::print_format</a></div><div class="ttdef"><b>Definition:</b> <a href="individual_8h_source.html#l00075">individual.h:75</a></div></div>
-<div class="ttc" id="structvita_1_1hash__t_html"><div class="ttname"><a href="structvita_1_1hash__t.html">vita::hash_t</a></div><div class="ttdoc">This is a 128bit stream used as individual signature / hash table look up key. </div><div class="ttdef"><b>Definition:</b> <a href="cache_8h_source.html#l00024">cache.h:24</a></div></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#include &quot;kernel/individual.tcc&quot;</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}  <span class="comment">// namespace vita</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif  // include guard</span></div>
+<div class="ttc" id="classvita_1_1out_1_1print__format_html"><div class="ttname"><a href="classvita_1_1out_1_1print__format.html">vita::out::print_format</a></div><div class="ttdef"><b>Definition:</b> <a href="individual_8h_source.html#l00077">individual.h:77</a></div></div>
+<div class="ttc" id="structvita_1_1hash__t_html"><div class="ttname"><a href="structvita_1_1hash__t.html">vita::hash_t</a></div><div class="ttdoc">A 128bit unsigned integer used as individual&#39;s signature / hash table look-up key. </div><div class="ttdef"><b>Definition:</b> <a href="cache__hash_8h_source.html#l00025">cache_hash.h:25</a></div></div>
 <div class="ttc" id="classvita_1_1individual_html_a484a2b3f2ceba915a0abbccc22da2502"><div class="ttname"><a href="classvita_1_1individual.html#a484a2b3f2ceba915a0abbccc22da2502">vita::individual::age</a></div><div class="ttdeci">unsigned age() const </div><div class="ttdoc">A measurement of the age of an individual (mainly used for ALPS). </div><div class="ttdef"><b>Definition:</b> <a href="individual_8h_source.html#l00039">individual.h:39</a></div></div>
 <div class="ttc" id="classvita_1_1individual_html_a21e77a2f75fa8de0426d405994e2a035"><div class="ttname"><a href="classvita_1_1individual.html#a21e77a2f75fa8de0426d405994e2a035">vita::individual::save</a></div><div class="ttdeci">bool save(std::ostream &amp;) const </div><div class="ttdef"><b>Definition:</b> <a href="individual_8h_source.html#l00083">individual.h:83</a></div></div>
 <div class="ttc" id="classvita_1_1individual_html_a58b202388a4d290b76b7ee8be0bb3147"><div class="ttname"><a href="classvita_1_1individual.html#a58b202388a4d290b76b7ee8be0bb3147">vita::individual::set_older_age</a></div><div class="ttdeci">void set_older_age(unsigned)</div><div class="ttdoc">Updates the age of this individual if it&#39;s smaller than rhs_age. </div><div class="ttdef"><b>Definition:</b> <a href="individual_8h_source.html#l00096">individual.h:96</a></div></div>
-<div class="ttc" id="classvita_1_1environment_html"><div class="ttname"><a href="classvita_1_1environment.html">vita::environment</a></div><div class="ttdoc">Context object aggregating multiple related parameters into one structure. </div><div class="ttdef"><b>Definition:</b> <a href="environment_8h_source.html#l00049">environment.h:49</a></div></div>
 <div class="ttc" id="namespacevita_html"><div class="ttname"><a href="namespacevita.html">vita</a></div><div class="ttdoc">The main namespace for the project. </div></div>
 <div class="ttc" id="namespaceout_html"><div class="ttname"><a href="namespaceout.html">out</a></div><div class="ttdoc">Contains flags and manipulators to control the output format of individuals. </div></div>
-<div class="ttc" id="classvita_1_1individual_html_acdf0181c2d76597dd162c5497c9540ff"><div class="ttname"><a href="classvita_1_1individual.html#acdf0181c2d76597dd162c5497c9540ff">vita::individual::load</a></div><div class="ttdeci">bool load(std::istream &amp;, const environment &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="individual_8h_source.html#l00061">individual.h:61</a></div></div>
-<div class="ttc" id="classvita_1_1individual_html"><div class="ttname"><a href="classvita_1_1individual.html">vita::individual</a></div><div class="ttdoc">A single member of a population. </div><div class="ttdef"><b>Definition:</b> <a href="individual_8h_source.html#l00039">individual.h:39</a></div></div>
+<div class="ttc" id="classvita_1_1individual_html"><div class="ttname"><a href="classvita_1_1individual.html">vita::individual</a></div><div class="ttdoc">A single member of a population. </div><div class="ttdef"><b>Definition:</b> <a href="individual_8h_source.html#l00040">individual.h:40</a></div></div>
 <div class="ttc" id="cache_8h_html"><div class="ttname"><a href="cache_8h.html">cache.h</a></div></div>
 <div class="ttc" id="vitafwd_8h_html"><div class="ttname"><a href="vitafwd_8h.html">vitafwd.h</a></div></div>
 <div class="ttc" id="environment_8h_html"><div class="ttname"><a href="environment_8h.html">environment.h</a></div></div>
 <div class="ttc" id="locus_8h_html"><div class="ttname"><a href="locus_8h.html">locus.h</a></div></div>
+<div class="ttc" id="classvita_1_1problem_html"><div class="ttname"><a href="classvita_1_1problem.html">vita::problem</a></div><div class="ttdoc">Aggregates the problem-related data needed by an evolutionary program. </div><div class="ttdef"><b>Definition:</b> <a href="problem_8h_source.html#l00028">problem.h:28</a></div></div>
+<div class="ttc" id="classvita_1_1individual_html_a29a8ce3a8f5956080664a98e7b0d0fc1"><div class="ttname"><a href="classvita_1_1individual.html#a29a8ce3a8f5956080664a98e7b0d0fc1">vita::individual::load</a></div><div class="ttdeci">bool load(std::istream &amp;, const problem &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="individual_8h_source.html#l00061">individual.h:61</a></div></div>
 <div class="ttc" id="classvita_1_1individual_html_ab0f63498ebae90239c568543dcf7e31a"><div class="ttname"><a href="classvita_1_1individual.html#ab0f63498ebae90239c568543dcf7e31a">vita::individual::inc_age</a></div><div class="ttdeci">void inc_age()</div><div class="ttdoc">Increments the individual&#39;s age. </div><div class="ttdef"><b>Definition:</b> <a href="individual_8h_source.html#l00048">individual.h:48</a></div></div>
-<div class="ttc" id="structvita_1_1has__introns_html"><div class="ttname"><a href="structvita_1_1has__introns.html">vita::has_introns</a></div><div class="ttdoc">The SFINAE way of recognizing if an individual has introns. </div><div class="ttdef"><b>Definition:</b> <a href="individual_8h_source.html#l00068">individual.h:68</a></div></div>
+<div class="ttc" id="structvita_1_1has__introns_html"><div class="ttname"><a href="structvita_1_1has__introns.html">vita::has_introns</a></div><div class="ttdoc">The SFINAE way of recognizing if an individual has introns. </div><div class="ttdef"><b>Definition:</b> <a href="individual_8h_source.html#l00070">individual.h:70</a></div></div>
+<div class="ttc" id="problem_8h_html"><div class="ttname"><a href="problem_8h.html">problem.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:36 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -7,7 +7,7 @@ var searchData=
   ['adf',['adf',['../classvita_1_1adf.html#a589e913c934fdfe604787aab84fc486e',1,'vita::adf']]],
   ['adf_5fcore',['adf_core',['../classvita_1_1adf__core.html#a853b94481dc5ed386d7dc8a90f45245b',1,'vita::adf_core']]],
   ['adt',['adt',['../classvita_1_1adt.html#ae6085c77b2a16ca6a9e89a49eba21d2f',1,'vita::adt']]],
-  ['adts',['adts',['../classvita_1_1symbol__set.html#a21aa69871a3547ae56aaea95b0d5c349',1,'vita::symbol_set']]],
+  ['adts',['adts',['../classvita_1_1symbol__set.html#a17ab3eacf4a54105edcd00be4e7c2525',1,'vita::symbol_set']]],
   ['age',['age',['../classvita_1_1individual.html#a484a2b3f2ceba915a0abbccc22da2502',1,'vita::individual']]],
   ['age_5fdist',['age_dist',['../classvita_1_1analyzer.html#a2398360813eca9b4d141855bb35704b8',1,'vita::analyzer::age_dist() const '],['../classvita_1_1analyzer.html#acdb8f37c96999ce2c225f12411cd7291',1,'vita::analyzer::age_dist(unsigned) const ']]],
   ['aged',['aged',['../namespacevita_1_1alps.html#a85e0d1334001fcf0ed941451865729d5',1,'vita::alps']]],

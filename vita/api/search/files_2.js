@@ -2,6 +2,7 @@ var searchData=
 [
   ['cache_2ecc',['cache.cc',['../cache_8cc.html',1,'']]],
   ['cache_2eh',['cache.h',['../cache_8h.html',1,'']]],
+  ['cache_5fhash_2ecc',['cache_hash.cc',['../cache__hash_8cc.html',1,'']]],
   ['cache_5fhash_2eh',['cache_hash.h',['../cache__hash_8h.html',1,'']]],
   ['category_5fset_2ecc',['category_set.cc',['../category__set_8cc.html',1,'']]],
   ['category_5fset_2eh',['category_set.h',['../category__set_8h.html',1,'']]],

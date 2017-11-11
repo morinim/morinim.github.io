@@ -1,5 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classvita_1_1evolution__strategy.html" title="Defines the skeleton of the evolution, deferring some steps to client subclasses. ..." alt="" coords="5,5,163,47"/>
-<area shape="rect" id="node2" href="$classvita_1_1basic__alps__es.html" title="vita::basic_alps_es\l\&lt; T, recombination::de \&gt;" alt="" coords="211,5,376,47"/>
-<area shape="rect" id="node3" href="$classvita_1_1de__alps__es.html" title="Differential evolution strategy enhanced with ALPS. " alt="" coords="424,13,573,39"/>
+<area shape="rect" id="node1" href="$classvita_1_1evolution__strategy.html" title="vita::evolution_strategy\l\&lt; T, selection::random,\l recombination::de, replacement\l::tournament \&gt;" alt="" coords="5,5,213,76"/>
+<area shape="rect" id="node2" href="$classvita_1_1de__es.html" title="Differential evolution strategy. " alt="" coords="261,27,380,54"/>
 </map>

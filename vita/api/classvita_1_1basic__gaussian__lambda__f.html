@@ -119,8 +119,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad6ef762c76991ef31565a34b92a1e27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba54bf0afb77d8a759bfc45eff193464"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__gaussian__lambda__f.html#aba54bf0afb77d8a759bfc45eff193464">debug</a> () const override</td></tr>
 <tr class="separator:aba54bf0afb77d8a759bfc45eff193464"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a592ed47515768e0aac9adb49a24fc83b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__gaussian__lambda__f.html#a592ed47515768e0aac9adb49a24fc83b">load</a> (std::istream &amp;, const <a class="el" href="classvita_1_1environment.html">environment</a> &amp;) override</td></tr>
-<tr class="separator:a592ed47515768e0aac9adb49a24fc83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c26b7430826f6358801e9098a8fae06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__gaussian__lambda__f.html#a8c26b7430826f6358801e9098a8fae06">load</a> (std::istream &amp;, const <a class="el" href="classvita_1_1problem.html">problem</a> &amp;) override</td></tr>
+<tr class="separator:a8c26b7430826f6358801e9098a8fae06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7dd298dd04a2bf0344cbd4713c73820"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__gaussian__lambda__f.html#ae7dd298dd04a2bf0344cbd4713c73820">save</a> (std::ostream &amp;) const override</td></tr>
 <tr class="separator:ae7dd298dd04a2bf0344cbd4713c73820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a546a35c19f21bda26a04ec296a1fb337"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="namespacevita.html#a3afa1d8068ad1dc34839791969bfe61b">class_t</a>, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__gaussian__lambda__f.html#a546a35c19f21bda26a04ec296a1fb337">tag</a> (const <a class="el" href="structvita_1_1src__data_1_1example.html">src_data::example</a> &amp;) const override</td></tr>
@@ -187,7 +187,7 @@ template&lt;class T, bool S, bool N&gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00443">443</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
+<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00440">440</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
 
 </div>
 </div>
@@ -218,11 +218,11 @@ template&lt;class T , bool S, bool N&gt; </div>
 
 <p>Implements <a class="el" href="classvita_1_1lambda__f.html">vita::lambda_f&lt; T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00636">636</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
+<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00630">630</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a592ed47515768e0aac9adb49a24fc83b"></a>
+<a class="anchor" id="a8c26b7430826f6358801e9098a8fae06"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -240,8 +240,8 @@ template&lt;class T , bool S, bool N&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvita_1_1environment.html">environment</a> &amp;&#160;</td>
-          <td class="paramname"><em>e</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvita_1_1problem.html">problem</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -257,7 +257,7 @@ template&lt;class T , bool S, bool N&gt; </div>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>environment used to build the object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>current problem. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>input stream. </td></tr>
   </table>
   </dd>
@@ -268,7 +268,7 @@ template&lt;class T , bool S, bool N&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classvita_1_1lambda__f.html">vita::lambda_f&lt; T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00575">575</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
+<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00572">572</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
 
 </div>
 </div>
@@ -306,7 +306,7 @@ template&lt;class T , bool S, bool N&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classvita_1_1lambda__f.html">vita::lambda_f&lt; T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00548">548</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
+<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00545">545</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
 
 </div>
 </div>
@@ -343,7 +343,7 @@ template&lt;class T , bool S, bool N&gt; </div>
 
 <p>Implements <a class="el" href="classvita_1_1class__lambda__f.html">vita::class_lambda_f&lt; T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00497">497</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
+<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00494">494</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
 
 </div>
 </div>
@@ -353,7 +353,7 @@ template&lt;class T , bool S, bool N&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:37 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

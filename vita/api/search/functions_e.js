@@ -7,6 +7,6 @@ var searchData=
   ['pre_5fbookkeeping',['pre_bookkeeping',['../classvita_1_1evolution__strategy.html#a3ae5bcf452335dacedd26b497efabb5e',1,'vita::evolution_strategy']]],
   ['preliminary_5fsetup',['preliminary_setup',['../classvita_1_1dss.html#aab54ae53d20446efe33f0ada18cbfb6d',1,'vita::dss::preliminary_setup()'],['../classvita_1_1holdout__validation.html#a3df1bfc05d5667463ae43c5f92955492',1,'vita::holdout_validation::preliminary_setup()']]],
   ['probes',['probes',['../classvita_1_1cache.html#a8627a7c66afb689dccd9119666865748',1,'vita::cache']]],
-  ['problem',['problem',['../classvita_1_1problem.html#a1cd4e735b51edb1092bee772482efb6c',1,'vita::problem']]],
+  ['problem',['problem',['../classvita_1_1problem.html#abf037add0eea685c2679a7f830e59004',1,'vita::problem']]],
   ['push_5fback',['push_back',['../classvita_1_1src__data.html#a7bfb25515fce902a0c48811d0a0fe1c5',1,'vita::src_data']]]
 ];

@@ -162,33 +162,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
 <div class="line">{</div>
-<div class="line">  <a name="_a9"></a><a class="code" href="classvita_1_1symbol__set.html">vita::symbol_set</a> sset;</div>
-<div class="line">  <a name="_a10"></a><a class="code" href="classvita_1_1environment.html">vita::environment</a> env(&amp;sset, <span class="keyword">true</span>);</div>
+<div class="line">  <span class="keyword">using namespace </span><a class="code" href="namespacevita.html">vita</a>;</div>
+<div class="line">  <a name="_a9"></a><a class="code" href="classvita_1_1problem.html">problem</a> p(initialization::standard);</div>
 <div class="line"></div>
-<div class="line">  env.individuals = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(argc &gt; 1 ? std::atoi(argv[1]) : 100);</div>
-<div class="line">  env.code_length = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(argc &gt; 2 ? std::atoi(argv[2]) : 100);</div>
-<div class="line">  env.generations = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(argc &gt; 3 ? std::atoi(argv[3]) : 100);</div>
+<div class="line">  p.env.individuals = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(argc &gt; 1</div>
+<div class="line">                                            ? std::atoi(argv[1])</div>
+<div class="line">                                            : 100);</div>
+<div class="line">  p.env.mep.code_length = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(argc &gt; 2</div>
+<div class="line">                                                ? std::atoi(argv[2])</div>
+<div class="line">                                                : 100);</div>
+<div class="line">  p.env.generations = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(argc &gt; 3</div>
+<div class="line">                                            ? std::atoi(argv[3])</div>
+<div class="line">                                            : 100);</div>
 <div class="line"></div>
-<div class="line">  <a name="_a11"></a><a class="code" href="classvita_1_1symbol__factory.html">vita::symbol_factory</a> factory;</div>
-<div class="line">  sset.<a name="a12"></a><a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(std::make_unique&lt;X&gt;());</div>
-<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(std::make_unique&lt;Y&gt;());</div>
-<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(std::make_unique&lt;Z&gt;());</div>
-<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a name="a13"></a><a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FADD&quot;</span>));</div>
-<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FSUB&quot;</span>));</div>
-<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FMUL&quot;</span>));</div>
-<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FIFL&quot;</span>));</div>
-<div class="line">  sset.<a class="code" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a>(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FIFE&quot;</span>));</div>
+<div class="line">  <a name="_a10"></a><a class="code" href="classvita_1_1symbol__factory.html">symbol_factory</a> factory;</div>
+<div class="line">  p.sset.insert&lt;X&gt;();</div>
+<div class="line">  p.sset.insert&lt;Y&gt;();</div>
+<div class="line">  p.sset.insert&lt;Z&gt;();</div>
+<div class="line">  p.sset.insert(factory.<a name="a11"></a><a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FADD&quot;</span>));</div>
+<div class="line">  p.sset.insert(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FSUB&quot;</span>));</div>
+<div class="line">  p.sset.insert(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FMUL&quot;</span>));</div>
+<div class="line">  p.sset.insert(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FIFL&quot;</span>));</div>
+<div class="line">  p.sset.insert(factory.<a class="code" href="classvita_1_1symbol__factory.html#aaab59967e6860742393b3ee0a016023d">make</a>(<span class="stringliteral">&quot;FIFE&quot;</span>));</div>
 <div class="line"></div>
 <div class="line">  <span class="keyword">auto</span> eva(std::make_unique&lt;my_evaluator&gt;());</div>
 <div class="line"></div>
-<div class="line">  <a name="_a14"></a><a class="code" href="classvita_1_1evolution.html">vita::evolution&lt;vita::i_mep, vita::std_es&gt;</a> evo(env, *eva);</div>
+<div class="line">  <a name="_a12"></a><a class="code" href="classvita_1_1evolution.html">evolution&lt;i_mep, std_es&gt;</a> evo(p, *eva);</div>
 <div class="line"></div>
 <div class="line">  evo.run(1);</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:36 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

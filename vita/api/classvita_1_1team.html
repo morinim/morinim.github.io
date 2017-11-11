@@ -109,6 +109,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b> =
 <tr class="memitem:aa6b9856128c49d57fa600f07cf1c55a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6b9856128c49d57fa600f07cf1c55a5"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>members_t</b> = std::vector&lt; T &gt;</td></tr>
 <tr class="separator:aa6b9856128c49d57fa600f07cf1c55a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef804659b6524e6ba169c1a2bcb1b3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ef804659b6524e6ba169c1a2bcb1b3d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = typename members_t::value_type</td></tr>
+<tr class="separator:a0ef804659b6524e6ba169c1a2bcb1b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -136,12 +139,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>inc_age</b> ()</td></
 <tr class="memitem:a6ba62603b64a31e3fe8c63aed4fcc6ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ba62603b64a31e3fe8c63aed4fcc6ff"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>individuals</b> () const </td></tr>
 <tr class="separator:a6ba62603b64a31e3fe8c63aed4fcc6ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa64b78ae411d0d2476fc4e486a212931"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa64b78ae411d0d2476fc4e486a212931"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (std::istream &amp;, const <a class="el" href="classvita_1_1environment.html">environment</a> &amp;)</td></tr>
-<tr class="separator:aa64b78ae411d0d2476fc4e486a212931"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50e6491469d2ceb4f9b46b65d8b7839e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50e6491469d2ceb4f9b46b65d8b7839e"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>mutation</b> (double, const <a class="el" href="classvita_1_1environment.html">environment</a> &amp;)</td></tr>
-<tr class="separator:a50e6491469d2ceb4f9b46b65d8b7839e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a146a075fdc0013d7719969117a67c7ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a146a075fdc0013d7719969117a67c7ee"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (std::istream &amp;, const <a class="el" href="classvita_1_1problem.html">problem</a> &amp;)</td></tr>
+<tr class="separator:a146a075fdc0013d7719969117a67c7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b8e76c9d869353aa83c26eb9968d7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61b8e76c9d869353aa83c26eb9968d7c"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>mutation</b> (double, const <a class="el" href="classvita_1_1problem.html">problem</a> &amp;)</td></tr>
+<tr class="separator:a61b8e76c9d869353aa83c26eb9968d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adde2526070c2941bf82665ce1e72f5f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adde2526070c2941bf82665ce1e72f5f6"></a>
 const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (unsigned) const </td></tr>
 <tr class="separator:adde2526070c2941bf82665ce1e72f5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,9 +157,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> (std::ostrea
 <tr class="memitem:a266c305fc86d04dcc6748dabc804e9fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a266c305fc86d04dcc6748dabc804e9fe"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>team</b> (unsigned)</td></tr>
 <tr class="separator:a266c305fc86d04dcc6748dabc804e9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa33dc6a4931c69e0d994a42f3f08c0ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa33dc6a4931c69e0d994a42f3f08c0ce"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>team</b> (const <a class="el" href="classvita_1_1environment.html">environment</a> &amp;)</td></tr>
-<tr class="separator:aa33dc6a4931c69e0d994a42f3f08c0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec240a289234bffcfd523ea265442312"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec240a289234bffcfd523ea265442312"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>team</b> (const <a class="el" href="classvita_1_1problem.html">problem</a> &amp;)</td></tr>
+<tr class="separator:aec240a289234bffcfd523ea265442312"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99f23c6a5b2012c4352568c172305f7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99f23c6a5b2012c4352568c172305f7c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>team</b> (std::vector&lt; T &gt;)</td></tr>
 <tr class="separator:a99f23c6a5b2012c4352568c172305f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,7 +198,7 @@ class vita::team&lt; T &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:37 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

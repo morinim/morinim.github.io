@@ -1,7 +1,7 @@
 var searchData=
 [
   ['alps',['alps',['../namespacevita_1_1alps.html',1,'vita']]],
-  ['vita_20v0_2e9_2e12',['VITA v0.9.12',['../index.html',1,'']]],
+  ['vita_20v0_2e9_2e13',['VITA v0.9.13',['../index.html',1,'']]],
   ['integer',['integer',['../namespacevita_1_1integer.html',1,'vita']]],
   ['vita_20architecture',['VITA Architecture',['../page1.html',1,'']]],
   ['real',['real',['../namespacevita_1_1real.html',1,'vita']]],

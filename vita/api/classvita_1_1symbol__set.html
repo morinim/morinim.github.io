@@ -90,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classvita_1_1symbol__set-members.html">List of all members</a>  </div>
@@ -101,10 +102,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>A container for the symbols used by the GP engine.  
  <a href="classvita_1_1symbol__set.html#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:af1289ce06a6db8dcbf59b1c6e13918a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1289ce06a6db8dcbf59b1c6e13918a2"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>weight_t</b> = unsigned</td></tr>
+<tr class="separator:af1289ce06a6db8dcbf59b1c6e13918a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a21aa69871a3547ae56aaea95b0d5c349"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#a21aa69871a3547ae56aaea95b0d5c349">adts</a> () const </td></tr>
-<tr class="separator:a21aa69871a3547ae56aaea95b0d5c349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17ab3eacf4a54105edcd00be4e7c2525"><td class="memItemLeft" align="right" valign="top">std::vector&lt; const <a class="el" href="classvita_1_1symbol.html">symbol</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#a17ab3eacf4a54105edcd00be4e7c2525">adts</a> () const </td></tr>
+<tr class="separator:a17ab3eacf4a54105edcd00be4e7c2525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75979c1627dafefe6ecfa82373615fb9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvita_1_1symbol.html">symbol</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#a75979c1627dafefe6ecfa82373615fb9">arg</a> (std::size_t) const </td></tr>
 <tr class="separator:a75979c1627dafefe6ecfa82373615fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e2c3df6c8c78ede8f4bd5d7376be269"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#a9e2c3df6c8c78ede8f4bd5d7376be269">categories</a> () const </td></tr>
@@ -122,27 +129,43 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:aadc37e4dac8ba9867a94fe166ba9fdb4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#aadc37e4dac8ba9867a94fe166ba9fdb4">enough_terminals</a> () const </td></tr>
 <tr class="memdesc:aadc37e4dac8ba9867a94fe166ba9fdb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">We want at least one terminal for every used category.  <a href="#aadc37e4dac8ba9867a94fe166ba9fdb4">More...</a><br /></td></tr>
 <tr class="separator:aadc37e4dac8ba9867a94fe166ba9fdb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0994b6b9ea73d9a18d3574c600c9fea4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvita_1_1symbol.html">symbol</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#a0994b6b9ea73d9a18d3574c600c9fea4">get_adt</a> (std::size_t) const </td></tr>
-<tr class="separator:a0994b6b9ea73d9a18d3574c600c9fea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ac1c305d2088ff6cbcc71724339045d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvita_1_1symbol.html">symbol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#a4ac1c305d2088ff6cbcc71724339045d">insert</a> (std::unique_ptr&lt; <a class="el" href="classvita_1_1symbol.html">symbol</a> &gt;, double=1.0)</td></tr>
 <tr class="memdesc:a4ac1c305d2088ff6cbcc71724339045d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new symbol to the set.  <a href="#a4ac1c305d2088ff6cbcc71724339045d">More...</a><br /></td></tr>
 <tr class="separator:a4ac1c305d2088ff6cbcc71724339045d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8b9dde1fbc492d406e37c1bcb9b4496"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8b9dde1fbc492d406e37c1bcb9b4496"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_adf_weights</b> ()</td></tr>
-<tr class="separator:aa8b9dde1fbc492d406e37c1bcb9b4496"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4df4fcfcfede383d6748c73a88142371"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvita_1_1symbol.html">symbol</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#a4df4fcfcfede383d6748c73a88142371">roulette</a> () const </td></tr>
-<tr class="separator:a4df4fcfcfede383d6748c73a88142371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0757ae1bc4fd3bdf3d92be3549e9d4bc"><td class="memTemplParams" colspan="2"><a class="anchor" id="a0757ae1bc4fd3bdf3d92be3549e9d4bc"></a>
+template&lt;class S , class... Args&gt; </td></tr>
+<tr class="memitem:a0757ae1bc4fd3bdf3d92be3549e9d4bc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvita_1_1symbol.html">symbol</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert</b> (double, Args &amp;&amp;...)</td></tr>
+<tr class="separator:a0757ae1bc4fd3bdf3d92be3549e9d4bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7435264db855ed985877cb1205ae3365"><td class="memTemplParams" colspan="2"><a class="anchor" id="a7435264db855ed985877cb1205ae3365"></a>
+template&lt;class S , class... Args&gt; </td></tr>
+<tr class="memitem:a7435264db855ed985877cb1205ae3365"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvita_1_1symbol.html">symbol</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert</b> (Args &amp;&amp;...)</td></tr>
+<tr class="separator:a7435264db855ed985877cb1205ae3365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5662b262f9040af9ad5027a7e1ca0585"><td class="memTemplParams" colspan="2">template&lt;class S , class... Args&gt; </td></tr>
+<tr class="memitem:a5662b262f9040af9ad5027a7e1ca0585"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvita_1_1symbol.html">symbol</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#a5662b262f9040af9ad5027a7e1ca0585">insert</a> (double wr, Args &amp;&amp;...args)</td></tr>
+<tr class="memdesc:a5662b262f9040af9ad5027a7e1ca0585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a symbol to the symbol set.  <a href="#a5662b262f9040af9ad5027a7e1ca0585">More...</a><br /></td></tr>
+<tr class="separator:a5662b262f9040af9ad5027a7e1ca0585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d600d745b06c6b71eb52fcc0e3c428"><td class="memTemplParams" colspan="2">template&lt;class S , class... Args&gt; </td></tr>
+<tr class="memitem:a85d600d745b06c6b71eb52fcc0e3c428"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classvita_1_1symbol.html">symbol</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#a85d600d745b06c6b71eb52fcc0e3c428">insert</a> (Args &amp;&amp;...args)</td></tr>
+<tr class="memdesc:a85d600d745b06c6b71eb52fcc0e3c428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a symbol to the symbol set.  <a href="#a85d600d745b06c6b71eb52fcc0e3c428">More...</a><br /></td></tr>
+<tr class="separator:a85d600d745b06c6b71eb52fcc0e3c428"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6df9819d4a06ab2dd5e6bf30303bc2c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvita_1_1symbol.html">symbol</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#af6df9819d4a06ab2dd5e6bf30303bc2c">roulette</a> (<a class="el" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a>) const </td></tr>
+<tr class="memdesc:af6df9819d4a06ab2dd5e6bf30303bc2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts a random symbol from the symbol set.  <a href="#af6df9819d4a06ab2dd5e6bf30303bc2c">More...</a><br /></td></tr>
 <tr class="separator:af6df9819d4a06ab2dd5e6bf30303bc2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d136cb13bf0cb8f1c1fe999d6cb739"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvita_1_1function.html">function</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#aa0d136cb13bf0cb8f1c1fe999d6cb739">roulette_function</a> (<a class="el" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a>) const </td></tr>
+<tr class="separator:aa0d136cb13bf0cb8f1c1fe999d6cb739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8baeb1617cc552360ec9fce3decc1da8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classvita_1_1terminal.html">terminal</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#a8baeb1617cc552360ec9fce3decc1da8">roulette_terminal</a> (<a class="el" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a>) const </td></tr>
 <tr class="separator:a8baeb1617cc552360ec9fce3decc1da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31908c737b95840cdd1ee7b7e20ed09d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31908c737b95840cdd1ee7b7e20ed09d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#a31908c737b95840cdd1ee7b7e20ed09d">scale_adf_weights</a> ()</td></tr>
+<tr class="memdesc:a31908c737b95840cdd1ee7b7e20ed09d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Halves ADF / ADT weights. <br /></td></tr>
+<tr class="separator:a31908c737b95840cdd1ee7b7e20ed09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10a8026f7c5d6b0162e6102a34f8bc32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#a10a8026f7c5d6b0162e6102a34f8bc32">symbol_set</a> ()</td></tr>
 <tr class="memdesc:a10a8026f7c5d6b0162e6102a34f8bc32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the object.  <a href="#a10a8026f7c5d6b0162e6102a34f8bc32">More...</a><br /></td></tr>
 <tr class="separator:a10a8026f7c5d6b0162e6102a34f8bc32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16abdd74c5d4383ef2edbdce61f0db06"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#a16abdd74c5d4383ef2edbdce61f0db06">terminals</a> (<a class="el" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a>) const </td></tr>
-<tr class="separator:a16abdd74c5d4383ef2edbdce61f0db06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afafd9dd20abc9d2f05fc83dc5418b12a"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#afafd9dd20abc9d2f05fc83dc5418b12a">weight</a> (const <a class="el" href="classvita_1_1symbol.html">symbol</a> &amp;) const </td></tr>
-<tr class="separator:afafd9dd20abc9d2f05fc83dc5418b12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9df5d1bb58b69bffccdf6964a7f26178"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#a9df5d1bb58b69bffccdf6964a7f26178">terminals</a> (<a class="el" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a>) const </td></tr>
+<tr class="separator:a9df5d1bb58b69bffccdf6964a7f26178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a0a5642363a9bc17a8eb50ee9801b3"><td class="memItemLeft" align="right" valign="top">weight_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1symbol__set.html#aa3a0a5642363a9bc17a8eb50ee9801b3">weight</a> (const <a class="el" href="classvita_1_1symbol.html">symbol</a> &amp;) const </td></tr>
+<tr class="separator:aa3a0a5642363a9bc17a8eb50ee9801b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -154,8 +177,7 @@ Friends</h2></td></tr>
 <div class="textblock"><p>A container for the symbols used by the GP engine. </p>
 <p>Symbols are stored to be quickly recalled by category and randomly selected.</p>
 <dl class="section note"><dt>Note</dt><dd>The functions and terminals used should be powerful enough to be able to represent a solution to the problem. On the other hand, it's better not to use a symbol set too large (this enlarges the search space and makes harder the search for a solution). </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="example3_8cc-example.html#_a0">example3.cc</a>, <a class="el" href="example4_8cc-example.html#_a0">example4.cc</a>, <a class="el" href="example5_8cc-example.html#_a0">example5.cc</a>, and <a class="el" href="example6_8cc-example.html#_a9">example6.cc</a>.</dd>
-</dl>
+
 <p>Definition at line <a class="el" href="symbol__set_8h_source.html#l00035">35</a> of file <a class="el" href="symbol__set_8h_source.html">symbol_set.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a10a8026f7c5d6b0162e6102a34f8bc32"></a>
@@ -179,21 +201,21 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a21aa69871a3547ae56aaea95b0d5c349"></a>
+<a class="anchor" id="a17ab3eacf4a54105edcd00be4e7c2525"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::size_t vita::symbol_set::adts </td>
+          <td class="memname">std::vector&lt; const <a class="el" href="classvita_1_1symbol.html">symbol</a> * &gt; vita::symbol_set::adts </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>the number of ADT functions stored </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a container with all the ADTs </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00066">66</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00055">55</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -218,7 +240,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a reference to the <code>n</code>-th <code>argument</code> symbol </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00047">47</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00046">46</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -235,9 +257,9 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>number of categories in the symbol set (<code>&gt;= 1</code>)</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">category_set::size()</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac" title="Number of input categories. ">category_set::size()</a>. </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00239">239</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00247">247</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -255,7 +277,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object passes the internal consistency check </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00337">337</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00340">340</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -280,7 +302,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the <a class="el" href="classvita_1_1symbol.html" title="Together functions and terminals are referred to as symbols. ">vita::symbol</a> identified by <code>opcode</code> (<code>nullptr</code> if not found). </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00204">204</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00212">212</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -306,7 +328,7 @@ Friends</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>a pointer to the symbol identified by <code>dex</code> (0 if not found)</dd></dl>
 <dl class="section attention"><dt>Attention</dt><dd>Please note that opcodes are automatically generated and fully identify a symbol (they're primary keys). Conversely the name of a symbol is chosen by the user, so, if you don't pay attention, different symbols may have the same name. </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00223">223</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00231">231</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -326,32 +348,7 @@ Friends</h2></td></tr>
 <p>We want at least one terminal for every used category. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if there are enough terminals for secure individual generation </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00263">263</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0994b6b9ea73d9a18d3574c600c9fea4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classvita_1_1symbol.html">symbol</a> &amp; vita::symbol_set::get_adt </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>index of an ADT symbol </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a reference to the <code>i</code>-th ADT symbol </dd></dl>
-
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00057">57</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00268">268</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -387,28 +384,80 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a raw pointer to the symbol just added (or <code>nullptr</code> in case of error). </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="example3_8cc-example.html#a4">example3.cc</a>, <a class="el" href="example4_8cc-example.html#a4">example4.cc</a>, <a class="el" href="example5_8cc-example.html#a4">example5.cc</a>, <a class="el" href="example6_8cc-example.html#a12">example6.cc</a>, <a class="el" href="pathfinding01_8cc-example.html#a5">pathfinding01.cc</a>, <a class="el" href="pathfinding02_8cc-example.html#a5">pathfinding02.cc</a>, and <a class="el" href="scheduling_8cc-example.html#a5">scheduling.cc</a>.</dd>
+<dl class="section return"><dt>Returns</dt><dd>a raw pointer to the symbol just added (or <code>nullptr</code> in case of error) </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="example3_8cc-example.html#a6">example3.cc</a>, <a class="el" href="example4_8cc-example.html#a6">example4.cc</a>, <a class="el" href="example5_8cc-example.html#a6">example5.cc</a>, <a class="el" href="pathfinding01_8cc-example.html#a4">pathfinding01.cc</a>, <a class="el" href="pathfinding02_8cc-example.html#a4">pathfinding02.cc</a>, and <a class="el" href="scheduling_8cc-example.html#a5">scheduling.cc</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00080">80</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00075">75</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a4df4fcfcfede383d6748c73a88142371"></a>
+<a class="anchor" id="a5662b262f9040af9ad5027a7e1ca0585"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class S , class... Args&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classvita_1_1symbol.html">symbol</a> &amp; vita::symbol_set::roulette </td>
+          <td class="memname"><a class="el" href="classvita_1_1symbol.html">symbol</a>* vita::symbol_set::insert </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>wr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>a random symbol from the set of all symbols </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00194">194</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Adds a symbol to the symbol set. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">S</td><td>symbol to be added </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wr</td><td>the weight of <code>S</code> (<code>1.0</code> means standard frequency, <code>2.0</code> double probability of selection) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>arguments used to build <code>S</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a raw pointer to the symbol just added (or <code>nullptr</code> in case of error)</dd></dl>
+<p>Insert a symbol in the symbol set without the user having to allocate memory. It doesn't completely replace the <code>insert(std::unique_ptr)</code> method (e.g. building from factory). </p>
+
+<p>Definition at line <a class="el" href="symbol__set_8h_source.html#l00179">179</a> of file <a class="el" href="symbol__set_8h_source.html">symbol_set.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a85d600d745b06c6b71eb52fcc0e3c428"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class S , class... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvita_1_1symbol.html">symbol</a>* vita::symbol_set::insert </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a symbol to the symbol set. </p>
+<dl class="section note"><dt>Note</dt><dd>Assumes a standard frequency (<code>1.0</code>) for symbol <code>S</code>. </dd></dl>
+
+<p>Definition at line <a class="el" href="symbol__set_8h_source.html#l00190">190</a> of file <a class="el" href="symbol__set_8h_source.html">symbol_set.h</a>.</p>
 
 </div>
 </div>
@@ -425,15 +474,44 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Extracts a random symbol from the symbol set. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>a category </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a random symbol of category <code>c</code> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a random symbol of category <code>c</code></dd></dl>
+<dl class="section attention"><dt>Attention</dt><dd>50% probability of selecting a terminal / 50% of selecting a function.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If all symbols have the same probability to appear into a chromosome, there could be some problems. For instance, if our problem has many variables (let's say 100) and the function set has only 4 symbols we cannot get too complex trees because the function symbols have a reduced chance to appear in the chromosome. </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00184">184</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00194">194</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0d136cb13bf0cb8f1c1fe999d6cb739"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classvita_1_1function.html">function</a> &amp; vita::symbol_set::roulette_function </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a>&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>a category </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a random function of category <code>c</code> </dd></dl>
+
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00158">158</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -458,16 +536,16 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a random terminal of category <code>c</code> </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00173">173</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00170">170</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a16abdd74c5d4383ef2edbdce61f0db06"></a>
+<a class="anchor" id="a9df5d1bb58b69bffccdf6964a7f26178"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned vita::symbol_set::terminals </td>
+          <td class="memname">std::size_t vita::symbol_set::terminals </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a>&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
@@ -483,16 +561,16 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of terminals in category <code>c</code> </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00251">251</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00256">256</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afafd9dd20abc9d2f05fc83dc5418b12a"></a>
+<a class="anchor" id="aa3a0a5642363a9bc17a8eb50ee9801b3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned vita::symbol_set::weight </td>
+          <td class="memname">symbol_set::weight_t vita::symbol_set::weight </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvita_1_1symbol.html">symbol</a> &amp;&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
@@ -508,7 +586,7 @@ Friends</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the weight of <code>s</code> </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00288">288</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00293">293</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -556,7 +634,7 @@ Friends</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>output stream including <code>ss</code></dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Useful for debugging purpose. </dd></dl>
 
-<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00306">306</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="symbol__set_8cc_source.html#l00311">311</a> of file <a class="el" href="symbol__set_8cc_source.html">symbol_set.cc</a>.</p>
 
 </div>
 </div>
@@ -567,7 +645,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:37 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

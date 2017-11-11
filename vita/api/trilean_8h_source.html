@@ -102,38 +102,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevita.html">vita</a></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacevita.html#acca0cbd3904e6cd30ca5b2df94ac5931">   38</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="namespacevita.html#acca0cbd3904e6cd30ca5b2df94ac5931">trilean</a> {unknown = -1, no, yes};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">inline</span> std::istream &amp;operator&gt;&gt;(std::iostream &amp;i, <a class="code" href="namespacevita.html#acca0cbd3904e6cd30ca5b2df94ac5931">trilean</a> &amp;v)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">int</span> tmp;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">if</span> (i &gt;&gt; tmp)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">switch</span> (tmp)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">case</span> 0:  v =      trilean::no; <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">case</span> 1:  v =     trilean::yes; <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">default</span>: v = trilean::unknown;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">return</span> i;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">inline</span> <a class="code" href="namespacevita.html#acca0cbd3904e6cd30ca5b2df94ac5931">trilean</a> &amp;assign(<a class="code" href="namespacevita.html#acca0cbd3904e6cd30ca5b2df94ac5931">trilean</a> &amp;lhs, <span class="keywordtype">bool</span> rhs)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">return</span> lhs = rhs ? trilean::yes : trilean::no;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}  <span class="comment">// namespace vita</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif  // Include guard</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespacevita.html#acca0cbd3904e6cd30ca5b2df94ac5931">   37</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="namespacevita.html#acca0cbd3904e6cd30ca5b2df94ac5931">trilean</a> {unknown = -1, no, yes};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">inline</span> std::istream &amp;operator&gt;&gt;(std::iostream &amp;i, <a class="code" href="namespacevita.html#acca0cbd3904e6cd30ca5b2df94ac5931">trilean</a> &amp;v)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">int</span> tmp;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">if</span> (i &gt;&gt; tmp)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">switch</span> (tmp)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">case</span> 0:  v =      trilean::no; <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">case</span> 1:  v =     trilean::yes; <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">default</span>: v = trilean::unknown;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">inline</span> <a class="code" href="namespacevita.html#acca0cbd3904e6cd30ca5b2df94ac5931">trilean</a> &amp;assign(<a class="code" href="namespacevita.html#acca0cbd3904e6cd30ca5b2df94ac5931">trilean</a> &amp;lhs, <span class="keywordtype">bool</span> rhs)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">return</span> lhs = rhs ? trilean::yes : trilean::no;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}  <span class="comment">// namespace vita</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif  // include guard</span></div>
 <div class="ttc" id="namespacevita_html"><div class="ttname"><a href="namespacevita.html">vita</a></div><div class="ttdoc">The main namespace for the project. </div></div>
 <div class="ttc" id="common_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div></div>
-<div class="ttc" id="namespacevita_html_acca0cbd3904e6cd30ca5b2df94ac5931"><div class="ttname"><a href="namespacevita.html#acca0cbd3904e6cd30ca5b2df94ac5931">vita::trilean</a></div><div class="ttdeci">trilean</div><div class="ttdoc">Three-valued logic enum. </div><div class="ttdef"><b>Definition:</b> <a href="trilean_8h_source.html#l00038">trilean.h:38</a></div></div>
+<div class="ttc" id="namespacevita_html_acca0cbd3904e6cd30ca5b2df94ac5931"><div class="ttname"><a href="namespacevita.html#acca0cbd3904e6cd30ca5b2df94ac5931">vita::trilean</a></div><div class="ttdeci">trilean</div><div class="ttdoc">Three-valued logic enum. </div><div class="ttdef"><b>Definition:</b> <a href="trilean_8h_source.html#l00037">trilean.h:37</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:36 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

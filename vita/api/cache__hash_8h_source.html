@@ -95,110 +95,200 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#if !defined(VITA_CACHE_HASH_H)</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define      VITA_CACHE_HASH_H</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common_8h.html">kernel/common.h</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevita.html">vita</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="namespacevita.html#ad882adf76501d4046d4f2f7f8d17c845">   44</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="structvita_1_1hash__t.html">hash_t</a> <a class="code" href="namespacevita.html#ad882adf76501d4046d4f2f7f8d17c845">hash</a>(<span class="keywordtype">void</span> *<span class="keyword">const</span> <a class="code" href="classvita_1_1data.html">data</a>, <span class="keywordtype">unsigned</span> len, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> seed)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> n_blocks(len / 16);  <span class="comment">// Block size is 128bit</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  std::uint64_t h1(seed), h2(seed);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">const</span> std::uint64_t c1(0x87c37b91114253d5), c2(0x4cf5ad432745937f);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// Body.</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">const</span> std::uint64_t *<span class="keyword">const</span> blocks(</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    reinterpret_cast&lt;const std::uint64_t *&gt;(data));</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="common_8h.html">kernel/common.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevita.html">vita</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structvita_1_1hash__t.html">   25</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structvita_1_1hash__t.html">hash_t</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="structvita_1_1hash__t.html">hash_t</a>(std::uint64_t a = 0, std::uint64_t b = 0) : <a class="code" href="classvita_1_1data.html">data</a>{a, b} {}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structvita_1_1hash__t.html#abe06016e7a1966def19271c5118c1031">   30</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="structvita_1_1hash__t.html#abe06016e7a1966def19271c5118c1031">clear</a>() { <a class="code" href="classvita_1_1data.html">data</a>[0] = <a class="code" href="classvita_1_1data.html">data</a>[1] = 0; }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structvita_1_1hash__t.html#a72a7a24e4b608c28f271a6bebc1b98d3">   33</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="structvita_1_1hash__t.html#a72a7a24e4b608c28f271a6bebc1b98d3">operator==</a>(<a class="code" href="structvita_1_1hash__t.html">hash_t</a> h)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">  </span>{ <span class="keywordflow">return</span> <a class="code" href="classvita_1_1data.html">data</a>[0] == h.data[0] &amp;&amp; <a class="code" href="classvita_1_1data.html">data</a>[1] == h.data[1]; }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structvita_1_1hash__t.html#a9988a7e73e536ecb9e1515c94c56b623">   37</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="structvita_1_1hash__t.html#a9988a7e73e536ecb9e1515c94c56b623">operator!=</a>(<a class="code" href="structvita_1_1hash__t.html">hash_t</a> h)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">  </span>{ <span class="keywordflow">return</span> <a class="code" href="classvita_1_1data.html">data</a>[0] != h.data[0] || <a class="code" href="classvita_1_1data.html">data</a>[1] != h.data[1]; }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structvita_1_1hash__t.html#aed6bd2de784711e17db1741f69ff2a0c">   46</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="structvita_1_1hash__t.html#aed6bd2de784711e17db1741f69ff2a0c">combine</a>(<a class="code" href="structvita_1_1hash__t.html">hash_t</a> h)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// This combine is a tip from Bob Jenkins. An alternative from Boost is:</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// data[i] ^= h.data[i] + 0x9e3779b9 + (data[i] &lt;&lt; 6) + (data[i] &gt;&gt; 2);</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classvita_1_1data.html">data</a>[0] += 11 * h.data[0];</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classvita_1_1data.html">data</a>[1] += 13 * h.data[1];</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structvita_1_1hash__t.html#aa312556a1f68cd92f2b069527527b2c5">   55</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="structvita_1_1hash__t.html#aa312556a1f68cd92f2b069527527b2c5">empty</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !<a class="code" href="classvita_1_1data.html">data</a>[0] &amp;&amp; !<a class="code" href="classvita_1_1data.html">data</a>[1]; }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i(0); i &lt; n_blocks; ++i)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    std::uint64_t k1(blocks[i * 2 + 0]);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::uint64_t k2(blocks[i * 2 + 1]);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    k1 *= c1;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    k1  = ROTL64(k1, 31);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    k1 *= c2;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    h1 ^= k1;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="comment">// Serialization.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="structvita_1_1hash__t.html#ae0d4051cbe8246d6ea9686acc53d8a4d">load</a>(std::istream &amp;);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="structvita_1_1hash__t.html#a826f444d18356876d4f0d653f57dda9b">save</a>(std::ostream &amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="comment">// Data members.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  std::uint_least64_t <a class="code" href="classvita_1_1data.html">data</a>[2];</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;std::ostream &amp;<a class="code" href="namespacevita.html#ae60a7117178f58cacfd11c43d086084e">operator&lt;&lt;</a>(std::ostream &amp;, hash_t);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    h1 = ROTL64(h1, 27);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    h1 += h2;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    h1 = h1*5 + 0x52dce729;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    k2 *= c2;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    k2  = ROTL64(k2, 33);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    k2 *= c1;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    h2 ^= k2;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    h2 = ROTL64(h2, 31);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    h2 += h1;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    h2 = h2*5 + 0x38495ab5;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="comment">// Tail.</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">const</span> std::uint8_t *<span class="keyword">const</span> tail(</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    reinterpret_cast&lt;const std::uint8_t *&gt;(data) + n_blocks * 16);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  std::uint64_t k1(0), k2(0);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">switch</span> (len &amp; 15)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">case</span> 15: k2 ^= std::uint64_t(tail[14]) &lt;&lt; 48;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">case</span> 14: k2 ^= std::uint64_t(tail[13]) &lt;&lt; 40;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">case</span> 13: k2 ^= std::uint64_t(tail[12]) &lt;&lt; 32;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">case</span> 12: k2 ^= std::uint64_t(tail[11]) &lt;&lt; 24;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">case</span> 11: k2 ^= std::uint64_t(tail[10]) &lt;&lt; 16;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordflow">case</span> 10: k2 ^= std::uint64_t(tail[ 9]) &lt;&lt; 8;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">case</span>  9: k2 ^= std::uint64_t(tail[ 8]) &lt;&lt; 0;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;           k2 *= c2; k2  = ROTL64(k2, 33); k2 *= c1; h2 ^= k2;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">case</span>  8: k1 ^= std::uint64_t(tail[ 7]) &lt;&lt; 56;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordflow">case</span>  7: k1 ^= std::uint64_t(tail[ 6]) &lt;&lt; 48;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordflow">case</span>  6: k1 ^= std::uint64_t(tail[ 5]) &lt;&lt; 40;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">case</span>  5: k1 ^= std::uint64_t(tail[ 4]) &lt;&lt; 32;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordflow">case</span>  4: k1 ^= std::uint64_t(tail[ 3]) &lt;&lt; 24;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">case</span>  3: k1 ^= std::uint64_t(tail[ 2]) &lt;&lt; 16;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordflow">case</span>  2: k1 ^= std::uint64_t(tail[ 1]) &lt;&lt; 8;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordflow">case</span>  1: k1 ^= std::uint64_t(tail[ 0]) &lt;&lt; 0;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;           k1 *= c1; k1  = ROTL64(k1, 31); k1 *= c2; h1 ^= k1;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="comment">// Finalization.</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  h1 ^= len;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  h2 ^= len;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  h1 += h2;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  h2 += h1;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  h1 ^= h1 &gt;&gt; 33;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  h1 *= 0xff51afd7ed558ccd;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  h1 ^= h1 &gt;&gt; 33;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  h1 *= 0xc4ceb9fe1a85ec53;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  h1 ^= h1 &gt;&gt; 33;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  h2 ^= h2 &gt;&gt; 33;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  h2 *= 0xff51afd7ed558ccd;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  h2 ^= h2 &gt;&gt; 33;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  h2 *= 0xc4ceb9fe1a85ec53;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  h2 ^= h2 &gt;&gt; 33;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  h1 += h2;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  h2 += h1;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="structvita_1_1hash__t.html">hash_t</a>(h1, h2);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#if defined(_MSC_VER)</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#  define ROTL64(x, y)  _rotl64(x, y)</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">inline</span> std::uint64_t <a class="code" href="namespacevita.html#a17de41b1232c925f891425c5ccb632d9">rotl64</a>(std::uint64_t x, std::uint8_t r)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordflow">return</span> (x &lt;&lt; r) | (x &gt;&gt; (64 - r));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#define ROTL64(x, y)  rotl64(x, y)</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classvita_1_1murmurhash3.html">   94</a></span>&#160;<span class="keyword">class </span><a class="code" href="classvita_1_1murmurhash3.html">murmurhash3</a></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">static</span> <a class="code" href="structvita_1_1hash__t.html">hash_t</a> <a class="code" href="classvita_1_1murmurhash3.html#a0b4e56b7ae9b843d619321afb7168f32">hash128</a>(<span class="keywordtype">void</span> *<span class="keyword">const</span>, std::size_t, std::uint32_t = 1973);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keyword">static</span> std::uint64_t fmix(std::uint64_t);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">static</span> std::uint32_t fmix(std::uint32_t);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">static</span> T get_block(<span class="keyword">const</span> T *, std::size_t);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classvita_1_1murmurhash3.html#a0b4e56b7ae9b843d619321afb7168f32">  113</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="structvita_1_1hash__t.html">hash_t</a> <a class="code" href="classvita_1_1murmurhash3.html#a0b4e56b7ae9b843d619321afb7168f32">murmurhash3::hash128</a>(<span class="keywordtype">void</span> *<span class="keyword">const</span> <a class="code" href="classvita_1_1data.html">data</a>, std::size_t len,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                   std::uint32_t seed)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> n_blocks(len / 16);  <span class="comment">// block size is 128bit</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keyword">const</span> std::uint64_t c1(0x87c37b91114253d5), c2(0x4cf5ad432745937f);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="comment">// Body.</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> *blocks(reinterpret_cast&lt;const std::uint64_t *&gt;(data));</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <a class="code" href="structvita_1_1hash__t.html">hash_t</a> h(seed, seed);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordflow">for</span> (std::size_t i(0); i &lt; n_blocks; ++i)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    std::uint64_t k1(get_block(blocks, i * 2 + 0));</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    std::uint64_t k2(get_block(blocks, i * 2 + 1));</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    k1 *= c1;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    k1  = ROTL64(k1, 31);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    k1 *= c2;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    h.data[0] ^= k1;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}  <span class="comment">// namespace vita</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif  // include guard</span></div>
-<div class="ttc" id="structvita_1_1hash__t_html"><div class="ttname"><a href="structvita_1_1hash__t.html">vita::hash_t</a></div><div class="ttdoc">This is a 128bit stream used as individual signature / hash table look up key. </div><div class="ttdef"><b>Definition:</b> <a href="cache_8h_source.html#l00024">cache.h:24</a></div></div>
-<div class="ttc" id="classvita_1_1data_html"><div class="ttname"><a href="classvita_1_1data.html">vita::data</a></div><div class="ttdoc">Interface for data used by vita::search class to to evolve vita::population. </div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00025">data.h:25</a></div></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    h.data[0] = ROTL64(h.data[0], 27);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    h.data[0] += h.data[1];</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    h.data[0] = h.data[0] * 5 + 0x52dce729;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    k2 *= c2;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    k2  = ROTL64(k2, 33);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    k2 *= c1;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    h.data[1] ^= k2;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    h.data[1] = ROTL64(h.data[1], 31);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    h.data[1] += h.data[0];</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    h.data[1] = h.data[1] * 5 + 0x38495ab5;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="comment">// Tail.</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keyword">auto</span> tail(reinterpret_cast&lt;const unsigned char *&gt;(data) + n_blocks * 16);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  std::uint64_t k1(0), k2(0);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordflow">switch</span> (len &amp; 15)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordflow">case</span> 15: k2 ^= std::uint64_t(tail[14]) &lt;&lt; 48;  <span class="comment">//-fallthrough</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordflow">case</span> 14: k2 ^= std::uint64_t(tail[13]) &lt;&lt; 40;  <span class="comment">//-fallthrough</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordflow">case</span> 13: k2 ^= std::uint64_t(tail[12]) &lt;&lt; 32;  <span class="comment">//-fallthrough</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordflow">case</span> 12: k2 ^= std::uint64_t(tail[11]) &lt;&lt; 24;  <span class="comment">//-fallthrough</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordflow">case</span> 11: k2 ^= std::uint64_t(tail[10]) &lt;&lt; 16;  <span class="comment">//-fallthrough</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordflow">case</span> 10: k2 ^= std::uint64_t(tail[ 9]) &lt;&lt; 8;   <span class="comment">//-fallthrough</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordflow">case</span>  9: k2 ^= std::uint64_t(tail[ 8]) &lt;&lt; 0;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;           k2 *= c2; k2  = ROTL64(k2, 33); k2 *= c1; h.data[1] ^= k2;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;           <span class="comment">//-fallthrough</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordflow">case</span>  8: k1 ^= std::uint64_t(tail[ 7]) &lt;&lt; 56;  <span class="comment">//-fallthrough</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordflow">case</span>  7: k1 ^= std::uint64_t(tail[ 6]) &lt;&lt; 48;  <span class="comment">//-fallthrough</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordflow">case</span>  6: k1 ^= std::uint64_t(tail[ 5]) &lt;&lt; 40;  <span class="comment">//-fallthrough</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordflow">case</span>  5: k1 ^= std::uint64_t(tail[ 4]) &lt;&lt; 32;  <span class="comment">//-fallthrough</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordflow">case</span>  4: k1 ^= std::uint64_t(tail[ 3]) &lt;&lt; 24;  <span class="comment">//-fallthrough</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordflow">case</span>  3: k1 ^= std::uint64_t(tail[ 2]) &lt;&lt; 16;  <span class="comment">//-fallthrough</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordflow">case</span>  2: k1 ^= std::uint64_t(tail[ 1]) &lt;&lt; 8;   <span class="comment">//-fallthrough</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordflow">case</span>  1: k1 ^= std::uint64_t(tail[ 0]) &lt;&lt; 0;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;           k1 *= c1; k1  = ROTL64(k1, 31); k1 *= c2; h.data[0] ^= k1;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="comment">// Finalization.</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  h.data[0] ^= len;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  h.data[1] ^= len;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  h.data[0] += h.data[1];</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  h.data[1] += h.data[0];</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  h.data[0] = fmix(h.data[0]);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  h.data[1] = fmix(h.data[1]);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  h.data[0] += h.data[1];</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  h.data[1] += h.data[0];</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordflow">return</span> h;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="keyword">inline</span> std::uint64_t murmurhash3::fmix(std::uint64_t k)</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;{</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="comment">// The constants were generated by a simple simulated-annealing algorithm.</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  k ^= k &gt;&gt; 33;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  k *= 0xff51afd7ed558ccd;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  k ^= k &gt;&gt; 33;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  k *= 0xc4ceb9fe1a85ec53;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  k ^= k &gt;&gt; 33;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordflow">return</span> k;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keyword">inline</span> std::uint32_t murmurhash3::fmix(std::uint32_t k)</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;{</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="comment">// The constants were generated by a simple simulated-annealing algorithm.</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  k ^= k &gt;&gt; 16;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  k *= 0x85ebca6b;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  k ^= k &gt;&gt; 13;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  k *= 0xc2b2ae35;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  k ^= k &gt;&gt; 16;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keywordflow">return</span> k;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;}</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="keyword">inline</span> T murmurhash3::get_block(<span class="keyword">const</span> T *p, std::size_t i)</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;{</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="comment">// The reason we do a memcpy() instead of simply returning p[i] is because</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="comment">// doing it this way avoids violations of the strict aliasing rule.</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  T tmp;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  std::memcpy(&amp;tmp, p + i, <span class="keyword">sizeof</span>(T));</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="keywordflow">return</span> tmp;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="keyword">typedef</span> murmurhash3 hash;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;}  <span class="comment">// namespace vita</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor">#endif  // include guard</span></div>
+<div class="ttc" id="classvita_1_1murmurhash3_html_a0b4e56b7ae9b843d619321afb7168f32"><div class="ttname"><a href="classvita_1_1murmurhash3.html#a0b4e56b7ae9b843d619321afb7168f32">vita::murmurhash3::hash128</a></div><div class="ttdeci">static hash_t hash128(void *const, std::size_t, std::uint32_t=1973)</div><div class="ttdoc">Hashes a single message in one call, return 128-bit output. </div><div class="ttdef"><b>Definition:</b> <a href="cache__hash_8h_source.html#l00113">cache_hash.h:113</a></div></div>
+<div class="ttc" id="classvita_1_1murmurhash3_html"><div class="ttname"><a href="classvita_1_1murmurhash3.html">vita::murmurhash3</a></div><div class="ttdoc">MurmurHash3 (https://github.com/aappleby/smhasher) by Austin Appleby. </div><div class="ttdef"><b>Definition:</b> <a href="cache__hash_8h_source.html#l00094">cache_hash.h:94</a></div></div>
+<div class="ttc" id="structvita_1_1hash__t_html"><div class="ttname"><a href="structvita_1_1hash__t.html">vita::hash_t</a></div><div class="ttdoc">A 128bit unsigned integer used as individual&#39;s signature / hash table look-up key. </div><div class="ttdef"><b>Definition:</b> <a href="cache__hash_8h_source.html#l00025">cache_hash.h:25</a></div></div>
+<div class="ttc" id="structvita_1_1hash__t_html_ae0d4051cbe8246d6ea9686acc53d8a4d"><div class="ttname"><a href="structvita_1_1hash__t.html#ae0d4051cbe8246d6ea9686acc53d8a4d">vita::hash_t::load</a></div><div class="ttdeci">bool load(std::istream &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="cache__hash_8cc_source.html#l00026">cache_hash.cc:26</a></div></div>
+<div class="ttc" id="classvita_1_1data_html"><div class="ttname"><a href="classvita_1_1data.html">vita::data</a></div><div class="ttdoc">Interface for data used by vita::search class to evolve vita::population. </div><div class="ttdef"><b>Definition:</b> <a href="data_8h_source.html#l00024">data.h:24</a></div></div>
 <div class="ttc" id="namespacevita_html"><div class="ttname"><a href="namespacevita.html">vita</a></div><div class="ttdoc">The main namespace for the project. </div></div>
-<div class="ttc" id="namespacevita_html_ad882adf76501d4046d4f2f7f8d17c845"><div class="ttname"><a href="namespacevita.html#ad882adf76501d4046d4f2f7f8d17c845">vita::hash</a></div><div class="ttdeci">hash_t hash(void *const data, unsigned len, const unsigned seed)</div><div class="ttdef"><b>Definition:</b> <a href="cache__hash_8h_source.html#l00044">cache_hash.h:44</a></div></div>
+<div class="ttc" id="structvita_1_1hash__t_html_abe06016e7a1966def19271c5118c1031"><div class="ttname"><a href="structvita_1_1hash__t.html#abe06016e7a1966def19271c5118c1031">vita::hash_t::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Resets the content of hash_t. </div><div class="ttdef"><b>Definition:</b> <a href="cache__hash_8h_source.html#l00030">cache_hash.h:30</a></div></div>
+<div class="ttc" id="structvita_1_1hash__t_html_a826f444d18356876d4f0d653f57dda9b"><div class="ttname"><a href="structvita_1_1hash__t.html#a826f444d18356876d4f0d653f57dda9b">vita::hash_t::save</a></div><div class="ttdeci">bool save(std::ostream &amp;) const </div><div class="ttdef"><b>Definition:</b> <a href="cache__hash_8cc_source.html#l00042">cache_hash.cc:42</a></div></div>
+<div class="ttc" id="structvita_1_1hash__t_html_a72a7a24e4b608c28f271a6bebc1b98d3"><div class="ttname"><a href="structvita_1_1hash__t.html#a72a7a24e4b608c28f271a6bebc1b98d3">vita::hash_t::operator==</a></div><div class="ttdeci">bool operator==(hash_t h) const </div><div class="ttdoc">Standard equality operator for hash signature. </div><div class="ttdef"><b>Definition:</b> <a href="cache__hash_8h_source.html#l00033">cache_hash.h:33</a></div></div>
+<div class="ttc" id="structvita_1_1hash__t_html_a9988a7e73e536ecb9e1515c94c56b623"><div class="ttname"><a href="structvita_1_1hash__t.html#a9988a7e73e536ecb9e1515c94c56b623">vita::hash_t::operator!=</a></div><div class="ttdeci">bool operator!=(hash_t h) const </div><div class="ttdoc">Standard inequality operator for hash signature. </div><div class="ttdef"><b>Definition:</b> <a href="cache__hash_8h_source.html#l00037">cache_hash.h:37</a></div></div>
+<div class="ttc" id="structvita_1_1hash__t_html_aed6bd2de784711e17db1741f69ff2a0c"><div class="ttname"><a href="structvita_1_1hash__t.html#aed6bd2de784711e17db1741f69ff2a0c">vita::hash_t::combine</a></div><div class="ttdeci">void combine(hash_t h)</div><div class="ttdoc">Used to combine multiple hashes. </div><div class="ttdef"><b>Definition:</b> <a href="cache__hash_8h_source.html#l00046">cache_hash.h:46</a></div></div>
+<div class="ttc" id="namespacevita_html_a17de41b1232c925f891425c5ccb632d9"><div class="ttname"><a href="namespacevita.html#a17de41b1232c925f891425c5ccb632d9">vita::rotl64</a></div><div class="ttdeci">std::uint64_t rotl64(std::uint64_t x, std::uint8_t r)</div><div class="ttdef"><b>Definition:</b> <a href="cache__hash_8h_source.html#l00076">cache_hash.h:76</a></div></div>
+<div class="ttc" id="namespacevita_html_ae60a7117178f58cacfd11c43d086084e"><div class="ttname"><a href="namespacevita.html#ae60a7117178f58cacfd11c43d086084e">vita::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;o, hash_t h)</div><div class="ttdoc">Mainly useful for debugging / testing. </div><div class="ttdef"><b>Definition:</b> <a href="cache__hash_8cc_source.html#l00056">cache_hash.cc:56</a></div></div>
 <div class="ttc" id="common_8h_html"><div class="ttname"><a href="common_8h.html">common.h</a></div></div>
+<div class="ttc" id="structvita_1_1hash__t_html_aa312556a1f68cd92f2b069527527b2c5"><div class="ttname"><a href="structvita_1_1hash__t.html#aa312556a1f68cd92f2b069527527b2c5">vita::hash_t::empty</a></div><div class="ttdeci">bool empty() const </div><div class="ttdoc">We assume that a string of 128 zero bits means empty. </div><div class="ttdef"><b>Definition:</b> <a href="cache__hash_8h_source.html#l00055">cache_hash.h:55</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:36 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

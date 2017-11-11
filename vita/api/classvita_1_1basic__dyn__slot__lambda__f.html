@@ -119,9 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9905d9fc3b253ceca0d197cdf6564b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4eeabcd3633021b7514bdada587948bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__dyn__slot__lambda__f.html#a4eeabcd3633021b7514bdada587948bf">debug</a> () const override</td></tr>
 <tr class="separator:a4eeabcd3633021b7514bdada587948bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a8b5eeff4ec4fb4b933fa624f627d65"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__dyn__slot__lambda__f.html#a7a8b5eeff4ec4fb4b933fa624f627d65">load</a> (std::istream &amp;, const <a class="el" href="classvita_1_1environment.html">environment</a> &amp;) override</td></tr>
-<tr class="memdesc:a7a8b5eeff4ec4fb4b933fa624f627d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the lambda from persistent storage.  <a href="#a7a8b5eeff4ec4fb4b933fa624f627d65">More...</a><br /></td></tr>
-<tr class="separator:a7a8b5eeff4ec4fb4b933fa624f627d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b8532521a133ad5e5ec731748152bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__dyn__slot__lambda__f.html#ad8b8532521a133ad5e5ec731748152bb">load</a> (std::istream &amp;, const <a class="el" href="classvita_1_1problem.html">problem</a> &amp;) override</td></tr>
+<tr class="memdesc:ad8b8532521a133ad5e5ec731748152bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the lambda from persistent storage.  <a href="#ad8b8532521a133ad5e5ec731748152bb">More...</a><br /></td></tr>
+<tr class="separator:ad8b8532521a133ad5e5ec731748152bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d172b7dd2a620770b3df4598618f807"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__dyn__slot__lambda__f.html#a4d172b7dd2a620770b3df4598618f807">save</a> (std::ostream &amp;) const override</td></tr>
 <tr class="separator:a4d172b7dd2a620770b3df4598618f807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01ed4b186eb59462328d3e86c13c827e"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="namespacevita.html#a3afa1d8068ad1dc34839791969bfe61b">class_t</a>, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__dyn__slot__lambda__f.html#a01ed4b186eb59462328d3e86c13c827e">tag</a> (const <a class="el" href="structvita_1_1src__data_1_1example.html">src_data::example</a> &amp;) const override</td></tr>
@@ -228,11 +228,11 @@ template&lt;class T , bool S, bool N&gt; </div>
 
 <p>Implements <a class="el" href="classvita_1_1lambda__f.html">vita::lambda_f&lt; T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00427">427</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
+<p>Definition at line <a class="el" href="lambda__f_8h_source.html#l00424">424</a> of file <a class="el" href="lambda__f_8h_source.html">lambda_f.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a7a8b5eeff4ec4fb4b933fa624f627d65"></a>
+<a class="anchor" id="ad8b8532521a133ad5e5ec731748152bb"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -250,8 +250,8 @@ template&lt;class T , bool S, bool N&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvita_1_1environment.html">environment</a> &amp;&#160;</td>
-          <td class="paramname"><em>e</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvita_1_1problem.html">problem</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -269,7 +269,7 @@ template&lt;class T , bool S, bool N&gt; </div>
 <p>Loads the lambda from persistent storage. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>environment used to build the object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>active problem. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>input stream. </td></tr>
   </table>
   </dd>
@@ -384,7 +384,7 @@ template&lt;class T , bool S, bool N&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:37 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

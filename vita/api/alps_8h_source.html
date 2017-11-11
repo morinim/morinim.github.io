@@ -112,7 +112,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordflow">if</span> (l + 1 == layers)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> std::numeric_limits&lt;unsigned&gt;::max();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespacevita_1_1alps.html#a8898d043e60c01fff6ba916fdc497396">max_age</a>(l, pop.env().alps.age_gap);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespacevita_1_1alps.html#a8898d043e60c01fff6ba916fdc497396">max_age</a>(l, pop.get_problem().env.alps.age_gap);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="namespacevita_1_1alps.html#a85e0d1334001fcf0ed941451865729d5">   53</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keywordtype">bool</span> <a class="code" href="namespacevita_1_1alps.html#a85e0d1334001fcf0ed941451865729d5">aged</a>(<span class="keyword">const</span> <a class="code" href="classvita_1_1population.html">population&lt;T&gt;</a> &amp;p,</div>
@@ -125,7 +125,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}  <span class="comment">// namespace vita</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif  // include guard</span></div>
-<div class="ttc" id="classvita_1_1population_html"><div class="ttname"><a href="classvita_1_1population.html">vita::population</a></div><div class="ttdoc">A group of individuals which may interact together (for example by mating) producing offspring...</div><div class="ttdef"><b>Definition:</b> <a href="population_8h_source.html#l00035">population.h:35</a></div></div>
+<div class="ttc" id="classvita_1_1population_html"><div class="ttname"><a href="classvita_1_1population.html">vita::population</a></div><div class="ttdoc">A group of individuals which may interact together (for example by mating) producing offspring...</div><div class="ttdef"><b>Definition:</b> <a href="population_8h_source.html#l00036">population.h:36</a></div></div>
 <div class="ttc" id="namespacevita_html"><div class="ttname"><a href="namespacevita.html">vita</a></div><div class="ttdoc">The main namespace for the project. </div></div>
 <div class="ttc" id="population_8h_html"><div class="ttname"><a href="population_8h.html">population.h</a></div></div>
 <div class="ttc" id="namespacevita_1_1alps_html_adf55c4cc79626ff69558558e241b34e5"><div class="ttname"><a href="namespacevita_1_1alps.html#adf55c4cc79626ff69558558e241b34e5">vita::alps::allowed_age</a></div><div class="ttdeci">unsigned allowed_age(const population&lt; T &gt; &amp;pop, unsigned l)</div><div class="ttdef"><b>Definition:</b> <a href="alps_8h_source.html#l00034">alps.h:34</a></div></div>
@@ -134,7 +134,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:36 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

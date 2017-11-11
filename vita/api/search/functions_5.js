@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['fast',['fast',['../classvita_1_1constrained__evaluator.html#a5e91c0c64ff99049b617663de2d6d2bd',1,'vita::constrained_evaluator::fast()'],['../classvita_1_1evaluator.html#a1075f033aa48b405701b80d4902e099f',1,'vita::evaluator::fast()'],['../classvita_1_1evaluator__proxy.html#ad340baca5dd6f119f0ede9a4cfa7de87',1,'vita::evaluator_proxy::fast()'],['../classvita_1_1sum__of__errors__evaluator.html#ade0cf1a400e21fe3195b62f56a596f1e',1,'vita::sum_of_errors_evaluator::fast()']]],
+  ['fast',['fast',['../classvita_1_1constrained__evaluator.html#a5e91c0c64ff99049b617663de2d6d2bd',1,'vita::constrained_evaluator::fast()'],['../classvita_1_1evaluator.html#a1075f033aa48b405701b80d4902e099f',1,'vita::evaluator::fast()'],['../classvita_1_1evaluator__proxy.html#a701eb5b5c8b082c6447393269d508632',1,'vita::evaluator_proxy::fast()'],['../classvita_1_1sum__of__errors__evaluator.html#ade0cf1a400e21fe3195b62f56a596f1e',1,'vita::sum_of_errors_evaluator::fast()']]],
   ['fetch_5fadf_5farg',['fetch_adf_arg',['../classvita_1_1interpreter.html#aa610f8c2d97c8f698219dbf8c9deba35',1,'vita::interpreter']]],
   ['fetch_5farg',['fetch_arg',['../classvita_1_1interpreter.html#a2b84209c91392e4249234cddd6022745',1,'vita::interpreter']]],
   ['fetch_5findex',['fetch_index',['../classvita_1_1interpreter.html#a4a3b46278fcbb3fa17930893aaa0b820',1,'vita::interpreter']]],

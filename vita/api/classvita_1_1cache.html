@@ -97,18 +97,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Implements a hash table that links individuals' signature to fitness (mainly used by the <a class="el" href="classvita_1_1evaluator__proxy.html">evaluator_proxy</a> class).  
+<p>Implements a hash table that links individuals' signature to fitness (mainly used by the <a class="el" href="classvita_1_1evaluator__proxy.html" title="Provides a surrogate for an evaluator to control access to it. ">evaluator_proxy</a> class).  
  <a href="classvita_1_1cache.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a35a5aa89652756b2670e151ef0d195b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1cache.html#a35a5aa89652756b2670e151ef0d195b3">cache</a> (std::uint8_t)</td></tr>
+<tr class="memdesc:a35a5aa89652756b2670e151ef0d195b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new hash table.  <a href="#a35a5aa89652756b2670e151ef0d195b3">More...</a><br /></td></tr>
 <tr class="separator:a35a5aa89652756b2670e151ef0d195b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45bfdf5666a5eca2002900b703872de3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45bfdf5666a5eca2002900b703872de3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1cache.html#a45bfdf5666a5eca2002900b703872de3">clear</a> ()</td></tr>
-<tr class="memdesc:a45bfdf5666a5eca2002900b703872de3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the content and the statistical informations of the table (allocated size isn't changed). <br /></td></tr>
+<tr class="memitem:a45bfdf5666a5eca2002900b703872de3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1cache.html#a45bfdf5666a5eca2002900b703872de3">clear</a> ()</td></tr>
+<tr class="memdesc:a45bfdf5666a5eca2002900b703872de3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the content and the statistical informations of the table.  <a href="#a45bfdf5666a5eca2002900b703872de3">More...</a><br /></td></tr>
 <tr class="separator:a45bfdf5666a5eca2002900b703872de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad91c89934887c515a2c74cc037d74973"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1cache.html#ad91c89934887c515a2c74cc037d74973">clear</a> (const <a class="el" href="structvita_1_1hash__t.html">hash_t</a> &amp;)</td></tr>
+<tr class="memdesc:ad91c89934887c515a2c74cc037d74973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the cached information for a specific individual.  <a href="#ad91c89934887c515a2c74cc037d74973">More...</a><br /></td></tr>
 <tr class="separator:ad91c89934887c515a2c74cc037d74973"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7529590626fc22e4e18370ee27f86330"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1cache.html#a7529590626fc22e4e18370ee27f86330">debug</a> () const </td></tr>
 <tr class="separator:a7529590626fc22e4e18370ee27f86330"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,6 +122,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a73dfc68bdc2683c4df8f7cf850a7f91d"><td class="memItemLeft" align="right" valign="top">std::uintmax_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1cache.html#a73dfc68bdc2683c4df8f7cf850a7f91d">hits</a> () const </td></tr>
 <tr class="separator:a73dfc68bdc2683c4df8f7cf850a7f91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aada0b84cec72b4ce34dd8170d07626bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1cache.html#aada0b84cec72b4ce34dd8170d07626bc">insert</a> (const <a class="el" href="structvita_1_1hash__t.html">hash_t</a> &amp;, const <a class="el" href="classvita_1_1basic__fitness__t.html">fitness_t</a> &amp;)</td></tr>
+<tr class="memdesc:aada0b84cec72b4ce34dd8170d07626bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores fitness information in the transposition table.  <a href="#aada0b84cec72b4ce34dd8170d07626bc">More...</a><br /></td></tr>
 <tr class="separator:aada0b84cec72b4ce34dd8170d07626bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef996262d900ea67ec96b70055652ce0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1cache.html#aef996262d900ea67ec96b70055652ce0">load</a> (std::istream &amp;)</td></tr>
 <tr class="separator:aef996262d900ea67ec96b70055652ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,11 +134,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a6a2ba6e8c4dc95b20e715792f7d95a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implements a hash table that links individuals' signature to fitness (mainly used by the <a class="el" href="classvita_1_1evaluator__proxy.html">evaluator_proxy</a> class). </p>
+<div class="textblock"><p>Implements a hash table that links individuals' signature to fitness (mainly used by the <a class="el" href="classvita_1_1evaluator__proxy.html" title="Provides a surrogate for an evaluator to control access to it. ">evaluator_proxy</a> class). </p>
 <p>During the evolution semantically equivalent (but syntactically distinct) individuals are often generated and cache can give a significant speed improvement avoiding the recalculation of shared information. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="example4_8cc-example.html#_a6">example4.cc</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="example4_8cc-example.html#_a8">example4.cc</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="cache_8h_source.html#l00076">76</a> of file <a class="el" href="cache_8h_source.html">cache.h</a>.</p>
+<p>Definition at line <a class="el" href="cache_8h_source.html#l00029">29</a> of file <a class="el" href="cache_8h_source.html">cache.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a35a5aa89652756b2670e151ef0d195b3"></a>
 <div class="memitem">
@@ -159,19 +161,40 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Creates a new hash table. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">bits</td><td><code>2^bits</code> is the number of elements of the table.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bits</td><td><code>2^bits</code> is the number of elements of the table </td></tr>
   </table>
   </dd>
 </dl>
-<p>Creates a new hash table. </p>
 
-<p>Definition at line <a class="el" href="cache_8cc_source.html#l00052">52</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
+<p>Definition at line <a class="el" href="cache_8cc_source.html#l00022">22</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a45bfdf5666a5eca2002900b703872de3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vita::cache::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears the content and the statistical informations of the table. </p>
+<dl class="section note"><dt>Note</dt><dd>Allocated size isn't changed. </dd></dl>
+
+<p>Definition at line <a class="el" href="cache_8cc_source.html#l00044">44</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ad91c89934887c515a2c74cc037d74973"></a>
 <div class="memitem">
 <div class="memproto">
@@ -185,15 +208,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Clears the cached information for a specific individual. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>individual's signature whose informations we have to clear.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>individual's signature whose informations we have to clear </td></tr>
   </table>
   </dd>
 </dl>
-<p>Clears the cached information for individual <code>h</code>. </p>
 
-<p>Definition at line <a class="el" href="cache_8cc_source.html#l00091">91</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
+<p>Definition at line <a class="el" href="cache_8cc_source.html#l00062">62</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
 
 </div>
 </div>
@@ -209,9 +233,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object passes the internal consistency check. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object passes the internal consistency check </dd></dl>
 
-<p>Definition at line <a class="el" href="cache_8cc_source.html#l00259">259</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
+<p>Definition at line <a class="el" href="cache_8cc_source.html#l00227">227</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
 
 </div>
 </div>
@@ -233,14 +257,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Looks for the fitness of an individual in the transposition table.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>individual's signature to look for. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>individual's signature to look for </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the fitness of the individual. If the individuals isn't present returns an empty fitness. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="example4_8cc-example.html#a11">example4.cc</a>.</dd>
+<dl class="section return"><dt>Returns</dt><dd>the fitness of the individual. If the individuals isn't present returns an empty fitness </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="example4_8cc-example.html#a13">example4.cc</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="cache_8cc_source.html#l00120">120</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
+<p>Definition at line <a class="el" href="cache_8cc_source.html#l00091">91</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
 
 </div>
 </div>
@@ -264,9 +288,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>number of successful searches in the hash table. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of successful searches in the hash table </dd></dl>
 
-<p>Definition at line <a class="el" href="cache_8h_source.html#l00098">98</a> of file <a class="el" href="cache_8h_source.html">cache.h</a>.</p>
+<p>Definition at line <a class="el" href="cache_8h_source.html#l00053">53</a> of file <a class="el" href="cache_8h_source.html">cache.h</a>.</p>
 
 </div>
 </div>
@@ -293,17 +317,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Stores fitness information in the transposition table. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>a (possibly) new individual's signature to be stored in the table. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fitness</td><td>the fitness of the individual.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>a (possibly) new individual's signature to be stored in the table </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fitness</td><td>the fitness of the individual </td></tr>
   </table>
   </dd>
 </dl>
-<p>Stores fitness information in the transposition table. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="example4_8cc-example.html#a9">example4.cc</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="example4_8cc-example.html#a11">example4.cc</a>.</dd>
 </dl>
-<p>Definition at line <a class="el" href="cache_8cc_source.html#l00164">164</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
+<p>Definition at line <a class="el" href="cache_8cc_source.html#l00135">135</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
 
 </div>
 </div>
@@ -322,14 +347,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>input stream. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>input stream </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object loaded correctly.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object is correctly loaded</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If the load operation isn't successful the current object isn't changed. </dd></dl>
 
-<p>Definition at line <a class="el" href="cache_8cc_source.html#l00184">184</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
+<p>Definition at line <a class="el" href="cache_8cc_source.html#l00155">155</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
 
 </div>
 </div>
@@ -353,9 +378,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>number of searches in the hash table. Every call to the find method increment the counter. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of searches in the hash table </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Every call to the find method increment the counter. </dd></dl>
 
-<p>Definition at line <a class="el" href="cache_8h_source.html#l00095">95</a> of file <a class="el" href="cache_8h_source.html">cache.h</a>.</p>
+<p>Definition at line <a class="el" href="cache_8h_source.html#l00050">50</a> of file <a class="el" href="cache_8h_source.html">cache.h</a>.</p>
 
 </div>
 </div>
@@ -374,13 +400,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>output stream. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out</td><td>output stream </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object was saved correctly. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the object was saved correctly </dd></dl>
 
-<p>Definition at line <a class="el" href="cache_8cc_source.html#l00231">231</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
+<p>Definition at line <a class="el" href="cache_8cc_source.html#l00201">201</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
 
 </div>
 </div>
@@ -399,13 +425,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>individual's signature to look for. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>individual's signature to look for </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>number of times <code>h</code> has been looked for. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>number of times <code>h</code> has been looked for </dd></dl>
 
-<p>Definition at line <a class="el" href="cache_8cc_source.html#l00144">144</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
+<p>Definition at line <a class="el" href="cache_8cc_source.html#l00115">115</a> of file <a class="el" href="cache_8cc_source.html">cache.cc</a>.</p>
 
 </div>
 </div>
@@ -416,7 +442,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:37 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

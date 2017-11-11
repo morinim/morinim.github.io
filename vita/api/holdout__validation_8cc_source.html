@@ -104,19 +104,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  Expects(perc &lt; 100);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classvita_1_1holdout__validation.html#a3df1bfc05d5667463ae43c5f92955492">   31</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classvita_1_1holdout__validation.html#a3df1bfc05d5667463ae43c5f92955492">holdout_validation::preliminary_setup</a>()</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classvita_1_1holdout__validation.html#a3df1bfc05d5667463ae43c5f92955492">   31</a></span>&#160;<span class="keywordtype">void</span> holdout_validation::preliminary_setup()</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="comment">// Validation set items are moved to the training set.</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  dat_.move_append(data::validation, data::training);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> available(dat_.<a class="code" href="classvita_1_1src__data.html#a07240e9deb6fde349fbb27dcb2859358">size</a>(data::training));</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> available(dat_.size(data::training));</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordflow">if</span> (available)</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    assert(perc_ &lt; 100);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> needed(available * perc_ / 100);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    dat_.<a class="code" href="classvita_1_1data.html#a578f3481c569bb4250b4270669427bcb">select</a>(data::training);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::shuffle(dat_.<a class="code" href="classvita_1_1src__data.html#a915427f4f6d7f4623ffc6c78ef1f7c32">begin</a>(data::training), dat_.<a class="code" href="classvita_1_1src__data.html#aa5449975c5c998fc7186343e78fcfcac">end</a>(data::training),</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    dat_.select(data::training);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::shuffle(dat_.begin(data::training), dat_.end(data::training),</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                 random::engine());</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    dat_.move_append(data::training, data::validation, needed);</div>
@@ -135,18 +135,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}  <span class="comment">// namespace vita</span></div>
-<div class="ttc" id="classvita_1_1data_html_a578f3481c569bb4250b4270669427bcb"><div class="ttname"><a href="classvita_1_1data.html#a578f3481c569bb4250b4270669427bcb">vita::data::select</a></div><div class="ttdeci">void select(dataset_t)</div><div class="ttdef"><b>Definition:</b> <a href="data_8cc_source.html#l00031">data.cc:31</a></div></div>
-<div class="ttc" id="classvita_1_1src__data_html_a915427f4f6d7f4623ffc6c78ef1f7c32"><div class="ttname"><a href="classvita_1_1src__data.html#a915427f4f6d7f4623ffc6c78ef1f7c32">vita::src_data::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdef"><b>Definition:</b> <a href="src_2data_8cc_source.html#l00104">src/data.cc:104</a></div></div>
 <div class="ttc" id="namespacevita_html"><div class="ttname"><a href="namespacevita.html">vita</a></div><div class="ttdoc">The main namespace for the project. </div></div>
-<div class="ttc" id="classvita_1_1holdout__validation_html_a3df1bfc05d5667463ae43c5f92955492"><div class="ttname"><a href="classvita_1_1holdout__validation.html#a3df1bfc05d5667463ae43c5f92955492">vita::holdout_validation::preliminary_setup</a></div><div class="ttdeci">void preliminary_setup() override</div><div class="ttdoc">Available examples are randomly partitioned into two independent sets according to a given percentage...</div><div class="ttdef"><b>Definition:</b> <a href="holdout__validation_8cc_source.html#l00031">holdout_validation.cc:31</a></div></div>
 <div class="ttc" id="holdout__validation_8h_html"><div class="ttname"><a href="holdout__validation_8h.html">holdout_validation.h</a></div></div>
-<div class="ttc" id="classvita_1_1src__data_html_a07240e9deb6fde349fbb27dcb2859358"><div class="ttname"><a href="classvita_1_1src__data.html#a07240e9deb6fde349fbb27dcb2859358">vita::src_data::size</a></div><div class="ttdeci">std::size_t size() const </div><div class="ttdef"><b>Definition:</b> <a href="src_2data_8cc_source.html#l00185">src/data.cc:185</a></div></div>
-<div class="ttc" id="classvita_1_1src__data_html_aa5449975c5c998fc7186343e78fcfcac"><div class="ttname"><a href="classvita_1_1src__data.html#aa5449975c5c998fc7186343e78fcfcac">vita::src_data::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdef"><b>Definition:</b> <a href="src_2data_8cc_source.html#l00140">src/data.cc:140</a></div></div>
 <div class="ttc" id="random_8h_html"><div class="ttname"><a href="random_8h.html">random.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:36 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

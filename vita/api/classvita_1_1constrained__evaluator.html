@@ -95,6 +95,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">vita::constrained_evaluator&lt; T, E, P &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The class merges a basic evaluator and a penalty function into a new combined evaluator.  
+ <a href="classvita_1_1constrained__evaluator.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for vita::constrained_evaluator&lt; T, E, P &gt;:</div>
 <div class="dyncontent">
@@ -129,6 +132,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac2090925bf83eba4db175768defa8e21 inherit pub_methods_classvita_1_1evaluator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6c7c3d40ea9f9227b328fa386941687 inherit pub_methods_classvita_1_1evaluator"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1evaluator.html#ac6c7c3d40ea9f9227b328fa386941687">info</a> () const </td></tr>
 <tr class="separator:ac6c7c3d40ea9f9227b328fa386941687 inherit pub_methods_classvita_1_1evaluator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b003a20ce3a4b70692731df353e873a inherit pub_methods_classvita_1_1evaluator"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1evaluator.html#a2b003a20ce3a4b70692731df353e873a">load</a> (std::istream &amp;)</td></tr>
+<tr class="separator:a2b003a20ce3a4b70692731df353e873a inherit pub_methods_classvita_1_1evaluator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63e35a24a63cf9c1e67995fc58ee0f0b inherit pub_methods_classvita_1_1evaluator"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1evaluator.html#a63e35a24a63cf9c1e67995fc58ee0f0b">save</a> (std::ostream &amp;) const </td></tr>
+<tr class="separator:a63e35a24a63cf9c1e67995fc58ee0f0b inherit pub_methods_classvita_1_1evaluator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeda37bbe1956c0266a4d1b1f2c231a3 inherit pub_methods_classvita_1_1evaluator"><td class="memItemLeft" align="right" valign="top">virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1evaluator.html#aeeda37bbe1956c0266a4d1b1f2c231a3">seen</a> (const T &amp;) const </td></tr>
 <tr class="memdesc:aeeda37bbe1956c0266a4d1b1f2c231a3 inherit pub_methods_classvita_1_1evaluator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Some evaluators keep additional statistics about the individual seen so far.  <a href="#aeeda37bbe1956c0266a4d1b1f2c231a3">More...</a><br /></td></tr>
 <tr class="separator:aeeda37bbe1956c0266a4d1b1f2c231a3 inherit pub_methods_classvita_1_1evaluator"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,18 +153,17 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><h3>template&lt;class T, class E, class P&gt;<br />
 class vita::constrained_evaluator&lt; T, E, P &gt;</h3>
 
+<p>The class merges a basic evaluator and a penalty function into a new combined evaluator. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>the type of individual used. </td></tr>
-    <tr><td class="paramname">E</td><td>the basic evaluator. </td></tr>
-    <tr><td class="paramname">P</td><td>the penalty function.</td></tr>
+    <tr><td class="paramname">T</td><td>the type of individual used </td></tr>
+    <tr><td class="paramname">E</td><td>the basic evaluator </td></tr>
+    <tr><td class="paramname">P</td><td>the penalty function</td></tr>
   </table>
   </dd>
 </dl>
-<p>The class merges a basic evaluator and a penalty function into a new combined evaluator.</p>
-<p>The new evaluator calculates a augmented fitness of this form: (-penalty, base fitness) </p>
-
-<p>Definition at line <a class="el" href="constrained__evaluator_8h_source.html#l00034">34</a> of file <a class="el" href="constrained__evaluator_8h_source.html">constrained_evaluator.h</a>.</p>
+<p>The new evaluator calculates an augmented fitness of this form: </p><pre class="fragment">(-penalty, base fitness)</pre> 
+<p>Definition at line <a class="el" href="constrained__evaluator_8h_source.html#l00035">35</a> of file <a class="el" href="constrained__evaluator_8h_source.html">constrained_evaluator.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a360ba8ccf28cc8c6f328f5c369e5a319"></a>
 <div class="memitem">
@@ -186,7 +192,7 @@ template&lt;class T , class E , class P &gt; </div>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>the base evaluator. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>the base evaluator </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>the penalty function (as described in "An Efficient Constraint
              Handling Method for Genetic Algorithms" - Kalyanmoy Deb) </td></tr>
   </table>
@@ -223,11 +229,11 @@ template&lt;class T , class E , class P &gt; </div>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">prg</td><td>the program (individual/team) whose fitness we want to know. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prg</td><td>a program (individual/team) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the an approximation of the fitness of <code>prg</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the an approximation of the fitness of <code>prg</code> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classvita_1_1evaluator.html#a1075f033aa48b405701b80d4902e099f">vita::evaluator&lt; T &gt;</a>.</p>
 
@@ -260,11 +266,11 @@ template&lt;class T , class E , class P &gt; </div>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">prg</td><td>a program (individual/team). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prg</td><td>a program (individual/team) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a pointer to the executable version of <code>prg</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a pointer to the executable version of <code>prg</code> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classvita_1_1evaluator.html#a2035a24384c300ed64fbcadd66431230">vita::evaluator&lt; T &gt;</a>.</p>
 
@@ -297,11 +303,11 @@ template&lt;class T , class E , class P &gt; </div>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">prg</td><td>the program (individual/team) whose fitness we want to know. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prg</td><td>the program (individual/team) whose fitness we want to know </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the fitness of <code>ind</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the fitness of <code>ind</code> </dd></dl>
 
 <p>Implements <a class="el" href="classvita_1_1evaluator.html#a722061b28b48df3893679cea0a49ac59">vita::evaluator&lt; T &gt;</a>.</p>
 
@@ -315,7 +321,7 @@ template&lt;class T , class E , class P &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:37 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

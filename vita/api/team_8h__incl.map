@@ -1,16 +1,20 @@
 <map id="team.h" name="team.h">
-<area shape="rect" id="node3" href="$cache_8h.html" title="kernel/cache.h" alt="" coords="971,155,1078,181"/>
-<area shape="rect" id="node32" href="$individual_8h.html" title="kernel/individual.h" alt="" coords="688,80,815,107"/>
-<area shape="rect" id="node4" href="$environment_8h.html" title="kernel/environment.h" alt="" coords="960,229,1103,256"/>
-<area shape="rect" id="node8" href="$model__measurements_8h.html" title="kernel/model_measurements.h" alt="" coords="931,304,1131,331"/>
-<area shape="rect" id="node15" href="$log_8h.html" title="kernel/log.h" alt="" coords="819,304,908,331"/>
-<area shape="rect" id="node25" href="$symbol__set_8h.html" title="kernel/symbol_set.h" alt="" coords="1370,304,1509,331"/>
-<area shape="rect" id="node31" href="$trilean_8h.html" title="kernel/trilean.h" alt="" coords="687,304,794,331"/>
-<area shape="rect" id="node9" href="$fitness_8h.html" title="kernel/fitness.h" alt="" coords="976,379,1087,405"/>
-<area shape="rect" id="node16" href="$common_8h.html" title="kernel/common.h" alt="" coords="530,379,653,405"/>
-<area shape="rect" id="node21" href="$compatibility__patch_8h.html" title="kernel/compatibility\l_patch.h" alt="" coords="24,453,159,495"/>
-<area shape="rect" id="node27" href="$terminal_8h.html" title="kernel/terminal.h" alt="" coords="1433,379,1552,405"/>
-<area shape="rect" id="node28" href="$symbol_8h.html" title="kernel/symbol.h" alt="" coords="1438,461,1553,487"/>
-<area shape="rect" id="node29" href="$vitafwd_8h.html" title="kernel/vitafwd.h" alt="" coords="754,543,869,569"/>
-<area shape="rect" id="node34" href="$locus_8h.html" title="kernel/locus.h" alt="" coords="560,304,663,331"/>
+<area shape="rect" id="node3" href="$cache_8h.html" title="kernel/cache.h" alt="" coords="720,155,827,181"/>
+<area shape="rect" id="node34" href="$individual_8h.html" title="kernel/individual.h" alt="" coords="935,80,1062,107"/>
+<area shape="rect" id="node4" href="$cache__hash_8h.html" title="kernel/cache_hash.h" alt="" coords="559,229,702,256"/>
+<area shape="rect" id="node15" href="$environment_8h.html" title="kernel/environment.h" alt="" coords="726,229,869,256"/>
+<area shape="rect" id="node6" href="$common_8h.html" title="kernel/common.h" alt="" coords="1153,379,1276,405"/>
+<area shape="rect" id="node11" href="$compatibility__patch_8h.html" title="kernel/compatibility\l_patch.h" alt="" coords="1638,453,1773,495"/>
+<area shape="rect" id="node19" href="$model__measurements_8h.html" title="kernel/model_measurements.h" alt="" coords="529,304,729,331"/>
+<area shape="rect" id="node26" href="$log_8h.html" title="kernel/log.h" alt="" coords="753,304,842,331"/>
+<area shape="rect" id="node27" href="$symbol__set_8h.html" title="kernel/symbol_set.h" alt="" coords="249,304,388,331"/>
+<area shape="rect" id="node33" href="$trilean_8h.html" title="kernel/trilean.h" alt="" coords="1077,304,1184,331"/>
+<area shape="rect" id="node20" href="$fitness_8h.html" title="kernel/fitness.h" alt="" coords="589,379,699,405"/>
+<area shape="rect" id="node28" href="$function_8h.html" title="kernel/function.h" alt="" coords="193,379,311,405"/>
+<area shape="rect" id="node32" href="$terminal_8h.html" title="kernel/terminal.h" alt="" coords="335,379,454,405"/>
+<area shape="rect" id="node29" href="$symbol_8h.html" title="kernel/symbol.h" alt="" coords="243,461,357,487"/>
+<area shape="rect" id="node30" href="$vitafwd_8h.html" title="kernel/vitafwd.h" alt="" coords="949,543,1064,569"/>
+<area shape="rect" id="node36" href="$locus_8h.html" title="kernel/locus.h" alt="" coords="1259,304,1362,331"/>
+<area shape="rect" id="node38" href="$problem_8h.html" title="kernel/problem.h" alt="" coords="1154,155,1273,181"/>
+<area shape="rect" id="node39" href="$data_8h.html" title="kernel/data.h" alt="" coords="1169,229,1266,256"/>
 </map>

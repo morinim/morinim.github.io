@@ -109,6 +109,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad5bbfddeceaff01f7aa6dfca2e90b7fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1category__set.html#ad5bbfddeceaff01f7aa6dfca2e90b7fd">add_label</a> (<a class="el" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a>, const std::string &amp;)</td></tr>
+<tr class="memdesc:ad5bbfddeceaff01f7aa6dfca2e90b7fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a label to the set of labels associated with a category.  <a href="#ad5bbfddeceaff01f7aa6dfca2e90b7fd">More...</a><br /></td></tr>
 <tr class="separator:ad5bbfddeceaff01f7aa6dfca2e90b7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7de7f7b1070a9481ae544e2100ad43c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7de7f7b1070a9481ae544e2100ad43c"></a>
 <a class="el" href="classvita_1_1category__set_1_1const__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1category__set.html#af7de7f7b1070a9481ae544e2100ad43c">begin</a> () const </td></tr>
@@ -129,14 +130,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a40fb05bfdfbe673636c35e048c1535d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1category__set.html#a40fb05bfdfbe673636c35e048c1535d7">insert</a> (const <a class="el" href="structvita_1_1untagged__category.html">untagged_category</a> &amp;)</td></tr>
 <tr class="separator:a40fb05bfdfbe673636c35e048c1535d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1760088d1a2452e1d76e7eee239762ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">size</a> () const </td></tr>
+<tr class="memdesc:a1760088d1a2452e1d76e7eee239762ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of input categories.  <a href="#a1760088d1a2452e1d76e7eee239762ac">More...</a><br /></td></tr>
 <tr class="separator:a1760088d1a2452e1d76e7eee239762ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d86934223db9e2e286419255d9c1988"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1category__set.html#a1d86934223db9e2e286419255d9c1988">swap</a> (<a class="el" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a>, <a class="el" href="namespacevita.html#ab4bee4c13eaf6e5d61b4900cae4f0447">category_t</a>)</td></tr>
+<tr class="memdesc:a1d86934223db9e2e286419255d9c1988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps two categories.  <a href="#a1d86934223db9e2e286419255d9c1988">More...</a><br /></td></tr>
 <tr class="separator:a1d86934223db9e2e286419255d9c1988"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The set of categories used in a specific problem. </p>
 
-<p>Definition at line <a class="el" href="category__set_8h_source.html#l00077">77</a> of file <a class="el" href="category__set_8h_source.html">category_set.h</a>.</p>
+<p>Definition at line <a class="el" href="category__set_8h_source.html#l00079">79</a> of file <a class="el" href="category__set_8h_source.html">category_set.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ad5bbfddeceaff01f7aa6dfca2e90b7fd"></a>
 <div class="memitem">
@@ -161,16 +164,17 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Adds a label to the set of labels associated with a category. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>the tag of a category. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>a label.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>the tag of the category <code>l</code> should be added to </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">l</td><td>label to be added </td></tr>
   </table>
   </dd>
 </dl>
-<p>Add the label <code>l</code> to the set of labels associated with category <code>t</code>. </p>
 
-<p>Definition at line <a class="el" href="category__set_8cc_source.html#l00143">143</a> of file <a class="el" href="category__set_8cc_source.html">category_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="category__set_8cc_source.html#l00146">146</a> of file <a class="el" href="category__set_8cc_source.html">category_set.cc</a>.</p>
 
 </div>
 </div>
@@ -189,13 +193,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of a category. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of a category </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the category with the specified <code>name</code> (if it doesn't exist returns <code><a class="el" href="structvita_1_1category.html#a41f7febefc98998d8be9bba957fec8a9" title="A special value used for missing answers. ">category::null</a></code>). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the category with the specified <code>name</code> or <code><a class="el" href="structvita_1_1category.html#a41f7febefc98998d8be9bba957fec8a9" title="A special value used for missing answers. ">category::null</a></code> if it doesn't exists </dd></dl>
 
-<p>Definition at line <a class="el" href="category__set_8cc_source.html#l00092">92</a> of file <a class="el" href="category__set_8cc_source.html">category_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="category__set_8cc_source.html#l00095">95</a> of file <a class="el" href="category__set_8cc_source.html">category_set.cc</a>.</p>
 
 </div>
 </div>
@@ -214,13 +218,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>tag of a category. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>tag of a category </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the category with tag <code>t</code> (if it doesn't exist returns <a class="el" href="structvita_1_1category.html#a41f7febefc98998d8be9bba957fec8a9" title="A special value used for missing answers. ">category::null</a>). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the category with tag <code>t</code> or <code><a class="el" href="structvita_1_1category.html#a41f7febefc98998d8be9bba957fec8a9" title="A special value used for missing answers. ">category::null</a></code> if it doesn't exists) </dd></dl>
 
-<p>Definition at line <a class="el" href="category__set_8cc_source.html#l00113">113</a> of file <a class="el" href="category__set_8cc_source.html">category_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="category__set_8cc_source.html#l00116">116</a> of file <a class="el" href="category__set_8cc_source.html">category_set.cc</a>.</p>
 
 </div>
 </div>
@@ -239,13 +243,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>a new <a class="el" href="structvita_1_1untagged__category.html" title="Informations about a category of the dataset. ">untagged_category</a> for the set. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>a new <a class="el" href="structvita_1_1untagged__category.html" title="Informations about a category of the dataset. ">untagged_category</a> for the set </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the tag associated with <code>c</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the tag associated with <code>c</code> </dd></dl>
 
-<p>Definition at line <a class="el" href="category__set_8cc_source.html#l00122">122</a> of file <a class="el" href="category__set_8cc_source.html">category_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="category__set_8cc_source.html#l00125">125</a> of file <a class="el" href="category__set_8cc_source.html">category_set.cc</a>.</p>
 
 </div>
 </div>
@@ -261,8 +265,10 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>number of categories.</dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>please note that the value <a class="el" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac">size()</a> returns may differ from the intuitive number of categories of the dataset (it can be 1 unit smaller). For instance consider the simple Iris classification problem: <pre class="fragment">...
+
+<p>Number of input categories. </p>
+<dl class="section return"><dt>Returns</dt><dd>number of input categories</dd></dl>
+<p>Please note that the value returned may differ from the intuitive number of categories of the dataset (it could be <code>1</code> unit smaller). For instance consider the simple <em>Iris</em> classification problem: </p><pre class="fragment">...
 &lt;attribute class="yes" name="class" type="nominal"&gt;
   &lt;labels&gt;
     &lt;label&gt;Iris-setosa&lt;/label&gt; ... &lt;label&gt;Iris-virginica&lt;/label&gt;
@@ -270,10 +276,13 @@ Public Member Functions</h2></td></tr>
 &lt;/attribute&gt;
 &lt;attribute name="sepallength" type="numeric" /&gt;
 ...
-</pre></dd></dl>
-<p>It has a nominal attribute to describe output classes and four numeric attributes as inputs. So there are two distinct attribute types (nominal and numeric), i.e. two categories. But... categories() would return 1. This happens because the genetic programming algorithm for classification we use (based on a discriminant function) doesn't manipulate (skips) the output category (it only uses the number of output classes). </p>
+</pre><p>There is a nominal attribute to describe output classes and four numeric attributes as input. So two distinct attributes / categories (nominal and numeric) but... <code><a class="el" href="classvita_1_1category__set.html#a1760088d1a2452e1d76e7eee239762ac" title="Number of input categories. ">size()</a></code> returns <code>1</code> (the number of input categories).</p>
+<p>This choice is due to the fact that:</p><ul>
+<li>for regression problems the output category is contained in the set of input categories;</li>
+<li>for classification tasks the algorithm ignores the output category (because it's based on a discriminant function). </li>
+</ul>
 
-<p>Definition at line <a class="el" href="category__set_8cc_source.html#l00082">82</a> of file <a class="el" href="category__set_8cc_source.html">category_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="category__set_8cc_source.html#l00085">85</a> of file <a class="el" href="category__set_8cc_source.html">category_set.cc</a>.</p>
 
 </div>
 </div>
@@ -300,16 +309,17 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Swaps two categories. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">t1</td><td>a tag of a category. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">t2</td><td>a tag of category.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t1</td><td>a tag of a category </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t2</td><td>a tag of a category </td></tr>
   </table>
   </dd>
 </dl>
-<p>Swap categories <code>t1</code> and <code>t2</code>. </p>
 
-<p>Definition at line <a class="el" href="category__set_8cc_source.html#l00157">157</a> of file <a class="el" href="category__set_8cc_source.html">category_set.cc</a>.</p>
+<p>Definition at line <a class="el" href="category__set_8cc_source.html#l00160">160</a> of file <a class="el" href="category__set_8cc_source.html">category_set.cc</a>.</p>
 
 </div>
 </div>
@@ -320,7 +330,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:37 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

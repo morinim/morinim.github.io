@@ -119,8 +119,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9d50c3e20c5533e4fd81e455e2fef606"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0abc2de158a77e69e704741455aebfb3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__reg__lambda__f.html#a0abc2de158a77e69e704741455aebfb3">debug</a> () const override</td></tr>
 <tr class="separator:a0abc2de158a77e69e704741455aebfb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2d44f26735c4d95d35c5b24425a40da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__reg__lambda__f.html#ae2d44f26735c4d95d35c5b24425a40da">load</a> (std::istream &amp;, const <a class="el" href="classvita_1_1environment.html">environment</a> &amp;) override</td></tr>
-<tr class="separator:ae2d44f26735c4d95d35c5b24425a40da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af257d212f624a293a7a3860ce90ed280"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__reg__lambda__f.html#af257d212f624a293a7a3860ce90ed280">load</a> (std::istream &amp;, const <a class="el" href="classvita_1_1problem.html">problem</a> &amp;) override</td></tr>
+<tr class="separator:af257d212f624a293a7a3860ce90ed280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abba9c66b0619f945095735d597927c33"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvita_1_1basic__reg__lambda__f.html#abba9c66b0619f945095735d597927c33">measure</a> (const <a class="el" href="classvita_1_1model__metric.html">model_metric</a>&lt; T &gt; &amp;, const <a class="el" href="classvita_1_1src__data.html">src_data</a> &amp;) const override</td></tr>
 <tr class="memdesc:abba9c66b0619f945095735d597927c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls (dynamic dispatch) polymhorphic <a class="el" href="classvita_1_1model__metric.html" title="There are a lot of metrics related to a model (a lambda_f) and we don&#39;t want fat classes. ">model_metric</a> <code>m</code> on <code>this</code>  <a href="#abba9c66b0619f945095735d597927c33">More...</a><br /></td></tr>
 <tr class="separator:abba9c66b0619f945095735d597927c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,7 +211,7 @@ template&lt;class T , bool S&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae2d44f26735c4d95d35c5b24425a40da"></a>
+<a class="anchor" id="af257d212f624a293a7a3860ce90ed280"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -229,8 +229,8 @@ template&lt;class T , bool S&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classvita_1_1environment.html">environment</a> &amp;&#160;</td>
-          <td class="paramname"><em>e</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classvita_1_1problem.html">problem</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -246,7 +246,7 @@ template&lt;class T , bool S&gt; </div>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">e</td><td>environment used to build the object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>active problem. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>input stream. </td></tr>
   </table>
   </dd>
@@ -427,7 +427,7 @@ template&lt;class T , bool S&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:12:45 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 11 2017 16:06:37 for Vita by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

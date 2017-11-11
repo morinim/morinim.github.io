@@ -6,7 +6,9 @@ var searchData=
   ['max',['max',['../classvita_1_1real_1_1max.html',1,'vita::real']]],
   ['max_5fage',['max_age',['../namespacevita_1_1alps.html#a8898d043e60c01fff6ba916fdc497396',1,'vita::alps']]],
   ['measure',['measure',['../classvita_1_1basic__reg__lambda__f.html#abba9c66b0619f945095735d597927c33',1,'vita::basic_reg_lambda_f::measure()'],['../classvita_1_1basic__class__lambda__f.html#adad76404bdbe1a6e47f7fb7886cd8ba4',1,'vita::basic_class_lambda_f::measure()']]],
+  ['mep_5fparameters',['mep_parameters',['../structvita_1_1environment_1_1mep__parameters.html',1,'vita::environment']]],
   ['min_5findividuals',['min_individuals',['../classvita_1_1environment.html#aac70c8ddfdb1d805502e2a31fb9f9f2c',1,'vita::environment']]],
+  ['misc_5fparameters',['misc_parameters',['../structvita_1_1environment_1_1misc__parameters.html',1,'vita::environment']]],
   ['mod',['mod',['../classvita_1_1integer_1_1mod.html',1,'vita::integer']]],
   ['mod',['mod',['../classvita_1_1real_1_1mod.html',1,'vita::real']]],
   ['model_5fmeasurements',['model_measurements',['../structvita_1_1model__measurements.html',1,'vita']]],
@@ -16,5 +18,7 @@ var searchData=
   ['mse_5fevaluator',['mse_evaluator',['../classvita_1_1mse__evaluator.html',1,'vita']]],
   ['mul',['mul',['../classvita_1_1real_1_1mul.html',1,'vita::real']]],
   ['mul',['mul',['../classvita_1_1integer_1_1mul.html',1,'vita::integer']]],
-  ['mutation',['mutation',['../classvita_1_1i__mep.html#a730f0831047db4ebb11cd0e2039c9509',1,'vita::i_mep']]]
+  ['murmurhash3',['murmurhash3',['../classvita_1_1murmurhash3.html',1,'vita']]],
+  ['mutation',['mutation',['../classvita_1_1i__mep.html#add21c6d7bc6b1447769e00964be4a715',1,'vita::i_mep']]],
+  ['mutations',['mutations',['../classvita_1_1summary.html#a0377214248cc6c0e5a0cda177f070067',1,'vita::summary']]]
 ];

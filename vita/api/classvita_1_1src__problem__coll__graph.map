@@ -1,13 +1,15 @@
 <map id="vita::src_problem" name="vita::src_problem">
-<area shape="rect" id="node2" href="$classvita_1_1problem.html" title="Aggregates the problem&#45;related data needed by an evolutionary program. " alt="" coords="903,368,1000,395"/>
-<area shape="rect" id="node3" href="$classvita_1_1environment.html" title="Context object aggregating multiple related parameters into one structure. " alt="" coords="707,277,829,304"/>
-<area shape="rect" id="node4" href="$structvita_1_1environment_1_1alps__parameters.html" title="Parameters for the Age&#45;Layered Population Structure (ALPS) paradigm. " alt="" coords="447,153,577,194"/>
-<area shape="rect" id="node5" href="$structvita_1_1environment_1_1team__parameters.html" title="vita::environment::\lteam_parameters" alt="" coords="447,218,577,259"/>
-<area shape="rect" id="node6" href="$structvita_1_1model__measurements.html" title="A collection of measurements. " alt="" coords="423,284,601,311"/>
-<area shape="rect" id="node7" href="$classvita_1_1basic__fitness__t.html" title="vita::basic_fitness\l_t\&lt; double \&gt;" alt="" coords="181,277,309,318"/>
-<area shape="rect" id="node8" href="$classvita_1_1symbol__set.html" title="A container for the symbols used by the GP engine. " alt="" coords="453,411,571,437"/>
-<area shape="rect" id="node9" href="$structvita_1_1environment_1_1de__parameters.html" title="vita::environment::\lde_parameters" alt="" coords="447,335,577,377"/>
-<area shape="rect" id="node10" href="$structvita_1_1environment_1_1statistics.html" title="vita::environment::\lstatistics" alt="" coords="447,87,577,129"/>
-<area shape="rect" id="node11" title="STL class. " alt="" coords="205,95,285,121"/>
-<area shape="rect" id="node12" title="STL class. " alt="" coords="5,87,132,129"/>
+<area shape="rect" id="node2" href="$classvita_1_1problem.html" title="Aggregates the problem&#45;related data needed by an evolutionary program. " alt="" coords="939,222,1036,249"/>
+<area shape="rect" id="node3" href="$classvita_1_1environment.html" title="Context object aggregating multiple related parameters into one structure. " alt="" coords="739,195,861,222"/>
+<area shape="rect" id="node4" href="$structvita_1_1environment_1_1alps__parameters.html" title="Parameters for the Age&#45;Layered Population Structure (ALPS) paradigm. " alt="" coords="479,5,609,47"/>
+<area shape="rect" id="node5" href="$structvita_1_1environment_1_1team__parameters.html" title="vita::environment::\lteam_parameters" alt="" coords="479,71,609,112"/>
+<area shape="rect" id="node6" href="$structvita_1_1model__measurements.html" title="A collection of measurements. " alt="" coords="455,137,633,163"/>
+<area shape="rect" id="node7" href="$classvita_1_1basic__fitness__t.html" title="vita::basic_fitness\l_t\&lt; double \&gt;" alt="" coords="181,129,309,171"/>
+<area shape="rect" id="node8" href="$structvita_1_1environment_1_1mep__parameters.html" title="vita::environment::\lmep_parameters" alt="" coords="479,188,609,229"/>
+<area shape="rect" id="node9" href="$structvita_1_1environment_1_1de__parameters.html" title="vita::environment::\lde_parameters" alt="" coords="479,253,609,295"/>
+<area shape="rect" id="node10" href="$structvita_1_1environment_1_1misc__parameters.html" title="vita::environment::\lmisc_parameters" alt="" coords="479,319,609,360"/>
+<area shape="rect" id="node11" title="STL class. " alt="" coords="205,375,285,402"/>
+<area shape="rect" id="node13" href="$structvita_1_1environment_1_1statistics.html" title="vita::environment::\lstatistics" alt="" coords="479,417,609,459"/>
+<area shape="rect" id="node12" title="STL class. " alt="" coords="5,368,132,409"/>
+<area shape="rect" id="node14" href="$classvita_1_1symbol__set.html" title="A container for the symbols used by the GP engine. " alt="" coords="741,246,859,273"/>
 </map>
